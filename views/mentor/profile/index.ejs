@@ -1,10 +1,10 @@
-<% layout("/admin/layouts/boilerplate") -%>
+<% layout("/mentor/layouts/boilerplate") -%>
 <div class="container mt-5">
     <h2 class="text-center">User Profile</h2>
 
     <div class="profile-info">
-        <h4>Username: <%= mentor.username %></h4>
-        <h4>Role: <%= mentor.role %></h4>
+        <h4>Username: <%= mentor.user.username %></h4>
+        <h4>Role: <%= mentor.user.role %></h4>
         <h4>Expertise: <%= mentor.expertise.join(", ") %></h4>
         <h4>Years of Experience: <%= mentor.yearsOfExperience %></h4>
         <h4>Bio: <%= mentor.bio || 'No bio available' %></h4>
@@ -17,15 +17,12 @@
     <!-- Show edit and delete options if the logged-in user is the owner -->
     <% if (isOwner) { %>
         <div class="profile-actions mt-3">
-            <a href="/mentor/profile/edit/<%= mentor._id %>" class="btn btn-primary">Edit Profile</a>
-            <form action="/mentor/profile/delete/<%= mentor._id %>" method="POST" class="mt-2" onsubmit="return confirm('Are you sure you want to delete your profile?');">
+            <a href="/mentor/profile/edit/<%= mentor.user._id %>" class="btn btn-primary">Edit Profile</a>
+            <form action="/mentor/profile/delete/<%= mentor.user._id %>" method="POST" class="mt-2" onsubmit="return confirm('Are you sure you want to delete your profile?');">
                 <button type="submit" class="btn btn-danger">Delete Profile</button>
             </form>
         </div>
     <% } %>
 
-    <!-- Logout button -->
-    <div class="mt-3">
-        <a href="/auth/logout" class="btn btn-danger">Logout</a>
-    </div>
+    
 </div>

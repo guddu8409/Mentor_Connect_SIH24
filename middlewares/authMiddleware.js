@@ -37,6 +37,11 @@ module.exports.isLoggedIn = (req, res, next) => {
 module.exports.isOwner = (req, res, next) => {
   const mentorId = req.params.id; // The mentor ID from the route
   const userId = req.user._id; // The logged-in user ID
+console.log("middleware.............");
+
+  console.log("mentorId: " + mentorId);
+  console.log("userId: " + userId);
+
 
   if (mentorId !== userId.toString()) {
     req.flash('error', 'You do not have permission to access this profile.');

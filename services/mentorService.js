@@ -14,8 +14,14 @@ const getAllMentors = async () => {
  * @param {String} mentorId - Mentor's ID
  * @returns {Promise<Object>} Mentor document
  */
-const getMentorById = async (mentorId) => {
-  return await Mentor.findById(mentorId);
+const getMentorByUserId = async (userId) => {
+  return await Mentor.findOne({ user: userId })
+    .populate('user')  // Populate the user field with the corresponding User document
+    .exec();
+};
+
+const getMentorByMentor = async (mentorId) => {
+  return await Mentor.findOne({ mentorId }) .exec();
 };
 
 /*
@@ -115,7 +121,7 @@ const deleteMentor = async (mentorId) => {
 // Export all functions
 module.exports = {
   getAllMentors,
-  getMentorById,
+  getMentorByUserId,
   checkImmediateAvailability,
   setImmediateAvailability,
   scheduleAvailability,
@@ -123,4 +129,5 @@ module.exports = {
   addMentor,
   updateMentor,
   deleteMentor,
+  getMentorByMentor,
 };

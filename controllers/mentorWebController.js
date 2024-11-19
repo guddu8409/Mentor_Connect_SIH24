@@ -18,30 +18,42 @@ module.exports.notifications = (req, res) => {
 
 module.exports.viewProfile = async (req, res) => {
   try {
-    const mentorId = req.params.id;
-    const mentor = await mentorService.getMentorById(mentorId);
+    // Fetch the mentor by the user ID from the params
+    const userId = req.params.id;
+
+    // Find the mentor by user ID
+    const mentor = await mentorService.getMentorByUserId(userId);
 
     if (!mentor) {
-      req.flash('error', 'Mentor not found.');
-      return res.redirect('/');
+      req.flash("error", "Mentor not found.");
+      console.log("Mentor not found");
+      return res.redirect("/");
     }
 
-    const isOwner = mentor.user.toString() === req.user._id.toString(); // Check if logged-in user is the owner
-    res.render('mentor/profile/index', { mentor, isOwner });
+    const isOwner = mentor.user._id.toString() === req.user._id.toString(); // Check if logged-in user is the owner
+    console.log("isOwner: " + isOwner);
+    console.log("mentor: " + mentor.user._id);
+    console.log("user: " + req.user._id);
+
+    // Render the profile page and pass mentor data and ownership status
+    res.render("mentor/profile/index", { mentor, isOwner });
   } catch (error) {
     console.error("Error fetching mentor profile: ", error);
-    req.flash('error', 'An error occurred while fetching the profile.');
-    res.redirect('/');
+    req.flash("error", "An error occurred while fetching the profile.");
+    res.redirect("/");
   }
 };
-
 // Edit Profile Controller
 module.exports.editProfile = async (req, res) => {
   const mentorId = req.params.id;
   const userId = req.user._id;
+  console.log("edit controller....................................................");
+  console.log("mentorId", mentorId);
+  console.log("userId", userId);
+  
 
   try {
-    const mentor = await mentorService.getMentorById(mentorId);
+    const mentor = await mentorService.getMentorByMentor(mentorId);
 
     if (!mentor || mentor.user.toString() !== userId.toString()) {
       req.flash('error', 'You do not have permission to edit this profile.');
