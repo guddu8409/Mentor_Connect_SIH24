@@ -1,16 +1,27 @@
+// routes/mentorRoutes.js
+
 const express = require("express");
-const { isLoggedIn, isMentor } = require("../middlewares/authMiddleware");
-const { dashboard, viewUsers, notifications,viewProfile } = require("../controllers/mentorWebController");
+const { isLoggedIn, isMentor, isOwner } = require("../middlewares/authMiddleware");
+const { dashboard, viewUsers, notifications, viewProfile, editProfile, deleteProfile } = require("../controllers/mentorWebController");
 
 const router = express.Router();
 
 // Mentor Dashboard
 router.get("/", isLoggedIn, isMentor, dashboard);
 
-// Manage Users (Example: mentor-specific user management)
+// Manage Users (mentor-specific user management)
 router.get("/users", isLoggedIn, isMentor, viewUsers);
 
+// View Mentor Profile
 router.get("/profile/:id", isLoggedIn, isMentor, viewProfile);
+
+// Edit Mentor Profile (only for the owner)
+router.get("/profile/edit/:id", isLoggedIn, isMentor, isOwner, editProfile);
+router.post("/profile/edit/:id", isLoggedIn, isMentor, isOwner, editProfile);
+
+// Delete Mentor Profile (only for the owner)
+router.post("/profile/delete/:id", isLoggedIn, isMentor, isOwner, deleteProfile);
+
 // Mentor Notifications
 router.get("/notifications", isLoggedIn, isMentor, notifications);
 
