@@ -1,0 +1,44 @@
+<% layout("/common/layouts/boilerplate") -%>
+
+
+<div class="row" >
+
+  <section class="hero">
+    <h1>Welcome to Mentor Connect</h1>
+    <p>Your gateway to connecting with mentors and enhancing your career growth.</p>
+    <button id="get-started">Get Started</button>
+  </section>
+
+  <section id="about">
+    <h2>About Mentor Connect</h2>
+    <p>Mentor Connect is a platform designed to bridge the gap between mentors and mentees, enabling growth and learning through meaningful connections.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features-container">
+      <div class="feature">
+        <h3>Find Mentors</h3>
+        <p>Search for experienced professionals ready to guide you.</p>
+      </div>
+      <div class="feature">
+        <h3>Collaborate</h3>
+        <p>Join groups, attend events, and collaborate with mentors.</p>
+      </div>
+      <div class="feature">
+        <h3>Grow</h3>
+        <p>Take your career to the next level with expert guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="/contact" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</div>
