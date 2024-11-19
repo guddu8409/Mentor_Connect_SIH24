@@ -43,23 +43,34 @@ module.exports.viewProfile = async (req, res) => {
     res.redirect("/");
   }
 };
+
+module.exports.renderEditProfile = async(req, res) => {
+  let userId = req.user._id;
+  const mentor = await mentorService.getMentorByUserId(userId);
+  console.log("Mentor retrieved successfully for user " + userId);
+  console.log("mentor: ", mentor);
+  
+  
+  res.render("mentor/profile/edit",{mentor:mentor});
+  };
 // Edit Profile Controller
 module.exports.editProfile = async (req, res) => {
-  const mentorId = req.params.id;
+  const paramsId = req.params.id;
   const userId = req.user._id;
   console.log("edit controller....................................................");
-  console.log("mentorId", mentorId);
+  console.log("paramsId", paramsId);
   console.log("userId", userId);
   
 
   try {
-    const mentor = await mentorService.getMentorByMentor(mentorId);
+    const mentor = await mentorService.getMentorByUserId(userId);
 
-    if (!mentor || mentor.user.toString() !== userId.toString()) {
+    if (!mentor || mentor.user._id.toString() !== userId.toString()) {
       req.flash('error', 'You do not have permission to edit this profile.');
-      return res.redirect(`/mentor/profile/${mentorId}`);
+      return res.redirect(`/mentor/profile/${paramsId}`);
     }
 
+    const mentorId = mentor._id;
     // Validation errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -78,11 +89,11 @@ module.exports.editProfile = async (req, res) => {
 
     await mentorService.updateMentor(mentorId, updatedData);
     req.flash("success", "Profile updated successfully!");
-    res.redirect(`/mentor/profile/${mentorId}`);
+    res.redirect(`/mentor/profile/${paramsId}`);
   } catch (error) {
     console.error("Error updating mentor profile: ", error);
     req.flash('error', 'An error occurred while updating the profile.');
-    res.redirect(`/mentor/profile/${mentorId}`);
+    res.redirect(`/mentor/profile/${paramsId}`);
   }
 };
 
@@ -92,14 +103,14 @@ module.exports.deleteProfile = async (req, res) => {
   const userId = req.user._id;
 
   try {
-    const mentor = await mentorService.getMentorById(mentorId);
+    const mentor = await mentorService.getMentorByUserId(mentorId);
 
-    if (!mentor || mentor.user.toString() !== userId.toString()) {
+    if (!mentor || mentor.user._id.toString() !== userId.toString()) {
       req.flash('error', 'You do not have permission to delete this profile.');
       return res.redirect(`/mentor/profile/${mentorId}`);
     }
 
-    await mentorService.deleteMentor(mentorId);
+    await mentorService.deleteMentor(mentor._id);
     req.flash('success', 'Profile deleted successfully.');
     res.redirect('/'); // Redirect to homepage or another page after deletion
   } catch (error) {

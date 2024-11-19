@@ -34,20 +34,19 @@ module.exports.isLoggedIn = (req, res, next) => {
 
   // middlewares/authMiddleware.js
 
-module.exports.isOwner = (req, res, next) => {
-  const mentorId = req.params.id; // The mentor ID from the route
-  const userId = req.user._id; // The logged-in user ID
-console.log("middleware.............");
-
-  console.log("mentorId: " + mentorId);
-  console.log("userId: " + userId);
-
-
-  if (mentorId !== userId.toString()) {
-    req.flash('error', 'You do not have permission to access this profile.');
-    return res.redirect('/');
-  }
-
-  next();
-};
-
+  module.exports.isOwner = (req, res, next) => {
+    const userId = req.params.id; // The user ID from the route (this corresponds to the `user` field in the mentor)
+    const loggedInUserId = req.user._id; // The logged-in user's ID
+  
+    console.log("Checking ownership in middleware.......................");
+    console.log("userId: " + userId);
+    console.log("loggedInUserId: " + loggedInUserId);
+  
+    if (userId !== loggedInUserId.toString()) {
+      req.flash('error', 'You do not have permission to access this profile.');
+      return res.redirect('/');
+    }
+  
+    next();
+  };
+  

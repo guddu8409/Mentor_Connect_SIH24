@@ -2,7 +2,7 @@
 
 const express = require("express");
 const { isLoggedIn, isMentor, isOwner } = require("../middlewares/authMiddleware");
-const { dashboard, viewUsers, notifications, viewProfile, editProfile, deleteProfile } = require("../controllers/mentorWebController");
+const { dashboard, viewUsers, notifications, viewProfile, editProfile, deleteProfile,renderEditProfile } = require("../controllers/mentorWebController");
 
 const router = express.Router();
 
@@ -16,7 +16,7 @@ router.get("/users", isLoggedIn, isMentor, viewUsers);
 router.get("/profile/:id", isLoggedIn, isMentor, viewProfile);
 
 // Edit Mentor Profile (only for the owner)
-router.get("/profile/edit/:id", isLoggedIn, isMentor, isOwner, editProfile);
+router.get("/profile/edit/:id", isLoggedIn, isMentor, isOwner, renderEditProfile);
 router.post("/profile/edit/:id", isLoggedIn, isMentor, isOwner, editProfile);
 
 // Delete Mentor Profile (only for the owner)
