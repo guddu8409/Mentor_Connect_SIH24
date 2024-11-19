@@ -1,0 +1,14 @@
+<% layout("/admin/layouts/boilerplate") -%>
+<div class="container mt-5">
+    <h2 class="text-center">User Profile</h2>
+
+    <div class="profile-info">
+        <h4>Username: <%= user.username %></h4>
+        <h4>Role: <%= user.role %></h4>
+    </div>
+
+    <div class="profile-actions mt-3">
+        <a href="/profile/edit" class="btn btn-primary">Edit Profile</a>  <!-- Link to edit profile if you have that functionality -->
+        <a href="/auth/logout" class="btn btn-danger">Logout</a>  <!-- Logout button -->
+    </div>
+</div>

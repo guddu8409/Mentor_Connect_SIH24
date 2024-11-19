@@ -3,7 +3,7 @@
   <header>
     <div class="logo">
       <a href="/">
-        <img src="/mentor/images/connexusLogo.jpeg" alt="Connexus" />
+        <img src="/image/mentee/connexusLogo.jpeg" alt="Connexus" />
       </a>
     </div>
     <nav class="navbar2">
@@ -19,7 +19,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Find Mentor
+            Find Mentor 
           </a>
           <ul class="dropdown-menu" aria-labelledby="findAlumniDropdown">
             <li>
@@ -49,7 +49,7 @@
           </span>
           <% } %>
         </a>
-        <a href="/users/profile/<%= currUser._id %>" class="btn login-btn"
+        <a href="/mentee/profile/<%= currUser._id %>" class="btn login-btn"
           >Profile</a
         >
         <a href="/auth/logout" class="btn login-btn">Log out</a>
@@ -111,7 +111,7 @@
         </span>
         <% } %>
       </a>
-      <a href="/users/profile/<%= currUser._id %>" class="btn login-btn"
+      <a href="/mentee/profile/<%= currUser._id %>" class="btn login-btn"
         >Profile</a
       >
       <a href="/auth/logout" class="btn login-btn">Log out</a>

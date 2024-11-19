@@ -1,6 +1,6 @@
 const express = require("express");
 const { isLoggedIn, isMentee } = require("../middlewares/authMiddleware");
-const { dashboard, viewUsers, notifications } = require("../controllers/menteeWebController");
+const { dashboard, viewUsers, notifications,viewProfile } = require("../controllers/menteeWebController");
 
 const router = express.Router();
 
@@ -9,6 +9,8 @@ router.get("/", isLoggedIn, isMentee, dashboard);
 
 // Manage Users (Example: mentor-specific user management)
 router.get("/users", isLoggedIn, isMentee, viewUsers);
+
+router.get("/profile/:id", isLoggedIn, isMentee, viewProfile);
 
 // Mentor Notifications
 router.get("/notifications", isLoggedIn, isMentee, notifications);

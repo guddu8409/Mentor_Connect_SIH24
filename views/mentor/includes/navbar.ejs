@@ -19,7 +19,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Find Mentor
+            Find Mentee
           </a>
           <ul class="dropdown-menu" aria-labelledby="findAlumniDropdown">
             <li>
@@ -49,7 +49,7 @@
           </span>
           <% } %>
         </a>
-        <a href="/users/profile/<%= currUser._id %>" class="btn login-btn"
+        <a href="/mentor/profile/<%= currUser._id %>" class="btn login-btn"
           >Profile</a
         >
         <a href="/auth/logout" class="btn login-btn">Log out</a>
@@ -111,7 +111,7 @@
         </span>
         <% } %>
       </a>
-      <a href="/users/profile/<%= currUser._id %>" class="btn login-btn"
+      <a href="/mentor/profile/<%= currUser._id %>" class="btn login-btn"
         >Profile</a
       >
       <a href="/auth/logout" class="btn login-btn">Log out</a>
