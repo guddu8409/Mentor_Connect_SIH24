@@ -13,7 +13,7 @@ router.get("/", isLoggedIn, isMentor, dashboard);
 router.get("/users", isLoggedIn, isMentor, viewUsers);
 
 // View Mentor Profile
-router.get("/profile/:id", isLoggedIn, isMentor, viewProfile);
+router.get("/profile/:id", isLoggedIn,  viewProfile);
 
 // Edit Mentor Profile (only for the owner)
 router.get("/profile/edit/:id", isLoggedIn, isMentor, isOwner, renderEditProfile);

@@ -1,4 +1,5 @@
 const Mentee = require("../models/mentee/mentee");
+const Mentor = require("../models/mentor/mentor");
 const menteeService = require("../services/menteeService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
@@ -106,3 +107,14 @@ module.exports.deleteProfile = async (req, res) => {
     res.redirect(`/mentee/profile/${paramsId}`);
   }
 };
+
+module.exports.displayMentor = async (req, res) => {
+  try {
+      const mentors = await Mentor.find().populate('user').exec(); // Replace with your mentor fetching logic
+      res.render("mentee/findMentor/mentorList", { mentors,cssFile:"mentee/findmentor/mentorList.css" });
+  } catch (error) {
+      console.error("Error fetching mentors:", error);
+      res.status(500).send("An error occurred while fetching mentors.");
+  }
+};
+

@@ -1,0 +1,58 @@
+<%- layout("/mentee/layouts/boilerplate") -%>
+
+<div class="container mt-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="mb-0">Mentors Available</h1>
+    </div>
+
+    <% if (mentors.length === 0) { %>
+    <div class="alert alert-warning" role="alert">
+        No mentors available at the moment.
+    </div>
+    <% } else { %>
+    <div class="row" id="mentorList">
+        <% mentors.forEach(mentor => { %>
+        <div class="col-md-4 mb-4 mentor-card">
+            <div class="card">
+                <div class="card-body p-0">
+                    <div class="cover-photo-container">
+                        <img src="<%= mentor.coverPhoto || '/images/default-cover.jpg' %>" class="cover-photo"
+                            alt="Cover Photo of <%= mentor.username %>">
+                    </div>
+                    <img src="<%= mentor.profilePicture || '/images/default-profile.png' %>"
+                        class="profile-photo rounded-circle" alt="<%= mentor.username %>">
+
+                    <div class="upperpart text-center mt-5">
+                        <h5 class="card-title mt-4"> <a href="/mentor/profile/<%=mentor.user._id%>"><%= mentor.user.username %></a></h5>
+                        <p class="card-text">Bio: <%= mentor.bio %></p>
+                        <p class="card-text">Expertise: <%= mentor.expertise.join(', ') %></p>
+                        <p class="card-text">Experience: <%= mentor.yearsOfExperience %> years</p>
+                        <p class="card-text">Availability: <%= mentor.availability.type %></p>
+                    </div>
+                    <div class="lowerpart">
+                        <div class="d-flex flex-column align-items-center">
+                            <a href="<%= mentor.linkedIn %>" target="_blank" class="btn btn-sm btn-outline-primary mb-1">
+                                LinkedIn
+                            </a>
+                            <a href="<%= mentor.twitter %>" target="_blank" class="btn btn-sm btn-outline-info mb-1">
+                                Twitter
+                            </a>
+                            <a href="<%= mentor.github %>" target="_blank" class="btn btn-sm btn-outline-dark mb-1">
+                                GitHub
+                            </a>
+                            <a href="<%= mentor.portfolio %>" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+    <% } %>
+</div>
+
+<script>
+    // Additional functionality can be added here if needed
+</script>

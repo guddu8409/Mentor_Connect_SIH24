@@ -7,7 +7,7 @@ const {
   viewProfile,
   editProfile,
   deleteProfile,
-  renderEditProfile,
+  renderEditProfile,displayMentor,
 } = require("../controllers/menteeWebController");
 
 const router = express.Router();
@@ -19,5 +19,7 @@ router.get("/profile/edit/:id", isLoggedIn, isMentee, isOwner, renderEditProfile
 router.post("/profile/edit/:id", isLoggedIn, isMentee, isOwner, editProfile);
 router.post("/profile/delete/:id", isLoggedIn, isMentee, isOwner, deleteProfile);
 router.get("/notifications", isLoggedIn, isMentee, notifications);
+
+router.get("/findMentor", isLoggedIn, isMentee, displayMentor);
 
 module.exports = router;
