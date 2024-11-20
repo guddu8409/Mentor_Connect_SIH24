@@ -1,41 +1,108 @@
-const User=require('../models/user');
+const Mentee = require("../models/mentee/mentee");
+const menteeService = require("../services/menteeService");
+const userService = require("../services/userService");
+const { validationResult } = require("express-validator");
 
 module.exports.dashboard = (req, res) => {
-  console.log("try to load dashboard");
-  
-    res.render("mentee/home/home");
-  };
-  
-  module.exports.viewUsers = (req, res) => {
-    // Add logic to retrieve users that mentors are allowed to manage/interact with
-    res.render("mentor/users/index", { title: "Manage Users" });
-  };
-  
-  module.exports.viewProfile = async (req, res) => {
-    try {
-      // Fetch the user details from the database by the user ID passed in the URL parameters
-      const user = await User.findById(req.params.id);  // Assuming 'id' is the field for the user ID in the database
-      
-      if (!user) {
-        // If the user is not found, you can handle the error (e.g., user not found)
-        req.flash('error', 'User not found.');
-        return res.redirect('/');  // Redirect to the users list or another page
-      }
-  
-      // Log the user details for debugging purposes (optional)
-      console.log("Rendering profile for user: ", user);
-  
-      // Pass the user details to the 'index.ejs' template
-      res.render('mentee/profile/index', { user });  // Pass 'user' as an object to the template
-    } catch (error) {
-      console.error("Error fetching user profile: ", error);
-      req.flash('error', 'An error occurred while fetching user details.');
-      res.redirect('/');  // Redirect to a safe place if an error occurs
-    }
-  };
+  res.render("mentee/home/home");
+};
 
-  module.exports.notifications = (req, res) => {
-    // Example notifications functionality
-    res.render("mentor/notification", { title: "Mentor Notifications" });
-  };
-  
+module.exports.viewMentors = (req, res) => {
+  res.render("mentee/mentors/mentors");
+};
+
+module.exports.notifications = (req, res) => {
+  res.render("mentee/notifications/notifications");
+};
+
+module.exports.viewProfile = async (req, res) => {
+  try {
+    const userId = req.params.id;
+    console.log("try to view mentee profile................................");
+    
+    const mentee = await menteeService.getMenteeByUserId(userId);
+
+    if (!mentee) {
+      req.flash("error", "Mentee not found.");
+      return res.redirect("/");
+    }
+console.log("Mentee retrieved: " + JSON.stringify(mentee));
+
+    const isOwner = mentee.user._id.toString() === req.user._id.toString();
+
+    res.render("mentee/profile/index", { mentee, isOwner });
+  } catch (error) {
+    console.error("Error fetching mentee profile: ", error);
+    req.flash("error", "An error occurred while fetching the profile.");
+    res.redirect("/");
+  }
+};
+
+module.exports.renderEditProfile = async (req, res) => {
+  const userId = req.user._id;
+  const mentee = await menteeService.getMenteeByUserId(userId);
+  res.render("mentee/profile/edit", { mentee });
+};
+
+module.exports.editProfile = async (req, res) => {
+  const paramsId = req.params.id;
+  const userId = req.user._id;
+
+  try {
+    const mentee = await menteeService.getMenteeByUserId(userId);
+
+    if (!mentee || mentee.user._id.toString() !== userId.toString()) {
+      req.flash("error", "You do not have permission to edit this profile.");
+      return res.redirect(`/mentee/profile/${paramsId}`);
+    }
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.render("mentee/profile/edit", { mentee, errors: errors.array() });
+    }
+
+    const updatedData = {
+      goals: req.body.goals,
+      educationLevel: req.body.educationLevel,
+      bio: req.body.bio,
+    };
+
+    await menteeService.updateMentee(mentee._id, updatedData);
+    req.flash("success", "Profile updated successfully!");
+    res.redirect(`/mentee/profile/${paramsId}`);
+  } catch (error) {
+    console.error("Error updating mentee profile: ", error);
+    req.flash("error", "An error occurred while updating the profile.");
+    res.redirect(`/mentee/profile/${paramsId}`);
+  }
+};
+
+module.exports.deleteProfile = async (req, res) => {
+  const paramsId = req.params.id;
+  const userId = req.user._id;
+
+  try {
+    const mentee = await menteeService.getMenteeByUserId(paramsId);
+
+    if (!mentee || mentee.user._id.toString() !== userId.toString()) {
+      req.flash("error", "You do not have permission to delete this profile.");
+      return res.redirect(`/mentee/profile/${paramsId}`);
+    }
+
+    await menteeService.deleteMentee(mentee._id);
+    await userService.deleteUserById(userId);
+
+    req.logout((err) => {
+      if (err) {
+        req.flash("error", "An error occurred during logout. Please try again.");
+        return res.redirect(`/mentee/profile/${paramsId}`);
+      }
+      req.flash("success", "Your profile has been deleted successfully.");
+      res.redirect("/");
+    });
+  } catch (error) {
+    console.error("Error deleting mentee profile and user: ", error);
+    req.flash("error", "An error occurred while deleting the profile.");
+    res.redirect(`/mentee/profile/${paramsId}`);
+  }
+};

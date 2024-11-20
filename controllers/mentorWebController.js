@@ -2,6 +2,7 @@
 
 const Mentor = require("../models/mentor/mentor");
 const mentorService = require("../services/mentorService");
+const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
 
 module.exports.dashboard = (req, res) => {
@@ -99,23 +100,39 @@ module.exports.editProfile = async (req, res) => {
 
 // Delete Profile Controller
 module.exports.deleteProfile = async (req, res) => {
-  const mentorId = req.params.id;
-  const userId = req.user._id;
+  const paramsId = req.params.id; // The user ID from the URL
+  const userId = req.user._id; // The currently logged-in user's ID
 
   try {
-    const mentor = await mentorService.getMentorByUserId(mentorId);
+    // Fetch the mentor profile based on the user ID
+    const mentor = await mentorService.getMentorByUserId(paramsId);
 
+    // Check if the mentor exists and if the logged-in user is the owner
     if (!mentor || mentor.user._id.toString() !== userId.toString()) {
       req.flash('error', 'You do not have permission to delete this profile.');
-      return res.redirect(`/mentor/profile/${mentorId}`);
+      return res.redirect(`/mentor/profile/${paramsId}`);
     }
 
+    // Delete the mentor profile
     await mentorService.deleteMentor(mentor._id);
-    req.flash('success', 'Profile deleted successfully.');
-    res.redirect('/'); // Redirect to homepage or another page after deletion
+
+    // Delete the associated user account
+    await userService.deleteUserById(userId); // Ensure you have a `deleteUserById` function in your user service
+
+    // Logout the user after deletion
+    req.logout(err => {
+      if (err) {
+        console.error("Error during logout after profile deletion: ", err);
+        req.flash('error', 'An error occurred during logout. Please try again.');
+        return res.redirect(`/mentor/profile/${paramsId}`);
+      }
+
+      req.flash('success', 'Your profile has been deleted successfully.');
+      res.redirect('/'); // Redirect to the homepage or another safe page
+    });
   } catch (error) {
-    console.error("Error deleting mentor profile: ", error);
+    console.error("Error deleting mentor profile and user: ", error);
     req.flash('error', 'An error occurred while deleting the profile.');
-    res.redirect(`/mentor/profile/${mentorId}`);
+    res.redirect(`/mentor/profile/${paramsId}`);
   }
 };

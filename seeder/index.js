@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const mentorSeeder = require("./mentorSeeder");
+const menteeSeeder = require("./menteeSeeder");
+const adminSeeder = require("./adminSeeder");
 
 // Database connection
 const MONGO_URL = "mongodb://127.0.0.1:27017/mentorConnect2"; // Replace with your DB URL
@@ -22,9 +24,13 @@ const runSeeders = async () => {
 
     // Run each seeder here
     await mentorSeeder();
-      console.log("Mentor seeding completed.");
-      
-      
+    console.log("Mentor seeding completed.");
+
+    await menteeSeeder();
+    console.log("Mentee seeding completed.");
+
+    await adminSeeder();
+    console.log("Admin seeding completed.");
 
     console.log("All seeders executed successfully.");
   } catch (err) {

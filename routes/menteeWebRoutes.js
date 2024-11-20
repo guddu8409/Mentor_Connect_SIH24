@@ -1,18 +1,23 @@
 const express = require("express");
-const { isLoggedIn, isMentee } = require("../middlewares/authMiddleware");
-const { dashboard, viewUsers, notifications,viewProfile } = require("../controllers/menteeWebController");
+const { isLoggedIn, isMentee, isOwner } = require("../middlewares/authMiddleware");
+const {
+  dashboard,
+  viewMentors,
+  notifications,
+  viewProfile,
+  editProfile,
+  deleteProfile,
+  renderEditProfile,
+} = require("../controllers/menteeWebController");
 
 const router = express.Router();
 
-// Mentor Dashboard
 router.get("/", isLoggedIn, isMentee, dashboard);
-
-// Manage Users (Example: mentor-specific user management)
-router.get("/users", isLoggedIn, isMentee, viewUsers);
-
+router.get("/mentors", isLoggedIn, isMentee, viewMentors);
 router.get("/profile/:id", isLoggedIn, isMentee, viewProfile);
-
-// Mentor Notifications
+router.get("/profile/edit/:id", isLoggedIn, isMentee, isOwner, renderEditProfile);
+router.post("/profile/edit/:id", isLoggedIn, isMentee, isOwner, editProfile);
+router.post("/profile/delete/:id", isLoggedIn, isMentee, isOwner, deleteProfile);
 router.get("/notifications", isLoggedIn, isMentee, notifications);
 
 module.exports = router;

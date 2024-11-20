@@ -16,14 +16,6 @@ module.exports.isLoggedIn = (req, res, next) => {
     res.redirect("/");
   };
   
-  module.exports.isMentee = (req, res, next) => {
-    if (req.user && req.user.role === "mentee") {
-      return next();
-    }
-    req.flash("error", "You do not have permission to access this page.");
-    res.redirect("/");
-  };
-
   module.exports.isAdmin = (req, res, next) => {
     if (req.user && req.user.role === "admin") {
       return next();
@@ -31,7 +23,15 @@ module.exports.isLoggedIn = (req, res, next) => {
     req.flash("error", "You do not have permission to access this page.");
     res.redirect("/");
   };
-
+  
+  module.exports.isMentee = (req, res, next) => {
+    if (req.user && req.user.role === "mentee") {
+      return next();
+    }
+    req.flash("error", "You do not have permission to access this page.");
+    res.redirect("/");
+  };
+  
   // middlewares/authMiddleware.js
 
   module.exports.isOwner = (req, res, next) => {

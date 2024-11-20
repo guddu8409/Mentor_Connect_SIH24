@@ -4,8 +4,8 @@ const Mentor = require("../models/mentor/mentor");
 
 const mentors = [
   {
-    username: "mentor_john",
-    password: "password123",
+    username: "mentor",
+    password: "mentor",
     role: "mentor",
     expertise: ["Web Development", "JavaScript"],
     yearsOfExperience: 5,
