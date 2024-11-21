@@ -1,11 +1,17 @@
 const mongoose = require("mongoose");
 
+
+// Updated Mentee Schema
 const MenteeSchema = new mongoose.Schema({
-  user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }, // Reference to User
-  goals: { type: [String], required: false, default: [] }, // Learning goals
-  educationLevel: { type: String, required: false, default: "" }, // Education level
-  bio: { type: String, required: false, default: "" }, // Bio of mentee
+  user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+  goals: { type: [String], default: [] },
+  educationLevel: { type: String, default: "" },
+  bio: { type: String, default: "" },
+  pendingRequests: [{ type: mongoose.Schema.Types.ObjectId, ref: "ConnectionRequest" }], // Pending requests
+  connections: [{ type: mongoose.Schema.Types.ObjectId, ref: "Mentor" }], // Accepted connections
 });
+
+
 
 // Middleware to auto-populate the `user` field when querying
 MenteeSchema.pre("find", function () {

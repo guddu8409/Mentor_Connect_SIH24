@@ -8,18 +8,27 @@ const AvailabilitySchema = new mongoose.Schema({
   reasonUnavailable: { type: String }, // Optional
 });
 
-// Mentor Schema
+
+// Updated Mentor Schema
 const MentorSchema = new mongoose.Schema({
-  user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }, // Reference to User
-  expertise: { type: [String], required: false, default: [] }, // Array of expertise areas
-  yearsOfExperience: { type: Number, required: false, default: 0 }, // Years of experience
-  availability: AvailabilitySchema, // Embedded schema for availability
-  bio: { type: String, required: false, default: "" }, // Mentor bio
-  linkedIn: { type: String, required: false, default: "" }, // LinkedIn profile
-  twitter: { type: String, required: false, default: "" }, // Twitter profile
-  github: { type: String, required: false, default: "" }, // GitHub profile
-  portfolio: { type: String, required: false, default: "" }, // Portfolio link
+  user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+  expertise: { type: [String], default: [] },
+  yearsOfExperience: { type: Number, default: 0 },
+  availability: {
+    type: { type: String, enum: ["immediate", "scheduled"], default: "immediate" },
+    startTime: { type: Date },
+    endTime: { type: Date },
+  },
+  bio: { type: String, default: "" },
+  linkedIn: { type: String, default: "" },
+  twitter: { type: String, default: "" },
+  github: { type: String, default: "" },
+  portfolio: { type: String, default: "" },
+  pendingRequests: [{ type: mongoose.Schema.Types.ObjectId, ref: "ConnectionRequest" }], // Pending requests
+  connections: [{ type: mongoose.Schema.Types.ObjectId, ref: "Mentee" }], // Accepted connections
 });
+
+
 
 // Middleware to auto-populate the `user` field when querying
 MentorSchema.pre("find", function () {

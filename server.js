@@ -1,3 +1,9 @@
+process.on("unhandledRejection", (reason, promise) => {
+  logger.error("Unhandled Rejection at:", { promise, reason });
+  process.exit(1);
+});
+
+
 // Environment Configuration
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
