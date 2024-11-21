@@ -19,6 +19,7 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const path = require("path");
 const ejsMate = require("ejs-mate");
+const methodOverride = require("method-override");
 
 // Models
 const User = require("./models/user");
@@ -52,6 +53,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride("_method"));
 
 // Session and Flash Configuration
 const store = MongoStore.create({
@@ -83,25 +85,32 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 // Middleware for Flash Messages
+// app.use((req, res, next) => {
+//   res.locals.success = req.flash("success");
+//   res.locals.error = req.flash("error");
+//   res.locals.currUser = req.user;
+//   next();
+// });
+
+
 app.use((req, res, next) => {
-  res.locals.success = req.flash("success");
-  res.locals.error = req.flash("error");
   res.locals.currUser = req.user;
+  res.locals.messages = {
+      success: req.flash("success"),
+      error: req.flash("error"),
+      info: req.flash("info"),
+  };
   next();
 });
+
 
 // Routes
 app.use("/auth", authRoutes);
 app.use("/mentor", mentorRoutes);
-app.use(
-  "/mentee",
-  (req, res, next) => {
-    console.log("/mentee path requested");
-    next();
-  },
-  menteeRoutes
-);
+app.use("/messages", require("./routes/messagingRoutes"));
+// app.use("/video", require("./routes/videoRoutes"));
 
+app.use("/mentee",menteeRoutes);
 app.use("/admin", adminRoutes);
 
 app.get("/", (req, res) => {

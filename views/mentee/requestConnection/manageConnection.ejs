@@ -1,0 +1,35 @@
+<%- layout('/layouts/boilerplate') -%>
+
+<div class="container mt-3">
+    <h1>Track Connection Requests</h1>
+
+    <% if (requests.length === 0) { %>
+        <div class="alert alert-info mt-3">
+            You have not sent any connection requests yet.
+        </div>
+    <% } else { %>
+        <div class="row">
+            <% requests.forEach(request => { %>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mentor: <%= request.mentor.user.username %></h5>
+                            <p><strong>Status:</strong>
+                                <% if (request.status === 'pending') { %>
+                                    <span class="text-warning">Pending</span>
+                                <% } else if (request.status === 'accepted') { %>
+                                    <span class="text-success">Accepted</span>
+                                <% } else if (request.status === 'rejected') { %>
+                                    <span class="text-danger">Rejected</span>
+                                    <p><strong>Reason:</strong> <%= request.rejectionReason || "No reason provided" %></p>
+                                <% } %>
+                            </p>
+                            <p><strong>Mentor's Expertise:</strong> <%= request.mentor.expertise.join(", ") %></p>
+                            <p><strong>Years of Experience:</strong> <%= request.mentor.yearsOfExperience %></p>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    <% } %>
+</div>

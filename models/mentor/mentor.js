@@ -2,33 +2,36 @@ const mongoose = require("mongoose");
 
 // Availability Schema
 const AvailabilitySchema = new mongoose.Schema({
-  type: { type: String, required: false, enum: ["immediate", "scheduled"] },
-  startTime: { type: Date, required: false },
-  endTime: { type: Date }, // Optional
-  reasonUnavailable: { type: String }, // Optional
+  type: { type: String, enum: ["immediate", "scheduled"], default: "immediate" },
+  startTime: { type: Date, default: null }, // Default to null
+  endTime: { type: Date, default: null }, // Default to null
+  reasonUnavailable: { type: String, default: "" }, // Default to an empty string
 });
 
-
-// Updated Mentor Schema
+// Mentor Schema
 const MentorSchema = new mongoose.Schema({
-  user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-  expertise: { type: [String], default: [] },
-  yearsOfExperience: { type: Number, default: 0 },
+  user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }, // No default since it's required
+  expertise: { type: [String], default: [] }, // Default to an empty array
+  yearsOfExperience: { type: Number, default: 0 }, // Default to 0
   availability: {
     type: { type: String, enum: ["immediate", "scheduled"], default: "immediate" },
-    startTime: { type: Date },
-    endTime: { type: Date },
+    startTime: { type: Date, default: null }, // Default to null
+    endTime: { type: Date, default: null }, // Default to null
   },
-  bio: { type: String, default: "" },
-  linkedIn: { type: String, default: "" },
-  twitter: { type: String, default: "" },
-  github: { type: String, default: "" },
-  portfolio: { type: String, default: "" },
-  pendingRequests: [{ type: mongoose.Schema.Types.ObjectId, ref: "ConnectionRequest" }], // Pending requests
-  connections: [{ type: mongoose.Schema.Types.ObjectId, ref: "Mentee" }], // Accepted connections
+  bio: { type: String, default: "" }, // Default to an empty string
+  linkedIn: { type: String, default: "" }, // Default to an empty string
+  twitter: { type: String, default: "" }, // Default to an empty string
+  github: { type: String, default: "" }, // Default to an empty string
+  portfolio: { type: String, default: "" }, // Default to an empty string
+  pendingRequests: {
+    type: [{ type: mongoose.Schema.Types.ObjectId, ref: "ConnectionRequest" }],
+    default: [], // Default to an empty array
+  },
+  connections: {
+    type: [{ type: mongoose.Schema.Types.ObjectId, ref: "Mentee" }],
+    default: [], // Default to an empty array
+  },
 });
-
-
 
 // Middleware to auto-populate the `user` field when querying
 MentorSchema.pre("find", function () {

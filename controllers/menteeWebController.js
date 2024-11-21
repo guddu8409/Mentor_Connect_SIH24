@@ -3,6 +3,9 @@ const Mentor = require("../models/mentor/mentor");
 const menteeService = require("../services/menteeService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
+const MenteeConnectionService = require("../services/menteeConnectionService");
+
+const ConnectionRequest = require("../models/connectionRequest");
 
 module.exports.dashboard = (req, res) => {
   res.render("mentee/home/home");
@@ -20,14 +23,14 @@ module.exports.viewProfile = async (req, res) => {
   try {
     const userId = req.params.id;
     console.log("try to view mentee profile................................");
-    
+
     const mentee = await menteeService.getMenteeByUserId(userId);
 
     if (!mentee) {
       req.flash("error", "Mentee not found.");
       return res.redirect("/");
     }
-console.log("Mentee retrieved: " + JSON.stringify(mentee));
+    console.log("Mentee retrieved: " + JSON.stringify(mentee));
 
     const isOwner = mentee.user._id.toString() === req.user._id.toString();
 
@@ -59,7 +62,10 @@ module.exports.editProfile = async (req, res) => {
 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.render("mentee/profile/edit", { mentee, errors: errors.array() });
+      return res.render("mentee/profile/edit", {
+        mentee,
+        errors: errors.array(),
+      });
     }
 
     const updatedData = {
@@ -95,7 +101,10 @@ module.exports.deleteProfile = async (req, res) => {
 
     req.logout((err) => {
       if (err) {
-        req.flash("error", "An error occurred during logout. Please try again.");
+        req.flash(
+          "error",
+          "An error occurred during logout. Please try again."
+        );
         return res.redirect(`/mentee/profile/${paramsId}`);
       }
       req.flash("success", "Your profile has been deleted successfully.");
@@ -110,11 +119,149 @@ module.exports.deleteProfile = async (req, res) => {
 
 module.exports.displayMentor = async (req, res) => {
   try {
-      const mentors = await Mentor.find().populate('user').exec(); // Replace with your mentor fetching logic
-      res.render("mentee/findMentor/mentorList", { mentors,cssFile:"mentee/findmentor/mentorList.css" });
+    const mentors = await Mentor.find().populate("user").exec(); // Replace with your mentor fetching logic
+    res.render("mentee/findMentor/mentorList", {
+      mentors,
+      cssFile: "mentee/findmentor/mentorList.css",
+    });
   } catch (error) {
-      console.error("Error fetching mentors:", error);
-      res.status(500).send("An error occurred while fetching mentors.");
+    console.error("Error fetching mentors:", error);
+    res.status(500).send("An error occurred while fetching mentors.");
   }
 };
 
+module.exports.displayMentorList = async (req, res) => {
+  try {
+    // Fetch the mentee's details
+    const mentee = await Mentee.findOne({ user: req.user._id })
+      .populate("connections")
+      .exec();
+
+    // Fetch all mentors
+    const mentors = await Mentor.find().populate("user").exec();
+
+    // Add connection status for each mentor
+    for (const mentor of mentors) {
+      const connectionRequest = await ConnectionRequest.findOne({
+        mentee: mentee._id,
+        mentor: mentor._id,
+      });
+
+      if (mentee.connections.includes(mentor._id)) {
+        mentor.connectionStatus = "connected"; // Already connected
+      } else if (connectionRequest) {
+        mentor.connectionStatus = connectionRequest.status; // Pending or Accepted/Rejection
+      } else {
+        mentor.connectionStatus = "none"; // No connection request sent
+      }
+    }
+
+    // Render the mentor list page with the connection status and CSS file
+    res.render("mentee/connection/mentorList", {
+      mentors,
+      cssFile: "mentee/connection/mentorList.css",
+    });
+  } catch (error) {
+    console.error("Error fetching mentors:", error);
+    res.status(500).send("An error occurred while fetching mentors.");
+  }
+};
+
+module.exports.displayAllConnections = async (req, res) => {
+  try {
+    // Find the mentee using the logged-in user's ID
+    const mentee = await Mentee.findOne({ user: req.user._id }).populate({
+      path: "connections",
+      populate: { path: "user" }, // Populate mentor details along with their user details
+    });
+
+    if (!mentee) {
+      return res.status(404).send("Mentee profile not found");
+    }
+
+    // Send the list of connected mentors to the EJS view
+    res.render("mentee/connection/index", {
+      connectedMentors: mentee.connections, // Array of connected mentors
+    });
+  } catch (error) {
+    console.error("Error fetching connections:", error);
+    res.status(500).send("Internal Server Error");
+  }
+};
+
+module.exports.connectRequest = async (req, res) => {
+  console.log("connectRequest");
+
+  const { mentorId } = req.params; // Mentor ID from the URL
+  const menteeId = req.user._id; // Mentee ID from the logged-in user
+  console.log("Mentee send request ");
+
+  const result = await MenteeConnectionService.sendConnectionRequest(
+    menteeId,
+    mentorId
+  );
+  console.log(
+    "Sent request to MenteeConnectionService with success message " +
+      JSON.stringify(result)
+  );
+
+  // Handle response from the service
+  if (result.success) {
+    req.flash("success", result.message);
+  } else {
+    req.flash("error", result.message);
+  }
+  res.redirect("/mentee/mentorList");
+};
+module.exports.cancelRequest = async (req, res) => {
+  try {
+    const userId = req.user._id; // Get the current mentee's ID
+    const mentorId = req.params.mentorId;
+
+    // Find the mentee document
+    const menteeDocument = await Mentee.findOne({ user: userId });
+    if (!menteeDocument) {
+      return res.status(404).send("Mentee not found.");
+    }
+
+    const menteeId = menteeDocument._id;
+    console.log("Mentee ID:", menteeId);
+
+    // Find the connection request
+    const connectionRequest = await ConnectionRequest.findOne({
+      mentee: menteeId,
+      mentor: mentorId,
+      status: "pending",
+    });
+
+    if (!connectionRequest) {
+      return res.status(404).send("No pending request found to cancel.");
+    }
+
+    // Remove the connection request
+    await ConnectionRequest.findByIdAndDelete(connectionRequest._id);
+    console.log(`Connection request ${connectionRequest._id} removed.`);
+    // Update Mentor and Mentee's pendingRequests
+    const mentor = await Mentor.findById(mentorId);
+    const mentee = await Mentee.findById(menteeId);
+
+    if (mentor && mentee) {
+      mentor.pendingRequests = mentor.pendingRequests.filter(
+        (req) => req.toString() !== connectionRequest._id.toString()
+      );
+      mentee.pendingRequests = mentee.pendingRequests.filter(
+        (req) => req.toString() !== connectionRequest._id.toString()
+      );
+
+      await mentor.save();
+      await mentee.save();
+    }
+
+    // Flash success message and redirect
+    req.flash("success", "Connection request has been cancelled.");
+    res.redirect("/mentee/mentorList");
+  } catch (error) {
+    console.error("Error cancelling connection request:", error.stack);
+    res.status(500).send("An error occurred while cancelling the request.");
+  }
+};

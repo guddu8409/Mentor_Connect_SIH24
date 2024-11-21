@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Connection Request Schema
 const ConnectionRequestSchema = new mongoose.Schema({
   mentee: { type: mongoose.Schema.Types.ObjectId, ref: "Mentee", required: true },
   mentor: { type: mongoose.Schema.Types.ObjectId, ref: "Mentor", required: true },
@@ -10,6 +9,8 @@ const ConnectionRequestSchema = new mongoose.Schema({
     default: "pending",
   },
   reason: { type: String, default: "" }, // Reason for rejection or acceptance
+  message: { type: String, default: "" }, // Optional message with the request
+  createdAt: { type: Date, default: Date.now },
 }, { timestamps: true });
 
-module.exports.ConnectionRequest = mongoose.model("ConnectionRequest", ConnectionRequestSchema);
+module.exports = mongoose.model("ConnectionRequest", ConnectionRequestSchema);  // Ensure you're exporting the model like this

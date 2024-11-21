@@ -1,0 +1,32 @@
+<%- include('layouts/boilerplate') -%>
+
+<div class="container mt-5">
+  <h1 class="text-center">Video Call</h1>
+  <div id="videoGrid" class="video-grid"></div>
+
+  <div id="statusMessage" class="text-center mt-3"></div>
+
+  <div class="mt-3 d-flex justify-content-center">
+    <button id="callButton" class="btn btn-success mx-2">Start Call</button>
+    <button id="endCallButton" class="btn btn-danger mx-2">End Call</button>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/videoCall.js"></script>
+
+<style>
+  .video-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  video {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+</style>

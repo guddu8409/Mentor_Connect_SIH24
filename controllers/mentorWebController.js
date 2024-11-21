@@ -136,3 +136,53 @@ module.exports.deleteProfile = async (req, res) => {
     res.redirect(`/mentor/profile/${paramsId}`);
   }
 };
+
+
+
+module.exports.displayAllConnections = async (req, res) => {
+  try {
+    // Find the mentor using the logged-in user's ID
+    const mentor = await Mentor.findOne({ user: req.user._id }).populate({
+      path: "connections",
+      populate: { path: "user" }, // Populate mentor details along with their user details
+    });
+
+    if (!mentor) {
+      return res.status(404).send("mentor profile not found");
+    }
+
+    // Send the list of connected mentors to the EJS view
+    res.render("mentor/connection/index", {
+      mentorId: mentor._id,
+      connectedMentees: mentor.connections, // Array of connected mentors
+    });
+  } catch (error) {
+    console.error("Error fetching connections:", error);
+    res.status(500).send("Internal Server Error");
+  }
+};
+
+module.exports.pendingRequest = async (req, res) => {
+  try {
+    // Find the mentor using the logged-in user's ID
+    const mentor = await Mentor.findOne({ user: req.user._id }).populate({
+      path: "pendingRequests",
+      populate: {
+        path: "mentee",
+        populate: { path: "user" }, // Populate mentee details along with their user details
+      },
+    });
+
+    if (!mentor) {
+      return res.status(404).send("Mentor profile not found");
+    }
+
+    // Send the list of pending connection requests to the EJS view
+    res.render("mentor/connection/pendingRequest", {
+      pendingRequests: mentor.pendingRequests, // Array of pending requests
+    });
+  } catch (error) {
+    console.error("Error fetching pending requests:", error);
+    res.status(500).send("Internal Server Error");
+  }
+};

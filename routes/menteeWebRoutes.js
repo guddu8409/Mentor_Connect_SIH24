@@ -7,7 +7,10 @@ const {
   viewProfile,
   editProfile,
   deleteProfile,
-  renderEditProfile,displayMentor,
+  renderEditProfile, displayMentor,displayMentorList,
+  displayAllConnections,
+  connectRequest,
+  cancelRequest,
 } = require("../controllers/menteeWebController");
 
 const router = express.Router();
@@ -21,5 +24,27 @@ router.post("/profile/delete/:id", isLoggedIn, isMentee, isOwner, deleteProfile)
 router.get("/notifications", isLoggedIn, isMentee, notifications);
 
 router.get("/findMentor", isLoggedIn, isMentee, displayMentor);
+
+router.get("/mentorList", isLoggedIn, isMentee, displayMentorList);
+
+router.get("/connections", isLoggedIn, isMentee, displayAllConnections);
+
+router.get("/connections/:mentorId/connectRequest", isLoggedIn, isMentee, connectRequest);
+
+// Cancel Connection Request
+router.delete('/connections/:mentorId/cancelRequest',isLoggedIn, isMentee, cancelRequest);
+
+
+
+/*
+router.get("/connections", connectionController.getConnections); // List connections
+router.post("/connections", connectionController.sendRequest);   // Send request
+router.patch("/connections/:id", connectionController.updateRequest); // Accept/reject requests
+
+router.get("/messages/:mentorId", messageController.getMessages); // Fetch messages
+router.post("/messages/:mentorId", messageController.sendMessage); // Send message
+
+
+*/
 
 module.exports = router;
