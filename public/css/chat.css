@@ -1,0 +1,23 @@
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+.chat-box .text-end {
+    text-align: right;
+    color: #007bff;
+}
+
+.chat-box .text-start {
+    text-align: left;
+    color: #28a745;
+}
+
+.chat-box small {
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.2rem;
+    color: #6c757d;
+}

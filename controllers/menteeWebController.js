@@ -179,8 +179,9 @@ module.exports.displayAllConnections = async (req, res) => {
       return res.status(404).send("Mentee profile not found");
     }
 
-    // Send the list of connected mentors to the EJS view
+    // Send the list of connected mentors along with logged-in user ID
     res.render("mentee/connection/index", {
+      loggedInUserId: req.user._id, // Pass the logged-in user's ID
       connectedMentors: mentee.connections, // Array of connected mentors
     });
   } catch (error) {

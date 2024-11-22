@@ -1,0 +1,72 @@
+<%- layout("mentor/layouts/boilerplate") %>
+
+<div class="container mt-3">
+    <h1>Chat with <%= secondPerson.name %> (<%= secondPerson.role %>)</h1>
+
+    <div id="chatBox" class="chat-box border rounded p-3 mb-3">
+        <% if (chat.messages.length === 0) { %>
+        <p class="text-muted">No messages yet. Start the conversation!</p>
+        <% } else { %>
+        <% chat.messages.forEach(message => { %>
+        <div class="<%= message.sender._id === loggedInUser.id ? 'text-end' : 'text-start' %> mb-2">
+            <strong>
+                <%= message.sender._id === loggedInUser.id ? 'You' : secondPerson.name %>:
+            </strong>
+            <p class="m-0"><%= message.text %></p>
+            <small class="text-muted"><%= new Date(message.timestamp).toLocaleString() %></small>
+        </div>
+        <% }); %>
+        <% } %>
+    </div>
+    
+
+    <!-- Message Input -->
+    <form id="chatForm" class="d-flex">
+        <input type="text" id="messageInput" class="form-control me-2" placeholder="Type your message..." required />
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+
+<script src="/socket.io/socket.io.js"></script> <!-- Include Socket.IO library -->
+<script>
+    const socket = io(); // Connect to the server
+    const chatId = "<%= chat._id %>"; // Chat room ID
+    const userId = "<%= loggedInUser.id %>"; // Logged-in user ID
+
+    // Join the chat room
+    socket.emit("joinRoom", chatId);
+
+    // Append a new message to the chat box
+    function appendMessage(senderId, text, timestamp) {
+        const chatBox = document.getElementById("chatBox");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = senderId === userId ? "text-end mb-2" : "text-start mb-2";
+
+        messageDiv.innerHTML = `
+            <strong>${senderId === userId ? 'You' : '<%= secondPerson.name %>'}:</strong>
+            <p class="m-0">${text}</p>
+            <small class="text-muted">${new Date(timestamp).toLocaleString()}</small>
+        `;
+
+        chatBox.appendChild(messageDiv);
+        chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the latest message
+    }
+
+    // Listen for new messages from the server
+    socket.on("message", (message) => {
+        appendMessage(message.sender, message.text, message.timestamp);
+    });
+
+    // Handle message submission
+    document.getElementById("chatForm").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const messageInput = document.getElementById("messageInput");
+        const text = messageInput.value;
+
+        // Send message to the server
+        socket.emit("newMessage", { chatId, senderId: userId, text });
+
+        // Clear the input box
+        messageInput.value = "";
+    });
+</script>

@@ -1,6 +1,11 @@
 // controllers/mentorWebController.js
 
 const Mentor = require("../models/mentor/mentor");
+const Mentee = require("../models/mentee/mentee");
+const ConnectionRequest = require("../models/connectionRequest");
+
+
+
 const mentorService = require("../services/mentorService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
@@ -45,29 +50,29 @@ module.exports.viewProfile = async (req, res) => {
   }
 };
 
-module.exports.renderEditProfile = async(req, res) => {
+module.exports.renderEditProfile = async (req, res) => {
   let userId = req.user._id;
   const mentor = await mentorService.getMentorByUserId(userId);
   console.log("Mentor retrieved successfully for user " + userId);
   console.log("mentor: ", mentor);
-  
-  
-  res.render("mentor/profile/edit",{mentor:mentor});
-  };
+
+  res.render("mentor/profile/edit", { mentor: mentor });
+};
 // Edit Profile Controller
 module.exports.editProfile = async (req, res) => {
   const paramsId = req.params.id;
   const userId = req.user._id;
-  console.log("edit controller....................................................");
+  console.log(
+    "edit controller...................................................."
+  );
   console.log("paramsId", paramsId);
   console.log("userId", userId);
-  
 
   try {
     const mentor = await mentorService.getMentorByUserId(userId);
 
     if (!mentor || mentor.user._id.toString() !== userId.toString()) {
-      req.flash('error', 'You do not have permission to edit this profile.');
+      req.flash("error", "You do not have permission to edit this profile.");
       return res.redirect(`/mentor/profile/${paramsId}`);
     }
 
@@ -75,7 +80,10 @@ module.exports.editProfile = async (req, res) => {
     // Validation errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.render("mentor/profile/edit", { mentor, errors: errors.array() });
+      return res.render("mentor/profile/edit", {
+        mentor,
+        errors: errors.array(),
+      });
     }
 
     const updatedData = {
@@ -93,7 +101,7 @@ module.exports.editProfile = async (req, res) => {
     res.redirect(`/mentor/profile/${paramsId}`);
   } catch (error) {
     console.error("Error updating mentor profile: ", error);
-    req.flash('error', 'An error occurred while updating the profile.');
+    req.flash("error", "An error occurred while updating the profile.");
     res.redirect(`/mentor/profile/${paramsId}`);
   }
 };
@@ -109,7 +117,7 @@ module.exports.deleteProfile = async (req, res) => {
 
     // Check if the mentor exists and if the logged-in user is the owner
     if (!mentor || mentor.user._id.toString() !== userId.toString()) {
-      req.flash('error', 'You do not have permission to delete this profile.');
+      req.flash("error", "You do not have permission to delete this profile.");
       return res.redirect(`/mentor/profile/${paramsId}`);
     }
 
@@ -120,24 +128,25 @@ module.exports.deleteProfile = async (req, res) => {
     await userService.deleteUserById(userId); // Ensure you have a `deleteUserById` function in your user service
 
     // Logout the user after deletion
-    req.logout(err => {
+    req.logout((err) => {
       if (err) {
         console.error("Error during logout after profile deletion: ", err);
-        req.flash('error', 'An error occurred during logout. Please try again.');
+        req.flash(
+          "error",
+          "An error occurred during logout. Please try again."
+        );
         return res.redirect(`/mentor/profile/${paramsId}`);
       }
 
-      req.flash('success', 'Your profile has been deleted successfully.');
-      res.redirect('/'); // Redirect to the homepage or another safe page
+      req.flash("success", "Your profile has been deleted successfully.");
+      res.redirect("/"); // Redirect to the homepage or another safe page
     });
   } catch (error) {
     console.error("Error deleting mentor profile and user: ", error);
-    req.flash('error', 'An error occurred while deleting the profile.');
+    req.flash("error", "An error occurred while deleting the profile.");
     res.redirect(`/mentor/profile/${paramsId}`);
   }
 };
-
-
 
 module.exports.displayAllConnections = async (req, res) => {
   try {
@@ -154,6 +163,7 @@ module.exports.displayAllConnections = async (req, res) => {
     // Send the list of connected mentors to the EJS view
     res.render("mentor/connection/index", {
       mentorId: mentor._id,
+      loggedInUserId: req.user._id,
       connectedMentees: mentor.connections, // Array of connected mentors
     });
   } catch (error) {
@@ -186,3 +196,101 @@ module.exports.pendingRequest = async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 };
+module.exports.acceptRequest = async (req, res) => {
+  const { reason } = req.body;
+  const requestId = req.params.requestId;
+
+  try {
+    const connectionRequest = await ConnectionRequest.findById(requestId);
+    if (!connectionRequest) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Connection request not found." });
+    }
+
+    if (connectionRequest.status !== "pending") {
+      return res
+        .status(400)
+        .json({ success: false, message: "Request is no longer pending." });
+    }
+
+    connectionRequest.status = "accepted";
+    connectionRequest.reason = reason || "Request accepted.";
+    await connectionRequest.save();
+
+    // Update mentor and mentee connections
+    const mentor = await Mentor.findById(connectionRequest.mentor);
+    const mentee = await Mentee.findById(connectionRequest.mentee);
+
+    if (!mentor || !mentee) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Mentor or Mentee not found." });
+    }
+
+    mentor.connections.push(mentee._id);
+    mentee.connections.push(mentor._id);
+
+    await mentor.save();
+    await mentee.save();
+
+    res.json({ success: true, message: "Connection request accepted." });
+  } catch (error) {
+    console.error("Error accepting connection request:", error);
+    res
+      .status(500)
+      .json({
+        success: false,
+        message: "An error occurred while accepting the request.",
+      });
+  }
+};
+module.exports.rejectRequest = async (req, res) => {
+  const { reason } = req.body;
+  const requestId = req.params.requestId;
+
+  try {
+    const connectionRequest = await ConnectionRequest.findById(requestId);
+    if (!connectionRequest) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Connection request not found." });
+    }
+
+    if (connectionRequest.status !== "pending") {
+      return res
+        .status(400)
+        .json({ success: false, message: "Request is no longer pending." });
+    }
+
+    connectionRequest.status = "rejected";
+    connectionRequest.reason = reason || "Request rejected.";
+    await connectionRequest.save();
+
+    res.json({ success: true, message: "Connection request rejected." });
+  } catch (error) {
+    console.error("Error rejecting connection request:", error);
+    res
+      .status(500)
+      .json({
+        success: false,
+        message: "An error occurred while rejecting the request.",
+      });
+  }
+};
+
+module.exports.renderMessagePage = async (req, res) => {
+  try {
+    const connectionRequest = await ConnectionRequest.findById(
+      req.params.requestId
+    );
+    if (!connectionRequest) {
+      return res.status(404).send("Connection request not found");
+    }
+    res.render("mentor/connection/message", { message });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error rendering message page");
+  }
+};
+

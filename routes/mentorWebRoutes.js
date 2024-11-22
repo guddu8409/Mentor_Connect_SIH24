@@ -5,9 +5,10 @@ const { isLoggedIn, isMentor, isOwner } = require("../middlewares/authMiddleware
 const { dashboard, viewUsers, notifications,
     viewProfile, editProfile, deleteProfile,
     renderEditProfile, displayAllConnections,
-    pendingRequest,
+    pendingRequest, acceptRequest, rejectRequest,
+    renderMessagePage,
     
- } = require("../controllers/mentorWebController");
+} = require("../controllers/mentorWebController");
 
 const router = express.Router();
 
@@ -35,24 +36,14 @@ router.get("/notifications", isLoggedIn, isMentor, notifications);
 router.get("/connection", isLoggedIn, isMentor, displayAllConnections);
 router.get("/connection/:mentorId/pendingRequest", isLoggedIn, isMentor, pendingRequest);
 
-
 // Accept Connection Request
-router.post('/connection/accept/:requestId', (req, res) => {
-    const { reason } = req.body;
-    const requestId = req.params.requestId;
-    // Logic to accept the request and update status
-    res.redirect('/mentor/connection/pendingRequests');
-});
+router.post("/connection/accept/:requestId",isLoggedIn,isMentor, acceptRequest);
 
 // Reject Connection Request
-router.post('/connection/reject/:requestId', (req, res) => {
-    const { reason } = req.body;
-    const requestId = req.params.requestId;
-    // Logic to reject the request and update status
-    res.redirect('/mentor/connection/pendingRequests');
-});
-
-
-
+router.post("/connection/reject/:requestId", isLoggedIn, isMentor, rejectRequest);
+ 
+// render message page with respective mentee
+router.get("/message/:menteeId", isLoggedIn, isMentor, renderMessagePage);
 
 module.exports = router;
+

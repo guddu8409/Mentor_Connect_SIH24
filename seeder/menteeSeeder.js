@@ -5,20 +5,20 @@ const Mentee = require("../models/mentee/mentee");
 const mentees = [
   {
     username: "mentee",
-    password: "mentee",
+    password: "m",
     role: "mentee",
     goals: "Learn full-stack web development and improve coding skills.",
     interests: ["Web Development", "React", "Node.js"],
     progress: "Not Started",
   },
-  {
-    username: "mentee_sara",
-    password: "saraSecure123",
-    role: "mentee",
-    goals: "Improve data science skills and work on machine learning projects.",
-    interests: ["Data Science", "Python", "Machine Learning"],
-    progress: "In Progress",
-  },
+  // {
+  //   username: "mentee_sara",
+  //   password: "saraSecure123",
+  //   role: "mentee",
+  //   goals: "Improve data science skills and work on machine learning projects.",
+  //   interests: ["Data Science", "Python", "Machine Learning"],
+  //   progress: "In Progress",
+  // },
 ];
 
 const seedMentees = async () => {

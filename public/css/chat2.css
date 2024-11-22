@@ -1,0 +1,76 @@
+/* General Container Styling */
+.container {
+    max-width: 800px;
+}
+
+/* Chat Box Styling */
+.chat-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    overflow-y: auto;
+    height: 400px;
+}
+
+.chat-box div {
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* Message Alignment */
+.text-start {
+    background-color: #e9ecef;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.text-end {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+    display: inline-block;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#messageInput {
+    flex-grow: 1;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* Scrollbar Customization */
+.chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Alert Messages */
+.alert {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}

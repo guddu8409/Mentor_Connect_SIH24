@@ -29,8 +29,8 @@ const runSeeders = async () => {
     await menteeSeeder();
     console.log("Mentee seeding completed.");
 
-    await adminSeeder();
-    console.log("Admin seeding completed.");
+    // await adminSeeder();
+    // console.log("Admin seeding completed.");
 
     console.log("All seeders executed successfully.");
   } catch (err) {

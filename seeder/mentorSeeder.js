@@ -5,7 +5,7 @@ const Mentor = require("../models/mentor/mentor");
 const mentors = [
   {
     username: "mentor",
-    password: "mentor",
+    password: "m",
     role: "mentor",
     expertise: ["Web Development", "JavaScript"],
     yearsOfExperience: 5,
@@ -19,20 +19,20 @@ const mentors = [
       startTime: new Date(),
     },
   },
-  {
-    username: "mentor_jane",
-    password: "securepassword",
-    role: "mentor",
-    expertise: ["Data Science", "Python"],
-    yearsOfExperience: 7,
-    bio: "Data scientist with a focus on AI and ML.",
-    linkedIn: "https://linkedin.com/in/mentorjane",
-    availability: {
-      type: "scheduled",
-      startTime: new Date("2024-11-20T10:00:00"),
-      endTime: new Date("2024-11-20T12:00:00"),
-    },
-  },
+  // {
+  //   username: "mentor_jane",
+  //   password: "securepassword",
+  //   role: "mentor",
+  //   expertise: ["Data Science", "Python"],
+  //   yearsOfExperience: 7,
+  //   bio: "Data scientist with a focus on AI and ML.",
+  //   linkedIn: "https://linkedin.com/in/mentorjane",
+  //   availability: {
+  //     type: "scheduled",
+  //     startTime: new Date("2024-11-20T10:00:00"),
+  //     endTime: new Date("2024-11-20T12:00:00"),
+  //   },
+  // },
 ];
 
 const seedMentors = async () => {

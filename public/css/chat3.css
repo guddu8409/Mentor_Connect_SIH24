@@ -1,0 +1,38 @@
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.text-start {
+    text-align: left;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.text-start p,
+.text-start strong {
+    background-color: #e9ecef;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0;
+    max-width: 75%;
+}
+
+.text-end p,
+.text-end strong {
+    background-color: #0d6efd;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0;
+    max-width: 75%;
+}
+
+.text-muted {
+    font-size: 0.75rem;
+}

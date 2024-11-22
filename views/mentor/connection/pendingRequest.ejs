@@ -1,83 +1,68 @@
-<%- layout("/Mentee/layouts/boilerplate") -%>
+<%- layout("/Mentor/layouts/boilerplate") -%>
 
 <div class="container mt-3">
+    <!-- Page Header -->
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h1 class="mb-0">Pending Mentee Requests</h1>
     </div>
 
+    <!-- Pending Requests List -->
     <% if (pendingRequests.length === 0) { %>
-    <div class="alert alert-info">
-        You have no pending mentee requests at the moment.
-    </div>
-    <% } else { %>
-    <div class="list-group">
-        <% pendingRequests.forEach(request => { %>
-        <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-            <div>
-                <h5 class="mb-1"><%= request.mentee.user.username %></h5>
-                <p class="mb-0 text-muted"><%= request.mentee.bio || "No bio provided" %></p>
-                <p class="mb-0"><strong>Requested Message:</strong> <%= request.message || "No message provided" %></p>
-            </div>
-            
-            <!-- Action Buttons for Accept/Reject -->
-            <div class="btn-group" role="group">
-                <!-- Accept Button -->
-                <button type="button" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#acceptModal<%= request._id %>">
-                    Accept
-                </button>
-
-                <!-- Reject Button -->
-                <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#rejectModal<%= request._id %>">
-                    Reject
-                </button>
-            </div>
-
-            <!-- Accept Modal -->
-            <div class="modal fade" id="acceptModal<%= request._id %>" tabindex="-1" aria-labelledby="acceptModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="acceptModalLabel">Accept Connection Request</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="/mentee/connection/accept/<%= request._id %>" method="POST">
-                                <div class="mb-3">
-                                    <label for="acceptMessage" class="form-label">Reason (Optional)</label>
-                                    <textarea class="form-control" id="acceptMessage" name="reason" rows="3">Request accepted</textarea>
-                                </div>
-                                <button type="submit" class="btn btn-success">Accept</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Reject Modal -->
-            <div class="modal fade" id="rejectModal<%= request._id %>" tabindex="-1" aria-labelledby="rejectModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="rejectModalLabel">Reject Connection Request</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="/mentee/connection/reject/<%= request._id %>" method="POST">
-                                <div class="mb-3">
-                                    <label for="rejectMessage" class="form-label">Reason (Optional)</label>
-                                    <textarea class="form-control" id="rejectMessage" name="reason" rows="3">Request rejected</textarea>
-                                </div>
-                                <button type="submit" class="btn btn-danger">Reject</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="alert alert-info">
+            You have no pending mentee requests at the moment.
         </div>
-        <% }) %>
-    </div>
+    <% } else { %>
+        <div class="list-group" id="pendingRequestsList">
+            <% pendingRequests.forEach(request => { %>
+                <div id="request-<%= request._id %>" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    <!-- Mentee Info -->
+                    <div>
+                        <h5 class="mb-1"><%= request.mentee.user.username %></h5>
+                        <p class="mb-0 text-muted"><%= request.mentee.bio || "No bio provided" %></p>
+                        <p class="mb-0"><strong>Message:</strong> <%= request.message || "No message provided" %></p>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-sm btn-success" onclick="handleRequest('<%= request._id %>', 'accept')">Accept</button>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="handleRequest('<%= request._id %>', 'reject')">Reject</button>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
     <% } %>
 </div>
 
-<!-- Bootstrap JS and dependencies (ensure these are included in your layout if not already) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    async function handleRequest(requestId, action) {
+        const reason = action === 'accept' ? "Request accepted." : "Request rejected.";
+        try {
+            const response = await fetch(`/mentor/connection/${action}/${requestId}`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ reason }),
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                // Remove the request element from the DOM
+                document.getElementById(`request-${requestId}`).remove();
+
+                // Check if the list is empty and show a message
+                const list = document.getElementById("pendingRequestsList");
+                if (list.children.length === 0) {
+                    list.innerHTML = `<div class="alert alert-info">
+                        You have no pending mentee requests at the moment.
+                    </div>`;
+                }
+            } else {
+                alert(result.message || "An error occurred.");
+            }
+        } catch (error) {
+            console.error("Error handling request:", error);
+            alert("An error occurred. Please try again.");
+        }
+    }
+</script>
