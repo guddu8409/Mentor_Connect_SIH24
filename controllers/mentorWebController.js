@@ -214,6 +214,7 @@ module.exports.acceptRequest = async (req, res) => {
         .json({ success: false, message: "Request is no longer pending." });
     }
 
+    // Update connection request status
     connectionRequest.status = "accepted";
     connectionRequest.reason = reason || "Request accepted.";
     await connectionRequest.save();
@@ -228,8 +229,20 @@ module.exports.acceptRequest = async (req, res) => {
         .json({ success: false, message: "Mentor or Mentee not found." });
     }
 
-    mentor.connections.push(mentee._id);
-    mentee.connections.push(mentor._id);
+    // Add to connections and remove from pendingRequests
+    if (!mentor.connections.includes(mentee._id)) {
+      mentor.connections.push(mentee._id);
+    }
+    mentor.pendingRequests = mentor.pendingRequests.filter(
+      (reqId) => reqId.toString() !== requestId
+    );
+
+    if (!mentee.connections.includes(mentor._id)) {
+      mentee.connections.push(mentor._id);
+    }
+    mentee.pendingRequests = mentee.pendingRequests.filter(
+      (reqId) => reqId.toString() !== requestId
+    );
 
     await mentor.save();
     await mentee.save();
@@ -237,14 +250,13 @@ module.exports.acceptRequest = async (req, res) => {
     res.json({ success: true, message: "Connection request accepted." });
   } catch (error) {
     console.error("Error accepting connection request:", error);
-    res
-      .status(500)
-      .json({
-        success: false,
-        message: "An error occurred while accepting the request.",
-      });
+    res.status(500).json({
+      success: false,
+      message: "An error occurred while accepting the request.",
+    });
   }
 };
+
 module.exports.rejectRequest = async (req, res) => {
   const { reason } = req.body;
   const requestId = req.params.requestId;
