@@ -76,7 +76,7 @@ module.exports.renderChatPage = async (req, res) => {
   }
 };
 
-
+/*
 module.exports.getOrCreateChat = async (req, res) => {
   const { userId1, userId2 } = req.params; // Now, the IDs are generic user IDs
 
@@ -152,6 +152,8 @@ module.exports.getMessages = async (req, res) => {
     res.status(500).json({ success: false, message: "An error occurred." });
   }
 };
+
+*/
 
 /*
 
