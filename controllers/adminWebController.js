@@ -4,7 +4,7 @@ const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
 
 module.exports.dashboard = (req, res) => {
-  res.render("admin/home/home");
+  res.render("admin/home/home", { cssFile: "admin/home.css" });
 };
 
 module.exports.viewUsers = async (req, res) => {
