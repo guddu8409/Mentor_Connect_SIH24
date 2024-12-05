@@ -1,0 +1,63 @@
+<% if (userRole === "mentor") { %>
+    <%- layout("mentor/layouts/boilerplate") %>
+    <% } else if (userRole === "mentee") { %>
+    <%- layout("mentee/layouts/boilerplate") %>
+    <% } else { %>
+    <%- layout("layouts/boilerplate") %>
+    <% } %>
+
+<div class="container mt-3">
+    <div class="group-show-header d-flex justify-content-between align-items-center">
+        <!-- Back to Groups -->
+        <div class="group-show-header-back">
+            <a href="/groups" class="btn btn-secondary d-inline-flex align-items-center">
+                <i class="fa-solid fa-left-long"></i>
+            </a>
+        </div>
+
+        <!-- If the current user is the owner of the group, show Edit and Delete buttons -->
+        <% if(currUser && String(currUser._id) === String(group.owner._id)) { %>
+        <div class="btns d-inline-flex align-items-center">
+            <a href="/groups/<%=group._id%>/edit" class="btn btn-edit d-inline-flex align-items-center">
+                <i class="fa-solid fa-edit"></i>
+            </a>
+            <form action="/groups/<%=group._id%>?_method=delete" method="post" class="ms-2">
+                <button class="btn btn-delete d-inline-flex align-items-center">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </form>
+        </div>
+        <% } %>
+    </div>
+
+    <br><br>
+
+    <h1><%= group.name %></h1> <!-- Changed from title to name -->
+    <p><%= group.description %></p>
+    <p><strong>Motto:</strong> <%= group.motto %></p> <!-- Added motto -->
+    <p><strong>Website:</strong> <%= group.website %></p> <!-- Added website -->
+    <p><strong>Contact Email:</strong> <%= group.contactEmail %></p> <!-- Added contact email -->
+    <p><strong>Member Count:</strong> <%= group.memberCount %></p> <!-- Added member count -->
+
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Members:</h3>
+            <ul>
+                <% group.members.forEach(member => { %>
+                <li><%= member.username %></li>
+                <% }) %>
+            </ul>
+        </div>
+
+        <!-- Button to navigate to quizzes for this group -->
+        <div class="col-md-4">
+            <hr>
+            <p><%= group._id %></p>
+            <hr>
+            <br>
+            <a href="/groups/<%=group._id %>/quizzes" class="btn btn-primary btn-lg">
+                Go to Quizzes
+            </a>
+        </div>
+    </div>
+</div>

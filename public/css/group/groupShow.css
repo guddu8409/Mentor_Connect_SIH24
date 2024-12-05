@@ -1,0 +1,148 @@
+/* Scoped styles for the group-show-container */
+
+/* Importing Professional Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: #f4f7f6;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1,
+h3,
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Container styling */
+.container.mt-3 {
+  border: 2px solid #dce7e4;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container.mt-3:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Group Header */
+.group-show-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.btn:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Back Button */
+.btn-secondary {
+  background-color: #00796b;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #004d40;
+}
+
+/* Edit Button */
+.btn-edit {
+  background-color: #0288d1;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background-color: #01579b;
+}
+
+/* Delete Button */
+.btn-delete {
+  background-color: #e53935;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #b71c1c;
+}
+
+/* Quizzes Button */
+.btn-primary.btn-lg {
+  background-color: #0288d1;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.btn-primary.btn-lg:hover {
+  background-color: #01579b;
+}
+
+/* Member List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #dce7e4;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container.mt-3 {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .group-show-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .container.mt-3 {
+    padding: 10px;
+    max-width: 95%;
+  }
+}

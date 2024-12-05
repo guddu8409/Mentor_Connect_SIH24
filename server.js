@@ -76,6 +76,10 @@ app.use("/mentor", require("./routes/mentorWebRoutes"));
 app.use("/chat", require("./routes/chatRoutes"));
 app.use("/mentee", require("./routes/menteeWebRoutes"));
 app.use("/admin", require("./routes/adminWebRoutes"));
+app.use("/jobs", require("./routes/jobRoutes"));
+app.use("/jobs/:id/reviews", require("./routes/jobReviewRoutes"));
+app.use("/groups", require("./routes/groupRoutes"));
+app.use("/groups/:groupId/quizzes", require("./routes/quizRoutes"));
 
 app.get("/", (req, res) => {
   if (req.isAuthenticated()) {

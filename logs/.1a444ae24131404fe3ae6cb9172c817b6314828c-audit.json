@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 2
+    },
+    "auditLog": "/Users/rakeshpower/Desktop/19 nov/mentor/logs/.1a444ae24131404fe3ae6cb9172c817b6314828c-audit.json",
+    "files": [
+        {
+            "date": 1733429380934,
+            "name": "/Users/rakeshpower/Desktop/19 nov/mentor/logs/application-2024-12-06.log",
+            "hash": "4fc475b5c2423b71e9a52a0c846289506bf20363917b65861e2af1d7a649153a"
+        }
+    ],
+    "hashType": "sha256"
+}

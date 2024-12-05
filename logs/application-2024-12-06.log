@@ -1,0 +1,1591 @@
+01:40:34 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+01:40:34 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+01:40:34 [jobController] [32minfo[39m: Fetching all jobs...
+01:40:34 [jobController] [32minfo[39m: Found 0 jobs.
+01:48:34 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+01:48:34 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+01:48:34 [jobController] [32minfo[39m: Fetching all jobs...
+01:48:34 [jobController] [32minfo[39m: Found 0 jobs.
+01:48:38 [router] [32minfo[39m: ======= [ROUTE: Render New Job Form] =======
+01:48:38 [router] [32minfo[39m: [ACTION: Rendering New Job Form]
+01:48:38 [jobController] [32minfo[39m: Rendering new job form.
+02:35:58 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+02:36:19 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+02:36:53 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+02:37:06 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+02:37:57 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+02:38:48 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+02:38:48 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+02:38:48 [runAllSeeds] [32minfo[39m: Old data cleared.
+02:38:48 [jobSeeder] [32minfo[39m: Existing jobs cleared.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Doctor" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Nurse" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Pharmacist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Surgeon" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Dentist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Physiotherapist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Optometrist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Veterinarian" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Software Engineer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Frontend Developer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Data Analyst Intern" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Architect" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Civil Engineer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Mechanical Engineer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Electrical Engineer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Teacher" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Professor" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Financial Advisor" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Marketing Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Product Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "HR Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Administrative Assistant" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Business Development Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Logistics Coordinator" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Event Planner" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Travel Consultant" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Customer Service Representative" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Graphic Designer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Content Writer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Social Media Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Legal Advisor" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Real Estate Agent" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "IT Support Specialist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Database Administrator" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Network Engineer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Web Developer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Software Tester" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Quality Assurance Analyst" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Systems Analyst" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Technical Writer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Data Scientist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Digital Marketing Specialist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "SEO Specialist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Product Designer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "UX Researcher" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Customer Success Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Sales Executive" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Business Analyst" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Operations Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Supply Chain Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "HR Coordinator" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Training Specialist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Project Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Quality Control Inspector" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Manufacturing Engineer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "R&D Scientist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Graphic Designer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Content Creator" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Digital Content Specialist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "E-commerce Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Cloud Engineer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "DevOps Engineer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Game Developer" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "IT Consultant" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "System Administrator" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Technical Support Specialist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Research Analyst" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Marketing Specialist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Public Relations Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Event Coordinator" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Recruitment Specialist" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Operations Analyst" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "IT Project Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Business Development Manager" added.
+02:38:48 [job schema] [32minfo[39m: ======= [SCHEMA: Job] =======
+02:38:48 [job schema] [32minfo[39m: [ACTION: Starting validation for Job schema]
+02:38:48 [job schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job schema] [32minfo[39m: ======= [END OF ACTION: Validation for Job schema] =======
+
+02:38:48 [jobSeeder] [32minfo[39m: Job "Strategic Planner" added.
+02:38:48 [jobSeeder] [32minfo[39m: Job data seeded successfully!
+02:38:48 [jobReviewSeeder] [32minfo[39m: Existing job reviews cleared.
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ef".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618e3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861889".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ad".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618c1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618bf".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d7".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861903".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861895".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618c9".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861907".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618e1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618eb".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861903".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ed".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861909".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286190f".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861899".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286187d".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618a7".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861893".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f7".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286189b".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618bf".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618b5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618c1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861897".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618cf".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618eb".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618dd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618bd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618dd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861907".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618cb".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f7".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861903".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861903".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ef".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ed".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618fb".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ab".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618c7".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618a5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286188f".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618e9".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618a5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ab".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618e1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618e5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861907".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861903".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618a3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618b7".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861897".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ed".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618b9".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618fd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286189d".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861897".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d7".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618fd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618b3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861893".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618a5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861895".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ff".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618b5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861903".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861883".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286188d".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861883".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f9".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286189f".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286188b".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618c1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286187f".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861883".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286190b".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861893".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ef".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286187b".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861897".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ed".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286189f".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618e1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861909".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618fd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618fb".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861899".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618b9".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286189d".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ed".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861905".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ef".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618a5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ed".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ff".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286187b".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861889".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286187d".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ed".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618fd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618c1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861903".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861895".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ef".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286190b".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861893".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618fd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286187d".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618df".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861901".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d3".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d1".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618b5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618f9".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ab".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618ab".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d7".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e562861909".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618dd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618eb".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286190b".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618fd".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e56286189d".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618d5".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618db".
+02:38:48 [job review schema] [32minfo[39m: ======= [SCHEMA: JobReview] =======
+02:38:48 [job review schema] [32minfo[39m: [ACTION: Starting validation for JobReview schema]
+02:38:48 [job review schema] [32minfo[39m: [Validation passed successfully]
+02:38:48 [job review schema] [32minfo[39m: ======= [END OF ACTION: Validation for JobReview schema] =======
+
+02:38:48 [jobReviewSeeder] [32minfo[39m: Review added for Job ID "67521660a18939e5628618e3".
+02:38:48 [jobReviewSeeder] [32minfo[39m: Job reviews seeded successfully!
+02:38:48 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+02:39:09 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:39:09 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:39:09 [jobController] [32minfo[39m: Fetching all jobs...
+02:39:09 [jobController] [32minfo[39m: Found 75 jobs.
+02:39:42 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:39:42 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:39:42 [jobController] [32minfo[39m: Fetching all jobs...
+02:39:43 [jobController] [32minfo[39m: Found 75 jobs.
+02:39:58 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:39:58 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:39:58 [jobController] [32minfo[39m: Fetching all jobs...
+02:39:58 [jobController] [32minfo[39m: Found 75 jobs.
+02:39:58 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:39:58 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:39:58 [jobController] [32minfo[39m: Fetching all jobs...
+02:39:58 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:02 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:02 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:02 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:02 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:17 [router] [32minfo[39m: ======= [ROUTE: Like Job] =======
+02:40:17 [router] [32minfo[39m: [ACTION: Liking Job]
+02:40:17 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is liking job ID: 67521660a18939e56286190f
+02:40:17 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a attempting to like job with ID: 67521660a18939e56286190f
+02:40:17 [jobController] [32minfo[39m: User unliked the job: 67521660a18939e56286190f
+02:40:17 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:17 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:17 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:17 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:18 [router] [32minfo[39m: ======= [ROUTE: Like Job] =======
+02:40:18 [router] [32minfo[39m: [ACTION: Liking Job]
+02:40:18 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is liking job ID: 67521660a18939e56286190f
+02:40:18 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a attempting to like job with ID: 67521660a18939e56286190f
+02:40:18 [jobController] [32minfo[39m: User liked the job: 67521660a18939e56286190f
+02:40:18 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:18 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:18 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:18 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:22 [router] [32minfo[39m: ======= [ROUTE: Like Job] =======
+02:40:22 [router] [32minfo[39m: [ACTION: Liking Job]
+02:40:22 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is liking job ID: 67521660a18939e562861907
+02:40:22 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a attempting to like job with ID: 67521660a18939e562861907
+02:40:22 [jobController] [32minfo[39m: User liked the job: 67521660a18939e562861907
+02:40:22 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:22 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:22 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:22 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:26 [router] [32minfo[39m: ======= [ROUTE: Report Job] =======
+02:40:26 [router] [32minfo[39m: [ACTION: Reporting Job]
+02:40:26 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is reporting job ID: 67521660a18939e562861907
+02:40:26 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a attempting to report job with ID: 67521660a18939e562861907
+02:40:26 [jobController] [32minfo[39m: User reported the job: 67521660a18939e562861907
+02:40:26 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:26 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:26 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:26 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:29 [router] [32minfo[39m: ======= [ROUTE: Report Job] =======
+02:40:29 [router] [32minfo[39m: [ACTION: Reporting Job]
+02:40:29 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is reporting job ID: 67521660a18939e56286190f
+02:40:29 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a attempting to report job with ID: 67521660a18939e56286190f
+02:40:29 [jobController] [32minfo[39m: User reported the job: 67521660a18939e56286190f
+02:40:29 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:29 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:29 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:29 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:31 [router] [32minfo[39m: ======= [ROUTE: Report Job] =======
+02:40:31 [router] [32minfo[39m: [ACTION: Reporting Job]
+02:40:31 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is reporting job ID: 67521660a18939e56286190f
+02:40:31 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a attempting to report job with ID: 67521660a18939e56286190f
+02:40:31 [jobController] [32minfo[39m: User removed report from job: 67521660a18939e56286190f
+02:40:31 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:31 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:31 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:31 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:32 [router] [32minfo[39m: ======= [ROUTE: Report Job] =======
+02:40:32 [router] [32minfo[39m: [ACTION: Reporting Job]
+02:40:32 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is reporting job ID: 67521660a18939e56286190f
+02:40:32 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a attempting to report job with ID: 67521660a18939e56286190f
+02:40:32 [jobController] [32minfo[39m: User reported the job: 67521660a18939e56286190f
+02:40:32 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:32 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:32 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:32 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:34 [router] [32minfo[39m: ======= [ROUTE: Report Job] =======
+02:40:34 [router] [32minfo[39m: [ACTION: Reporting Job]
+02:40:34 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is reporting job ID: 67521660a18939e56286190f
+02:40:34 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a attempting to report job with ID: 67521660a18939e56286190f
+02:40:34 [jobController] [32minfo[39m: User removed report from job: 67521660a18939e56286190f
+02:40:34 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:40:34 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:40:34 [jobController] [32minfo[39m: Fetching all jobs...
+02:40:34 [jobController] [32minfo[39m: Found 75 jobs.
+02:40:35 [router] [32minfo[39m: ======= [ROUTE: Comment on Job] =======
+02:40:35 [router] [32minfo[39m: [ACTION: Commenting on Job]
+02:40:35 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is commenting on job ID: 67521660a18939e56286190f
+02:40:35 [jobController] [32minfo[39m: User 6740d96166c00c38d95a3f6a commenting on job with ID: 67521660a18939e56286190f
+02:40:35 [router] [32minfo[39m: ======= [ROUTE: Show Job Details] =======
+02:40:35 [router] [32minfo[39m: [ACTION: Fetching Job Details]
+02:40:35 [router] [32minfo[39m: Job ID: 67521660a18939e56286190f
+02:40:35 [jobController] [32minfo[39m: Fetching job with ID: 67521660a18939e56286190f
+02:40:35 [jobController] [32minfo[39m: Job found: 67521660a18939e56286190f
+02:40:40 [router] [32minfo[39m: ======= [ROUTE: Show Job Details] =======
+02:40:40 [router] [32minfo[39m: [ACTION: Fetching Job Details]
+02:40:40 [router] [32minfo[39m: Job ID: 67521660a18939e56286190f
+02:40:40 [jobController] [32minfo[39m: Fetching job with ID: 67521660a18939e56286190f
+02:40:40 [jobController] [32minfo[39m: Job found: 67521660a18939e56286190f
+02:43:01 [router] [32minfo[39m: ======= [ROUTE: Show Job Details] =======
+02:43:01 [router] [32minfo[39m: [ACTION: Fetching Job Details]
+02:43:01 [router] [32minfo[39m: Job ID: 67521660a18939e56286190f
+02:43:01 [jobController] [32minfo[39m: Fetching job with ID: 67521660a18939e56286190f
+02:43:01 [jobController] [32minfo[39m: Job found: 67521660a18939e56286190f
+02:47:06 [router] [32minfo[39m: ======= [ROUTE: Show Job Details] =======
+02:47:06 [router] [32minfo[39m: [ACTION: Fetching Job Details]
+02:47:06 [router] [32minfo[39m: Job ID: 67521660a18939e56286190f
+02:47:06 [jobController] [32minfo[39m: Fetching job with ID: 67521660a18939e56286190f
+02:47:06 [jobController] [32minfo[39m: Job found: 67521660a18939e56286190f
+02:47:12 [routes] [32minfo[39m: ======= [ROUTE: Create Job Review] =======
+02:47:12 [routes] [32minfo[39m: [ACTION: Creating New Job Review]
+02:47:12 [routes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is creating a new job review
+02:47:12 [jobMiddleware] [32minfo[39m: Validating job review schema...
+02:47:12 [jobMiddleware] [32minfo[39m: Job review schema validation passed. Proceeding to the next middleware.
+02:47:12 [jobReviewController] [32minfo[39m: Creating a new job review for job ID: 67521660a18939e56286190f
+02:47:12 [jobReviewController] [32minfo[39m: New job review created with ID: 675218585a45120bdf0110fe for job ID: 67521660a18939e56286190f
+02:47:12 [router] [32minfo[39m: ======= [ROUTE: Show Job Details] =======
+02:47:12 [router] [32minfo[39m: [ACTION: Fetching Job Details]
+02:47:12 [router] [32minfo[39m: Job ID: 67521660a18939e56286190f
+02:47:12 [jobController] [32minfo[39m: Fetching job with ID: 67521660a18939e56286190f
+02:47:12 [jobController] [32minfo[39m: Job found: 67521660a18939e56286190f
+02:47:22 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:47:22 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:47:22 [jobController] [32minfo[39m: Fetching all jobs...
+02:47:22 [jobController] [32minfo[39m: Found 75 jobs.
+02:48:35 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:48:35 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:48:35 [jobController] [32minfo[39m: Fetching all jobs...
+02:48:35 [jobController] [32minfo[39m: Found 75 jobs.
+02:50:01 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:50:01 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:50:01 [jobController] [32minfo[39m: Fetching all jobs...
+02:50:01 [jobController] [32minfo[39m: Found 75 jobs.
+02:50:03 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+02:50:03 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+02:50:03 [jobController] [32minfo[39m: Fetching all jobs...
+02:50:03 [jobController] [32minfo[39m: Found 75 jobs.
+02:50:12 [router] [32minfo[39m: ======= [ROUTE: Show Job Details] =======
+02:50:12 [router] [32minfo[39m: [ACTION: Fetching Job Details]
+02:50:12 [router] [32minfo[39m: Job ID: 67521660a18939e56286190f
+02:50:12 [jobController] [32minfo[39m: Fetching job with ID: 67521660a18939e56286190f
+02:50:12 [jobController] [32minfo[39m: Job found: 67521660a18939e56286190f
+02:52:04 [router] [32minfo[39m: ======= [ROUTE: Render New Job Form] =======
+02:52:04 [router] [32minfo[39m: [ACTION: Rendering New Job Form]
+02:52:04 [jobController] [32minfo[39m: Rendering new job form.
+02:54:42 [router] [32minfo[39m: ======= [ROUTE: Render New Job Form] =======
+02:54:42 [router] [32minfo[39m: [ACTION: Rendering New Job Form]
+02:54:42 [jobController] [32minfo[39m: Rendering new job form.
+02:54:46 [router] [32minfo[39m: ======= [ROUTE: Show Job Details] =======
+02:54:46 [router] [32minfo[39m: [ACTION: Fetching Job Details]
+02:54:46 [router] [32minfo[39m: Job ID: 67521660a18939e56286190f
+02:54:46 [jobController] [32minfo[39m: Fetching job with ID: 67521660a18939e56286190f
+02:54:46 [jobController] [32minfo[39m: Job found: 67521660a18939e56286190f
+03:02:40 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+03:02:40 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+03:02:40 [jobController] [32minfo[39m: Fetching all jobs...
+03:02:40 [jobController] [32minfo[39m: Found 75 jobs.
+03:11:41 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+03:11:41 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+03:11:41 [jobController] [32minfo[39m: Fetching all jobs...
+03:11:41 [jobController] [32minfo[39m: Found 75 jobs.
+03:12:33 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+03:12:33 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+03:12:33 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+03:12:33 [groupController] [32minfo[39m: Fetching all groups...
+03:12:33 [groupController] [32minfo[39m: Found 0 groups.
+03:12:35 [route] [32minfo[39m: ======= [ROUTE: New Group Form] =======
+03:12:35 [route] [32minfo[39m: [ACTION: Requesting New Group Form]
+03:12:35 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting the form to create a new group
+03:12:35 [groupController] [32minfo[39m: Rendering new group form.
+03:13:00 [route] [32minfo[39m: ======= [ROUTE: Create Group] =======
+03:13:00 [route] [32minfo[39m: [ACTION: Creating New Group]
+03:13:00 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is creating a new group
+03:13:00 [groupMiddleware] [32minfo[39m: Validating group schema...
+03:13:20 [route] [32minfo[39m: ======= [ROUTE: Create Group] =======
+03:13:20 [route] [32minfo[39m: [ACTION: Creating New Group]
+03:13:20 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is creating a new group
+03:13:20 [groupMiddleware] [32minfo[39m: Validating group schema...
+03:13:20 [groupMiddleware] [32minfo[39m: Group schema validation passed. Proceeding to the next middleware.
+03:13:20 [groupController] [32minfo[39m: Creating new group...
+03:13:20 [groupController] [32minfo[39m: New group created with ID: 67521e784d425a0fc82f1503
+03:13:20 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+03:13:20 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+03:13:20 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+03:13:20 [groupController] [32minfo[39m: Fetching all groups...
+03:13:20 [groupController] [32minfo[39m: Found 1 groups.
+03:13:26 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 67521e784d425a0fc82f1503
+03:13:26 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 67521e784d425a0fc82f1503
+03:13:26 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+03:13:26 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+03:13:26 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 67521e784d425a0fc82f1503
+03:13:26 [groupController] [32minfo[39m: Fetching group with ID: 67521e784d425a0fc82f1503
+03:13:26 [groupController] [32minfo[39m: Group found: 67521e784d425a0fc82f1503
+03:13:29 [groupMiddleware] [32minfo[39m: Checking if user is the owner of group ID: 67521e784d425a0fc82f1503
+03:13:29 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is the owner of group ID: 67521e784d425a0fc82f1503
+03:13:29 [route] [32minfo[39m: ======= [ROUTE: Edit Group Form] =======
+03:13:29 [route] [32minfo[39m: [ACTION: Requesting Edit Group Form]
+03:13:29 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting the form to edit group 67521e784d425a0fc82f1503
+03:13:29 [groupController] [32minfo[39m: Fetching group for editing with ID: 67521e784d425a0fc82f1503
+03:13:29 [groupController] [32minfo[39m: Group found for editing: 67521e784d425a0fc82f1503
+03:13:33 [groupMiddleware] [32minfo[39m: Checking if user is the owner of group ID: 67521e784d425a0fc82f1503
+03:13:33 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is the owner of group ID: 67521e784d425a0fc82f1503
+03:13:33 [route] [32minfo[39m: ======= [ROUTE: Edit Group Form] =======
+03:13:33 [route] [32minfo[39m: [ACTION: Requesting Edit Group Form]
+03:13:33 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting the form to edit group 67521e784d425a0fc82f1503
+03:13:33 [groupController] [32minfo[39m: Fetching group for editing with ID: 67521e784d425a0fc82f1503
+03:13:33 [groupController] [32minfo[39m: Group found for editing: 67521e784d425a0fc82f1503
+03:13:39 [groupMiddleware] [32minfo[39m: Checking if user is the owner of group ID: 67521e784d425a0fc82f1503
+03:13:39 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is the owner of group ID: 67521e784d425a0fc82f1503
+03:13:39 [route] [32minfo[39m: ======= [ROUTE: Update Group] =======
+03:13:39 [route] [32minfo[39m: [ACTION: Updating Group]
+03:13:39 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is updating group 67521e784d425a0fc82f1503
+03:13:39 [groupMiddleware] [32minfo[39m: Validating group schema...
+03:13:39 [groupMiddleware] [32minfo[39m: Group schema validation passed. Proceeding to the next middleware.
+03:13:39 [groupController] [32minfo[39m: Updating group with ID: 67521e784d425a0fc82f1503
+03:13:39 [groupController] [32minfo[39m: Request Body: {"group":{"name":"fsdf","description":"dsfdsf","motto":"fdsffkjksdfkjsdhjkfksdjfsk","website":"http://localhost:8080/groups/new","contactEmail":"sdhfjksdh@gmail.com"}}
+03:13:39 [groupController] [32minfo[39m: Group updated successfully: 67521e784d425a0fc82f1503
+03:13:39 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 67521e784d425a0fc82f1503
+03:13:39 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 67521e784d425a0fc82f1503
+03:13:39 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+03:13:39 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+03:13:39 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 67521e784d425a0fc82f1503
+03:13:39 [groupController] [32minfo[39m: Fetching group with ID: 67521e784d425a0fc82f1503
+03:13:39 [groupController] [32minfo[39m: Group found: 67521e784d425a0fc82f1503
+03:13:41 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 67521e784d425a0fc82f1503
+03:13:41 [groupMiddleware] [32minfo[39m: Group with ID: 67521e784d425a0fc82f1503 found
+03:13:41 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 67521e784d425a0fc82f1503
+03:13:41 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 67521e784d425a0fc82f1503
+03:13:41 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+03:13:41 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+03:13:41 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 67521e784d425a0fc82f1503
+03:13:41 [quizController] [32minfo[39m: Fetching quizzes for group ID: 67521e784d425a0fc82f1503
+03:13:41 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 67521e784d425a0fc82f1503
+03:13:47 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+03:13:47 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+03:13:47 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+03:13:47 [groupController] [32minfo[39m: Fetching all groups...
+03:13:47 [groupController] [32minfo[39m: Found 1 groups.
+03:13:54 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+03:13:54 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+03:13:54 [jobController] [32minfo[39m: Fetching all jobs...
+03:13:54 [jobController] [32minfo[39m: Found 75 jobs.
+03:14:58 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+03:14:58 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+03:14:58 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+03:14:58 [groupController] [32minfo[39m: Fetching all groups...
+03:14:58 [groupController] [32minfo[39m: Found 1 groups.
+03:15:38 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+03:15:38 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+03:15:38 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+03:15:38 [groupController] [32minfo[39m: Fetching all groups...
+03:15:38 [groupController] [32minfo[39m: Found 1 groups.
+03:15:47 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+03:15:47 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+03:15:47 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+03:15:47 [groupController] [32minfo[39m: Fetching all groups...
+03:15:47 [groupController] [32minfo[39m: Found 1 groups.
+03:15:49 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+03:15:49 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+03:15:49 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+03:15:49 [groupController] [32minfo[39m: Fetching all groups...
+03:15:49 [groupController] [32minfo[39m: Found 1 groups.
