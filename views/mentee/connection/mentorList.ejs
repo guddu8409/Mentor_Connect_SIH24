@@ -26,7 +26,7 @@
 
                     <!-- Connection button logic -->
                     <% if (mentor.connectionStatus === "none") { %>
-                        <form action="/mentee/connections/<%= mentor._id %>/connectRequest" method="GET" class="d-inline-block">
+                        <form action="/mentee/connections/<%= mentor._id %>/connectRequest" method="POST" class="d-inline-block">
                             <button type="submit" class="btn btn-sm btn-success">Add Connection</button>
                         </form>
                     <% } else if (mentor.connectionStatus === "pending") { %>

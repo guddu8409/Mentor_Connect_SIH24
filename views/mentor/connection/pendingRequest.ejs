@@ -6,9 +6,12 @@
         <h1 class="mb-0">Pending Mentee Requests</h1>
     </div>
 
+    <div><button><a href="/mentor/connection"> Go back</a></button></div>
+    <br>
+
     <!-- Pending Requests List -->
     <% if (pendingRequests.length === 0) { %>
-        <div class="alert alert-info">
+        <div class="noRequest">
             You have no pending mentee requests at the moment.
         </div>
     <% } else { %>
@@ -54,7 +57,7 @@
                 const list = document.getElementById("pendingRequestsList");
                 if (list.children.length === 0) {
                     list.innerHTML = `<div class="alert alert-info">
-                        You have no pending mentee requests at the moment.
+                        You have  no pending mentee requests at the moment.
                     </div>`;
                 }
             } else {

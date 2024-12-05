@@ -1,8 +1,9 @@
 <%- layout("mentee/layouts/boilerplate") %>
 
 <div class="container mt-3">
-
-    <h1>Chat with <%= secondPerson.name %> </h1>
+    <h1>
+        <center> Chat with <%= secondPerson.name %> </center>
+    </h1>
 
     <div id="chatBox" class="chat-box border rounded p-3 mb-3">
         <% if (chat.messages.length === 0) { %>
@@ -10,9 +11,7 @@
         <% } else { %>
         <% chat.messages.forEach(message => { %>
         <div class="<%= message.sender._id === loggedInUser.id ? 'text-end' : 'text-start' %> mb-2">
-            <strong>
-                <%= message.sender._id === loggedInUser.id ? 'You' : secondPerson.name %>:
-            </strong>
+          
             <p class="m-0"><%= message.text %></p>
             <small class="text-muted"><%= new Date(message.timestamp).toLocaleString() %></small>
         </div>
@@ -20,13 +19,16 @@
         <% } %>
     </div>
 
-
-
     <!-- Message Input -->
-    <form id="chatForm" class="d-flex">
+    <form id="chatForm" class="d-flex align-items-center">
         <input type="text" id="messageInput" class="form-control me-2" placeholder="Type your message..." required />
-        <button type="submit" class="btn btn-primary">Send</button>
+
+        <!-- Font Awesome Icon for Sending Message -->
+        <button type="submit" class="btn btn-transparent">
+            <i class="fas fa-paper-plane fa-lg"></i> <!-- Font Awesome Send Icon -->
+        </button>
     </form>
+
 </div>
 
 <script src="/socket.io/socket.io.js"></script> <!-- Include Socket.IO library -->
@@ -38,6 +40,12 @@
     // Join the chat room
     socket.emit("joinRoom", chatId);
 
+    // Scroll the chat box to the bottom
+    function scrollToBottom() {
+        const chatBox = document.getElementById("chatBox");
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
     // Append a new message to the chat box
     function appendMessage(senderId, text, timestamp) {
         const chatBox = document.getElementById("chatBox");
@@ -45,13 +53,12 @@
         messageDiv.className = senderId === userId ? "text-end mb-2" : "text-start mb-2";
 
         messageDiv.innerHTML = `
-            <strong>${senderId === userId ? 'You' : '<%= secondPerson.name %>'}:</strong>
             <p class="m-0">${text}</p>
             <small class="text-muted">${new Date(timestamp).toLocaleString()}</small>
         `;
 
         chatBox.appendChild(messageDiv);
-        chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the latest message
+        scrollToBottom(); // Scroll to the bottom after appending a new message
     }
 
     // Listen for new messages from the server
@@ -71,4 +78,7 @@
         // Clear the input box
         messageInput.value = "";
     });
+
+    // Scroll to the bottom when the page loads
+    window.onload = scrollToBottom;
 </script>

@@ -3,9 +3,6 @@
 const Mentor = require("../models/mentor/mentor");
 const Mentee = require("../models/mentee/mentee");
 const ConnectionRequest = require("../models/connectionRequest");
-
-
-
 const mentorService = require("../services/mentorService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
@@ -14,13 +11,6 @@ module.exports.dashboard = (req, res) => {
   res.render("mentor/home/home");
 };
 
-module.exports.viewUsers = (req, res) => {
-  res.render("mentor/users/users");
-};
-
-module.exports.notifications = (req, res) => {
-  res.render("mentor/notifications/notifications");
-};
 
 module.exports.viewProfile = async (req, res) => {
   try {

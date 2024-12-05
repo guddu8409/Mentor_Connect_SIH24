@@ -1,50 +1,24 @@
 const express = require("express");
 const { isLoggedIn, isMentee, isOwner } = require("../middlewares/authMiddleware");
-const {
-  dashboard,
-  viewMentors,
-  notifications,
-  viewProfile,
-  editProfile,
-  deleteProfile,
-  renderEditProfile, displayMentor,displayMentorList,
-  displayAllConnections,
-  connectRequest,
-  cancelRequest,
-} = require("../controllers/menteeWebController");
+const menteeController = require("../controllers/menteeWebController");
 
 const router = express.Router();
 
-router.get("/", isLoggedIn, isMentee, dashboard);
-router.get("/mentors", isLoggedIn, isMentee, viewMentors);
-router.get("/profile/:id", isLoggedIn, isMentee, viewProfile);
-router.get("/profile/edit/:id", isLoggedIn, isMentee, isOwner, renderEditProfile);
-router.post("/profile/edit/:id", isLoggedIn, isMentee, isOwner, editProfile);
-router.post("/profile/delete/:id", isLoggedIn, isMentee, isOwner, deleteProfile);
-router.get("/notifications", isLoggedIn, isMentee, notifications);
+// Dashboard route
+router.get("/", isLoggedIn, isMentee, menteeController.dashboard);
 
-router.get("/findMentor", isLoggedIn, isMentee, displayMentor);
+// Profile routes
+router.get("/profile/:id", isLoggedIn, isMentee, menteeController.viewProfile);
+router.get("/profile/edit/:id", isLoggedIn, isMentee, isOwner, menteeController.renderEditProfile);
+router.post("/profile/edit/:id", isLoggedIn, isMentee, isOwner, menteeController.editProfile);
+router.post("/profile/delete/:id", isLoggedIn, isMentee, isOwner, menteeController.deleteProfile);
 
-router.get("/mentorList", isLoggedIn, isMentee, displayMentorList);
+// Mentor listing and finding routes
+router.get("/mentorList", isLoggedIn, isMentee, menteeController.displayMentorList);
 
-router.get("/connections", isLoggedIn, isMentee, displayAllConnections);
-
-router.get("/connections/:mentorId/connectRequest", isLoggedIn, isMentee, connectRequest);
-
-// Cancel Connection Request
-router.delete('/connections/:mentorId/cancelRequest',isLoggedIn, isMentee, cancelRequest);
-
-
-
-/*
-router.get("/connections", connectionController.getConnections); // List connections
-router.post("/connections", connectionController.sendRequest);   // Send request
-router.patch("/connections/:id", connectionController.updateRequest); // Accept/reject requests
-
-router.get("/messages/:mentorId", messageController.getMessages); // Fetch messages
-router.post("/messages/:mentorId", messageController.sendMessage); // Send message
-
-
-*/
+// Connection routes
+router.get("/connections", isLoggedIn, isMentee, menteeController.displayAllConnections);
+router.post("/connections/:mentorId/connectRequest", isLoggedIn, isMentee, menteeController.connectRequest);
+router.delete("/connections/:mentorId/cancelRequest", isLoggedIn, isMentee, menteeController.cancelRequest);
 
 module.exports = router;

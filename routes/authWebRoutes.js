@@ -1,7 +1,6 @@
 const express = require("express");
 const passport = require("passport");
-const { register, login, logout } = require("../controllers/authWebController");
-
+const { register, login, logout,forgetPassword } = require("../controllers/authWebController");
 const router = express.Router();
 
 router.get("/register", (req, res) =>
@@ -24,5 +23,9 @@ router.post(
 
 // Logout Route
 router.get("/logout", logout);
+router.post("/forgetPassword", (req, res, next) => {
+  console.log("fksdfkl");
+  next();
+}, forgetPassword);
 
 module.exports = router;

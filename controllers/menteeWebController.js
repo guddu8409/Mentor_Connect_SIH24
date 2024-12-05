@@ -11,13 +11,6 @@ module.exports.dashboard = (req, res) => {
   res.render("mentee/home/home");
 };
 
-module.exports.viewMentors = (req, res) => {
-  res.render("mentee/mentors/mentors");
-};
-
-module.exports.notifications = (req, res) => {
-  res.render("mentee/notifications/notifications");
-};
 
 module.exports.viewProfile = async (req, res) => {
   try {
@@ -130,7 +123,7 @@ module.exports.displayMentor = async (req, res) => {
   }
 };
 
-module.exports.displayMentorList = async (req, res) => {
+module.exports.displayMentorList = async (req, res) => { //when he search for add new mentor
   try {
     // Fetch the mentee's details
     const mentee = await Mentee.findOne({ user: req.user._id })
@@ -167,7 +160,7 @@ module.exports.displayMentorList = async (req, res) => {
   }
 };
 
-module.exports.displayAllConnections = async (req, res) => {
+module.exports.displayAllConnections = async (req, res) => { // display all connected mentor
   try {
     // Find the mentee using the logged-in user's ID
     const mentee = await Mentee.findOne({ user: req.user._id }).populate({

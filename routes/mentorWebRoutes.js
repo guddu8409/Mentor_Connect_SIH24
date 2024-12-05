@@ -2,10 +2,9 @@
 
 const express = require("express");
 const { isLoggedIn, isMentor, isOwner } = require("../middlewares/authMiddleware");
-const { dashboard, viewUsers, notifications,
-    viewProfile, editProfile, deleteProfile,
-    renderEditProfile, displayAllConnections,
-    pendingRequest, acceptRequest, rejectRequest,
+const { dashboard, 
+    viewProfile, editProfile, deleteProfile, renderEditProfile,
+    displayAllConnections,pendingRequest, acceptRequest, rejectRequest,
     renderMessagePage,
     
 } = require("../controllers/mentorWebController");
@@ -16,7 +15,7 @@ const router = express.Router();
 router.get("/", isLoggedIn, isMentor, dashboard);
 
 // Manage Users (mentor-specific user management)
-router.get("/users", isLoggedIn, isMentor, viewUsers);
+// router.get("/users", isLoggedIn, isMentor, viewUsers);
 
 // View Mentor Profile
 router.get("/profile/:id", isLoggedIn,  viewProfile);
@@ -29,7 +28,7 @@ router.post("/profile/edit/:id", isLoggedIn, isMentor, isOwner, editProfile);
 router.post("/profile/delete/:id", isLoggedIn, isMentor, isOwner, deleteProfile);
 
 // Mentor Notifications
-router.get("/notifications", isLoggedIn, isMentor, notifications);
+// router.get("/notifications", isLoggedIn, isMentor, notifications);
 
 
 

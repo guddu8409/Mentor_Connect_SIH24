@@ -9,39 +9,19 @@
     <nav class="navbar2">
       <ul class="nav-links2">
         <li><a href="/">Home</a></li>
-        <li><a href="/mentor/connection">Mentee</a></li>
-        <!-- Find Alumni Dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="findAlumniDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Find Mentee
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="findAlumniDropdown">
-            <li>
-              <a class="dropdown-item" href="/findMentee?filter=username"
-                >By Username</a
-              >
-            </li>
-            <li><a class="dropdown-item" href="/groups">By Group</a></li>
-            <li><a class="dropdown-item" href="/nearBy">nearBy</a></li>
-          </ul>
-        </li>
-
-        <li><%=currUser  %></li>
+        <li><a href="/mentor/connection">My Mentee</a></li>
+      
+        <li><a href="/jobs">Jobs</a></li>
+        <li><a href="groups">Groups</a></li>
+        <li><a href="events">Events</a></li>
+        <li><a href="/donation">Donation</a></li>
+        <li><a href="/discussion">Discussion</a></li>
+        
 
       </ul>
 
       <div class="auth-buttons">
-        <% if (!currUser) { %>
-        <a href="/auth/login" class="btn login-btn">Log in</a>
-        <a href="/auth/register" class="btn register-btn">Signup</a>
-        <% } else { %>
+       
         <a href="/notifications" class="btn btn-light position-relative">
           <i class="fa fa-bell"></i>
           <% if (typeof unreadCount !== 'undefined' && unreadCount > 0) { %>
@@ -56,7 +36,7 @@
           >Profile </a
         >
         <a href="/auth/logout" class="btn login-btn">Log out</a>
-        <% } %>
+       
       </div>
       <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
     </nav>
