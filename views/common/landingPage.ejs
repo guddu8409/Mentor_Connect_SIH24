@@ -2,12 +2,11 @@
 
 <div>
   <!-- Hero Section -->
-  <div class="page1hero">
+  <div id="/" class="page1hero">
     <section class="hero">
       <div class="hero-content">
         <h1><b>Accelerate Your Career Growth with Expert Mentorship</b></h1>
-        <p>Connect with industry leaders who've been there,done that.Get structured guidance to achive your goals faster
-        </p>
+        <p>Connect with industry leaders who've been there, done that. Get structured guidance to achieve your goals faster.</p>
         <a href="#" class="cta-button">Start Your Growth Journey</a>
         <div class="image-rating-container">
           <div class="image-container">
@@ -29,11 +28,11 @@
     </div>
   </div>
   <br>
+
   <!-- Challenges Section -->
-  <section class="challenges-section">
+  <section id="Stats-section" class="challenges-section">
     <div>
-      <h2 class="main-title"><b>76% of professionals consider mentors crucial for growth,yet only 37% have access to
-          one</b></h2>
+      <p class="main-title"><b>76% of professionals consider mentors crucial for growth, yet only 37% have access to one</b></p>
       <div class="challenges-grid">
         <div class="challenge-item">
           <img src="/image/common/disconnected_icon.png" alt="Disconnected from Alumni" class="challenge-icon" />
@@ -48,9 +47,7 @@
           <h3 class="challenge-title">Wasting time coordinating meetings and following up</h3>
         </div>
       </div>
-      <br>
-      <br>
-
+      <br><br>
       <div class="counter-bar">
         <div class="counter-container">
           <div class="counter-item">
@@ -71,16 +68,16 @@
   </section>
 
   <!-- How It Works Section -->
-  <section class="how-it-works">
+  <section  id ="how-it-works" class="how-it-works">
     <div>
-      <h2><b>Your Path to Professional Successs</b></h2>
+      <h2><b>Your Path to Professional Success</b></h2>
       <div class="steps-container">
         <div class="steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
               <h3><strong>Create Your Profile</strong></h3>
-              <p>Share your background,goals and preferences to help us match you with the right mentor</p>
+              <p>Share your background, goals, and preferences to help us match you with the right mentor</p>
             </div>
           </div>
           <div class="step">
@@ -113,7 +110,7 @@
   </section>
 
   <!-- Features Section -->
-  <section class="features-section">
+  <section id="features-section"  class="features-section">
     <div>
       <div class="features-header">
         <h2><b>Everything You Need to Accelerate Your Career</b></h2>
@@ -126,8 +123,7 @@
           </div>
           <div class="feature-content">
             <h3><strong>Connect with Industry Leaders</strong></h3>
-            <p>Get matched with experienced mentors from your target industry who can provide personalized guidance and
-              insights.</p>
+            <p>Get matched with experienced mentors from your target industry who can provide personalized guidance and insights.</p>
           </div>
         </div>
         <div class="feature">
@@ -136,8 +132,7 @@
           </div>
           <div class="feature-content">
             <h3><strong>Seamless Scheduling</strong></h3>
-            <p>Book mentoring sessions effortlessly with our integrated calendar system that works around your
-              availability.</p>
+            <p>Book mentoring sessions effortlessly with our integrated calendar system that works around your availability.</p>
           </div>
         </div>
         <div class="feature">
@@ -146,8 +141,7 @@
           </div>
           <div class="feature-content">
             <h3><strong>Virtual Meetings</strong></h3>
-            <p>Connect face-to-face with your mentor through our built-in video conferencing,from anywhere in the world.
-            </p>
+            <p>Connect face-to-face with your mentor through our built-in video conferencing, from anywhere in the world.</p>
           </div>
         </div>
         <div class="feature">
@@ -155,11 +149,8 @@
             <img src="/image/common/global_conn2.png" alt="Global Connections icon" />
           </div>
           <div class="feature-content">
-            <h3>
-              <strong>Resource Library</strong>
-            </h3>
-            <p>Access curated resources,templates and tools shared by mentors to accelerate your professional growth.
-            </p>
+            <h3><strong>Resource Library</strong></h3>
+            <p>Access curated resources, templates, and tools shared by mentors to accelerate your professional growth.</p>
           </div>
         </div>
         <div class="feature">
@@ -177,8 +168,7 @@
           </div>
           <div class="feature-content">
             <h3><strong>Secure Platform</strong></h3>
-            <p>Enjoy peace of mind with our secure platform designed to protect your privacy and confidential
-              conservations.</p>
+            <p>Enjoy peace of mind with our secure platform designed to protect your privacy and confidential conversations.</p>
           </div>
         </div>
       </div>
@@ -189,16 +179,14 @@
   <section class="cta-section">
     <div>
       <h2>You're still here!</h2>
-      <p class="quote">
-        "Unlock the power of mentorship. Connect with industry experts today and take the first step toward achieving
-        your
-        professional dreams!"
-      </p>
+      <p class="quote">"Unlock the power of mentorship. Connect with industry experts today and take the first step toward achieving your professional dreams!"</p>
       <a href="#" class="cta-button">Get started</a>
     </div>
   </section>
 </div>
+
 <script>
+  // Counter Animation Function
   function animateCounter(element, target, duration) {
     let start = 0;
     const increment = target / (duration / 16);
@@ -212,11 +200,39 @@
     }, 16);
   }
 
+  // Counter Elements
   const alumniCounter = document.getElementById('alumni-counter');
   const studentsCounter = document.getElementById('students-counter');
   const facultyCounter = document.getElementById('faculty-counter');
 
+  // Animate Counters
   animateCounter(alumniCounter, 60000, 2000);
   animateCounter(studentsCounter, 12000, 2000);
   animateCounter(facultyCounter, 770, 2000);
+
+  // Scroll Function for Active Navigation Links
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section, .hero-content");
+    const navLinks = document.querySelectorAll(".nav-links2 a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  });
 </script>
+

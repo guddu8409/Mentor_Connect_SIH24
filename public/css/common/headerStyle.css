@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html, body {
   font-family: Arial, sans-serif;
   height: 100vh;
@@ -20,70 +21,65 @@ html, body {
   min-height: 50vh;
 }
 
+/* Header */
 header {
-  background-color: #f9f9f9;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
   background-color: #fff;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  padding: 0 20px;
   border-bottom: 1px solid #ddd;
-  /* position: fixed; */
-  width: 100vw;
+  width: 100%;
+  height: 80px; /* Set a fixed height for the header */
 }
 
-/* Logo Animation */
+/* Logo */
+.logo {
+  flex-shrink: 0; /* Prevent the logo from shrinking */
+  margin-right: 20px; /* Add some spacing after the logo */
+}
+
 .logo a {
   display: block;
   width: 150px;
   transition: transform 0.3s ease-in-out;
 }
 
-.logo a:hover {
-  transform: scale(1.1);
-}
-
 .logo img {
   width: 100%;
 }
 
-/* Normal Navigation Bar Styles */
-.navbar2 {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
+.logo a:hover {
+  transform: scale(1.1);
 }
 
-.nav-links2 li,
-ul {
-  padding: 0;
+/* Navigation Bar */
+.navbar2 {
+  display: flex;
+  flex: 1; /* Takes up the available space between logo and auth-buttons */
+  justify-content: center; /* Centers the navigation horizontally */
+  align-items: center; /* Centers the navigation vertically */
 }
 
 .nav-links2 {
-  list-style-type: none;
+  list-style: none;
   display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  flex-grow: 1;
-  margin-left: 1.2rem;
-    /* margin-right: 1.2rem; */
+  gap: 30px; /* Space between navigation links */
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links2 li {
-  margin-right: 20px;
+  display: inline-block;
 }
 
 .nav-links2 a {
   text-decoration: none;
   color: #000;
-  transition: all 0.3s ease-in-out;
   padding: 8px 15px;
   border-radius: 4px;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-links2 a:hover {
@@ -92,23 +88,12 @@ ul {
   transform: scale(1.05);
 }
 
-/* Hover effect for dropdown items */
-.dropdown-item {
-  color: #000;
-  padding: 8px 15px;
-}
-
-.dropdown-item:hover {
-  background-color: #007bff;
-  color: white;
-  transform: scale(1.05);
-}
-
 /* Auth Buttons */
 .auth-buttons {
-  margin-left: 30px;
+  flex-shrink: 0; /* Prevent the auth-buttons from shrinking */
   display: flex;
-  align-items: center;
+  gap: 15px; /* Space between buttons */
+  align-items: center; /* Align buttons vertically */
 }
 
 .login-btn,
@@ -125,7 +110,6 @@ ul {
   border: 1px solid #007bff;
   color: #007bff;
   border-radius: 4px;
-  margin-right: 15px;
 }
 
 .login-btn:hover {
@@ -145,7 +129,7 @@ ul {
   transform: scale(1.05);
 }
 
-/* Mobile Menu */
+/* Hamburger Menu (for mobile) */
 .hamburger-menu {
   display: none;
   font-size: 30px;
@@ -154,6 +138,7 @@ ul {
   right: 30px;
 }
 
+/* Mobile Menu */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -197,6 +182,7 @@ ul {
   margin-bottom: 10px;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   .nav-links2,
   .auth-buttons {
