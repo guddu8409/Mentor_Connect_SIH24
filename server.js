@@ -62,6 +62,7 @@ passport.deserializeUser(User.deserializeUser());
 // Middleware for Flash Messages
 app.use((req, res, next) => {
   res.locals.currUser = req.user;
+  res.locals.userRole = req.user?.role || "mentee";
   res.locals.messages = {
     success: req.flash("success"),
     error: req.flash("error"),

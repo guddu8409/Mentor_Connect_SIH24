@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const logger = require("../utils/logger")('route'); // Import the logger
-const { isLoggedIn } = require("../middlewares/authMiddleware");
+const { isLoggedIn,isMentor } = require("../middlewares/authMiddleware");
 const { isGroupOwner, isGroupMember, validateGroup } = require("../middlewares/group");
 const { validateQuiz } = require("../middlewares/quiz");
 const {
@@ -33,7 +33,7 @@ router.get("/new", isLoggedIn, (req, res, next) => {
 }, renderNewForm);
 
 // Route to create a new group
-router.post("/", isLoggedIn, (req, res, next) => {
+router.post("/", isLoggedIn, isMentor,(req, res, next) => {
   logger.info(`======= [ROUTE: Create Group] =======`);
   logger.info(`[ACTION: Creating New Group]`);
   logger.info(`User ID: ${req.user._id} is creating a new group`);
@@ -41,7 +41,7 @@ router.post("/", isLoggedIn, (req, res, next) => {
 }, validateGroup, createGroup);
 
 // Route to view a specific group
-router.get("/:groupId", isLoggedIn, isGroupMember, (req, res, next) => {
+router.get("/:groupId", isLoggedIn,  (req, res, next) => {
   logger.info(`======= [ROUTE: View Group] =======`);
   logger.info(`[ACTION: Viewing Group Details]`);
   logger.info(`User ID: ${req.user._id} is viewing details for group ${req.params.groupId}`);

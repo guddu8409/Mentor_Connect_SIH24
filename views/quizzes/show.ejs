@@ -1,4 +1,10 @@
-<%- layout("/layouts/boilerplate") -%>
+<% if (userRole === "mentor") { %>
+    <%- layout("mentor/layouts/boilerplate") %>
+    <% } else if (userRole === "mentee") { %>
+    <%- layout("mentee/layouts/boilerplate") %>
+    <% } else { %>
+    <%- layout("layouts/boilerplate") %>
+    <% } %>
 
 <div class="page-container mt-3">
     <div class="row">

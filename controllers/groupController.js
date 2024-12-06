@@ -14,12 +14,11 @@ module.exports.listGroups = wrapAsync(async (req, res) => {
     allUsers.forEach((user, index) => {
       user.isStarAlumni = index < 2; // Mark only the top 2 users as Star Alumni
     });
-    const userRole = req.user?.role || "mentee"; // Default to "mentee" if role isn't defined
 
     logger.info(`Found ${groups.length} groups.`);
     res.render("groups/index", {
       groups,
-      currUserT,userRole,
+      currUserT,
       allUsers,
       cssFile: "/group/groupIndex.css",
     });
@@ -32,9 +31,8 @@ module.exports.listGroups = wrapAsync(async (req, res) => {
 
 module.exports.renderNewForm = (req, res) => {
   logger.info("Rendering new group form.");
-  const userRole = req.user?.role || "mentee"; // Default to "mentee" if role isn't defined
 
-  res.render("groups/new", { userRole,cssFile: "group/groupNew.css" });
+  res.render("groups/new", { cssFile: "group/groupNew.css" });
 };
 
 module.exports.createGroup = wrapAsync(async (req, res) => {

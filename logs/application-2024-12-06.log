@@ -1589,3 +1589,400 @@
 03:15:49 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
 03:15:49 [groupController] [32minfo[39m: Fetching all groups...
 03:15:49 [groupController] [32minfo[39m: Found 1 groups.
+08:05:32 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+08:05:32 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+08:05:32 [jobController] [32minfo[39m: Fetching all jobs...
+08:05:32 [jobController] [32minfo[39m: Found 75 jobs.
+08:05:33 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:05:33 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:05:33 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:05:33 [groupController] [32minfo[39m: Fetching all groups...
+08:05:33 [groupController] [32minfo[39m: Found 1 groups.
+08:05:40 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:05:40 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:05:40 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:05:40 [groupController] [32minfo[39m: Fetching all groups...
+08:05:40 [groupController] [32minfo[39m: Found 1 groups.
+08:05:41 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:05:41 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:05:41 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:05:41 [groupController] [32minfo[39m: Fetching all groups...
+08:05:41 [groupController] [32minfo[39m: Found 1 groups.
+08:05:43 [route] [32minfo[39m: ======= [ROUTE: New Group Form] =======
+08:05:43 [route] [32minfo[39m: [ACTION: Requesting New Group Form]
+08:05:43 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting the form to create a new group
+08:05:43 [groupController] [32minfo[39m: Rendering new group form.
+08:06:13 [route] [32minfo[39m: ======= [ROUTE: Create Group] =======
+08:06:13 [route] [32minfo[39m: [ACTION: Creating New Group]
+08:06:13 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is creating a new group
+08:06:13 [groupMiddleware] [32minfo[39m: Validating group schema...
+08:06:25 [route] [32minfo[39m: ======= [ROUTE: Create Group] =======
+08:06:25 [route] [32minfo[39m: [ACTION: Creating New Group]
+08:06:25 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is creating a new group
+08:06:25 [groupMiddleware] [32minfo[39m: Validating group schema...
+08:06:25 [groupMiddleware] [32minfo[39m: Group schema validation passed. Proceeding to the next middleware.
+08:06:25 [groupController] [32minfo[39m: Creating new group...
+08:06:25 [groupController] [32minfo[39m: New group created with ID: 6752632909faba0d16f31d88
+08:06:25 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:06:25 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:06:25 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:06:25 [groupController] [32minfo[39m: Fetching all groups...
+08:06:25 [groupController] [32minfo[39m: Found 2 groups.
+08:06:57 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 67521e784d425a0fc82f1503
+08:06:57 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 67521e784d425a0fc82f1503
+08:06:57 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:06:57 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:06:57 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 67521e784d425a0fc82f1503
+08:06:57 [groupController] [32minfo[39m: Fetching group with ID: 67521e784d425a0fc82f1503
+08:06:57 [groupController] [32minfo[39m: Group found: 67521e784d425a0fc82f1503
+08:06:59 [groupMiddleware] [32minfo[39m: Checking if user is the owner of group ID: 67521e784d425a0fc82f1503
+08:06:59 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is the owner of group ID: 67521e784d425a0fc82f1503
+08:06:59 [route] [32minfo[39m: ======= [ROUTE: Edit Group Form] =======
+08:06:59 [route] [32minfo[39m: [ACTION: Requesting Edit Group Form]
+08:06:59 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting the form to edit group 67521e784d425a0fc82f1503
+08:06:59 [groupController] [32minfo[39m: Fetching group for editing with ID: 67521e784d425a0fc82f1503
+08:06:59 [groupController] [32minfo[39m: Group found for editing: 67521e784d425a0fc82f1503
+08:07:14 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 67521e784d425a0fc82f1503
+08:07:14 [groupMiddleware] [32minfo[39m: Group with ID: 67521e784d425a0fc82f1503 found
+08:07:14 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 67521e784d425a0fc82f1503
+08:07:14 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 67521e784d425a0fc82f1503
+08:07:14 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:07:14 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:07:14 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 67521e784d425a0fc82f1503
+08:07:14 [quizController] [32minfo[39m: Fetching quizzes for group ID: 67521e784d425a0fc82f1503
+08:07:14 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 67521e784d425a0fc82f1503
+08:13:29 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:13:29 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:13:29 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:13:29 [groupController] [32minfo[39m: Fetching all groups...
+08:13:29 [groupController] [32minfo[39m: Found 2 groups.
+08:21:20 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:21:20 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:21:20 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:21:20 [groupController] [32minfo[39m: Fetching all groups...
+08:21:20 [groupController] [32minfo[39m: Found 2 groups.
+08:21:48 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+08:21:48 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+08:21:48 [jobController] [32minfo[39m: Fetching all jobs...
+08:21:48 [jobController] [32minfo[39m: Found 75 jobs.
+08:21:50 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:21:50 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:21:50 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is fetching the list of all groups
+08:21:50 [groupController] [32minfo[39m: Fetching all groups...
+08:21:50 [groupController] [32minfo[39m: Found 2 groups.
+08:27:15 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:27:15 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:27:15 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:27:15 [groupController] [32minfo[39m: Fetching all groups...
+08:27:15 [groupController] [32minfo[39m: Found 2 groups.
+08:27:16 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:27:16 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:27:16 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is fetching the list of all groups
+08:27:16 [groupController] [32minfo[39m: Fetching all groups...
+08:27:16 [groupController] [32minfo[39m: Found 2 groups.
+08:27:29 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:27:29 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:27:29 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is fetching the list of all groups
+08:27:29 [groupController] [32minfo[39m: Fetching all groups...
+08:27:29 [groupController] [32minfo[39m: Found 2 groups.
+08:27:31 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96266c00c38d95a3f74 in group ID: 67521e784d425a0fc82f1503
+08:27:31 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:27:31 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:27:31 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is fetching the list of all groups
+08:27:31 [groupController] [32minfo[39m: Fetching all groups...
+08:27:31 [groupController] [32minfo[39m: Found 2 groups.
+08:29:47 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:29:47 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:29:47 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:29:47 [groupController] [32minfo[39m: Fetching all groups...
+08:29:47 [groupController] [32minfo[39m: Found 2 groups.
+08:29:48 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:29:48 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:29:48 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:29:48 [groupController] [32minfo[39m: Fetching all groups...
+08:29:48 [groupController] [32minfo[39m: Found 2 groups.
+08:30:05 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:30:05 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:30:05 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:30:05 [groupController] [32minfo[39m: Fetching all groups...
+08:30:05 [groupController] [32minfo[39m: Found 2 groups.
+08:30:07 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 67521e784d425a0fc82f1503
+08:30:07 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 67521e784d425a0fc82f1503
+08:30:07 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:30:07 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:30:07 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 67521e784d425a0fc82f1503
+08:30:07 [groupController] [32minfo[39m: Fetching group with ID: 67521e784d425a0fc82f1503
+08:30:07 [groupController] [32minfo[39m: Group found: 67521e784d425a0fc82f1503
+08:30:28 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:30:28 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:30:28 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is viewing details for group 67521e784d425a0fc82f1503
+08:30:28 [groupController] [32minfo[39m: Fetching group with ID: 67521e784d425a0fc82f1503
+08:30:28 [groupController] [32minfo[39m: Group found: 67521e784d425a0fc82f1503
+08:31:17 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:31:17 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:31:17 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is viewing details for group 67521e784d425a0fc82f1503
+08:31:17 [groupController] [32minfo[39m: Fetching group with ID: 67521e784d425a0fc82f1503
+08:31:17 [groupController] [32minfo[39m: Group found: 67521e784d425a0fc82f1503
+08:32:19 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:32:19 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:32:19 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is viewing details for group 67521e784d425a0fc82f1503
+08:32:19 [groupController] [32minfo[39m: Fetching group with ID: 67521e784d425a0fc82f1503
+08:32:19 [groupController] [32minfo[39m: Group found: 67521e784d425a0fc82f1503
+08:32:25 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:32:25 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:32:25 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is fetching the list of all groups
+08:32:25 [groupController] [32minfo[39m: Fetching all groups...
+08:32:25 [groupController] [32minfo[39m: Found 2 groups.
+08:32:28 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:32:28 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:32:28 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 67521e784d425a0fc82f1503
+08:32:28 [groupController] [32minfo[39m: Fetching group with ID: 67521e784d425a0fc82f1503
+08:32:28 [groupController] [32minfo[39m: Group found: 67521e784d425a0fc82f1503
+08:32:29 [groupMiddleware] [32minfo[39m: Checking if user is the owner of group ID: 67521e784d425a0fc82f1503
+08:32:29 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is the owner of group ID: 67521e784d425a0fc82f1503
+08:32:29 [route] [32minfo[39m: ======= [ROUTE: Edit Group Form] =======
+08:32:29 [route] [32minfo[39m: [ACTION: Requesting Edit Group Form]
+08:32:29 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting the form to edit group 67521e784d425a0fc82f1503
+08:32:29 [groupController] [32minfo[39m: Fetching group for editing with ID: 67521e784d425a0fc82f1503
+08:32:29 [groupController] [32minfo[39m: Group found for editing: 67521e784d425a0fc82f1503
+08:32:33 [groupMiddleware] [32minfo[39m: Checking if user is the owner of group ID: 67521e784d425a0fc82f1503
+08:32:33 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is the owner of group ID: 67521e784d425a0fc82f1503
+08:32:33 [route] [32minfo[39m: ======= [ROUTE: Delete Group] =======
+08:32:33 [route] [32minfo[39m: [ACTION: Attempting to Delete Group]
+08:32:33 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is attempting to delete group 67521e784d425a0fc82f1503
+08:32:33 [groupController] [32minfo[39m: Deleting group with ID: 67521e784d425a0fc82f1503
+08:32:33 [groupController] [32minfo[39m: Group deleted successfully: 67521e784d425a0fc82f1503
+08:32:33 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:32:33 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:32:33 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:32:33 [groupController] [32minfo[39m: Fetching all groups...
+08:32:33 [groupController] [32minfo[39m: Found 1 groups.
+08:32:37 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:32:37 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:32:37 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 6752632909faba0d16f31d88
+08:32:37 [groupController] [32minfo[39m: Fetching group with ID: 6752632909faba0d16f31d88
+08:32:37 [groupController] [32minfo[39m: Group found: 6752632909faba0d16f31d88
+08:32:43 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:32:43 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:32:43 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 6752632909faba0d16f31d88
+08:32:43 [groupController] [32minfo[39m: Fetching group with ID: 6752632909faba0d16f31d88
+08:32:43 [groupController] [32minfo[39m: Group found: 6752632909faba0d16f31d88
+08:32:46 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:32:46 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:32:46 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:32:46 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:32:46 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:32:46 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:32:46 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:32:46 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:32:46 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:36:17 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:36:17 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:36:17 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:36:17 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:36:17 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:36:17 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:36:17 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:36:17 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:36:17 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:36:19 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:36:19 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:36:19 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 6752632909faba0d16f31d88
+08:36:19 [groupController] [32minfo[39m: Fetching group with ID: 6752632909faba0d16f31d88
+08:36:19 [groupController] [32minfo[39m: Group found: 6752632909faba0d16f31d88
+08:37:05 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:37:05 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:37:05 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 6752632909faba0d16f31d88
+08:37:05 [groupController] [32minfo[39m: Fetching group with ID: 6752632909faba0d16f31d88
+08:37:05 [groupController] [32minfo[39m: Group found: 6752632909faba0d16f31d88
+08:37:08 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:37:08 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:37:08 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+08:37:08 [groupController] [32minfo[39m: Fetching all groups...
+08:37:08 [groupController] [32minfo[39m: Found 1 groups.
+08:37:10 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:37:10 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:37:10 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 6752632909faba0d16f31d88
+08:37:10 [groupController] [32minfo[39m: Fetching group with ID: 6752632909faba0d16f31d88
+08:37:10 [groupController] [32minfo[39m: Group found: 6752632909faba0d16f31d88
+08:37:17 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:37:17 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:37:17 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:37:17 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:37:17 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:37:17 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:37:17 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:37:17 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:37:18 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:37:19 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:37:19 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:37:19 [groupMiddleware] [32minfo[39m: Checking if user is the owner of group ID: 6752632909faba0d16f31d88
+08:37:19 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is the owner of group ID: 6752632909faba0d16f31d88
+08:37:19 [router] [32minfo[39m: ======= [ROUTE: Show New Quiz Form] =======
+08:37:19 [router] [32minfo[39m: [ACTION: Accessing New Quiz Form]
+08:37:19 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting to create a new quiz in group 6752632909faba0d16f31d88
+08:37:19 [quizController] [32minfo[39m: Rendered new quiz form for group ID: 6752632909faba0d16f31d88
+08:38:32 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:38:32 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:38:32 [groupMiddleware] [32minfo[39m: Checking if user is the owner of group ID: 6752632909faba0d16f31d88
+08:38:32 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is the owner of group ID: 6752632909faba0d16f31d88
+08:38:32 [router] [32minfo[39m: ======= [ROUTE: Create Quiz] =======
+08:38:32 [router] [32minfo[39m: [ACTION: Submitting New Quiz]
+08:38:32 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is submitting a new quiz for group 6752632909faba0d16f31d88
+08:38:32 [quizMiddleware] [32minfo[39m: Validating quiz data...
+08:38:32 [quizMiddleware] [32minfo[39m: Quiz data validation passed.
+08:38:32 [router] [32minfo[39m: [ACTION: Validation Completed]
+08:38:32 [router] [32minfo[39m: Quiz validation completed for group 6752632909faba0d16f31d88
+08:38:32 [quizController] [32minfo[39m: Creating quiz for group ID: 6752632909faba0d16f31d88
+08:38:32 [quizController] [32minfo[39m: Quiz created successfully with ID: 67526ab026e0ace09c8a68e4
+08:38:32 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:38:32 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:38:32 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:38:32 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:38:32 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:38:32 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:38:32 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:38:32 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:38:32 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:38:37 [router] [32minfo[39m: ======= [ROUTE: Show Quiz] =======
+08:38:37 [router] [32minfo[39m: [ACTION: Viewing Quiz]
+08:38:37 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quiz 67526ab026e0ace09c8a68e4
+08:38:37 [quizController] [32minfo[39m: Fetching quiz with ID: 67526ab026e0ace09c8a68e4
+08:38:37 [quizController] [32minfo[39m: Rendered quiz show page for quiz ID: 67526ab026e0ace09c8a68e4
+08:38:51 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:38:51 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:38:51 [router] [32minfo[39m: ======= [ROUTE: Submit Quiz] =======
+08:38:51 [router] [32minfo[39m: [ACTION: Submitting Quiz]
+08:38:51 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is submitting quiz 67526ab026e0ace09c8a68e4
+08:38:51 [quizController] [32minfo[39m: Submitting quiz with ID: 67526ab026e0ace09c8a68e4
+08:38:51 [quizController] [32minfo[39m: Quiz submitted with score: 4 for quiz ID: 67526ab026e0ace09c8a68e4
+08:38:51 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:38:51 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:38:51 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:38:51 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:38:51 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:38:51 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:38:51 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:38:51 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:38:51 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:38:58 [router] [32minfo[39m: ======= [ROUTE: Show Quiz] =======
+08:38:58 [router] [32minfo[39m: [ACTION: Viewing Quiz]
+08:38:58 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quiz 67526ab026e0ace09c8a68e4
+08:38:58 [quizController] [32minfo[39m: Fetching quiz with ID: 67526ab026e0ace09c8a68e4
+08:38:58 [quizController] [32minfo[39m: Rendered quiz show page for quiz ID: 67526ab026e0ace09c8a68e4
+08:39:00 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:39:00 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:39:00 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:39:00 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:39:00 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:39:00 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:39:00 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:39:00 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:39:00 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:39:02 [quizMiddleware] [32minfo[39m: Checking if user is creator of quiz ID: 67526ab026e0ace09c8a68e4
+08:39:02 [quizMiddleware] [32minfo[39m: Quiz creator ID: 6740d96166c00c38d95a3f6a, Logged-in user ID: 6740d96166c00c38d95a3f6a
+08:39:02 [quizMiddleware] [32minfo[39m: User is authorized to edit this quiz.
+08:39:02 [router] [32minfo[39m: ======= [ROUTE: Show Edit Quiz Form] =======
+08:39:02 [router] [32minfo[39m: [ACTION: Accessing Edit Quiz Form]
+08:39:02 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting to edit quiz 67526ab026e0ace09c8a68e4
+08:39:02 [quizController] [32minfo[39m: Fetching quiz for editing with ID: 67526ab026e0ace09c8a68e4
+08:39:02 [quizController] [32minfo[39m: Rendered edit quiz form for quiz ID: 67526ab026e0ace09c8a68e4
+08:39:32 [quizMiddleware] [32minfo[39m: Checking if user is creator of quiz ID: 67526ab026e0ace09c8a68e4
+08:39:32 [quizMiddleware] [32minfo[39m: Quiz creator ID: 6740d96166c00c38d95a3f6a, Logged-in user ID: 6740d96166c00c38d95a3f6a
+08:39:32 [quizMiddleware] [32minfo[39m: User is authorized to edit this quiz.
+08:39:32 [router] [32minfo[39m: ======= [ROUTE: Show Edit Quiz Form] =======
+08:39:32 [router] [32minfo[39m: [ACTION: Accessing Edit Quiz Form]
+08:39:32 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting to edit quiz 67526ab026e0ace09c8a68e4
+08:39:32 [quizController] [32minfo[39m: Fetching quiz for editing with ID: 67526ab026e0ace09c8a68e4
+08:39:32 [quizController] [32minfo[39m: Rendered edit quiz form for quiz ID: 67526ab026e0ace09c8a68e4
+08:39:43 [quizMiddleware] [32minfo[39m: Validating quiz data...
+08:39:43 [quizMiddleware] [32minfo[39m: Quiz data validation passed.
+08:39:43 [quizMiddleware] [32minfo[39m: Checking if user is creator of quiz ID: 67526ab026e0ace09c8a68e4
+08:39:43 [quizMiddleware] [32minfo[39m: Quiz creator ID: 6740d96166c00c38d95a3f6a, Logged-in user ID: 6740d96166c00c38d95a3f6a
+08:39:43 [quizMiddleware] [32minfo[39m: User is authorized to edit this quiz.
+08:39:43 [router] [32minfo[39m: ======= [ROUTE: Update Quiz] =======
+08:39:43 [router] [32minfo[39m: [ACTION: Updating Quiz]
+08:39:43 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is updating quiz 67526ab026e0ace09c8a68e4
+08:39:43 [quizController] [32minfo[39m: Updating quiz with ID: 67526ab026e0ace09c8a68e4
+08:39:43 [quizController] [32minfo[39m: Updated quiz with ID: 67526ab026e0ace09c8a68e4
+08:39:43 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:39:43 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:39:43 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:39:43 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:39:43 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:39:43 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:39:43 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:39:43 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:39:43 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:39:47 [router] [32minfo[39m: ======= [ROUTE: Show Quiz] =======
+08:39:47 [router] [32minfo[39m: [ACTION: Viewing Quiz]
+08:39:47 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quiz 67526ab026e0ace09c8a68e4
+08:39:47 [quizController] [32minfo[39m: Fetching quiz with ID: 67526ab026e0ace09c8a68e4
+08:39:47 [quizController] [32minfo[39m: Rendered quiz show page for quiz ID: 67526ab026e0ace09c8a68e4
+08:39:52 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:39:52 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:39:52 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 6752632909faba0d16f31d88
+08:39:52 [groupController] [32minfo[39m: Fetching group with ID: 6752632909faba0d16f31d88
+08:39:52 [groupController] [32minfo[39m: Group found: 6752632909faba0d16f31d88
+08:39:54 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:39:54 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:39:54 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:39:54 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:39:54 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:39:54 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:39:54 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:39:54 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:39:54 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:40:00 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:40:00 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:40:00 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 6752632909faba0d16f31d88
+08:40:00 [groupController] [32minfo[39m: Fetching group with ID: 6752632909faba0d16f31d88
+08:40:00 [groupController] [32minfo[39m: Group found: 6752632909faba0d16f31d88
+08:40:37 [route] [32minfo[39m: ======= [ROUTE: Join Group] =======
+08:40:37 [route] [32minfo[39m: [ACTION: Joining Group]
+08:40:37 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is joining group 67521e784d425a0fc82f1503
+08:40:37 [groupController] [32minfo[39m: User 6740d96266c00c38d95a3f74 attempting to join group with ID: 67521e784d425a0fc82f1503
+08:40:37 [groupController] [32minfo[39m: Group not found.
+08:40:37 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+08:40:37 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+08:40:37 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is fetching the list of all groups
+08:40:37 [groupController] [32minfo[39m: Fetching all groups...
+08:40:37 [groupController] [32minfo[39m: Found 1 groups.
+08:40:39 [route] [32minfo[39m: ======= [ROUTE: Join Group] =======
+08:40:39 [route] [32minfo[39m: [ACTION: Joining Group]
+08:40:39 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is joining group 6752632909faba0d16f31d88
+08:40:39 [groupController] [32minfo[39m: User 6740d96266c00c38d95a3f74 attempting to join group with ID: 6752632909faba0d16f31d88
+08:40:39 [groupController] [32minfo[39m: User joined the group: 6752632909faba0d16f31d88
+08:40:39 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+08:40:39 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+08:40:39 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is viewing details for group 6752632909faba0d16f31d88
+08:40:39 [groupController] [32minfo[39m: Fetching group with ID: 6752632909faba0d16f31d88
+08:40:39 [groupController] [32minfo[39m: Group found: 6752632909faba0d16f31d88
+08:41:00 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:41:00 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:41:00 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 6752632909faba0d16f31d88
+08:41:00 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 6752632909faba0d16f31d88
+08:41:00 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:41:00 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:41:00 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 6752632909faba0d16f31d88
+08:41:00 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:41:00 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:41:03 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 6752632909faba0d16f31d88
+08:41:03 [groupMiddleware] [32minfo[39m: Group with ID: 6752632909faba0d16f31d88 found
+08:41:03 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96266c00c38d95a3f74 in group ID: 6752632909faba0d16f31d88
+08:41:03 [groupMiddleware] [32minfo[39m: User 6740d96266c00c38d95a3f74 is a member of group ID: 6752632909faba0d16f31d88
+08:41:03 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+08:41:03 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+08:41:03 [router] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is viewing quizzes for group 6752632909faba0d16f31d88
+08:41:03 [quizController] [32minfo[39m: Fetching quizzes for group ID: 6752632909faba0d16f31d88
+08:41:03 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 6752632909faba0d16f31d88
+08:41:05 [router] [32minfo[39m: ======= [ROUTE: Show Leaderboard] =======
+08:41:05 [router] [32minfo[39m: [ACTION: Viewing Leaderboard]
+08:41:05 [router] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is viewing leaderboard for quiz 67526ab026e0ace09c8a68e4
+08:41:05 [quizController] [32minfo[39m: Fetching leaderboard for quiz ID: 67526ab026e0ace09c8a68e4
+08:41:05 [quizController] [32minfo[39m: Rendered leaderboard for quiz ID: 67526ab026e0ace09c8a68e4
+08:41:07 [router] [32minfo[39m: ======= [ROUTE: Show Quiz] =======
+08:41:07 [router] [32minfo[39m: [ACTION: Viewing Quiz]
+08:41:07 [router] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is viewing quiz 67526ab026e0ace09c8a68e4
+08:41:07 [quizController] [32minfo[39m: Fetching quiz with ID: 67526ab026e0ace09c8a68e4
+08:41:07 [quizController] [32minfo[39m: Rendered quiz show page for quiz ID: 67526ab026e0ace09c8a68e4

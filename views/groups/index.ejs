@@ -43,7 +43,9 @@
 </style>
  
         <h1 class="mb-4">By Groups</h1>
+        <%if (userRole==="mentor") {%>
     <a href="/groups/new" class="btn btn-success mb-3">Create New Group</a>
+    <% }%>
 
     <div class="row">
         <% groups.forEach(group => { %>

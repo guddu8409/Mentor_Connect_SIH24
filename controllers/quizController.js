@@ -28,6 +28,7 @@ module.exports.viewQuizzes = wrapAsync(async (req, res) => {
 module.exports.showNewQuizForm = wrapAsync(async (req, res) => {
   try {
     const group = req.group; // Get the group from the isGroup middleware
+    
     res.render("quizzes/new", { group, cssFile: "quiz/quizNew.css" });
     logger.info(`Rendered new quiz form for group ID: ${group._id}`);
   } catch (error) {
