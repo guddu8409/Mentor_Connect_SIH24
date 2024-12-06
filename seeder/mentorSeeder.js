@@ -4,7 +4,7 @@ const Mentor = require("../models/mentor/mentor");
 
 const mentors = [
   {
-    username: "mentor",
+    username: "mentor11",
     password: "m",
     role: "mentor",
     expertise: ["Web Development", "JavaScript"],
@@ -20,7 +20,7 @@ const mentors = [
     },
   },
   {
-    username: "mentor_jane",
+    username: "mentor_jane11",
     password: "securepassword",
     role: "mentor",
     expertise: ["Data Science", "Python"],
@@ -37,8 +37,8 @@ const mentors = [
 
 const seedMentors = async () => {
   try {
-    await User.deleteMany({ role: "mentor" }); // Clear existing mentor users
-    await Mentor.deleteMany(); // Clear existing mentor records
+    // await User.deleteMany({ role: "mentor" }); // Clear existing mentor users
+    // await Mentor.deleteMany(); // Clear existing mentor records
     console.log("Existing mentors removed.");
 
     for (const mentorData of mentors) {

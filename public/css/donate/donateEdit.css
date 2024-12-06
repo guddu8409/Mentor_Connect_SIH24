@@ -1,0 +1,71 @@
+/* Outer Border for the Page Container */
+.page-container {
+  border: 2px solid #00ffcc; /* Neon border color */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Slightly different background for contrast */
+  max-width: 800px; /* Set a max-width to control the container width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 15px;
+    max-width: 90%; /* Allow more width on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .page-container {
+    padding: 10px;
+    max-width: 95%; /* Further increase width for very small screens */
+  }
+}
+
+/* Custom border for form controls */
+.custom-border {
+  border: 2px solid #00ffcc; /* Neon border color */
+  border-radius: 5px;
+}
+
+/* Button Styles */
+.btn-dark {
+  background-color: #1a1a1a; /* Dark button color */
+  border: 2px solid #1a1a1a; /* Matching border */
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #333333; /* Slightly lighter on hover */
+  color: #ffffff; /* Text color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  transform: translateY(-2px); /* Moves the button up slightly */
+}
+
+/* Back Button */
+.btn-secondary.back-btn {
+  background-color: #00ffcc; /* Neon greenish color */
+  border: 2px solid #00ffcc; /* Matching border */
+  color: #ffffff;
+}
+
+.btn-secondary.back-btn:hover {
+  background-color: #00cc99; /* Slightly darker on hover */
+}
+
+/* Update Donation Button */
+.btn-dark.add-btn {
+  background-color: #004493; /* Dark bluish color */
+  border: 2px solid #003366; /* Matching border */
+  color: #ffffff;
+}
+
+.btn-dark.add-btn:hover {
+  background-color: #002a80; /* Slightly darker on hover */
+}

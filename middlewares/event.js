@@ -5,6 +5,10 @@ const Event = require("../models/event");
 
 module.exports.validateEvent = async (req, res, next) => {
   try {
+    console.log("validating event...........................");
+    console.log("validation req.body.event");
+    console.log(req.body.event);
+    
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       console.log("Errors: ", errors.array());

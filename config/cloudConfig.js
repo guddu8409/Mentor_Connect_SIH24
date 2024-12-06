@@ -11,11 +11,8 @@ const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: "connexus_dev",
-    allowed_Formats: ["png", "jpg", "jpeg"], // supports promises as well
+    allowed_formats: ["png", "jpg", "jpeg"],
   },
 });
 
-module.exports = {
-  cloudinary,
-  storage,
-};
+module.exports = { cloudinary, storage };

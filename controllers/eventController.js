@@ -53,37 +53,34 @@ module.exports.new = (req, res) => {
 // Create
 module.exports.create = wrapAsync(async (req, res) => {
   logger.info("Creating a new event...");
+
   try {
-    console.log("create 1: req.body.event: ", req.body.event);
-
+    console.log("111req.body.event");
+    console.log(req.body.event);
+    
     const event = new Event(req.body.event);
-    console.log("create 2");
 
+    // Attach uploaded images
+    if (req.files["event[images]"]) {
+      event.images = req.files["event[images]"].map(file => ({
+        url: file.path,
+        filename: file.filename,
+      }));
+    }
+
+    // Attach the chief guest's image
+    if (req.files["event[chiefGuests][image]"] && req.files["event[chiefGuests][image]"][0]) {
+      event.chiefGuests.image = {
+        url: req.files["event[chiefGuests][image]"][0].path,
+        filename: req.files["event[chiefGuests][image]"][0].filename,
+      };
+    }
+
+    // Set the organiser as the currently logged-in user
     event.organiser = req.user._id;
-    console.log("create 3");
-    try {
-      await event.save();
-      console.log("Event saved successfully.");
-    } catch (err) {
-      console.log("create 3.5");
-      logger.error(`Error saving event: ${err}`);
 
-      console.log("create 3.6: ",err);
-      req.flash("error", "Unable to save event.");
-      throw new ExpressError(500, "Unable to save event.");
-  }
-  
-    console.log("create 4");
-
-    // const organiser = await User.findById(req.user._id);
-    // console.log("create 5");
-    // if (!organiser.eventsOrganised.includes(event._id)) {
-    //   console.log("create 6");
-    //   organiser.eventsOrganised.push(event._id);
-    //   console.log("create 7");
-    //   await organiser.save();
-    //   console.log(`Updated organiser ${organiser.username}: added event ${event.title}`);
-    // }
+    // Save the event to the database
+    await event.save();
 
     logger.info(`New event created with ID: ${event._id}`);
     req.flash("success", "Event created successfully!");
