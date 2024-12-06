@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+const { Schema } = mongoose;
 
 // Updated Mentee Schema
 const MenteeSchema = new mongoose.Schema({
@@ -9,6 +9,55 @@ const MenteeSchema = new mongoose.Schema({
   bio: { type: String, default: "" },
   pendingRequests: [{ type: mongoose.Schema.Types.ObjectId, ref: "ConnectionRequest" }], // Pending requests
   connections: [{ type: mongoose.Schema.Types.ObjectId, ref: "Mentor" }], // Accepted connections
+  linkedIn: { type: String, default: "" }, // Default to an empty string
+  twitter: { type: String, default: "" }, // Default to an empty string
+  github: { type: String, default: "" }, // Default to an empty string
+  portfolio: { type: String, default: "" }, // Default to an empty string
+  skills: { type: [String], default: [] },
+
+  dob: {
+    type: Date,
+    default: null,
+  },
+  city: {
+    type: String,
+    default: "",
+  },
+  country: {
+    type: String,
+    default: "",
+  },
+  skills: {
+    type: [String],
+    default: [],
+  },
+  projects: {
+    type: [String],
+    default: [],
+  },
+  achievements: {
+    type: [String],
+    default: [],
+  },
+ 
+  profilePicture: {
+    type: String,
+    default: "",
+  },
+
+  points: {
+    type: Number,
+    default: 0,
+  },
+  isStarMentee: {
+    type: Boolean,
+    default: false,
+  },
+  // isPrivate: {
+  //   type: Boolean,
+  //   default: false,
+  // }
+
 });
 
 

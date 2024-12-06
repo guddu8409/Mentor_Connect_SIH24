@@ -9,27 +9,26 @@ const MONGO_URL = "mongodb://127.0.0.1:27017/mentorConnect2";
 const logger = require("../utils/logger")("runAllSeeds"); // Import your logger
 
 // Import seeders
-// const discussionSeeder = require("./discussionSeeder");
-// const discussionReviewSeeder = require("./discussionReviewSeeder");
-// const donationSeeder = require("./donationSeeder");
-// const groupSeeder = require("./groupSeeder");
+const discussionSeeder = require("./discussionSeeder");
+const discussionReviewSeeder = require("./discussionReviewSeeder");
+const donationSeeder = require("./donationSeeder");
+const groupSeeder = require("./groupSeeder");
 const jobSeeder = require("./jobSeeder");
 const jobReviewSeeder = require("./jobReviewSeeder");
-// // const notificationSeeder = require("./notificationSeeder");
-// const paymentSeeder = require("./paymentSeeder");
-// const quizSeeder = require("./quizSeeder");
-// const successSeeder = require("./successSeeder");
-// const successReviewSeeder = require("./successReviewSeeder");
-// const userSeeder = require("./userSeeder");
+const notificationSeeder = require("./notificationSeeder");
+const paymentSeeder = require("./paymentSeeder");
+const quizSeeder = require("./quizSeeder");
+const successSeeder = require("./successSeeder");
+const successReviewSeeder = require("./successReviewSeeder");
+const userSeeder = require("./userSeeder");
 
 async function runSeeds() {
   try {
     // Connect to MongoDB
-   await mongoose
-  .connect(MONGO_URL)
-  .then(() => logger.info("Connectedd to MongoDB"))
-  .catch((err) => logger.error("Error connecting to MongoDB:", err));
-
+    await mongoose
+      .connect(MONGO_URL)
+      .then(() => logger.info("Connectedd to MongoDB"))
+      .catch((err) => logger.error("Error connecting to MongoDB:", err));
 
     logger.info("Connected to MongoDB");
 
@@ -39,8 +38,8 @@ async function runSeeds() {
       // require("../models/discussionReview").deleteMany({}),
       // require("../models/donation").deleteMany({}),
       // require("../models/group").deleteMany({}),
-      require("../models/job").deleteMany({}),
-      require("../models/jobReview").deleteMany({}),
+      // require("../models/job").deleteMany({}),
+      // require("../models/jobReview").deleteMany({}),
       // require("../models/payment").deleteMany({}),
       // require("../models/quiz").deleteMany({}),
       // require("../models/success").deleteMany({}),
@@ -49,7 +48,6 @@ async function runSeeds() {
     ]);
     logger.info("Old data cleared.");
     console.log("old data cleared");
-    
 
     // Seed in proper sequence
     // await userSeeder();
@@ -57,10 +55,10 @@ async function runSeeds() {
     // await discussionReviewSeeder();
     // await donationSeeder();
     // await groupSeeder();
-    await jobSeeder();
-    await jobReviewSeeder();
+    // await jobSeeder();
+    // await jobReviewSeeder();
     // await paymentSeeder();
-    // await quizSeeder();
+    await quizSeeder();
     // await successSeeder();
     // await successReviewSeeder();
 

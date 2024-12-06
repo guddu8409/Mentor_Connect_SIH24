@@ -21,6 +21,8 @@ const ejsMate = require("ejs-mate");
 const methodOverride = require("method-override");
 const http = require("http");
 const socketIo = require("socket.io");
+const bodyParser = require('body-parser');
+const multer = require('multer');
 
 // MongoDB Connection
 const connectToDatabase = require("./config/mongoConfig"); // Import the MongoDB configuration
@@ -46,11 +48,18 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+app.use(express.json());
 app.use(session(sessionConfig(MONGO_URL, SESSION_SECRET))); // Use the session config module
 app.use(flash());
+
+// For handling multipart/form-data (file uploads)
+const storage = multer.memoryStorage(); // Use memory storage
+const upload = multer({ storage });
+
+app.use(upload.any());
+
 
 // Passport Configuration
 app.use(passport.initialize());
@@ -81,7 +90,8 @@ app.use("/jobs", require("./routes/jobRoutes"));
 app.use("/jobs/:id/reviews", require("./routes/jobReviewRoutes"));
 app.use("/groups", require("./routes/groupRoutes"));
 app.use("/groups/:groupId/quizzes", require("./routes/quizRoutes"));
-
+app.use("/events",require("./routes/eventRoutes"));
+app.use("/events/:id/reviews", require("./routes/eventReviewRoutes"));
 app.get("/", (req, res) => {
   if (req.isAuthenticated()) {
     return res.redirect(`/${req.user.role}`);

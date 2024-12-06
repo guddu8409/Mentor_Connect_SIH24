@@ -179,11 +179,16 @@ async function jobReviewSeeder() {
     await JobReview.deleteMany({});
     logger.info("Existing job reviews cleared.");
 
-    // Fetch all job and user IDs
+    // Fetch all jobs and mentees
     const jobs = await Job.find({});
-    const users = await User.find({});
+    const mentees = await User.find({ role: "mentee" }); // Fetch only mentees
     const jobIds = jobs.map((job) => job._id);
-    const userIds = users.map((user) => user._id);
+    const menteeIds = mentees.map((mentee) => mentee._id);
+
+    if (menteeIds.length === 0) {
+      logger.warn("No mentees found. Cannot seed reviews without mentees.");
+      return;
+    }
 
     for (const review of reviewData) {
       // Validate the review data
@@ -194,13 +199,14 @@ async function jobReviewSeeder() {
         continue; // Skip this review and move to the next one
       }
 
-      // Pick a random job and user for the review
+      // Pick a random job and mentee for the review
       const randomJob = jobIds[Math.floor(Math.random() * jobIds.length)];
-      review.author = userIds[Math.floor(Math.random() * userIds.length)];
+      const randomMentee = menteeIds[Math.floor(Math.random() * menteeIds.length)];
+      review.author = randomMentee;
 
       // Create the job review
       const newReview = await JobReview.create(review);
-      logger.info(`Review added for Job ID "${randomJob}".`);
+      logger.info(`Review added for Job ID "${randomJob}" by mentee ID "${randomMentee}".`);
 
       // Update the job with the new review
       await Job.findByIdAndUpdate(randomJob, {
@@ -213,5 +219,6 @@ async function jobReviewSeeder() {
     logger.error("Error seeding job reviews:", error);
   }
 }
+
 
 module.exports = jobReviewSeeder;

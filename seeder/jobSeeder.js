@@ -696,13 +696,21 @@ async function jobSeeder() {
     await Job.deleteMany({});
     logger.info("Existing jobs cleared.");
 
-    // Fetch all user IDs with the role of "mentor"
+    // Fetch all mentors
     const mentors = await User.find({ role: "mentor" });
     const mentorIds = mentors.map((mentor) => mentor._id);
+
+    // Fetch all mentees
+    const mentees = await User.find({ role: "mentee" });
+    const menteeIds = mentees.map((mentee) => mentee._id);
 
     if (mentorIds.length === 0) {
       logger.warn("No mentors found. Cannot seed jobs without mentors.");
       return;
+    }
+
+    if (menteeIds.length === 0) {
+      logger.warn("No mentees found. Jobs will have no likes.");
     }
 
     for (const job of jobData) {
@@ -714,28 +722,25 @@ async function jobSeeder() {
         continue; // Skip this job and move to the next one
       }
 
-      // Pick a random mentor ID for the job owner
-      job.owner = mentorIds[Math.floor(Math.random() * mentorIds.length)];
+      // Assign a random mentor as the job owner
+      const ownerId = mentorIds[Math.floor(Math.random() * mentorIds.length)];
+      job.owner = ownerId;
 
-      // Random number of likes
-      let x = Math.floor(Math.random() * mentorIds.length);
-      console.log("Value of x: ", x);
+      // Randomly generate likes from mentees
+      const numLikes = Math.floor(Math.random() * menteeIds.length);
       job.likes = [];
-      for (let i = 0; i < x; i++) {
-        const uId = mentorIds[Math.floor(Math.random() * mentorIds.length)];
-        // Check if the user already likes the job
-        if (!job.likes.includes(uId)) {
-          // Add the user to the job's likes array
-          job.likes.push(uId);
+      for (let i = 0; i < numLikes; i++) {
+        const menteeId = menteeIds[Math.floor(Math.random() * menteeIds.length)];
+        if (!job.likes.includes(menteeId)) {
+          job.likes.push(menteeId);
         }
-        console.log("uId: ", uId);
       }
-
-      console.log("All likes added");
 
       // Create the job
       const newJob = await Job.create(job);
-      logger.info(`Job "${job.title}" added.`);
+
+
+      console.info(`Job "${newJob.title}" created successfully`);
     }
 
     logger.info("Job data seeded successfully!");
@@ -743,5 +748,6 @@ async function jobSeeder() {
     logger.error("Error seeding job data:", error);
   }
 }
+
 
 module.exports = jobSeeder;
