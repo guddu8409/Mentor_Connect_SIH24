@@ -12091,3 +12091,27 @@
 15:15:04 [successRoutes] [32minfo[39m: Fetching success story with ID 6752c7239e7a5df5d6494b21
 15:15:04 [successController] [32minfo[39m: Fetching success story with ID: 6752c7239e7a5df5d6494b21
 15:15:04 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752c7239e7a5df5d6494b21
+17:07:29 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+17:07:29 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+17:07:29 [jobController] [32minfo[39m: Fetching all jobs...
+17:07:29 [jobController] [32minfo[39m: Found 0 jobs.
+17:07:33 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+17:07:33 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+17:07:33 [route] [32minfo[39m: User ID: 673d96fca8640c87e3779de9 is fetching the list of all groups
+17:07:33 [groupController] [32minfo[39m: Fetching all groups...
+17:07:33 [groupController] [32minfo[39m: Found 0 groups.
+17:07:39 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+17:07:39 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+17:07:39 [donationController] [32minfo[39m: Fetching donations...
+17:07:39 [donationController] [32minfo[39m: Found 0 donations.
+17:07:41 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+17:07:41 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+17:07:41 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+17:07:41 [discussionController] [32minfo[39m: [ACTION: Index]
+17:07:41 [discussionController] [32minfo[39m: Retrieved 0 discussions.
+17:07:41 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+17:07:43 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+17:07:43 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+17:07:43 [successController] [32minfo[39m: Fetching all success stories
+17:07:43 [successController] [32minfo[39m: Successfully fetched and rendered success stories
