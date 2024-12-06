@@ -2,6 +2,10 @@ const Success = require("../models/success");
 const ExpressError = require("../utils/expressError");
 const wrapAsync = require("../utils/wrapAsync");
 const logger = require("../utils/logger")('successController'); // Specify label
+const { uploadFile } = require("../services/uploadService");
+
+
+
 
 module.exports.index = wrapAsync(async (req, res) => {
   try {
@@ -60,30 +64,63 @@ module.exports.renderNewForm = wrapAsync(async (req, res) => {
   }
 });
 
-module.exports.create = wrapAsync(async (req, res) => {
+// Controller for creating a success story
+module.exports.createSuccessStory = async (req, res, next) => {
   try {
-    logger.info("Creating new success story");
+    const { title, description } = req.body.success;
 
-    const newSuccess = new Success(req.body.success);
-    newSuccess.owner = req.user._id;
-    newSuccess.image = { url: req.file.path, filename: req.file.filename };
-    await newSuccess.save();
+    // Process uploaded file using uploadService
+    const uploadedImage = req.file
+      ? await uploadFile(req.file, "local", { folder: "success_stories" })
+      : null;
 
-    // Update the user's successStories array
-    const user = await User.findById(req.user._id);
-    user.successStories.push(newSuccess._id);
-    await user.save();
+    const success = new Success({
+      title,
+      description,
+      owner: req.user._id,
+      image: uploadedImage
+        ? {
+            url: uploadedImage.url,
+            publicId: uploadedImage.publicId,
+          }
+        : null,
+    });
 
-    req.flash("success", "New success story created!");
+    await success.save();
+    req.flash("success", "Success story created successfully!");
     res.redirect("/successes");
-
-    logger.info(`Successfully created new success story with ID: ${newSuccess._id}`);
   } catch (error) {
-    logger.error("Error creating new success story", error);
-    req.flash("error", "Error creating success story.");
-    res.redirect("/successes");
+    next(error);
   }
-});
+};
+
+
+
+
+// module.exports.create = wrapAsync(async (req, res) => {
+//   try {
+//     logger.info("Creating new success story");
+
+//     const newSuccess = new Success(req.body.success);
+//     newSuccess.owner = req.user._id;
+//     newSuccess.image = { url: req.file.path, filename: req.file.filename };
+//     await newSuccess.save();
+
+//     // Update the user's successStories array
+//     const user = await User.findById(req.user._id);
+//     user.successStories.push(newSuccess._id);
+//     await user.save();
+
+//     req.flash("success", "New success story created!");
+//     res.redirect("/successes");
+
+//     logger.info(`Successfully created new success story with ID: ${newSuccess._id}`);
+//   } catch (error) {
+//     logger.error("Error creating new success story", error);
+//     req.flash("error", "Error creating success story.");
+//     res.redirect("/successes");
+//   }
+// });
 
 
 module.exports.renderEditForm = wrapAsync(async (req, res) => {

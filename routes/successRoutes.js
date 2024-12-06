@@ -2,28 +2,28 @@ const express = require("express");
 const router = express.Router();
 const multer = require("multer");
 const path = require("path");
-// Set storage to save locally in an "uploads" folder
+// const { createSuccessStory } = require("../controllers/successController");
+const upload = require("../services/uploadService").upload; // Multer middleware
+
+const successController = require("../controllers/successController");
+const { isLoggedIn } = require("../middlewares/authMiddleware");
+const { validateSuccess,isStoryOwner } = require("../middlewares/success");
+const { log } = require("util");
+const logger = require("../utils/logger")("successRoutes"); // Logging utility (optional)
+
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, path.join(__dirname, "../uploads")); // Save in 'uploads' folder
+    cb(null, path.join(__dirname, "../uploads")); // Adjust the path as needed
   },
   filename: function (req, file, cb) {
-    // Use the original file name or customize if needed
-    cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
-  }
+    cb(null, `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`);
+  },
 });
 
-const upload = multer({ storage });
-const logger = require("../utils/logger")('successRoutes'); // Specify label
 
-const {
-  isStoryOwner,
-  validateSuccess,
-} = require("../middlewares/success.js");
-
-const { isLoggedIn } = require("../middlewares/authMiddleware.js");
-const successController = require("../controllers/successController.js");
-const successReviewController = require("../controllers/successReviewController.js");
+// // Multer setup for temporary storage
+// const upload = multer({ dest: "temp/" }); // Temporary folder for file uploads
 
 // Routes
 router.get("/", (req, res, next) => {
@@ -39,21 +39,10 @@ router.get("/new", isLoggedIn, (req, res, next) => {
   next();
 }, successController.renderNewForm);
 
-router.post(
-  "/",
-  isLoggedIn,
-  upload.single("success[image]"), // Ensure the name matches the input
-  (req, res, next) => {
-    logger.info("Image upload in progress...");
-    if (!req.file) {
-      return next(new ExpressError(400, "Image upload is required"));
-    }
-    logger.info("Image upload successful");
-    next();
-  },
-  validateSuccess,
-  successController.create
-);
+
+
+// Route for creating a success story
+router.post("/", upload.single("success[image]"), successController.createSuccessStory);
 
 router.get("/:id", (req, res, next) => {
   logger.info("======= [ROUTE: Fetch Success Story by ID] =======");

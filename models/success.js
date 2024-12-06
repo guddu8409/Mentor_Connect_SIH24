@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const SuccessReview = require("./successReview"); // Ensure the path is correct
+const SuccessReview = require("./successReview");
 
 const successSchema = new Schema({
   title: {
@@ -13,7 +13,7 @@ const successSchema = new Schema({
   },
   image: {
     url: String,
-    filename: String,
+    publicId: String, // Public ID for managing Cloudinary assets
   },
   owner: {
     type: Schema.Types.ObjectId,
@@ -33,11 +33,11 @@ const successSchema = new Schema({
   ],
 });
 
-successSchema.post("findOneAndDelete", async function(successStory) {
+// Middleware to delete related reviews when a success story is deleted
+successSchema.post("findOneAndDelete", async function (successStory) {
   if (successStory) {
     await SuccessReview.deleteMany({ _id: { $in: successStory.reviews } });
   }
 });
 
-const Success = mongoose.model("Success", successSchema);
-module.exports = Success;
+module.exports = mongoose.model("Success", successSchema);

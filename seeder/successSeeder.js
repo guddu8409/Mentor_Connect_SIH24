@@ -31,6 +31,8 @@ const successData = [
       filename: "startup_bangalore.jpg",
     },
   },
+ 
+ /*
   {
     title: "Graduated from IIT Delhi",
     description:
@@ -1824,6 +1826,8 @@ const successData = [
       filename: "skateboard_store.jpg",
     },
   },
+
+  */
   {
     title: "Developed a Mobile App for Event Planning",
     description:

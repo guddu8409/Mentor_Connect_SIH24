@@ -12091,6 +12091,7 @@
 15:15:04 [successRoutes] [32minfo[39m: Fetching success story with ID 6752c7239e7a5df5d6494b21
 15:15:04 [successController] [32minfo[39m: Fetching success story with ID: 6752c7239e7a5df5d6494b21
 15:15:04 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752c7239e7a5df5d6494b21
+<<<<<<< HEAD
 17:07:29 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
 17:07:29 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
 17:07:29 [jobController] [32minfo[39m: Fetching all jobs...
@@ -12124,3 +12125,763 @@
 17:26:02 [route] [32minfo[39m: User ID: 67528b0b7fcde345af470e31 is fetching the list of all groups
 17:26:02 [groupController] [32minfo[39m: Fetching all groups...
 17:26:02 [groupController] [32minfo[39m: Found 0 groups.
+=======
+15:42:06 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:42:06 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:42:06 [successController] [32minfo[39m: Fetching all success stories
+15:42:06 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:42:08 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:42:08 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:42:08 [successController] [32minfo[39m: Fetching all success stories
+15:42:08 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:42:11 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+15:42:11 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+15:42:11 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+15:42:11 [successController] [32minfo[39m: Rendered new success story form
+16:06:55 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+16:06:55 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+16:06:55 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+16:06:55 [successController] [32minfo[39m: Rendered new success story form
+16:09:40 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+16:09:40 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+16:09:40 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+16:09:40 [successController] [32minfo[39m: Rendered new success story form
+16:09:40 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+16:09:40 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+16:09:40 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+16:09:40 [successController] [32minfo[39m: Rendered new success story form
+16:58:52 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+16:58:52 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+16:58:52 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+16:58:52 [successController] [32minfo[39m: Rendered new success story form
+16:58:53 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+16:58:53 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+16:58:53 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+16:58:53 [successController] [32minfo[39m: Rendered new success story form
+16:58:53 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+16:58:53 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+16:58:53 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+16:58:53 [successController] [32minfo[39m: Rendered new success story form
+17:17:34 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+17:17:34 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+17:17:34 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+17:17:34 [successController] [32minfo[39m: Rendered new success story form
+18:20:46 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+18:20:46 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+18:20:46 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+18:20:46 [successController] [32minfo[39m: Rendered new success story form
+18:20:56 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+18:20:56 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+18:20:56 [donationController] [32minfo[39m: Fetching donations...
+18:20:56 [donationController] [32minfo[39m: Found 4 donations.
+18:20:58 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:20:58 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:20:58 [successController] [32minfo[39m: Fetching all success stories
+18:20:58 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:21:00 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+18:21:00 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+18:21:00 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+18:21:00 [successController] [32minfo[39m: Rendered new success story form
+18:29:54 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:29:54 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:29:54 [successController] [32minfo[39m: Fetching all success stories
+18:29:54 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:29:56 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+18:29:56 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+18:29:56 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+18:29:56 [successController] [32minfo[39m: Rendered new success story form
+18:30:12 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:30:12 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:30:12 [successController] [32minfo[39m: Fetching all success stories
+18:30:12 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:31:00 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+18:31:00 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+18:31:00 [successRoutes] [32minfo[39m: Fetching success story with ID 6752f55c325fc21208fcb213
+18:31:00 [successController] [32minfo[39m: Fetching success story with ID: 6752f55c325fc21208fcb213
+18:31:00 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752f55c325fc21208fcb213
+18:34:25 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+18:34:25 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+18:34:25 [runAllSeeds] [32minfo[39m: Old data cleared.
+18:34:25 [successSeeder] [32minfo[39m: Existing success stories cleared.
+18:34:25 [successSeeder] [32minfo[39m: Success story "Achieved Promotion at Work" added, created by m.
+18:34:25 [successSeeder] [32minfo[39m: Success story "Completed Marathon in Mumbai" added, created by mentor.
+18:34:25 [successSeeder] [32minfo[39m: Success story "Launched a Startup in Bangalore" added, created by mnm.
+18:34:25 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Event Planning" added, created by a.
+18:34:25 [successSeeder] [32minfo[39m: Success story "Opened a Contemporary Art Studio" added, created by mentee_sara.
+18:34:25 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Wellness Tracking" added, created by mentor11.
+18:34:25 [successSeeder] [32minfo[39m: Success stories seeded successfully!
+18:34:25 [successReviewSeeder] [32minfo[39m: Existing success reviews cleared.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Incredible story, really inspiring!"
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Great journey, I learned a lot from this."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I can relate to this experience."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "This was an eye-opener. Thank you for sharing!"
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Amazing transformation and growth depicted here."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Such a motivating story! Well done!"
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is truly inspiring and encouraging."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I appreciate the honesty and depth in this journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "This experience resonates with me deeply."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "What a powerful narrative of overcoming challenges."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for the insights and motivation."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly remarkable journey with valuable lessons."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a beacon of hope."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "This was a very engaging and uplifting read."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your perseverance and achievements are admirable."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of dedication and success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story offers great lessons for anyone striving for success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Such a powerful and motivational account!"
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly inspiring."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "The depth of your story provides much-needed encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I learned a lot from your experiences and struggles."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A compelling and motivating success story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a testament to hard work and perseverance."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your inspiring journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experience is a great source of motivation."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "This success story has left a significant impact on me."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly motivating account of overcoming obstacles."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey is both inspiring and educational."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was deeply moved by your story of success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A fantastic story of growth and achievement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are highly motivational and insightful."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Such a moving and inspiring success story!"
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I appreciate the courage and honesty in your journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story provides hope and motivation for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale that offers great lessons for everyone."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly motivating and uplifting."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a great example of resilience and dedication."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such an inspiring and impactful journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "This is a powerful narrative of triumph over adversity."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey is a shining example of success through perseverance."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and motivating story that resonates deeply."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a beacon of hope and determination."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was truly inspired by your path to success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful story that offers valuable lessons and inspiration."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is both motivational and insightful."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be a great source of inspiration."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your remarkable success story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experience is a powerful example of overcoming challenges."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A compelling and motivating account of your journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great inspiration for those facing similar challenges."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An incredible journey that inspires and educates."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I appreciate the depth and motivation in your story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is both impactful and encouraging."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly uplifting and motivating account of your journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are a great example of hard work and success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for providing such an inspiring and motivational story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey is a fantastic example of perseverance and success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A powerful and inspiring narrative of overcoming obstacles."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was deeply moved by your story of achievement and growth."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a great source of motivation for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and inspiring tale of success and dedication."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer valuable lessons and encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A remarkable story that inspires and uplifts."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a motivating and insightful journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a testament to hard work and perseverance."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly inspiring and motivational."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story offers great lessons and encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly moving and uplifting account of your achievements."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are both motivational and educational."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring journey that provides hope and encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a compelling and motivational story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a fantastic example of dedication and growth."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A powerful narrative that offers great inspiration and lessons."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of motivation and hope."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was truly inspired by your path to success and achievement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful example of perseverance and dedication."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey offers valuable lessons and much-needed encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your inspiring and impactful story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a great example of overcoming challenges."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and motivational account of your achievements."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both uplifting and inspiring."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly motivational and enlightening."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A remarkable tale of success and growth through perseverance."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer great lessons and motivation for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a compelling and inspiring journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a powerful example of hard work and resilience."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly motivating and uplifting account of your achievements."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey provides hope and encouragement for those facing challenges."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was deeply inspired by your story of success and perseverance."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A fantastic example of dedication and triumph over adversity."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both motivational and educational."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such an impactful and inspiring journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer valuable insights and motivation."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A compelling and uplifting account of your path to success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a great source of encouragement and hope."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was inspired by your journey and the lessons you've shared."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful narrative of achievement and growth through determination."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both engaging and motivating."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for providing such a remarkable and inspiring account."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story offers great lessons and much-needed motivation."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly impactful and uplifting journey of perseverance and success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are a fantastic source of inspiration and encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of hard work and achievement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your incredible journey and success story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great example of overcoming challenges and achieving goals."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A motivating and insightful account of your path to success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences provide valuable lessons and inspiration for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and engaging story of growth and achievement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a powerful example of dedication and perseverance."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be both motivational and educational."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a compelling and inspiring narrative."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of hope and encouragement for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly moving account of success and determination."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are highly motivational and offer great lessons."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and inspiring success story that resonates deeply."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your remarkable journey and achievements."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a fantastic example of hard work and growth."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A powerful and motivational narrative of overcoming obstacles."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was inspired by your story of perseverance and success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey provides valuable insights and encouragement for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and motivational tale of achievement and growth."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a powerful and inspiring success story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer great lessons and motivation for achieving goals."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly inspiring account of success and dedication."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of motivation and hope."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly uplifting and enlightening."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A remarkable example of growth and perseverance through challenges."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such an engaging and motivating success story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is both impactful and inspiring."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A compelling and motivating narrative of your journey to success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer valuable lessons and much-needed encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of overcoming adversity and achieving goals."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a fantastic example of dedication and achievement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your remarkable and motivating journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a powerful example of perseverance and growth."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly motivating and inspiring account of your path to success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey provides hope and encouragement for others facing challenges."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was deeply moved by your story of success and determination."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful example of achievement and growth through hard work."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both engaging and motivational, offering valuable lessons."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such an impactful and inspiring journey."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer great insights and motivation for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and compelling success story that resonates deeply."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey is a fantastic source of inspiration and hope."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your story to be incredibly motivating and enlightening."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A remarkable and inspiring tale of perseverance and success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your incredible journey and achievements."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is both powerful and motivational."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly engaging and inspiring account of overcoming challenges."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences provide valuable lessons and much-needed encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of success and growth through determination."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of motivation and hope for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was inspired by your journey and the lessons you've shared."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful narrative of achievement and growth through perseverance."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both engaging and motivating."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for providing such a remarkable and inspiring account."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story offers great lessons and much-needed motivation."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly impactful and uplifting journey of perseverance and success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are a fantastic source of inspiration and encouragement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of hard work and achievement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your incredible journey and success story."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great example of overcoming challenges and achieving goals."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A motivating and insightful account of your path to success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences provide valuable lessons and inspiration for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and engaging story of growth and achievement."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a powerful example of dedication and perseverance."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be both motivational and educational."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a compelling and inspiring narrative."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763be" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of hope and encouragement for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A truly moving account of success and determination."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763bc" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are highly motivational and offer great lessons."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and inspiring success story that resonates deeply."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your remarkable journey and achievements."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a fantastic example of hard work and growth."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b6" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "A powerful and motivational narrative of overcoming obstacles."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b8" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "I was inspired by your story of perseverance and success."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "Your journey provides valuable insights and encouragement for others."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763ba" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and motivational tale of achievement and growth."
+18:34:25 [successReviewSeeder] [32minfo[39m: Success story "6752f6599b00197935a763b4" updated with new review.
+18:34:25 [successReviewSeeder] [32minfo[39m: Success reviews seeded successfully!
+18:34:25 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+18:34:28 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:34:28 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:34:28 [successController] [32minfo[39m: Fetching all success stories
+18:34:28 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:34:52 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+18:34:52 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+18:34:52 [successRoutes] [32minfo[39m: Fetching success story with ID 6752f6599b00197935a763b6
+18:34:52 [successController] [32minfo[39m: Fetching success story with ID: 6752f6599b00197935a763b6
+18:34:53 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752f6599b00197935a763b6
+18:35:01 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:35:01 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:35:01 [successController] [32minfo[39m: Fetching all success stories
+18:35:01 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:35:04 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+18:35:04 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+18:35:04 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+18:35:04 [successController] [32minfo[39m: Rendered new success story form
+18:35:15 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:35:15 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:35:15 [successController] [32minfo[39m: Fetching all success stories
+18:35:15 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:38:02 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:38:02 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:38:02 [successController] [32minfo[39m: Fetching all success stories
+18:38:02 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:38:04 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:38:04 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:38:04 [successController] [32minfo[39m: Fetching all success stories
+18:38:04 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:38:17 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:38:17 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:38:17 [successController] [32minfo[39m: Fetching all success stories
+18:38:17 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:38:48 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:38:48 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:38:48 [successController] [32minfo[39m: Fetching all success stories
+18:38:48 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:38:50 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:38:50 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:38:50 [successController] [32minfo[39m: Fetching all success stories
+18:38:50 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:39:03 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+18:39:03 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+18:39:03 [successRoutes] [32minfo[39m: Fetching success story with ID 6752f6599b00197935a763be
+18:39:03 [successController] [32minfo[39m: Fetching success story with ID: 6752f6599b00197935a763be
+18:39:03 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752f6599b00197935a763be
+18:39:29 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:39:29 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:39:29 [successController] [32minfo[39m: Fetching all success stories
+18:39:29 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:40:13 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:40:13 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:40:13 [successController] [32minfo[39m: Fetching all success stories
+18:40:13 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:41:03 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+18:41:03 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+18:41:03 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+18:41:03 [successController] [32minfo[39m: Rendered new success story form
+18:41:15 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:41:15 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:41:15 [successController] [32minfo[39m: Fetching all success stories
+18:41:15 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:41:25 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+18:41:25 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+18:41:25 [successRoutes] [32minfo[39m: Fetching success story with ID 6752f7f300b73893dc351627
+18:41:25 [successController] [32minfo[39m: Fetching success story with ID: 6752f7f300b73893dc351627
+18:41:25 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752f7f300b73893dc351627
+18:46:34 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+18:46:34 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+18:46:34 [successController] [32minfo[39m: Fetching all success stories
+18:46:34 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+18:46:37 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+18:46:37 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+18:46:37 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+18:46:37 [successController] [32minfo[39m: Rendered new success story form
+22:03:07 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+22:03:07 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+22:03:07 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+22:03:07 [successController] [32minfo[39m: Rendered new success story form
+22:03:24 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:03:24 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:03:24 [successController] [32minfo[39m: Fetching all success stories
+22:03:24 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:11:44 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+22:11:44 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+22:11:44 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+22:11:44 [successController] [32minfo[39m: Rendered new success story form
+22:12:01 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+22:12:01 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+22:12:01 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+22:12:01 [successController] [32minfo[39m: Rendered new success story form
+22:12:14 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:12:14 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:12:14 [successController] [32minfo[39m: Fetching all success stories
+22:12:14 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:53:24 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+22:53:24 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+22:53:24 [jobController] [32minfo[39m: Fetching all jobs...
+22:53:24 [jobController] [32minfo[39m: Found 75 jobs.
+22:53:25 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+22:53:25 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+22:53:25 [route] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is fetching the list of all groups
+22:53:25 [groupController] [32minfo[39m: Fetching all groups...
+22:53:25 [groupController] [32minfo[39m: Found 3 groups.
+22:53:27 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+22:53:27 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+22:53:27 [donationController] [32minfo[39m: Fetching donations...
+22:53:27 [donationController] [32minfo[39m: Found 4 donations.
+22:53:28 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+22:53:28 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+22:53:28 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+22:53:28 [discussionController] [32minfo[39m: [ACTION: Index]
+22:53:28 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+22:53:28 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+22:53:29 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:53:29 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:53:29 [successController] [32minfo[39m: Fetching all success stories
+22:53:29 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:54:12 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:54:12 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:54:12 [successController] [32minfo[39m: Fetching all success stories
+22:54:12 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:54:13 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+22:54:13 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+22:54:13 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+22:54:13 [successController] [32minfo[39m: Rendered new success story form
+22:54:23 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:54:23 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:54:23 [successController] [32minfo[39m: Fetching all success stories
+22:54:23 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:54:28 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:54:28 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:54:28 [successRoutes] [32minfo[39m: Fetching success story with ID 675333478ea6b8bc898ba495
+22:54:28 [successController] [32minfo[39m: Fetching success story with ID: 675333478ea6b8bc898ba495
+22:54:28 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675333478ea6b8bc898ba495
+22:54:32 [successMiddleware] [32minfo[39m: Checking ownership for success story ID: 675333478ea6b8bc898ba495
+22:54:32 [successMiddleware] [32minfo[39m: Success story owner ID: 6740e239a0f9d2173544a237, Logged-in user ID: 6740e239a0f9d2173544a237
+22:54:32 [successMiddleware] [32minfo[39m: Ownership confirmed. Proceeding to the next middleware.
+22:54:32 [successRoutes] [32minfo[39m: ======= [ROUTE: Edit Success Story Form] =======
+22:54:32 [successRoutes] [32minfo[39m: [ACTION: Accessing Edit Success Story Form]
+22:54:32 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the edit form for success story 675333478ea6b8bc898ba495
+22:54:32 [successController] [32minfo[39m: Fetching success story for editing with ID: 675333478ea6b8bc898ba495
+22:54:32 [successController] [32minfo[39m: Rendered edit form for success story with ID: 675333478ea6b8bc898ba495
+22:54:35 [successMiddleware] [32minfo[39m: Checking ownership for success story ID: 675333478ea6b8bc898ba495
+22:54:35 [successMiddleware] [32minfo[39m: Success story owner ID: 6740e239a0f9d2173544a237, Logged-in user ID: 6740e239a0f9d2173544a237
+22:54:35 [successMiddleware] [32minfo[39m: Ownership confirmed. Proceeding to the next middleware.
+22:54:35 [successRoutes] [32minfo[39m: ======= [ROUTE: Update Success Story] =======
+22:54:35 [successRoutes] [32minfo[39m: [ACTION: Updating Success Story]
+22:54:35 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is updating success story 675333478ea6b8bc898ba495
+22:54:35 [successController] [32minfo[39m: Updating success story with ID: 675333478ea6b8bc898ba495
+22:54:35 [successController] [32minfo[39m: Successfully updated success story with ID: 675333478ea6b8bc898ba495
+22:54:35 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:54:35 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:54:35 [successRoutes] [32minfo[39m: Fetching success story with ID 675333478ea6b8bc898ba495
+22:54:35 [successController] [32minfo[39m: Fetching success story with ID: 675333478ea6b8bc898ba495
+22:54:35 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675333478ea6b8bc898ba495
+22:54:41 [successMiddleware] [32minfo[39m: Checking ownership for success story ID: 675333478ea6b8bc898ba495
+22:54:41 [successMiddleware] [32minfo[39m: Success story owner ID: 6740e239a0f9d2173544a237, Logged-in user ID: 6740e239a0f9d2173544a237
+22:54:41 [successMiddleware] [32minfo[39m: Ownership confirmed. Proceeding to the next middleware.
+22:54:41 [successRoutes] [32minfo[39m: ======= [ROUTE: Edit Success Story Form] =======
+22:54:41 [successRoutes] [32minfo[39m: [ACTION: Accessing Edit Success Story Form]
+22:54:41 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the edit form for success story 675333478ea6b8bc898ba495
+22:54:41 [successController] [32minfo[39m: Fetching success story for editing with ID: 675333478ea6b8bc898ba495
+22:54:41 [successController] [32minfo[39m: Rendered edit form for success story with ID: 675333478ea6b8bc898ba495
+22:54:50 [successMiddleware] [32minfo[39m: Checking ownership for success story ID: 675333478ea6b8bc898ba495
+22:54:50 [successMiddleware] [32minfo[39m: Success story owner ID: 6740e239a0f9d2173544a237, Logged-in user ID: 6740e239a0f9d2173544a237
+22:54:50 [successMiddleware] [32minfo[39m: Ownership confirmed. Proceeding to the next middleware.
+22:54:50 [successRoutes] [32minfo[39m: ======= [ROUTE: Update Success Story] =======
+22:54:50 [successRoutes] [32minfo[39m: [ACTION: Updating Success Story]
+22:54:50 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is updating success story 675333478ea6b8bc898ba495
+22:54:50 [successController] [32minfo[39m: Updating success story with ID: 675333478ea6b8bc898ba495
+22:54:50 [successController] [32minfo[39m: Successfully updated success story with ID: 675333478ea6b8bc898ba495
+22:54:50 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:54:50 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:54:50 [successRoutes] [32minfo[39m: Fetching success story with ID 675333478ea6b8bc898ba495
+22:54:50 [successController] [32minfo[39m: Fetching success story with ID: 675333478ea6b8bc898ba495
+22:54:50 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675333478ea6b8bc898ba495
+22:54:54 [successMiddleware] [32minfo[39m: Checking ownership for success story ID: 675333478ea6b8bc898ba495
+22:54:54 [successMiddleware] [32minfo[39m: Success story owner ID: 6740e239a0f9d2173544a237, Logged-in user ID: 6740e239a0f9d2173544a237
+22:54:54 [successMiddleware] [32minfo[39m: Ownership confirmed. Proceeding to the next middleware.
+22:54:54 [successRoutes] [32minfo[39m: ======= [ROUTE: Delete Success Story] =======
+22:54:54 [successRoutes] [32minfo[39m: [ACTION: Deleting Success Story]
+22:54:54 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is deleting success story 675333478ea6b8bc898ba495
+22:54:54 [successController] [32minfo[39m: Deleting success story with ID: 675333478ea6b8bc898ba495
+22:54:54 [successController] [32minfo[39m: Successfully deleted success story with ID: 675333478ea6b8bc898ba495
+22:54:54 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:54:54 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:54:54 [successController] [32minfo[39m: Fetching all success stories
+22:54:54 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:55:04 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:55:04 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:55:04 [successRoutes] [32minfo[39m: Fetching success story with ID 675329666e3137c54bb3ad11
+22:55:04 [successController] [32minfo[39m: Fetching success story with ID: 675329666e3137c54bb3ad11
+22:55:04 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675329666e3137c54bb3ad11
+22:55:06 [successRoutes] [32minfo[39m: ======= [ROUTE: Like Success Story] =======
+22:55:06 [successRoutes] [32minfo[39m: [ACTION: Liking Success Story]
+22:55:06 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is liking success story 675329666e3137c54bb3ad11
+22:55:06 [successController] [32minfo[39m: Toggling like for success story with ID: 675329666e3137c54bb3ad11
+22:55:06 [successController] [32minfo[39m: Like toggled for success story with ID: 675329666e3137c54bb3ad11 by user ID: 6740e239a0f9d2173544a237
+22:55:06 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:55:06 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:55:06 [successController] [32minfo[39m: Fetching all success stories
+22:55:06 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:55:09 [successRoutes] [32minfo[39m: ======= [ROUTE: Like Success Story] =======
+22:55:09 [successRoutes] [32minfo[39m: [ACTION: Liking Success Story]
+22:55:09 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is liking success story 675329666e3137c54bb3ad11
+22:55:09 [successController] [32minfo[39m: Toggling like for success story with ID: 675329666e3137c54bb3ad11
+22:55:09 [successController] [32minfo[39m: Like toggled for success story with ID: 675329666e3137c54bb3ad11 by user ID: 6740e239a0f9d2173544a237
+22:55:09 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:55:09 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:55:09 [successController] [32minfo[39m: Fetching all success stories
+22:55:09 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:55:11 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:55:11 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:55:11 [successRoutes] [32minfo[39m: Fetching success story with ID 675329666e3137c54bb3ad11
+22:55:11 [successController] [32minfo[39m: Fetching success story with ID: 675329666e3137c54bb3ad11
+22:55:11 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675329666e3137c54bb3ad11
+22:55:14 [successReviewRoutes] [32minfo[39m: ======= [ROUTE: Create Success Review] =======
+22:55:14 [successReviewRoutes] [32minfo[39m: [ACTION: Creating New Success Review]
+22:55:14 [successReviewRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is creating a new success review
+22:55:14 [successMiddleware] [32minfo[39m: Validating success review schema...
+22:55:14 [successMiddleware] [32minfo[39m: Success review schema validation passed. Proceeding to the next middleware.
+22:55:14 [successReviewRoutes] [32minfo[39m: [ACTION: Validation Completed]
+22:55:14 [successReviewRoutes] [32minfo[39m: Validation for the success review passed
+22:55:14 [successReviewController] [32minfo[39m: Creating review for success story with ID: 675329666e3137c54bb3ad11
+22:55:14 [successReviewController] [32minfo[39m: New review created and saved for success story with ID: 675329666e3137c54bb3ad11
+22:55:14 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:55:14 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:55:14 [successRoutes] [32minfo[39m: Fetching success story with ID 675329666e3137c54bb3ad11
+22:55:14 [successController] [32minfo[39m: Fetching success story with ID: 675329666e3137c54bb3ad11
+22:55:14 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675329666e3137c54bb3ad11
+22:55:16 [successReviewRoutes] [32minfo[39m: ======= [ROUTE: Delete Success Review] =======
+22:55:16 [successReviewRoutes] [32minfo[39m: [ACTION: Attempting to Delete Review]
+22:55:16 [successReviewRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is attempting to delete success review 6753337a8ea6b8bc898ba4d1
+22:55:16 [successMiddleware] [32minfo[39m: Checking if user is author of success review ID: 6753337a8ea6b8bc898ba4d1
+22:55:16 [successMiddleware] [32minfo[39m: Review author ID: 6740e239a0f9d2173544a237, Logged-in user ID: 6740e239a0f9d2173544a237
+22:55:16 [successMiddleware] [32minfo[39m: User is authorized to edit this review.
+22:55:16 [successReviewController] [32minfo[39m: Deleting review with ID: 6753337a8ea6b8bc898ba4d1 from success story with ID: 675329666e3137c54bb3ad11
+22:55:16 [successReviewController] [32minfo[39m: Review with ID: 6753337a8ea6b8bc898ba4d1 successfully deleted from success story with ID: 675329666e3137c54bb3ad11
+22:55:16 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:55:16 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:55:16 [successRoutes] [32minfo[39m: Fetching success story with ID 675329666e3137c54bb3ad11
+22:55:16 [successController] [32minfo[39m: Fetching success story with ID: 675329666e3137c54bb3ad11
+22:55:16 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675329666e3137c54bb3ad11
+22:55:21 [successReviewRoutes] [32minfo[39m: ======= [ROUTE: Create Success Review] =======
+22:55:21 [successReviewRoutes] [32minfo[39m: [ACTION: Creating New Success Review]
+22:55:21 [successReviewRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is creating a new success review
+22:55:21 [successMiddleware] [32minfo[39m: Validating success review schema...
+22:55:21 [successMiddleware] [32minfo[39m: Success review schema validation passed. Proceeding to the next middleware.
+22:55:21 [successReviewRoutes] [32minfo[39m: [ACTION: Validation Completed]
+22:55:21 [successReviewRoutes] [32minfo[39m: Validation for the success review passed
+22:55:21 [successReviewController] [32minfo[39m: Creating review for success story with ID: 675329666e3137c54bb3ad11
+22:55:21 [successReviewController] [32minfo[39m: New review created and saved for success story with ID: 675329666e3137c54bb3ad11
+22:55:21 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:55:21 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:55:21 [successRoutes] [32minfo[39m: Fetching success story with ID 675329666e3137c54bb3ad11
+22:55:21 [successController] [32minfo[39m: Fetching success story with ID: 675329666e3137c54bb3ad11
+22:55:21 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675329666e3137c54bb3ad11
+22:55:35 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:55:35 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:55:35 [successController] [32minfo[39m: Fetching all success stories
+22:55:35 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+22:55:41 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+22:55:41 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+22:55:41 [successRoutes] [32minfo[39m: Fetching success story with ID 675329666e3137c54bb3ad11
+22:55:41 [successController] [32minfo[39m: Fetching success story with ID: 675329666e3137c54bb3ad11
+22:55:41 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 675329666e3137c54bb3ad11
+22:55:57 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+22:55:57 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+22:55:57 [successController] [32minfo[39m: Fetching all success stories
+22:55:57 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+23:02:30 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+23:02:30 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+23:02:30 [successController] [32minfo[39m: Fetching all success stories
+23:02:30 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+23:02:32 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+23:02:32 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+23:02:32 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+23:02:32 [discussionController] [32minfo[39m: [ACTION: Index]
+23:02:32 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+23:02:32 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+23:02:34 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+23:02:34 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+23:02:34 [donationController] [32minfo[39m: Fetching donations...
+23:02:34 [donationController] [32minfo[39m: Found 4 donations.
+23:03:38 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+23:03:38 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+23:03:38 [donationController] [32minfo[39m: Fetching donations...
+23:03:38 [donationController] [32minfo[39m: Found 4 donations.
+23:03:39 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+23:03:39 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+23:03:39 [donationController] [32minfo[39m: Fetching donations...
+23:03:39 [donationController] [32minfo[39m: Found 4 donations.
+23:03:40 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+23:03:40 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+23:03:40 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+23:03:40 [discussionController] [32minfo[39m: [ACTION: Index]
+23:03:40 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+23:03:40 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+23:05:37 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+23:05:37 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+23:05:37 [donationController] [32minfo[39m: Fetching donations...
+23:05:37 [donationController] [32minfo[39m: Found 4 donations.
+23:06:01 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+23:06:01 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+23:06:01 [jobController] [32minfo[39m: Fetching all jobs...
+23:06:01 [jobController] [32minfo[39m: Found 75 jobs.
+23:06:03 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+23:06:03 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+23:06:03 [route] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is fetching the list of all groups
+23:06:03 [groupController] [32minfo[39m: Fetching all groups...
+23:06:03 [groupController] [32minfo[39m: Found 3 groups.
+>>>>>>> f5dfa5f (fix success story)
