@@ -12115,3 +12115,12 @@
 17:07:43 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
 17:07:43 [successController] [32minfo[39m: Fetching all success stories
 17:07:43 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+17:26:00 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+17:26:00 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+17:26:00 [jobController] [32minfo[39m: Fetching all jobs...
+17:26:00 [jobController] [32minfo[39m: Found 0 jobs.
+17:26:02 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+17:26:02 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+17:26:02 [route] [32minfo[39m: User ID: 67528b0b7fcde345af470e31 is fetching the list of all groups
+17:26:02 [groupController] [32minfo[39m: Fetching all groups...
+17:26:02 [groupController] [32minfo[39m: Found 0 groups.

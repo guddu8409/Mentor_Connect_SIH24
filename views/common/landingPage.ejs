@@ -66,9 +66,8 @@
       </div>
     </div>
   </section>
-
   <!-- How It Works Section -->
-  <section  id ="how-it-works" class="how-it-works">
+  <section id="how-it-works" class="how-it-works">
     <div>
       <h2><b>Your Path to Professional Success</b></h2>
       <div class="steps-container">
@@ -110,7 +109,7 @@
   </section>
 
   <!-- Features Section -->
-  <section id="features-section"  class="features-section">
+  <section id="features-section" class="features-section">
     <div>
       <div class="features-header">
         <h2><b>Everything You Need to Accelerate Your Career</b></h2>
@@ -175,6 +174,8 @@
     </div>
   </section>
 
+  
+
   <!-- CTA Section -->
   <section class="cta-section">
     <div>
@@ -200,39 +201,18 @@
     }, 16);
   }
 
-  // Counter Elements
-  const alumniCounter = document.getElementById('alumni-counter');
-  const studentsCounter = document.getElementById('students-counter');
-  const facultyCounter = document.getElementById('faculty-counter');
-
-  // Animate Counters
-  animateCounter(alumniCounter, 60000, 2000);
-  animateCounter(studentsCounter, 12000, 2000);
-  animateCounter(facultyCounter, 770, 2000);
-
-  // Scroll Function for Active Navigation Links
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section, .hero-content");
-    const navLinks = document.querySelectorAll(".nav-links2 a");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-          link.classList.add("active");
-        }
-      });
+  // Intersection Observer for Section Visibility
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(document.getElementById('alumni-counter'), 60000, 2000);
+        animateCounter(document.getElementById('students-counter'), 12000, 2000);
+        animateCounter(document.getElementById('faculty-counter'), 770, 2000);
+      }
     });
-  });
+  }, { threshold: 0.5 });
+
+  // Observe the counter section
+  observer.observe(document.getElementById('Stats-section'));
 </script>
 

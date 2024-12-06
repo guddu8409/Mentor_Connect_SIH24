@@ -9,6 +9,7 @@ html, body {
   font-family: Arial, sans-serif;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .login-page {
@@ -25,18 +26,19 @@ html, body {
 header {
   background-color: #fff;
   display: flex;
-  align-items: center; /* Center items vertically */
+  align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   border-bottom: 1px solid #ddd;
   width: 100%;
-  height: 80px; /* Set a fixed height for the header */
+  height: 80px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 /* Logo */
 .logo {
   flex-shrink: 0; /* Prevent the logo from shrinking */
-  margin-right: 20px; /* Add some spacing after the logo */
+  margin-right: 20px;
 }
 
 .logo a {
@@ -56,15 +58,17 @@ header {
 /* Navigation Bar */
 .navbar2 {
   display: flex;
-  flex: 1; /* Takes up the available space between logo and auth-buttons */
-  justify-content: center; /* Centers the navigation horizontally */
-  align-items: center; /* Centers the navigation vertically */
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow navigation links to wrap */
 }
 
 .nav-links2 {
   list-style: none;
   display: flex;
-  gap: 30px; /* Space between navigation links */
+  flex-wrap: wrap; /* Allow links to wrap for smaller screens */
+  gap: 15px; /* Reduced spacing for smaller screens */
   margin: 0;
   padding: 0;
 }
@@ -76,9 +80,9 @@ header {
 .nav-links2 a {
   text-decoration: none;
   color: #000;
-  padding: 8px 15px;
+  padding: 8px 10px; /* Reduced padding for smaller screens */
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 14px; /* Adjust font size for responsiveness */
   transition: all 0.3s ease-in-out;
 }
 
@@ -90,43 +94,33 @@ header {
 
 /* Auth Buttons */
 .auth-buttons {
-  flex-shrink: 0; /* Prevent the auth-buttons from shrinking */
+  flex-shrink: 0;
   display: flex;
-  gap: 15px; /* Space between buttons */
-  align-items: center; /* Align buttons vertically */
+  gap: 10px; /* Reduced gap for smaller screens */
+  align-items: center;
+  flex-wrap: wrap; /* Wrap buttons for smaller screens */
+  
 }
 
 .login-btn,
 .register-btn {
-  padding: 8px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  transition: all 0.3s ease-in-out;
+  padding: 6px 15px; /*Adjusted padding for smaller screens */
+  font-size: 14px; /* Adjusted font size for smaller screens */
+  background-color: #007bff;
+  color: white;
 }
 
 .login-btn {
-  background-color: transparent;
   border: 1px solid #007bff;
-  color: #007bff;
-  border-radius: 4px;
-}
+  /* background-color: #007bff;
+  color: white; */
 
-.login-btn:hover {
-  background-color: #007bff;
-  color: white;
-  transform: scale(1.05);
 }
 
 .register-btn {
-  background-color: #007bff;
-  color: white;
-  border-radius: 4px;
-}
-
-.register-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+  border: 1px #007bff ;
+  /* background-color: #007bff;
+  color: white; */
 }
 
 /* Hamburger Menu (for mobile) */
@@ -135,7 +129,7 @@ header {
   font-size: 30px;
   cursor: pointer;
   position: absolute;
-  right: 30px;
+  right: 20px;
 }
 
 /* Mobile Menu */
@@ -184,12 +178,29 @@ header {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  header {
+    flex-wrap: wrap; /* Ensure header content wraps */
+  }
+
   .nav-links2,
   .auth-buttons {
-    display: none;
+    display: none; /* Hide for smaller screens (mobile) */
   }
 
   .hamburger-menu {
     display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    width: 120px; /* Scale down logo for very small screens */
+  }
+
+  .nav-links2 a,
+  .auth-buttons .login-btn,
+  .auth-buttons .register-btn {
+    font-size: 12px; /* Reduce font size for very small screens */
+    padding: 5px 10px;
   }
 }
