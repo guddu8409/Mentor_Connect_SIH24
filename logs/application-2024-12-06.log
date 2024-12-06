@@ -9820,3 +9820,1074 @@
 10:37:20 [eventController] [32minfo[39m: New event created with ID: 675286881d39bf1e69051485
 10:37:20 [eventRoutes] [32minfo[39m: ======= [ROUTE: Get Event Details] =======
 10:37:20 [eventController] [32minfo[39m: Fetching event with ID: 675286881d39bf1e69051485
+11:37:55 [eventRoutes] [32minfo[39m: ======= [ROUTE: Get All Events] =======
+11:37:55 [eventController] [32minfo[39m: Fetching all events...
+11:37:55 [eventController] [32minfo[39m: Found 2 events.
+11:37:56 [eventRoutes] [32minfo[39m: ======= [ROUTE: Get All Events] =======
+11:37:56 [eventController] [32minfo[39m: Fetching all events...
+11:37:56 [eventController] [32minfo[39m: Found 2 events.
+11:37:58 [eventRoutes] [32minfo[39m: ======= [ROUTE: Render New Event Form] =======
+11:37:58 [eventController] [32minfo[39m: Rendering new event form.
+11:38:26 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:38:26 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:38:26 [eventController] [32minfo[39m: Creating a new event...
+11:40:29 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:40:29 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:40:29 [eventController] [32minfo[39m: Creating a new event...
+11:41:32 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:41:32 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:41:32 [eventController] [32minfo[39m: Creating a new event...
+11:42:51 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:42:51 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:42:51 [eventController] [32minfo[39m: Creating a new event...
+11:43:29 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:43:29 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:43:29 [eventController] [32minfo[39m: Creating a new event...
+11:43:46 [eventRoutes] [32minfo[39m: ======= [ROUTE: Render New Event Form] =======
+11:43:46 [eventController] [32minfo[39m: Rendering new event form.
+11:44:06 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:44:06 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:44:06 [eventController] [32minfo[39m: Creating a new event...
+11:44:41 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:44:41 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:44:41 [eventController] [32minfo[39m: Creating a new event...
+11:44:57 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:44:57 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:44:57 [eventController] [32minfo[39m: Creating a new event...
+11:46:02 [eventRoutes] [32minfo[39m: ======= [ROUTE: Get All Events] =======
+11:46:02 [eventController] [32minfo[39m: Fetching all events...
+11:46:02 [eventController] [32minfo[39m: Found 2 events.
+11:46:05 [eventRoutes] [32minfo[39m: ======= [ROUTE: Render New Event Form] =======
+11:46:05 [eventController] [32minfo[39m: Rendering new event form.
+11:46:22 [eventRoutes] [32minfo[39m: ======= [ROUTE: Create New Event] =======
+11:46:22 [eventRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is trying to create a new event
+11:46:22 [eventController] [32minfo[39m: Creating a new event...
+13:28:53 [eventRoutes] [32minfo[39m: ======= [ROUTE: Get All Events] =======
+13:28:53 [eventController] [32minfo[39m: Fetching all events...
+13:28:53 [eventController] [32minfo[39m: Found 2 events.
+13:28:54 [eventRoutes] [32minfo[39m: ======= [ROUTE: Get All Events] =======
+13:28:54 [eventController] [32minfo[39m: Fetching all events...
+13:28:54 [eventController] [32minfo[39m: Found 2 events.
+13:28:54 [eventRoutes] [32minfo[39m: ======= [ROUTE: Get All Events] =======
+13:28:54 [eventController] [32minfo[39m: Fetching all events...
+13:28:54 [eventController] [32minfo[39m: Found 2 events.
+13:51:24 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+13:51:24 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+13:51:24 [jobController] [32minfo[39m: Fetching all jobs...
+13:51:24 [jobController] [32minfo[39m: Found 75 jobs.
+13:53:28 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+13:53:28 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+13:53:28 [jobController] [32minfo[39m: Fetching all jobs...
+13:53:28 [jobController] [32minfo[39m: Found 75 jobs.
+13:53:30 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+13:53:30 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+13:53:30 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:53:30 [discussionController] [32minfo[39m: [ACTION: Index]
+13:53:30 [discussionController] [32minfo[39m: Retrieved 0 discussions.
+13:53:30 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+13:54:53 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+13:54:53 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+13:54:53 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:54:53 [discussionController] [32minfo[39m: [ACTION: Index]
+13:54:53 [discussionController] [32minfo[39m: Retrieved 0 discussions.
+13:54:53 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+13:56:32 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+13:56:32 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+13:56:32 [runAllSeeds] [32minfo[39m: Old data cleared.
+13:56:32 [discussionSeeder] [32minfo[39m: Existing discussions cleared.
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionValidation] [32minfo[39m: ======= [SCHEMA: Discussion] =======
+13:56:32 [discussionValidation] [32minfo[39m: [ACTION: Starting validation for Discussion schema]
+13:56:32 [discussionValidation] [32minfo[39m: [Validation passed successfully]
+13:56:32 [discussionValidation] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion schema] =======
+
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Launched my first website!
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Sharing my first coding project
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Looking for internship advice
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: How to get started with Node.js?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: General life update
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Tips for remote internships?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Help needed with debugging
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Best way to learn React?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Which database to use for a small project?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: JavaScript function not returning expected value
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Graduated from college!
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Moved to a new city for a job
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Need assistance with CSS layout
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Understanding async/await in JavaScript
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Help with SQL JOIN query
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Completed my first mobile app
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: What is the best way to manage state in React?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Seeking advice on tech internship applications
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Starting a new side project
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Node.js error: 'Cannot find module'
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Built my own task management tool
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Started learning a new programming language
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Interview tips for tech roles?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: How to optimize React app performance?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Completed my first open-source contribution
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: How to prepare for a technical phone interview?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: How to make a great resume for tech internships?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Won a hackathon!
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Completed 100 days of coding challenge
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Help with deploying a React app
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: CSS animations not working as expected
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Switched careers to tech
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Best practices for API design?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: How to get a remote internship?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Deployed my first full-stack app!
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Issues with Git merge conflicts
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Became a mentor for junior developers
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Applying for internships abroad
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Completed my first machine learning model
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Can't connect to MongoDB Atlas from Node.js
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Started blogging about tech
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: What is the difference between OAuth and JWT?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Best websites to find tech internships?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Won a coding competition at my university
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Help needed with SQL query optimization
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Attended my first tech conference
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Best practices for securing a REST API?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: How to follow up after an internship interview?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Got my first job as a junior developer!
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Understanding Docker for beginners
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Built a portfolio website!
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Can't get my Flask app to run on Heroku
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Started a tech podcast!
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: Best Node.js libraries for building APIs?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion created: How to negotiate an internship offer?
+13:56:32 [discussionSeeder] [32minfo[39m: Discussion data seeded successfully!
+13:56:32 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+13:56:41 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+13:56:41 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+13:56:41 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:56:41 [discussionController] [32minfo[39m: [ACTION: Index]
+13:56:41 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+13:56:41 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+13:56:47 [route] [32minfo[39m: ======= [ROUTE: View Discussion] =======
+13:56:47 [route] [32minfo[39m: [ACTION: Fetching Discussion Details]
+13:56:47 [route] [32minfo[39m: Fetching details for discussion ID: 6752b53812d8e03102717021
+13:56:47 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:56:47 [discussionController] [32minfo[39m: [ACTION: Show]
+13:56:47 [discussionController] [32minfo[39m: Discussion ID: 6752b53812d8e03102717021
+13:56:47 [discussionController] [32minfo[39m: Discussion found: 6752b53812d8e03102717021
+13:56:47 [discussionController] [32minfo[39m: ======= [END OF ACTION: Show] =======
+
+13:56:58 [router] [32minfo[39m: ======= [ROUTE: Get All Jobs] =======
+13:56:58 [router] [32minfo[39m: [ACTION: Fetching All Jobs]
+13:56:58 [jobController] [32minfo[39m: Fetching all jobs...
+13:56:58 [jobController] [32minfo[39m: Found 75 jobs.
+13:57:00 [router] [32minfo[39m: ======= [ROUTE: Show Job Details] =======
+13:57:00 [router] [32minfo[39m: [ACTION: Fetching Job Details]
+13:57:00 [router] [32minfo[39m: Job ID: 675275fd8c718e914d6bb0a9
+13:57:00 [jobController] [32minfo[39m: Fetching job with ID: 675275fd8c718e914d6bb0a9
+13:57:00 [jobController] [32minfo[39m: Job found: 675275fd8c718e914d6bb0a9
+13:57:17 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+13:57:17 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+13:57:17 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is fetching the list of all groups
+13:57:17 [groupController] [32minfo[39m: Fetching all groups...
+13:57:17 [groupController] [32minfo[39m: Found 3 groups.
+13:57:21 [route] [32minfo[39m: ======= [ROUTE: View Group] =======
+13:57:21 [route] [32minfo[39m: [ACTION: Viewing Group Details]
+13:57:21 [route] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing details for group 675275fd8c718e914d6bb00e
+13:57:21 [groupController] [32minfo[39m: Fetching group with ID: 675275fd8c718e914d6bb00e
+13:57:21 [groupController] [32minfo[39m: Group found: 675275fd8c718e914d6bb00e
+13:57:56 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 675275fd8c718e914d6bb00e
+13:57:56 [groupMiddleware] [32minfo[39m: Group with ID: 675275fd8c718e914d6bb00e found
+13:57:56 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96166c00c38d95a3f6a in group ID: 675275fd8c718e914d6bb00e
+13:57:56 [groupMiddleware] [32minfo[39m: User 6740d96166c00c38d95a3f6a is a member of group ID: 675275fd8c718e914d6bb00e
+13:57:56 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+13:57:56 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+13:57:56 [router] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is viewing quizzes for group 675275fd8c718e914d6bb00e
+13:57:56 [quizController] [32minfo[39m: Fetching quizzes for group ID: 675275fd8c718e914d6bb00e
+13:57:56 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 675275fd8c718e914d6bb00e
+13:59:11 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+13:59:11 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+13:59:11 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:59:11 [discussionController] [32minfo[39m: [ACTION: Index]
+13:59:11 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+13:59:11 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+13:59:12 [route] [32minfo[39m: ======= [ROUTE: View Discussion] =======
+13:59:12 [route] [32minfo[39m: [ACTION: Fetching Discussion Details]
+13:59:12 [route] [32minfo[39m: Fetching details for discussion ID: 6752b53812d8e03102717020
+13:59:12 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:59:12 [discussionController] [32minfo[39m: [ACTION: Show]
+13:59:12 [discussionController] [32minfo[39m: Discussion ID: 6752b53812d8e03102717020
+13:59:12 [discussionController] [32minfo[39m: Discussion found: 6752b53812d8e03102717020
+13:59:12 [discussionController] [32minfo[39m: ======= [END OF ACTION: Show] =======
+
+13:59:34 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+13:59:34 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+13:59:34 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:59:34 [discussionController] [32minfo[39m: [ACTION: Index]
+13:59:35 [discussionController] [32minfo[39m: Retrieved 0 discussions.
+13:59:35 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+13:59:37 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+13:59:37 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+13:59:37 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:59:37 [discussionController] [32minfo[39m: [ACTION: Index]
+13:59:37 [discussionController] [32minfo[39m: Retrieved 0 discussions.
+13:59:37 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+13:59:40 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+13:59:40 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+13:59:40 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:59:40 [discussionController] [32minfo[39m: [ACTION: Index]
+13:59:40 [discussionController] [32minfo[39m: Retrieved 11 discussions.
+13:59:40 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+13:59:43 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+13:59:43 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+13:59:43 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:59:43 [discussionController] [32minfo[39m: [ACTION: Index]
+13:59:43 [discussionController] [32minfo[39m: Retrieved 11 discussions.
+13:59:43 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+13:59:49 [route] [32minfo[39m: ======= [ROUTE: View Discussion] =======
+13:59:49 [route] [32minfo[39m: [ACTION: Fetching Discussion Details]
+13:59:49 [route] [32minfo[39m: Fetching details for discussion ID: 6752b53812d8e03102717031
+13:59:49 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+13:59:49 [discussionController] [32minfo[39m: [ACTION: Show]
+13:59:49 [discussionController] [32minfo[39m: Discussion ID: 6752b53812d8e03102717031
+13:59:49 [discussionController] [32minfo[39m: Discussion found: 6752b53812d8e03102717031
+13:59:49 [discussionController] [32minfo[39m: ======= [END OF ACTION: Show] =======
+
+14:02:25 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:02:25 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:02:25 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Existing discussion reviews cleared.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Found 55 discussions and 7 users.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Great discussion! Thanks for sharing." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717003" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I had a similar issue, here's how I solved it..." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717022" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This is a very informative post, thanks!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717025" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I appreciate the advice, really helpful!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717003" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Congrats on your achievement! Keep going!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271702b" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I completely agree with your points." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271702c" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This topic has been on my mind for a while, great insights." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271702e" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Your solution worked perfectly, thanks a ton!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717005" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I think there's another way to approach this problem..." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701f" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Thanks for the explanation, that cleared things up for me." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717014" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This really helped me understand the concept better." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717021" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I'm glad I found this discussion, so relevant!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717021" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This is such a well-thought-out response, thank you!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717006" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I'll definitely try this approach next time." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717016" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This thread has been very helpful, thanks everyone!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271702d" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Has anyone tried this with a different tool?" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701c" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This is exactly what I was looking for!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717020" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Interesting viewpoint, I hadn't considered that." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717030" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Thanks for providing the example, really useful." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717003" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This post saved me hours of work, thanks!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717000" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I have a slightly different take on this..." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701c" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Great to see such an active community here!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717024" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I would love to see more discussions like this." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717020" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This really resonates with my experience, thanks!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701b" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I'm going to bookmark this for future reference." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717003" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This solved my problem instantly, thanks so much!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701c" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I didn't know that, really helpful info!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717028" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This discussion helped me figure out what I was doing wrong." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717012" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Has anyone tried this with a larger dataset?" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271700b" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Amazing insights, thanks for breaking it down." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271702c" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I appreciate how you explained the logic behind this." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717004" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Thanks for all the contributions, this is super helpful!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701b" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I tried this method and it worked like a charm!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717028" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Could you clarify one part of your explanation?" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717022" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This approach is new to me, thanks for sharing." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717015" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Such a valuable discussion, thank you!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717019" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I learned something new from this thread, thanks!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701c" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Good discussion, let's keep this going!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271700a" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I appreciate the real-world example, that makes it clear." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717030" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Thanks for sharing, this helped me a lot." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717019" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I love how thorough your response is, very helpful." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717009" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This approach really opened my eyes to a different solution." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102716fff" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I can’t thank you enough for this clear explanation." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717025" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This discussion answered all the questions I had, thanks!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271702c" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I’ll definitely be using this method from now on." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717032" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This is exactly what I was struggling with, thanks for posting!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717026" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Thanks for taking the time to share your knowledge!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701e" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Such a positive and helpful community, love it here." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701d" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I've had a similar experience, this is great advice!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717002" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This tip has saved me so much time, much appreciated!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102716ffc" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Your solution is brilliant, I would have never thought of that." added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717022" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "This is a game changer for me, thanks a lot!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e0310271701c" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "I just implemented this, and it's working perfectly!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717010" updated with new review.
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [SCHEMA: Discussion Review] =======
+14:02:25 [discussionReview Schema] [32minfo[39m: [ACTION: Starting validation for Discussion Review schema]
+14:02:25 [discussionReview Schema] [32minfo[39m: [Validation passed successfully]
+14:02:25 [discussionReview Schema] [32minfo[39m: ======= [END OF ACTION: Validation for Discussion Review schema] =======
+
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Review "Awesome contribution, this is very helpful!" added.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion "6752b53812d8e03102717009" updated with new review.
+14:02:25 [discussionReviewSeeder] [32minfo[39m: Discussion review data seeded successfully!
+14:02:25 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:02:29 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+14:02:29 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+14:02:29 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+14:02:29 [discussionController] [32minfo[39m: [ACTION: Index]
+14:02:29 [discussionController] [32minfo[39m: Retrieved 11 discussions.
+14:02:29 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+14:02:31 [route] [32minfo[39m: ======= [ROUTE: View Discussion] =======
+14:02:31 [route] [32minfo[39m: [ACTION: Fetching Discussion Details]
+14:02:31 [route] [32minfo[39m: Fetching details for discussion ID: 6752b53812d8e03102717031
+14:02:31 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+14:02:31 [discussionController] [32minfo[39m: [ACTION: Show]
+14:02:31 [discussionController] [32minfo[39m: Discussion ID: 6752b53812d8e03102717031
+14:02:31 [discussionController] [32minfo[39m: Discussion found: 6752b53812d8e03102717031
+14:02:31 [discussionController] [32minfo[39m: ======= [END OF ACTION: Show] =======
+
+14:02:34 [route] [32minfo[39m: ======= [ROUTE: View Discussion] =======
+14:02:34 [route] [32minfo[39m: [ACTION: Fetching Discussion Details]
+14:02:34 [route] [32minfo[39m: Fetching details for discussion ID: 6752b53812d8e0310271702c
+14:02:34 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+14:02:34 [discussionController] [32minfo[39m: [ACTION: Show]
+14:02:34 [discussionController] [32minfo[39m: Discussion ID: 6752b53812d8e0310271702c
+14:02:34 [discussionController] [32minfo[39m: Discussion found: 6752b53812d8e0310271702c
+14:02:34 [discussionController] [32minfo[39m: ======= [END OF ACTION: Show] =======
+
+14:03:43 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:03:43 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:03:43 [donationController] [32minfo[39m: Fetching donations...
+14:03:43 [donationController] [32minfo[39m: Found 0 donations.
+14:03:46 [donationRouter] [32minfo[39m: ======= [ROUTE: New Donation Form] =======
+14:03:46 [donationRouter] [32minfo[39m: [ACTION: Requesting New Donation Form]
+14:03:46 [donationRouter] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting the form to create a new donation.
+14:03:46 [donationController] [32minfo[39m: Rendering new donation form.
+14:04:15 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:04:15 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:04:15 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:04:15 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:04:15 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:04:15 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:04:15 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:04:15 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:04:15 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:04:17 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:04:17 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:04:17 [donationController] [32minfo[39m: Fetching donations...
+14:04:17 [donationController] [32minfo[39m: Found 1 donations.
+14:04:31 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:04:31 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:04:31 [donationController] [32minfo[39m: Fetching donations...
+14:04:31 [donationController] [32minfo[39m: Found 1 donations.
+14:04:31 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:04:31 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:04:31 [donationController] [32minfo[39m: Fetching donations...
+14:04:31 [donationController] [32minfo[39m: Found 1 donations.
+14:04:33 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:04:33 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:04:33 [donationController] [32minfo[39m: Fetching donations...
+14:04:33 [donationController] [32minfo[39m: Found 1 donations.
+14:04:34 [donationRouter] [32minfo[39m: ======= [ROUTE: New Donation Form] =======
+14:04:34 [donationRouter] [32minfo[39m: [ACTION: Requesting New Donation Form]
+14:04:34 [donationRouter] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is requesting the form to create a new donation.
+14:04:34 [donationController] [32minfo[39m: Rendering new donation form.
+14:04:36 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:04:36 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:04:36 [donationController] [32minfo[39m: Fetching donations...
+14:04:36 [donationController] [32minfo[39m: Found 0 donations.
+14:04:37 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:04:37 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:04:37 [donationController] [32minfo[39m: Fetching donations...
+14:04:37 [donationController] [32minfo[39m: Found 1 donations.
+14:04:43 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:04:43 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:04:43 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:04:43 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:04:43 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:04:43 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:04:43 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:04:43 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:04:43 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:04:45 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:04:45 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:04:45 [donationController] [32minfo[39m: Fetching donations...
+14:04:45 [donationController] [32minfo[39m: Found 1 donations.
+14:04:45 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:04:45 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:04:45 [donationController] [32minfo[39m: Fetching donations...
+14:04:45 [donationController] [32minfo[39m: Found 1 donations.
+14:05:32 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:05:32 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:05:32 [donationController] [32minfo[39m: Fetching donations...
+14:05:32 [donationController] [32minfo[39m: Found 1 donations.
+14:05:33 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:05:33 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:05:33 [donationController] [32minfo[39m: Fetching donations...
+14:05:33 [donationController] [32minfo[39m: Found 1 donations.
+14:05:33 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:05:33 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:05:33 [donationController] [32minfo[39m: Fetching donations...
+14:05:33 [donationController] [32minfo[39m: Found 1 donations.
+14:05:33 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:05:33 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:05:33 [donationController] [32minfo[39m: Fetching donations...
+14:05:33 [donationController] [32minfo[39m: Found 1 donations.
+14:06:12 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:06:12 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:06:12 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:06:12 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:06:12 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:06:12 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:06:12 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:06:12 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:06:12 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:06:36 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:06:36 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:06:36 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:06:36 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:06:36 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:06:36 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:06:36 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:06:36 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:06:36 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:06:38 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:06:38 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:06:38 [donationController] [32minfo[39m: Fetching donations...
+14:06:38 [donationController] [32minfo[39m: Found 1 donations.
+14:20:20 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:20:20 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:20:20 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:20:20 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:20:20 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:20:20 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:20:20 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:20:20 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:20:20 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:20:22 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:20:22 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:20:22 [donationController] [32minfo[39m: Fetching donations...
+14:20:22 [donationController] [32minfo[39m: Found 1 donations.
+14:20:46 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:20:46 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:20:46 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:20:46 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:20:46 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:20:46 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:20:46 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:20:46 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:20:46 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:20:47 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:20:47 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:20:47 [donationController] [32minfo[39m: Fetching donations...
+14:20:47 [donationController] [32minfo[39m: Found 1 donations.
+14:20:48 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:20:48 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:20:48 [donationController] [32minfo[39m: Fetching donations...
+14:20:48 [donationController] [32minfo[39m: Found 1 donations.
+14:20:49 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:20:49 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:20:49 [donationController] [32minfo[39m: Fetching donations...
+14:20:49 [donationController] [32minfo[39m: Found 1 donations.
+14:20:51 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:20:51 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752bae65a2879e9388240c5]
+14:20:51 [donationController] [32minfo[39m: Fetching donation with ID: 6752bae65a2879e9388240c5
+14:20:51 [donationController] [32minfo[39m: Donation found: 6752bae65a2879e9388240c5
+14:20:57 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+14:20:57 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+14:20:57 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+14:20:57 [discussionController] [32minfo[39m: [ACTION: Index]
+14:20:57 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+14:20:57 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+14:20:58 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:20:58 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:20:58 [donationController] [32minfo[39m: Fetching donations...
+14:20:58 [donationController] [32minfo[39m: Found 1 donations.

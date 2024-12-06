@@ -1,0 +1,70 @@
+<% if (userRole === "mentor") { %>
+    <%- layout("mentor/layouts/boilerplate") %>
+    <% } else if (userRole === "mentee") { %>
+    <%- layout("mentee/layouts/boilerplate") %>
+    <% } else { %>
+    <%- layout("layouts/boilerplate") %>
+    <% } %>
+<div class="page-container">
+    <div class="row mt-3">
+        <div class="col-6 offset-3">
+            <a href="/donations" class="btn btn-secondary d-inline-flex align-items-center back-btn">
+                <i class="fa-solid fa-left-long"></i>
+            </a>
+            <br><br>
+            <h3>Edit Donation</h3>
+
+            <form action="/donations/<%= donation._id %>?_method=PUT" method="POST" class="needs-validation" novalidate>
+                <!-- Title Input -->
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" id="title" name="donation[title]" class="form-control custom-border"
+                        value="<%= donation.title %>" placeholder="Enter donation title" required minlength="5"
+                        maxlength="200">
+                    <div class="valid-feedback">Title looks good!</div>
+                    <div class="invalid-feedback">Please enter a valid title (5-200 characters).</div>
+                </div>
+
+                <!-- Description Input -->
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea id="description" name="donation[description]" class="form-control custom-border"
+                        placeholder="Enter description" rows="3" required minlength="1"
+                        maxlength="1000"><%= donation.description %></textarea>
+                    <div class="invalid-feedback">Please enter a description (up to 1000 characters).</div>
+                </div>
+
+                <!-- Fundraising Goal Input -->
+                <div class="mb-3">
+                    <label for="fundraisingGoal" class="form-label">Fundraising Goal</label>
+                    <input type="number" id="fundraisingGoal" name="donation[fundraisingGoal]" class="form-control custom-border"
+                        value="<%= donation.fundraisingGoal %>" placeholder="Enter fundraising goal" required>
+                    <div class="invalid-feedback">Please enter a valid fundraising goal.</div>
+                </div>
+
+                <!-- Total Collection Input -->
+                <div class="mb-3">
+                    <label for="totalCollection" class="form-label">Total Collection</label>
+                    <input type="number" id="totalCollection" name="donation[totalCollection]" class="form-control custom-border"
+                        value="<%= donation.totalCollection %>" placeholder="Enter total collected" required>
+                    <div class="invalid-feedback">Please enter a valid total collection amount.</div>
+                </div>
+
+                <!-- Emergency Checkbox -->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="isEmergency" name="donation[isEmergency]" value="true"
+                        <%= donation.isEmergency ? 'checked' : '' %>>
+                    <label class="form-check-label" for="isEmergency">
+                        Mark as Emergency
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-dark add-btn d-inline-flex align-items-center mt-3">
+                    <i class="fa-solid fa-save"></i> Update
+                </button>
+                <br><br>
+            </form>
+        </div>
+    </div>
+</div>

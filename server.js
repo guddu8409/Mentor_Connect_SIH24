@@ -90,8 +90,14 @@ app.use("/jobs", require("./routes/jobRoutes"));
 app.use("/jobs/:id/reviews", require("./routes/jobReviewRoutes"));
 app.use("/groups", require("./routes/groupRoutes"));
 app.use("/groups/:groupId/quizzes", require("./routes/quizRoutes"));
-app.use("/events",require("./routes/eventRoutes"));
-app.use("/events/:id/reviews", require("./routes/eventReviewRoutes"));
+// app.use("/events",require("./routes/eventRoutes"));
+// app.use("/events/:id/reviews", require("./routes/eventReviewRoutes"));
+
+app.use("/discussions", require("./routes/discussionRoutes"));
+app.use("/discussions/:id/reviews",require("./routes/discussionReviewRoutes"));
+// app.use("/api/payment", require("./routes/paymentRoutes"));
+
+app.use("/donations",require("./routes/donationRoutes"));
 app.get("/", (req, res) => {
   if (req.isAuthenticated()) {
     return res.redirect(`/${req.user.role}`);
