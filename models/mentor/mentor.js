@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const JobReview = require("../jobReview");
+const { Schema } = mongoose;
 
 // Availability Schema
 // const AvailabilitySchema = new mongoose.Schema({
@@ -31,6 +33,76 @@ const MentorSchema = new mongoose.Schema({
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: "Mentee" }],
     default: [], // Default to an empty array
   },
+
+  dob: {
+    type: Date,
+    default: null,
+  },
+  city: {
+    type: String,
+    default: "",
+  },
+  country: {
+    type: String,
+    default: "",
+  },
+  graduationYear: {
+    type: Number,
+    default: null,
+  },
+  degree: {
+    type: String,
+    default: "",
+  },
+  department: {
+    type: String,
+    default: "",
+  },
+  employer: {
+    type: String,
+    default: "",
+  },
+  jobTitle: {
+    type: String,
+    default: "",
+  },
+  industry: {
+    type: String,
+    default: "",
+  },
+  experience: {
+    type: Number,
+    default: 0,
+  },
+  skills: {
+    type: [String],
+    default: [],
+  },
+  projects: {
+    type: [String],
+    default: [],
+  },
+  achievements: {
+    type: [String],
+    default: [],
+  },
+ 
+  profilePicture: {
+    type: String,
+    default: "",
+  },
+  points: {
+    type: Number,
+    default: 0,
+  },
+  isStarMentor: {
+    type: Boolean,
+    default: false,
+  },
+  // isPrivate: {
+  //   type: Boolean,
+  //   default: false,
+  // }
 });
 
 // Middleware to auto-populate the `user` field when querying
