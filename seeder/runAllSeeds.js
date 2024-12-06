@@ -16,11 +16,12 @@ const donationSeeder = require("./donationSeeder");
 // const jobSeeder = require("./jobSeeder");
 // const jobReviewSeeder = require("./jobReviewSeeder");
 // const notificationSeeder = require("./notificationSeeder");
-// const paymentSeeder = require("./paymentSeeder");
+const paymentSeeder = require("./paymentSeeder");
 // const quizSeeder = require("./quizSeeder");
-// const successSeeder = require("./successSeeder");
-// const successReviewSeeder = require("./successReviewSeeder");
+const successSeeder = require("./successSeeder");
+const successReviewSeeder = require("./successReviewSeeder");
 // const userSeeder = require("./userSeeder");
+const mentorSeeder = require("./mentorSeeder");
 
 async function runSeeds() {
   try {
@@ -36,14 +37,14 @@ async function runSeeds() {
     await Promise.all([
       // require("../models/discussion").deleteMany({}),
       // require("../models/discussionReview").deleteMany({}),
-      require("../models/donation").deleteMany({}),
+      // require("../models/donation").deleteMany({}),
       // require("../models/group").deleteMany({}),
       // require("../models/job").deleteMany({}),
       // require("../models/jobReview").deleteMany({}),
       // require("../models/payment").deleteMany({}),
       // require("../models/quiz").deleteMany({}),
-      // require("../models/success").deleteMany({}),
-      // require("../models/successReview").deleteMany({}),
+      require("../models/success").deleteMany({}),
+      require("../models/successReview").deleteMany({}),
       // require("../models/user").deleteMany({}),
     ]);
     logger.info("Old data cleared.");
@@ -51,16 +52,18 @@ async function runSeeds() {
 
     // Seed in proper sequence
     // await userSeeder();
+    // await mentorSeeder();
+    // await notificationSeeder();
     // await discussionSeeder();
     // await discussionReviewSeeder();
-    await donationSeeder();
+    // await donationSeeder();
     // await groupSeeder();
     // await jobSeeder();
     // await jobReviewSeeder();
     // await paymentSeeder();
     // await quizSeeder();
-    // await successSeeder();
-    // await successReviewSeeder();
+    await successSeeder();
+    await successReviewSeeder();
 
     logger.info("Database successfully seeded!");
     console.log("Database successfully seeded!");

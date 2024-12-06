@@ -36,34 +36,25 @@ const donationData = [
 
 async function donationSeeder() {
   try {
-    // Clear existing donations
     await Donation.deleteMany({});
     logger.info("Existing donations cleared.");
 
-    // Fetch all user IDs
     const users = await User.find({});
     const userIds = users.map((user) => user._id);
 
-    for (let donation of donationData) {
-      // Validate the donation data
+    const donationPromises = donationData.map(async (donation) => {
       try {
         validateDonation(donation);
-      } catch (validationError) {
-        logger.error(`Failed to validate donation: ${validationError.message}`);
-        continue; // Skip this donation and move to the next one
+        donation.owner = userIds[Math.floor(Math.random() * userIds.length)];
+        await Donation.create(donation);
+        logger.info(`Donation "${donation.title}" added.`);
+      } catch (error) {
+        logger.error(`Failed to process donation "${donation.title}": ${error.message}`);
       }
+    });
 
-      // Pick a random user ID
-      donation.owner = userIds[Math.floor(Math.random() * userIds.length)];
-
-      // Create the donation
-      const newDonation = await Donation.create(donation);
-      logger.info(`Donation "${donation.title}" added.`);
-
-     
-    }
-
-    logger.info("Donation data seeded successfully!");
+    await Promise.all(donationPromises);
+    logger.info("All donations seeded successfully!");
   } catch (error) {
     logger.error("Error seeding donation data:", error);
   }

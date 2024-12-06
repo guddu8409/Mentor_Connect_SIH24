@@ -95,7 +95,9 @@ app.use("/groups/:groupId/quizzes", require("./routes/quizRoutes"));
 
 app.use("/discussions", require("./routes/discussionRoutes"));
 app.use("/discussions/:id/reviews",require("./routes/discussionReviewRoutes"));
-// app.use("/api/payment", require("./routes/paymentRoutes"));
+app.use("/api/payment", require("./routes/paymentRoutes"));
+app.use("/successes", require("./routes/successRoutes"));
+app.use("/successes/:id/reviews", require("./routes/successReviewRoutes"));
 
 app.use("/donations",require("./routes/donationRoutes"));
 app.get("/", (req, res) => {

@@ -10891,3 +10891,1203 @@
 14:20:58 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
 14:20:58 [donationController] [32minfo[39m: Fetching donations...
 14:20:58 [donationController] [32minfo[39m: Found 1 donations.
+14:26:12 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:26:12 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:26:12 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:26:12 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:26:41 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:26:41 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:26:41 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:26:42 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:26:44 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:26:44 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:26:44 [donationController] [32minfo[39m: Fetching donations...
+14:26:44 [donationController] [32minfo[39m: Found 1 donations.
+14:26:52 [groupMiddleware] [32minfo[39m: Checking existence of group with ID: 675275fd8c718e914d6bb00c
+14:26:52 [groupMiddleware] [32minfo[39m: Group with ID: 675275fd8c718e914d6bb00c found
+14:26:52 [groupMiddleware] [32minfo[39m: Checking membership for user 6740d96266c00c38d95a3f74 in group ID: 675275fd8c718e914d6bb00c
+14:26:52 [groupMiddleware] [32minfo[39m: User 6740d96266c00c38d95a3f74 is a member of group ID: 675275fd8c718e914d6bb00c
+14:26:52 [router] [32minfo[39m: ======= [ROUTE: View Quizzes] =======
+14:26:52 [router] [32minfo[39m: [ACTION: Viewing Quizzes]
+14:26:52 [router] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is viewing quizzes for group 675275fd8c718e914d6bb00c
+14:26:52 [quizController] [32minfo[39m: Fetching quizzes for group ID: 675275fd8c718e914d6bb00c
+14:26:52 [quizController] [32minfo[39m: Rendered quizzes index page for group ID: 675275fd8c718e914d6bb00c
+14:27:12 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:27:12 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:27:12 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:27:18 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:27:18 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:27:18 [donationController] [32minfo[39m: Fetching donations...
+14:27:18 [donationController] [32minfo[39m: Found 1 donations.
+14:27:19 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:27:19 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:27:19 [donationController] [32minfo[39m: Fetching donations...
+14:27:19 [donationController] [32minfo[39m: Found 1 donations.
+14:27:19 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:27:19 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:27:19 [donationController] [32minfo[39m: Fetching donations...
+14:27:19 [donationController] [32minfo[39m: Found 1 donations.
+14:28:07 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:28:07 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:28:07 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:29:01 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:29:01 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:29:01 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:29:01 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:29:01 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:29:01 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:29:01 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:29:01 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:29:01 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:29:19 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:29:19 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:29:19 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:29:19 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:29:19 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:29:19 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:29:19 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:29:19 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:29:19 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:30:11 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:30:11 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:30:11 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:30:11 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:30:11 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:30:11 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:30:11 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:30:11 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:30:11 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:31:11 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:31:11 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:31:11 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:31:11 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:31:11 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:31:11 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:31:11 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:31:11 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:31:11 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:32:09 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:32:09 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:32:09 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:32:09 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:32:09 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:32:09 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:32:09 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:32:09 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:32:09 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:33:00 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:33:00 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:33:00 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:33:00 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:33:00 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:33:00 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:33:00 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:33:00 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:33:00 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:50:31 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:50:31 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:50:31 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:50:31 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:50:31 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:50:31 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:50:31 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:50:31 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:50:31 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:50:31 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:50:31 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:50:31 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:50:31 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:50:31 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:50:31 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:50:31 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:50:31 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:50:31 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:50:31 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:50:31 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:50:31 [donationSeeder] [32minfo[39m: All donations seeded successfully!
+14:50:31 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:52:29 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:52:29 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:52:29 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:52:29 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:52:29 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:29 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:29 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:29 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:29 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:29 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:29 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:29 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:29 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:29 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:29 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:29 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:29 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:29 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:29 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:29 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:29 [donationSeeder] [32minfo[39m: All donations seeded successfully!
+14:52:29 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:52:34 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:52:34 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:52:34 [donationController] [32minfo[39m: Fetching donations...
+14:52:34 [donationController] [32minfo[39m: Found 4 donations.
+14:52:50 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:52:50 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:52:50 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:52:50 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:52:50 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:50 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:50 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:50 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:50 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:50 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:50 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:50 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:50 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:50 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:50 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:50 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:50 [donationSeeder] [32minfo[39m: All donations seeded successfully!
+14:52:50 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:52:51 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:52:51 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:52:51 [donationController] [32minfo[39m: Fetching donations...
+14:52:51 [donationController] [32minfo[39m: Found 3 donations.
+14:52:58 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:52:58 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:52:58 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:52:58 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:52:58 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:58 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:58 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:58 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:58 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:58 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:58 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:58 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:58 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:58 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:58 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:58 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:58 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:52:58 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:52:58 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:52:58 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:52:58 [donationSeeder] [32minfo[39m: All donations seeded successfully!
+14:52:58 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:53:00 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:53:00 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c26ae80c1e394fff38fe]
+14:53:00 [donationController] [32minfo[39m: Fetching donation with ID: 6752c26ae80c1e394fff38fe
+14:53:00 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:53:00 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:53:00 [donationController] [32minfo[39m: Fetching donations...
+14:53:00 [donationController] [32minfo[39m: Found 4 donations.
+14:53:01 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:53:01 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c27214170cc01480bbba]
+14:53:01 [donationController] [32minfo[39m: Fetching donation with ID: 6752c27214170cc01480bbba
+14:53:01 [donationController] [32minfo[39m: Donation found: 6752c27214170cc01480bbba
+14:53:04 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:53:04 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:53:04 [donationController] [32minfo[39m: Fetching donations...
+14:53:04 [donationController] [32minfo[39m: Found 4 donations.
+14:53:05 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:53:05 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c27214170cc01480bbba]
+14:53:05 [donationController] [32minfo[39m: Fetching donation with ID: 6752c27214170cc01480bbba
+14:53:05 [donationController] [32minfo[39m: Donation found: 6752c27214170cc01480bbba
+14:54:56 [paymentRouter] [32minfo[39m: ======= [ROUTE: Render Payment Form] =======
+14:54:56 [paymentRouter] [32minfo[39m: [ACTION: Accessing Payment Form for Donation ID: 6752c27214170cc01480bbba]
+14:54:56 [paymentRouter] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is accessing the payment form.
+14:55:10 [paymentMiddleware] [32minfo[39m: Validating payment details...
+14:55:10 [paymentRouter] [32minfo[39m: ======= [ROUTE: Render Payment Form] =======
+14:55:10 [paymentRouter] [32minfo[39m: [ACTION: Accessing Payment Form for Donation ID: 6752c27214170cc01480bbba]
+14:55:10 [paymentRouter] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is accessing the payment form.
+14:55:37 [paymentMiddleware] [32minfo[39m: Validating payment details...
+14:55:37 [paymentMiddleware] [32minfo[39m: Payment details validation passed.
+14:55:37 [paymentRouter] [32minfo[39m: ======= [ROUTE: Handle Payment Submission] =======
+14:55:37 [paymentRouter] [32minfo[39m: [ACTION: Submitting Payment for Donation ID: 6752c27214170cc01480bbba]
+14:55:37 [paymentRouter] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is submitting payment.
+14:55:37 [paymentController] [32minfo[39m: Processing payment for donation ID: 6752c27214170cc01480bbba
+14:55:37 [paymentController] [32minfo[39m: Payment saved successfully with ID: 6752c311af8a58b21592cf7b
+14:55:37 [paymentController] [32minfo[39m: Notifications created for donation ID: 6752c27214170cc01480bbba
+14:55:37 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:55:37 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c27214170cc01480bbba]
+14:55:37 [donationController] [32minfo[39m: Fetching donation with ID: 6752c27214170cc01480bbba
+14:55:37 [donationController] [32minfo[39m: Donation found: 6752c27214170cc01480bbba
+14:55:45 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:55:45 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:55:45 [donationController] [32minfo[39m: Fetching donations...
+14:55:45 [donationController] [32minfo[39m: Found 4 donations.
+14:55:47 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:55:47 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:55:47 [donationController] [32minfo[39m: Fetching donations...
+14:55:47 [donationController] [32minfo[39m: Found 2 donations.
+14:55:49 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:55:49 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:55:49 [donationController] [32minfo[39m: Fetching donations...
+14:55:49 [donationController] [32minfo[39m: Found 4 donations.
+14:55:50 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+14:55:50 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+14:55:50 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+14:55:50 [discussionController] [32minfo[39m: [ACTION: Index]
+14:55:50 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+14:55:50 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+14:55:51 [route] [32minfo[39m: ======= [ROUTE: View Discussion] =======
+14:55:51 [route] [32minfo[39m: [ACTION: Fetching Discussion Details]
+14:55:51 [route] [32minfo[39m: Fetching details for discussion ID: 6752b53812d8e03102717020
+14:55:51 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+14:55:51 [discussionController] [32minfo[39m: [ACTION: Show]
+14:55:51 [discussionController] [32minfo[39m: Discussion ID: 6752b53812d8e03102717020
+14:55:51 [discussionController] [32minfo[39m: Discussion found: 6752b53812d8e03102717020
+14:55:51 [discussionController] [32minfo[39m: ======= [END OF ACTION: Show] =======
+
+14:57:53 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:57:53 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:57:53 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:57:53 [paymentSeeder] [32minfo[39m: Existing payments cleared.
+14:57:53 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:57:53 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:57:53 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:57:53 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:57:53 [paymentSeeder] [32minfo[39m: Payment for donation "6752c27214170cc01480bbba" added with ID: 6752c39913084f5f347bd1d6
+14:57:53 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c27214170cc01480bbba
+14:57:53 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:57:53 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:57:53 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:57:53 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:57:53 [paymentSeeder] [32minfo[39m: Payment for donation "6752c27214170cc01480bbba" added with ID: 6752c39913084f5f347bd1e4
+14:57:53 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c27214170cc01480bbba
+14:57:53 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:57:53 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:57:53 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:57:53 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:57:53 [paymentSeeder] [32minfo[39m: Payment for donation "6752c27214170cc01480bbbc" added with ID: 6752c39913084f5f347bd1f2
+14:57:53 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c27214170cc01480bbbc
+14:57:53 [paymentSeeder] [32minfo[39m: Payment data seeded successfully!
+14:57:53 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:57:57 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:57:57 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:57:57 [donationController] [32minfo[39m: Fetching donations...
+14:57:57 [donationController] [32minfo[39m: Found 4 donations.
+14:57:58 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:57:58 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c27214170cc01480bbba]
+14:57:58 [donationController] [32minfo[39m: Fetching donation with ID: 6752c27214170cc01480bbba
+14:57:58 [donationController] [32minfo[39m: Donation found: 6752c27214170cc01480bbba
+14:58:04 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:58:04 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c27214170cc01480bbba]
+14:58:04 [donationController] [32minfo[39m: Fetching donation with ID: 6752c27214170cc01480bbba
+14:58:04 [donationController] [32minfo[39m: Donation found: 6752c27214170cc01480bbba
+14:58:09 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:58:09 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:58:09 [donationController] [32minfo[39m: Fetching donations...
+14:58:09 [donationController] [32minfo[39m: Found 4 donations.
+14:58:11 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:58:11 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c27214170cc01480bbbc]
+14:58:11 [donationController] [32minfo[39m: Fetching donation with ID: 6752c27214170cc01480bbbc
+14:58:11 [donationController] [32minfo[39m: Donation found: 6752c27214170cc01480bbbc
+14:58:15 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:58:15 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c27214170cc01480bbba]
+14:58:15 [donationController] [32minfo[39m: Fetching donation with ID: 6752c27214170cc01480bbba
+14:58:15 [donationController] [32minfo[39m: Donation found: 6752c27214170cc01480bbba
+14:59:17 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:59:17 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:59:17 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:59:17 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:59:17 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:59:17 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:59:17 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:59:17 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:59:17 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:59:17 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:59:17 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:59:17 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:59:17 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:59:17 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:59:17 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:59:17 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:59:17 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:59:17 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:59:17 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:59:17 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:59:17 [donationSeeder] [32minfo[39m: Donation "Environmental Conservation" added.
+14:59:17 [donationSeeder] [32minfo[39m: Donation "Support for Education" added.
+14:59:17 [donationSeeder] [32minfo[39m: Donation "Support for Food Security Programs" added.
+14:59:17 [donationSeeder] [32minfo[39m: Donation "Medical Aid" added.
+14:59:17 [donationSeeder] [32minfo[39m: All donations seeded successfully!
+14:59:17 [paymentSeeder] [32minfo[39m: Existing payments cleared.
+14:59:17 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:59:17 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:59:17 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:59:17 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:59:17 [paymentSeeder] [32minfo[39m: Payment for donation "6752c3ed2f6bef0098479724" added with ID: 6752c3ed2f6bef0098479739
+14:59:17 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c3ed2f6bef0098479724
+14:59:17 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:59:17 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:59:17 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:59:17 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:59:17 [paymentSeeder] [32minfo[39m: Payment for donation "6752c3ed2f6bef0098479724" added with ID: 6752c3ed2f6bef0098479744
+14:59:17 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c3ed2f6bef0098479724
+14:59:17 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:59:17 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:59:17 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:59:17 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:59:17 [paymentSeeder] [32minfo[39m: Payment for donation "6752c3ed2f6bef0098479724" added with ID: 6752c3ed2f6bef009847974f
+14:59:17 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c3ed2f6bef0098479724
+14:59:17 [paymentSeeder] [32minfo[39m: Payment data seeded successfully!
+14:59:17 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:59:19 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:59:19 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:59:19 [donationController] [32minfo[39m: Fetching donations...
+14:59:19 [donationController] [32minfo[39m: Found 4 donations.
+14:59:20 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:59:20 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:59:20 [donationController] [32minfo[39m: Fetching donations...
+14:59:20 [donationController] [32minfo[39m: Found 4 donations.
+14:59:20 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:59:20 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:59:20 [donationController] [32minfo[39m: Fetching donations...
+14:59:20 [donationController] [32minfo[39m: Found 4 donations.
+14:59:21 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:59:21 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:59:21 [donationController] [32minfo[39m: Fetching donations...
+14:59:21 [donationController] [32minfo[39m: Found 4 donations.
+14:59:21 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:59:21 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:59:21 [donationController] [32minfo[39m: Fetching donations...
+14:59:21 [donationController] [32minfo[39m: Found 4 donations.
+14:59:23 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:59:23 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c3ed2f6bef0098479724]
+14:59:23 [donationController] [32minfo[39m: Fetching donation with ID: 6752c3ed2f6bef0098479724
+14:59:23 [donationController] [32minfo[39m: Donation found: 6752c3ed2f6bef0098479724
+14:59:29 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+14:59:29 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+14:59:29 [runAllSeeds] [32minfo[39m: Old data cleared.
+14:59:29 [donationSeeder] [32minfo[39m: Existing donations cleared.
+14:59:29 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:59:29 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:59:29 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:59:29 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:59:29 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:59:29 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:59:29 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:59:29 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:59:29 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:59:29 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:59:29 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:59:29 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:59:29 [donation schema] [32minfo[39m: ======= [SCHEMA: Donation] =======
+14:59:29 [donation schema] [32minfo[39m: [ACTION: Starting validation for Donation schema]
+14:59:29 [donation schema] [32minfo[39m: [Validation passed successfully]
+14:59:29 [donation schema] [32minfo[39m: ======= [END OF ACTION: Validation for Donation schema] =======
+
+14:59:29 [donationSeeder] [32minfo[39m: Donation "Environmental Conservation" added.
+14:59:29 [donationSeeder] [32minfo[39m: Donation "Support for Education" added.
+14:59:29 [donationSeeder] [32minfo[39m: Donation "Medical Aid" added.
+14:59:29 [donationSeeder] [32minfo[39m: Donation "Support for Food Security Programs" added.
+14:59:29 [donationSeeder] [32minfo[39m: All donations seeded successfully!
+14:59:29 [paymentSeeder] [32minfo[39m: Existing payments cleared.
+14:59:29 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:59:29 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:59:29 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:59:29 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:59:29 [paymentSeeder] [32minfo[39m: Payment for donation "6752c3f952c8b237028807f8" added with ID: 6752c3f952c8b23702880810
+14:59:29 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c3f952c8b237028807f8
+14:59:29 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:59:29 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:59:29 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:59:29 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:59:29 [paymentSeeder] [32minfo[39m: Payment for donation "6752c3f952c8b237028807f8" added with ID: 6752c3f952c8b2370288081b
+14:59:29 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c3f952c8b237028807f8
+14:59:29 [payment schema] [32minfo[39m: ======= [SCHEMA: Payment] =======
+14:59:29 [payment schema] [32minfo[39m: [ACTION: Starting validation for Payment schema]
+14:59:29 [payment schema] [32minfo[39m: [Validation passed successfully]
+14:59:29 [payment schema] [32minfo[39m: ======= [END OF ACTION: Validation for Payment schema] =======
+
+14:59:29 [paymentSeeder] [32minfo[39m: Payment for donation "6752c3f952c8b237028807fb" added with ID: 6752c3f952c8b23702880826
+14:59:29 [paymentSeeder] [32minfo[39m: Notifications created for donation ID: 6752c3f952c8b237028807fb
+14:59:29 [paymentSeeder] [32minfo[39m: Payment data seeded successfully!
+14:59:29 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+14:59:31 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:59:31 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:59:31 [donationController] [32minfo[39m: Fetching donations...
+14:59:31 [donationController] [32minfo[39m: Found 4 donations.
+14:59:32 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+14:59:32 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+14:59:32 [donationController] [32minfo[39m: Fetching donations...
+14:59:32 [donationController] [32minfo[39m: Found 4 donations.
+14:59:34 [donationRouter] [32minfo[39m: ======= [ROUTE: View Donation] =======
+14:59:34 [donationRouter] [32minfo[39m: [ACTION: Fetching Donation Details for ID: 6752c3f952c8b237028807f8]
+14:59:34 [donationController] [32minfo[39m: Fetching donation with ID: 6752c3f952c8b237028807f8
+14:59:34 [donationController] [32minfo[39m: Donation found: 6752c3f952c8b237028807f8
+15:00:03 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+15:00:03 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+15:00:03 [donationController] [32minfo[39m: Fetching donations...
+15:00:03 [donationController] [32minfo[39m: Found 4 donations.
+15:00:04 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+15:00:04 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+15:00:04 [donationController] [32minfo[39m: Fetching donations...
+15:00:04 [donationController] [32minfo[39m: Found 4 donations.
+15:00:04 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+15:00:04 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+15:00:04 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+15:00:04 [discussionController] [32minfo[39m: [ACTION: Index]
+15:00:05 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+15:00:05 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+15:00:05 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+15:00:05 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+15:00:05 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+15:00:05 [discussionController] [32minfo[39m: [ACTION: Index]
+15:00:05 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+15:00:05 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+15:00:10 [route] [32minfo[39m: ======= [ROUTE: List Discussions] =======
+15:00:10 [route] [32minfo[39m: [ACTION: Fetching List of Discussions]
+15:00:10 [discussionController] [32minfo[39m: ======= [CONTROLLER: Discussion] =======
+15:00:10 [discussionController] [32minfo[39m: [ACTION: Index]
+15:00:10 [discussionController] [32minfo[39m: Retrieved 55 discussions.
+15:00:10 [discussionController] [32minfo[39m: ======= [END OF ACTION: Index] =======
+
+15:00:14 [route] [32minfo[39m: ======= [ROUTE: List Groups] =======
+15:00:14 [route] [32minfo[39m: [ACTION: Fetching All Groups]
+15:00:14 [route] [32minfo[39m: User ID: 6740d96266c00c38d95a3f74 is fetching the list of all groups
+15:00:14 [groupController] [32minfo[39m: Fetching all groups...
+15:00:14 [groupController] [32minfo[39m: Found 3 groups.
+15:07:37 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+15:07:37 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+15:07:37 [donationController] [32minfo[39m: Fetching donations...
+15:07:37 [donationController] [32minfo[39m: Found 4 donations.
+15:07:39 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:07:39 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:07:39 [successController] [32minfo[39m: Fetching all success stories
+15:07:39 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:08:46 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:08:46 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:08:46 [successController] [32minfo[39m: Fetching all success stories
+15:08:46 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:08:48 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+15:08:48 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+15:08:48 [successRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is accessing the new success story form
+15:08:48 [successController] [32minfo[39m: Rendered new success story form
+15:08:56 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+15:08:56 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+15:08:56 [successRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is accessing the new success story form
+15:08:56 [successController] [32minfo[39m: Rendered new success story form
+15:09:11 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+15:09:11 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+15:09:11 [successRoutes] [32minfo[39m: User ID: 6740d96166c00c38d95a3f6a is accessing the new success story form
+15:09:11 [successController] [32minfo[39m: Rendered new success story form
+15:09:26 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:09:26 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:09:26 [successController] [32minfo[39m: Fetching all success stories
+15:09:26 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:09:26 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:09:26 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:09:26 [successController] [32minfo[39m: Fetching all success stories
+15:09:26 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:10:59 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:10:59 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:10:59 [successController] [32minfo[39m: Fetching all success stories
+15:10:59 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:11:00 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:11:00 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:11:00 [successController] [32minfo[39m: Fetching all success stories
+15:11:00 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:11:01 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:11:01 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:11:01 [successController] [32minfo[39m: Fetching all success stories
+15:11:01 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:11:16 [donationRouter] [32minfo[39m: ======= [ROUTE: List Donations] =======
+15:11:16 [donationRouter] [32minfo[39m: [ACTION: Fetching List of All Donations]
+15:11:16 [donationController] [32minfo[39m: Fetching donations...
+15:11:16 [donationController] [32minfo[39m: Found 4 donations.
+15:11:29 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:11:29 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:11:29 [successController] [32minfo[39m: Fetching all success stories
+15:11:29 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:11:31 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:11:31 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:11:31 [successController] [32minfo[39m: Fetching all success stories
+15:11:31 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:11:32 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:11:32 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:11:32 [successController] [32minfo[39m: Fetching all success stories
+15:11:32 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:11:33 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+15:11:33 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+15:11:33 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+15:11:33 [successController] [32minfo[39m: Rendered new success story form
+15:12:59 [runAllSeeds] [32minfo[39m: Connectedd to MongoDB
+15:12:59 [runAllSeeds] [32minfo[39m: Connected to MongoDB
+15:12:59 [runAllSeeds] [32minfo[39m: Old data cleared.
+15:12:59 [successSeeder] [32minfo[39m: Existing success stories cleared.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Achieved Promotion at Work" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Completed Marathon in Mumbai" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Startup in Bangalore" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Graduated from IIT Delhi" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Published a Book on Indian Cuisine" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Boutique in Delhi" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Won National Award for Innovation" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Successfully Hosted a Tech Conference" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Completed Yoga Teacher Training" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Secured Funding for Social Enterprise" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Health & Wellness Blog" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Traveled the World with a Photography Project" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Started a Non-Profit for Animal Welfare" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Popular Mobile App" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Cafe in Chennai" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Started a YouTube Channel on Indian Cooking" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Yoga Studio in Bangalore" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Graduated from Indian School of Business" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Achieved Top Sales Performance" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Won a National Photography Award" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Secured a Major Research Grant" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Language School in Pune" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched an E-commerce Platform for Local Artisans" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Started a Tech Blog with Industry Insights" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Published a Research Paper on AI" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Craft Brewery in Bangalore" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Won the Best Startup Award in India" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Digital Marketing Agency" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile Game with Over a Million Downloads" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Fine Dining Restaurant in Delhi" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Founded a Non-Profit for Rural Healthcare" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Achieved Certification in Data Science" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Social Media Influencer Career" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Wellness Retreat in Kerala" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Cutting-Edge AI Solution" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Won Best Young Entrepreneur Award" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened an Art Gallery in Mumbai" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Completed an Advanced Cooking Course" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Founded an NGO for Environmental Conservation" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Secured a Major Contract with a Global Client" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Published a Best-Selling Novel" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Vegan Restaurant in Bangalore" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Personal Finance Blog" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Graduated from a Prestigious Design School" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Coding Bootcamp in Pune" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Started a Podcast on Indian Culture" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Secured Investment for a Health Tech Startup" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Farm-to-Table Restaurant" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Mobile Health App" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Published a Guide to Indian Festivals" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Boutique Fitness Studio" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Secured a Major Government Grant" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Craft Brewery in Goa" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Virtual Reality Experience" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Won a National Photography Award" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Green Energy Solutions Firm" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched an E-commerce Platform for Handicrafts" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Wellness Center in Rishikesh" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Language Learning App" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Published a Book on Indian Architecture" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Gourmet Chocolate Shop" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Popular Travel Vlog" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened an Eco-Friendly Resort in Shimla" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Fitness App with AI Integration" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Traditional Indian Bakery" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Secured Funding for an EdTech Startup" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Co-Working Space in Hyderabad" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed an Innovative Payment Solution" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Boutique Hotel in Jaipur" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Popular Food Blog" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Sports Complex in Chennai" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Local Artisans Marketplace" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Smart Home System" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Language School in Delhi" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Health and Wellness Podcast" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Craft Studio in Jaipur" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Revolutionary Fitness Tracker" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Published a Collection of Indian Folktales" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Wellness Cafe in Bangalore" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Unique Furniture Line" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Mobile App for Traditional Music" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Modern Art Gallery in Mumbai" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Smart Agriculture System" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-End Fashion Boutique" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched an AI-Based Customer Service Platform" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Traditional Indian Spice Shop" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Unique Handcrafted Jewelry Line" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Social Impact Initiative" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Luxury Spa in Goa" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile Platform for Local Farmers" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Design Studio for Indian Textiles" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Personalized Nutrition App" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Boutique Fitness Studio" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Cutting-Edge Virtual Event Platform" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Craft Beer Bar in Pune" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a High-Tech Smart Watch" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Subscription Box for Indian Snacks" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened an Artisanal Cheese Shop" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Smart Wearable for Health Monitoring" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Tech Innovation Hub in Bangalore" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed an Innovative Online Learning Platform" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Boutique Tea Brand" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Yoga Studio in Mumbai" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Revolutionary Home Automation System" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Contemporary Art Studio" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Mobile Health Diagnostics App" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Coffee Shop" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Unique Eco-Friendly Packaging Solution" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Creative Writing Workshop" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Modern Furniture Store" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Cutting-Edge Fitness Tracker" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Boutique Travel Agency" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Sustainable Living" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-Tech Co-Working Space" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Personalized Skincare Line" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed an Innovative Fitness App" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Unique Art Supply Store" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Personal Finance" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Tea Cafe" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Cutting-Edge E-Commerce Platform" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Contemporary Music Studio" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Virtual Reality Fitness Experience" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Food Delivery" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Books Store" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Mental Wellness" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Luxury Chocolatier" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Remote Work" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-End Home Decor Store" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Language Learning" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Unique Pop-Up Art Gallery" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Mobile App for Personal Safety" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a High-Tech Smart Home Device" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Wine Store" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Travel Planning" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Modern Art Gallery" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Event Management" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Craft Brewery" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Launched a Mobile App for Pet Care" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Vintage Clothing Store" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Home Renovation" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Gourmet Cheese Shop" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Recipe Sharing" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-End Sports Equipment Store" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Career Coaching" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Fitness Studio" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Art and Design" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Contemporary Jewelry Boutique" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Fitness Challenges" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Luxury Pet Boutique" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Home Automation" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Vegan Bakery" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Educational Games" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Boutique Art Supply Store" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Cooking Classes" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Luxury Travel Concierge Service" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Personalized Nutrition" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Contemporary Dance Studio" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Social Networking" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-End Home Theater Store" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Personal Growth" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Coffee Shop" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Mental Health Support" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Premium Cigar Lounge" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Financial Planning" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Modern Furniture Store" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Guided Meditation" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-End Cosmetic Store" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Virtual Fitness Training" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Bookstore" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Home Gardening" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Contemporary Art Supply Store" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Personalized Fitness Plans" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Sushi Bar" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Local Events" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Kitchenware Store" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Digital Art Creation" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-End Audio Equipment Store" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Yoga and Meditation" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Modern Home Decor Store" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Language Learning" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-End Watch Boutique" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Virtual Reality Experiences" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Health Food Store" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Art Therapy" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Outdoor Gear Store" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Smart Home Integration" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Contemporary Ceramic Studio" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Personal Safety" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Wine Bar" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Cooking Recipes" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Premium Pet Store" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Travel Planning" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Modern Art Gallery" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Personal Finance Management" added, created by mnm.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Luxury Candle Shop" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Online Learning" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Boutique Chocolate Shop" added, created by mentor_jane11.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Fitness Challenges" added, created by a.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Modern Jewelry Store" added, created by mentee.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Recipe Sharing" added, created by m.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Specialty Vintage Store" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Meditation and Mindfulness" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a High-End Skateboard Store" added, created by mentor.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Developed a Mobile App for Event Planning" added, created by mentee_sara.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Opened a Contemporary Art Studio" added, created by mentor_jane.
+15:12:59 [successSeeder] [32minfo[39m: Success story "Created a Mobile App for Wellness Tracking" added, created by mentor11.
+15:12:59 [successSeeder] [32minfo[39m: Success stories seeded successfully!
+15:12:59 [successReviewSeeder] [32minfo[39m: Existing success reviews cleared.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Incredible story, really inspiring!"
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aa1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Great journey, I learned a lot from this."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949c9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I can relate to this experience."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ae9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "This was an eye-opener. Thank you for sharing!"
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a29" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Amazing transformation and growth depicted here."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b05" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Such a motivating story! Well done!"
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949fb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is truly inspiring and encouraging."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a4f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I appreciate the honesty and depth in this journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aed" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "This experience resonates with me deeply."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aa5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "What a powerful narrative of overcoming challenges."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ac1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for the insights and motivation."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ae9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly remarkable journey with valuable lessons."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949c9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a beacon of hope."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a71" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "This was a very engaging and uplifting read."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494af9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your perseverance and achievements are admirable."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a57" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of dedication and success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ad9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story offers great lessons for anyone striving for success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949d5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Such a powerful and motivational account!"
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a11" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly inspiring."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949f5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "The depth of your story provides much-needed encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b21" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I learned a lot from your experiences and struggles."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494adb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A compelling and motivating success story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949df" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a testament to hard work and perseverance."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a93" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your inspiring journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a55" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experience is a great source of motivation."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949b3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "This success story has left a significant impact on me."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949a1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly motivating account of overcoming obstacles."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aeb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey is both inspiring and educational."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949eb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was deeply moved by your story of success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a73" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A fantastic story of growth and achievement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b0f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are highly motivational and insightful."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494afb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Such a moving and inspiring success story!"
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949ed" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I appreciate the courage and honesty in your journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a0d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story provides hope and motivation for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a6d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale that offers great lessons for everyone."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b0d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly motivating and uplifting."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494abd" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a great example of resilience and dedication."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aef" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such an inspiring and impactful journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949d9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "This is a powerful narrative of triumph over adversity."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aab" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey is a shining example of success through perseverance."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494af3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and motivating story that resonates deeply."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ab1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a beacon of hope and determination."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ad9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was truly inspired by your path to success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aad" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful story that offers valuable lessons and inspiration."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494989" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is both motivational and insightful."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b17" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be a great source of inspiration."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a27" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your remarkable success story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b11" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experience is a powerful example of overcoming challenges."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a67" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A compelling and motivating account of your journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a75" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great inspiration for those facing similar challenges."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949e3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An incredible journey that inspires and educates."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494add" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I appreciate the depth and motivation in your story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949a5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is both impactful and encouraging."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949a1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly uplifting and motivating account of your journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949b9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are a great example of hard work and success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494abb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for providing such an inspiring and motivational story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ae7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey is a fantastic example of perseverance and success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a89" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A powerful and inspiring narrative of overcoming obstacles."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a77" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was deeply moved by your story of achievement and growth."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a7d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a great source of motivation for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a0b" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and inspiring tale of success and dedication."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a75" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer valuable lessons and encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d649498d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A remarkable story that inspires and uplifts."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a77" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a motivating and insightful journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a83" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a testament to hard work and perseverance."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ad9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly inspiring and motivational."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a69" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story offers great lessons and encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ab3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly moving and uplifting account of your achievements."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a8b" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are both motivational and educational."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aa7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring journey that provides hope and encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949d7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a compelling and motivational story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a69" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a fantastic example of dedication and growth."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a19" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A powerful narrative that offers great inspiration and lessons."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494987" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of motivation and hope."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949c5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was truly inspired by your path to success and achievement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a13" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful example of perseverance and dedication."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494af7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey offers valuable lessons and much-needed encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a35" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your inspiring and impactful story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ae9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a great example of overcoming challenges."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a5d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and motivational account of your achievements."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494af3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both uplifting and inspiring."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a79" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly motivational and enlightening."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ac3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A remarkable tale of success and growth through perseverance."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a87" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer great lessons and motivation for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a5f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a compelling and inspiring journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aeb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a powerful example of hard work and resilience."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a21" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly motivating and uplifting account of your achievements."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ad5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey provides hope and encouragement for those facing challenges."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494987" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was deeply inspired by your story of success and perseverance."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a29" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A fantastic example of dedication and triumph over adversity."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b11" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both motivational and educational."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a77" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such an impactful and inspiring journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a1d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer valuable insights and motivation."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949e7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A compelling and uplifting account of your path to success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d649499f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a great source of encouragement and hope."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a05" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was inspired by your journey and the lessons you've shared."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949d7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful narrative of achievement and growth through determination."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a9d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both engaging and motivating."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b11" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for providing such a remarkable and inspiring account."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949a1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story offers great lessons and much-needed motivation."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494acd" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly impactful and uplifting journey of perseverance and success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494acb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are a fantastic source of inspiration and encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ac1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of hard work and achievement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aeb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your incredible journey and success story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a6f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great example of overcoming challenges and achieving goals."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494999" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A motivating and insightful account of your path to success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a6d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences provide valuable lessons and inspiration for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a0f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and engaging story of growth and achievement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b11" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a powerful example of dedication and perseverance."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a77" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be both motivational and educational."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a2f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a compelling and inspiring narrative."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a91" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of hope and encouragement for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aef" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly moving account of success and determination."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a9b" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are highly motivational and offer great lessons."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a41" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and inspiring success story that resonates deeply."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ac9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your remarkable journey and achievements."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494af3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a fantastic example of hard work and growth."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b11" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A powerful and motivational narrative of overcoming obstacles."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ae9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was inspired by your story of perseverance and success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a8d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey provides valuable insights and encouragement for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949e5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and motivational tale of achievement and growth."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d649498b" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a powerful and inspiring success story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949bd" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer great lessons and motivation for achieving goals."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494add" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly inspiring account of success and dedication."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494acd" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of motivation and hope."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949a1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be incredibly uplifting and enlightening."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a79" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A remarkable example of growth and perseverance through challenges."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949d3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such an engaging and motivating success story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a89" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is both impactful and inspiring."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a4d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A compelling and motivating narrative of your journey to success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949c5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer valuable lessons and much-needed encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494b01" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of overcoming adversity and achieving goals."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ac7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a fantastic example of dedication and achievement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ab5" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your remarkable and motivating journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949bf" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a powerful example of perseverance and growth."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949d7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly motivating and inspiring account of your path to success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a9f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey provides hope and encouragement for others facing challenges."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a41" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was deeply moved by your story of success and determination."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949f3" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful example of achievement and growth through hard work."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494acf" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both engaging and motivational, offering valuable lessons."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a79" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such an impactful and inspiring journey."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a5d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences offer great insights and motivation for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aa7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and compelling success story that resonates deeply."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949d9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey is a fantastic source of inspiration and hope."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a53" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your story to be incredibly motivating and enlightening."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d649499b" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A remarkable and inspiring tale of perseverance and success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494991" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your incredible journey and achievements."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aff" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is both powerful and motivational."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a95" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly engaging and inspiring account of overcoming challenges."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494995" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences provide valuable lessons and much-needed encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a2d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of success and growth through determination."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949af" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of motivation and hope for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a1d" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was inspired by your journey and the lessons you've shared."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a89" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A wonderful narrative of achievement and growth through perseverance."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949f1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is both engaging and motivating."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494995" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for providing such a remarkable and inspiring account."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a9b" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story offers great lessons and much-needed motivation."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494abb" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly impactful and uplifting journey of perseverance and success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a27" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are a fantastic source of inspiration and encouragement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494aa1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An inspiring tale of hard work and achievement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949c1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your incredible journey and success story."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ab9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great example of overcoming challenges and achieving goals."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a13" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A motivating and insightful account of your path to success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a75" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences provide valuable lessons and inspiration for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a6b" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and engaging story of growth and achievement."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949e7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a powerful example of dedication and perseverance."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494af9" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I found your journey to be both motivational and educational."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a2f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing such a compelling and inspiring narrative."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a49" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your story is a great source of hope and encouragement for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a9f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A truly moving account of success and determination."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494ac7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your experiences are highly motivational and offer great lessons."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949e7" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An engaging and inspiring success story that resonates deeply."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d649499f" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Thank you for sharing your remarkable journey and achievements."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a25" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your success story is a fantastic example of hard work and growth."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a63" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "A powerful and motivational narrative of overcoming obstacles."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a47" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "I was inspired by your story of perseverance and success."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494a45" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "Your journey provides valuable insights and encouragement for others."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d64949b1" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Review added: "An uplifting and motivational tale of achievement and growth."
+15:12:59 [successReviewSeeder] [32minfo[39m: Success story "6752c7239e7a5df5d6494acd" updated with new review.
+15:12:59 [successReviewSeeder] [32minfo[39m: Success reviews seeded successfully!
+15:12:59 [runAllSeeds] [32minfo[39m: Database successfully seeded!
+15:13:06 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:13:06 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:13:06 [successController] [32minfo[39m: Fetching all success stories
+15:13:06 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:13:47 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:13:47 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:13:47 [successController] [32minfo[39m: Fetching all success stories
+15:13:47 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:13:48 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch List of Success Stories] =======
+15:13:48 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Stories]
+15:13:48 [successController] [32minfo[39m: Fetching all success stories
+15:13:48 [successController] [32minfo[39m: Successfully fetched and rendered success stories
+15:13:49 [successRoutes] [32minfo[39m: ======= [ROUTE: New Success Story Form] =======
+15:13:49 [successRoutes] [32minfo[39m: [ACTION: Accessing New Success Story Form]
+15:13:49 [successRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is accessing the new success story form
+15:13:49 [successController] [32minfo[39m: Rendered new success story form
+15:14:48 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+15:14:48 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+15:14:48 [successRoutes] [32minfo[39m: Fetching success story with ID 6752c7239e7a5df5d6494b21
+15:14:48 [successController] [32minfo[39m: Fetching success story with ID: 6752c7239e7a5df5d6494b21
+15:14:48 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752c7239e7a5df5d6494b21
+15:14:52 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+15:14:52 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+15:14:52 [successRoutes] [32minfo[39m: Fetching success story with ID 6752c7239e7a5df5d6494b21
+15:14:52 [successController] [32minfo[39m: Fetching success story with ID: 6752c7239e7a5df5d6494b21
+15:14:52 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752c7239e7a5df5d6494b21
+15:14:57 [successReviewRoutes] [32minfo[39m: ======= [ROUTE: Create Success Review] =======
+15:14:57 [successReviewRoutes] [32minfo[39m: [ACTION: Creating New Success Review]
+15:14:57 [successReviewRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is creating a new success review
+15:14:57 [successMiddleware] [32minfo[39m: Validating success review schema...
+15:14:57 [successMiddleware] [32minfo[39m: Success review schema validation passed. Proceeding to the next middleware.
+15:14:57 [successReviewRoutes] [32minfo[39m: [ACTION: Validation Completed]
+15:14:57 [successReviewRoutes] [32minfo[39m: Validation for the success review passed
+15:14:57 [successReviewController] [32minfo[39m: Creating review for success story with ID: 6752c7239e7a5df5d6494b21
+15:14:57 [successReviewController] [32minfo[39m: New review created and saved for success story with ID: 6752c7239e7a5df5d6494b21
+15:14:57 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+15:14:57 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+15:14:57 [successRoutes] [32minfo[39m: Fetching success story with ID 6752c7239e7a5df5d6494b21
+15:14:57 [successController] [32minfo[39m: Fetching success story with ID: 6752c7239e7a5df5d6494b21
+15:14:57 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752c7239e7a5df5d6494b21
+15:14:59 [successReviewRoutes] [32minfo[39m: ======= [ROUTE: Delete Success Review] =======
+15:14:59 [successReviewRoutes] [32minfo[39m: [ACTION: Attempting to Delete Review]
+15:14:59 [successReviewRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is attempting to delete success review 6752c799d60aa006a2f33eb5
+15:14:59 [successMiddleware] [32minfo[39m: Checking if user is author of success review ID: 6752c799d60aa006a2f33eb5
+15:14:59 [successMiddleware] [32minfo[39m: Review author ID: 6740e239a0f9d2173544a237, Logged-in user ID: 6740e239a0f9d2173544a237
+15:14:59 [successMiddleware] [32minfo[39m: User is authorized to edit this review.
+15:14:59 [successReviewController] [32minfo[39m: Deleting review with ID: 6752c799d60aa006a2f33eb5 from success story with ID: 6752c7239e7a5df5d6494b21
+15:14:59 [successReviewController] [32minfo[39m: Review with ID: 6752c799d60aa006a2f33eb5 successfully deleted from success story with ID: 6752c7239e7a5df5d6494b21
+15:14:59 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+15:14:59 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+15:14:59 [successRoutes] [32minfo[39m: Fetching success story with ID 6752c7239e7a5df5d6494b21
+15:14:59 [successController] [32minfo[39m: Fetching success story with ID: 6752c7239e7a5df5d6494b21
+15:14:59 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752c7239e7a5df5d6494b21
+15:15:04 [successReviewRoutes] [32minfo[39m: ======= [ROUTE: Create Success Review] =======
+15:15:04 [successReviewRoutes] [32minfo[39m: [ACTION: Creating New Success Review]
+15:15:04 [successReviewRoutes] [32minfo[39m: User ID: 6740e239a0f9d2173544a237 is creating a new success review
+15:15:04 [successMiddleware] [32minfo[39m: Validating success review schema...
+15:15:04 [successMiddleware] [32minfo[39m: Success review schema validation passed. Proceeding to the next middleware.
+15:15:04 [successReviewRoutes] [32minfo[39m: [ACTION: Validation Completed]
+15:15:04 [successReviewRoutes] [32minfo[39m: Validation for the success review passed
+15:15:04 [successReviewController] [32minfo[39m: Creating review for success story with ID: 6752c7239e7a5df5d6494b21
+15:15:04 [successReviewController] [32minfo[39m: New review created and saved for success story with ID: 6752c7239e7a5df5d6494b21
+15:15:04 [successRoutes] [32minfo[39m: ======= [ROUTE: Fetch Success Story by ID] =======
+15:15:04 [successRoutes] [32minfo[39m: [ACTION: Fetching Success Story]
+15:15:04 [successRoutes] [32minfo[39m: Fetching success story with ID 6752c7239e7a5df5d6494b21
+15:15:04 [successController] [32minfo[39m: Fetching success story with ID: 6752c7239e7a5df5d6494b21
+15:15:04 [successController] [32minfo[39m: Successfully fetched and rendered success story with ID: 6752c7239e7a5df5d6494b21
