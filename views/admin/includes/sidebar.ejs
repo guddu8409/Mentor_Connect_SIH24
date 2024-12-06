@@ -1,69 +1,23 @@
-<div class="container">
-  <!-- Toggle Button -->
-  <button class="toggle-btn" id="toggleBtn">
-    <i class="fas fa-bars"></i>
-  </button>
-
-  <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <div class="logo">
-        <img src="image/admin/logo&typo-01-01.png" alt="Logo" />
-      </div>
-    </div>
-    <ul class="sidebar-menu">
-      <li><i class="fas fa-home"></i><span>Home</span></li>
-      <li><i class="fas fa-fire"></i><span>Trending</span></li>
-      <li><i class="fas fa-subscript"></i><span>Subscriptions</span></li>
-      <li><i class="fas fa-folder"></i><span>Library</span></li>
-      <li><i class="fas fa-history"></i><span>History</span></li>
-      <li><i class="fas fa-clock"></i><span>Watch Later</span></li>
-      <li><i class="fas fa-thumbs-up"></i><span>Liked Videos</span></li>
-    </ul>
-    <div class="social-media">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-    <div class="sidebar-menu button">
-      <li>
-        <a href="#"><i class="fa-solid fa-right-to-bracket"></i><span>Logout</span></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa-solid fa-user-pen"></i><span>My Profile</span></a>
-      </li>
+<!-- Sidebar -->
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-logo">
+      <img src="image/admin/adminConnexusLogo.png" alt="Logo" />
     </div>
   </div>
-
-  <!-- Main Content -->
-  <main class="main-content">
-    <%- body %>
-  </main>
+  <ul class="sidebar-menu">
+    <li><i class="fas fa-home"></i><span>Dashboard</span></li>
+    <li><i class="fas fa-fire"></i><span>User Analysis</span></li>
+    <li><i class="fas fa-subscript"></i><span>Listing</span></li>
+    <li><i class="fas fa-folder"></i><span>User Management</span></li>
+    <li><i class="fas fa-history"></i><span>Help</span></li>
+    <li><i class="fas fa-clock"></i><span>Feedback</span></li>
+    <li><i class="fas fa-thumbs-up"></i><span>Reports</span></li>
+  </ul>
+  <div class="sidebar-social-media">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  
 </div>
-
-<script>
-  const toggleBtn = document.getElementById("toggleBtn");
-  const sidebar = document.getElementById("sidebar");
-
-  function toggleSidebar() {
-    if (window.innerWidth <= 768) {
-      sidebar.classList.toggle("expanded");
-    } else {
-      sidebar.classList.toggle("collapsed");
-    }
-  }
-
-  toggleBtn.addEventListener("click", toggleSidebar);
-
-  function adjustSidebar() {
-    if (window.innerWidth <= 768) {
-      sidebar.classList.remove("collapsed");
-      sidebar.classList.remove("expanded");
-    } else {
-      sidebar.classList.remove("expanded");
-    }
-  }
-
-  window.addEventListener("resize", adjustSidebar);
-  window.addEventListener("load", adjustSidebar);
-</script>
