@@ -3,9 +3,7 @@ const ExpressError = require("../utils/expressError");
 const wrapAsync = require("../utils/wrapAsync");
 const logger = require("../utils/logger")('successController'); // Specify label
 const { uploadFile } = require("../services/uploadService");
-
-
-
+const { deleteImage } = require("../services/deleteImageService");
 
 module.exports.index = wrapAsync(async (req, res) => {
   try {
@@ -64,14 +62,13 @@ module.exports.renderNewForm = wrapAsync(async (req, res) => {
   }
 });
 
-// Controller for creating a success story
+//create
 module.exports.createSuccessStory = async (req, res, next) => {
   try {
     const { title, description } = req.body.success;
 
-    // Process uploaded file using uploadService
     const uploadedImage = req.file
-      ? await uploadFile(req.file, "local", { folder: "success_stories" })
+      ? await uploadFile(req.file) // Automatically handles local or Cloudinary
       : null;
 
     const success = new Success({
@@ -93,36 +90,6 @@ module.exports.createSuccessStory = async (req, res, next) => {
     next(error);
   }
 };
-
-
-
-
-// module.exports.create = wrapAsync(async (req, res) => {
-//   try {
-//     logger.info("Creating new success story");
-
-//     const newSuccess = new Success(req.body.success);
-//     newSuccess.owner = req.user._id;
-//     newSuccess.image = { url: req.file.path, filename: req.file.filename };
-//     await newSuccess.save();
-
-//     // Update the user's successStories array
-//     const user = await User.findById(req.user._id);
-//     user.successStories.push(newSuccess._id);
-//     await user.save();
-
-//     req.flash("success", "New success story created!");
-//     res.redirect("/successes");
-
-//     logger.info(`Successfully created new success story with ID: ${newSuccess._id}`);
-//   } catch (error) {
-//     logger.error("Error creating new success story", error);
-//     req.flash("error", "Error creating success story.");
-//     res.redirect("/successes");
-//   }
-// });
-
-
 module.exports.renderEditForm = wrapAsync(async (req, res) => {
   const { id } = req.params;
   try {
@@ -148,29 +115,87 @@ module.exports.renderEditForm = wrapAsync(async (req, res) => {
   }
 });
 
-module.exports.update = wrapAsync(async (req, res) => {
-  const { id } = req.params;
+module.exports.update = async (req, res, next) => {
   try {
-    logger.info(`Updating success story with ID: ${id}`);
+    const { id } = req.params;
+    const { title, description } = req.body.success;
 
-    const updatedStory = await Success.findByIdAndUpdate(id, req.body.success, { new: true });
+    // Find the existing success story
+    const success = await Success.findById(id);
 
-    req.flash("success", "Successfully updated the success story!");
-    res.redirect(`/successes/${updatedStory._id}`);
+    if (!success) {
+      req.flash("error", "Success story not found!");
+      return res.redirect("/successes");
+    }
 
-    logger.info(`Successfully updated success story with ID: ${id}`);
-  } catch (error) {
-    logger.error(`Error updating success story with ID: ${id}`, error);
-    req.flash("error", "Error updating success story.");
+    // Update fields
+    success.title = title || success.title;
+    success.description = description || success.description;
+
+    // Handle image update
+    if (req.file) {
+      // Delete the old image if it exists
+      if (success.image) {
+        await deleteImage(success.image); // Reuse the deleteImage service
+      }
+
+      // Upload the new image
+      const uploadedImage = await uploadFile(req.file); // Handles both local and Cloudinary
+      success.image = {
+        url: uploadedImage.url,
+        publicId: uploadedImage.publicId,
+      };
+    }
+
+    await success.save();
+
+    req.flash("success", "Success story updated successfully!");
     res.redirect(`/successes/${id}`);
+  } catch (error) {
+    next(error);
   }
-});
+};
+
+
+// module.exports.update = wrapAsync(async (req, res) => {
+//   const { id } = req.params;
+//   try {
+//     logger.info(`Updating success story with ID: ${id}`);
+
+//     const updatedStory = await Success.findByIdAndUpdate(id, req.body.success, { new: true });
+
+//     req.flash("success", "Successfully updated the success story!");
+//     res.redirect(`/successes/${updatedStory._id}`);
+
+//     logger.info(`Successfully updated success story with ID: ${id}`);
+//   } catch (error) {
+//     logger.error(`Error updating success story with ID: ${id}`, error);
+//     req.flash("error", "Error updating success story.");
+//     res.redirect(`/successes/${id}`);
+//   }
+// });
+
 
 module.exports.delete = wrapAsync(async (req, res) => {
   const { id } = req.params;
   try {
     logger.info(`Deleting success story with ID: ${id}`);
 
+    // Find the success story
+    const successStory = await Success.findById(id);
+
+    if (!successStory) {
+      logger.error(`Success story not found with ID: ${id}`);
+      req.flash("error", "Success story does not exist!");
+      return res.redirect("/successes");
+    }
+
+    // Delete associated image
+    if (successStory.image) {
+      await deleteImage(successStory.image);
+    }
+
+    // Delete the success story from the database
     await Success.findByIdAndDelete(id);
 
     req.flash("success", "Success story deleted!");
