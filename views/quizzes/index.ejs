@@ -34,6 +34,11 @@
                 <% group.quizzes.forEach(quiz => { %>
                 <div class="quiz-card">
                     <h4 class="quiz-title"><%= quiz.title %></h4>
+                    <p>quiz sub-topic: xyz</p>
+                    <p>quiz sub-topic: xyz</p>
+                    <p>quiz sub-topic: xyz</p>
+                    <p>quiz sub-topic: xyz</p>
+                    <p>quiz sub-topic: xyz</p>
                     <div class="quiz-actions">
                         <% if (String(currUser._id) !== String(group.owner._id)) { %>
                         <!-- For members (but not the owner), show Start and Leaderboard buttons -->
