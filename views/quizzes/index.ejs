@@ -1,10 +1,10 @@
 <% if (userRole === "mentor") { %>
-    <%- layout("mentor/layouts/boilerplate") %>
-    <% } else if (userRole === "mentee") { %>
-    <%- layout("mentee/layouts/boilerplate") %>
-    <% } else { %>
-    <%- layout("layouts/boilerplate") %>
-    <% } %>
+<%- layout("mentor/layouts/boilerplate") %>
+<% } else if (userRole === "mentee") { %>
+<%- layout("mentee/layouts/boilerplate") %>
+<% } else { %>
+<%- layout("layouts/boilerplate") %>
+<% } %>
 
 <div class="container mt-3 page-container">
     <div class="quiz-index-header">
@@ -28,37 +28,29 @@
     <h1 class="text-center">Quizzes for <%= group.title %></h1>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <h3>Available Quizzes:</h3>
-            <ul>
+            <div class="quiz-card-container">
                 <% group.quizzes.forEach(quiz => { %>
-                <li>
-                    <a href="/groups/<%= group._id %>/quizzes/<%= quiz._id %>"><%= quiz.title %></a>
-
-                    <% if (String(currUser._id) !== String(group.owner._id)) { %>
-                    <!-- For members (but not the owner), show Start, Leaderboard, and Show Score buttons -->
-                    <div class="btn-group">
-                        <!-- Start Quiz Button if the member hasn't participated -->
-                        <%# if (!quiz.participants.includes(currUser._id)) { %>
+                <div class="quiz-card">
+                    <h4 class="quiz-title"><%= quiz.title %></h4>
+                    <div class="quiz-actions">
+                        <% if (String(currUser._id) !== String(group.owner._id)) { %>
+                        <!-- For members (but not the owner), show Start and Leaderboard buttons -->
                         <form action="/groups/<%= group._id %>/quizzes/<%= quiz._id %>" method="get"
                             style="display:inline;">
                             <button type="submit" class="btn btn-primary btn-sm">
                                 <i class="fa-solid fa-play"></i> Start Quiz
                             </button>
                         </form>
-                        <%# } %>
-
-                        <!-- Leaderboard and Show Score buttons -->
                         <a href="/groups/<%= group._id %>/quizzes/<%= quiz._id %>/leaderboard"
                             class="btn btn-secondary btn-sm">
                             <i class="fa-solid fa-trophy"></i> Leaderboard
                         </a>
-                    </div>
-                    <% } %>
+                        <% } %>
 
-                    <% if(currUser && String(currUser._id) === String(group.owner._id)) { %>
-                    <!-- For owner, show Edit and Delete buttons for each quiz -->
-                    <div class="btn-group">
+                        <% if(currUser && String(currUser._id) === String(group.owner._id)) { %>
+                        <!-- For owner, show Edit and Delete buttons for each quiz -->
                         <a href="/groups/<%= group._id %>/quizzes/<%= quiz._id %>/edit" class="btn btn-info btn-sm">
                             <i class="fa-solid fa-edit"></i> Edit Quiz
                         </a>
@@ -68,11 +60,11 @@
                                 <i class="fa-solid fa-trash"></i> Delete Quiz
                             </button>
                         </form>
+                        <% } %>
                     </div>
-                    <% } %>
-                </li>
+                </div>
                 <% }) %>
-            </ul>
+            </div>
         </div>
     </div>
 </div>
