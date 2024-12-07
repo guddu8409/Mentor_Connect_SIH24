@@ -1,29 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const multer = require("multer");
-const path = require("path");
-// const { createSuccessStory } = require("../controllers/successController");
+// const multer = require("multer");
+// const path = require("path");
 const upload = require("../services/uploadService").upload; // Multer middleware
-
 const successController = require("../controllers/successController");
 const { isLoggedIn } = require("../middlewares/authMiddleware");
 const { validateSuccess,isStoryOwner } = require("../middlewares/success");
-const { log } = require("util");
+// const { log } = require("util");
 const logger = require("../utils/logger")("successRoutes"); // Logging utility (optional)
-
-
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, path.join(__dirname, "../uploads")); // Adjust the path as needed
-  },
-  filename: function (req, file, cb) {
-    cb(null, `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`);
-  },
-});
-
-
-// // Multer setup for temporary storage
-// const upload = multer({ dest: "temp/" }); // Temporary folder for file uploads
 
 // Routes
 router.get("/", (req, res, next) => {
@@ -38,7 +22,6 @@ router.get("/new", isLoggedIn, (req, res, next) => {
   logger.info(`User ID: ${req.user._id} is accessing the new success story form`);
   next();
 }, successController.renderNewForm);
-
 
 
 // Route for creating a success story
@@ -58,7 +41,7 @@ router.get("/:id/edit", isLoggedIn, isStoryOwner, (req, res, next) => {
   next();
 }, successController.renderEditForm);
 
-router.put("/:id", isLoggedIn, isStoryOwner, (req, res, next) => {
+router.put("/:id", isLoggedIn, isStoryOwner,upload.single("success[image]"), (req, res, next) => {
   logger.info("======= [ROUTE: Update Success Story] =======");
   logger.info("[ACTION: Updating Success Story]");
   logger.info(`User ID: ${req.user._id} is updating success story ${req.params.id}`);

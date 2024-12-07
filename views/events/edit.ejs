@@ -24,7 +24,7 @@
 
     <div class="mb-3">
       <label for="eventPoster" class="form-label">Event Poster (optional)</label>
-      <input type="file" class="form-control" id="eventPoster" name="event[images]" accept="image/*">
+      <input type="file" class="form-control" id="eventPoster" name="event[poster]" accept="image/*">
     </div>
 
     <div class="row mb-3">
@@ -64,30 +64,7 @@
       </div>
     </div>
 
-    <div class="row mb-3">
-      <div class="col-6">
-        <label for="chiefGuests" class="form-label">Chief Guest Name</label>
-        <input type="text" class="form-control" id="chiefGuests" name="event[chiefGuests][name]" value="<%= event.chiefGuests.length ? event.chiefGuests[0].name : '' %>">
-      </div>
-      <div class="col-6">
-        <label for="chiefGuestImage" class="form-label">Chief Guest Image</label>
-        <input type="file" class="form-control" id="chiefGuestImage" name="event[chiefGuests][image]" accept="image/*">
-      </div>
-    </div>
-
-    <div class="row mb-3">
-      <div class="col-6">
-        <label for="donationId" class="form-label">Donation ID (if linked to a group)</label>
-        <input type="text" class="form-control" id="donationId" name="event[donation]" value="<%= event.donation || '' %>" placeholder="Enter Donation ID">
-      </div>
-      <div class="col-6">
-        <label for="group" class="form-label">Group ID (if linked to a group)</label>
-        <input type="text" class="form-control" id="group" name="event[group]" value="<%= event.group || '' %>" placeholder="Enter Group ID">
-      </div>
-    </div>
-
-    <p class="text-warning">Note: If you provide a Donation ID or Group ID, you must be the owner of the respective group or donation to edit the event.</p>
-
+   
     <input type="submit" class="btn btn-primary" value="Update Event">
   </form>
 
