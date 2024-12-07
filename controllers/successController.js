@@ -4,9 +4,6 @@ const wrapAsync = require("../utils/wrapAsync");
 const logger = require("../utils/logger")('successController'); // Specify label
 const { uploadFile } = require("../services/uploadService");
 
-
-
-
 module.exports.index = wrapAsync(async (req, res) => {
   try {
     logger.info("Fetching all success stories");
@@ -93,35 +90,6 @@ module.exports.createSuccessStory = async (req, res, next) => {
     next(error);
   }
 };
-
-
-
-
-// module.exports.create = wrapAsync(async (req, res) => {
-//   try {
-//     logger.info("Creating new success story");
-
-//     const newSuccess = new Success(req.body.success);
-//     newSuccess.owner = req.user._id;
-//     newSuccess.image = { url: req.file.path, filename: req.file.filename };
-//     await newSuccess.save();
-
-//     // Update the user's successStories array
-//     const user = await User.findById(req.user._id);
-//     user.successStories.push(newSuccess._id);
-//     await user.save();
-
-//     req.flash("success", "New success story created!");
-//     res.redirect("/successes");
-
-//     logger.info(`Successfully created new success story with ID: ${newSuccess._id}`);
-//   } catch (error) {
-//     logger.error("Error creating new success story", error);
-//     req.flash("error", "Error creating success story.");
-//     res.redirect("/successes");
-//   }
-// });
-
 
 module.exports.renderEditForm = wrapAsync(async (req, res) => {
   const { id } = req.params;

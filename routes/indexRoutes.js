@@ -17,6 +17,7 @@ router.use("/api/payment", require("./paymentRoutes"));
 router.use("/successes", require("./successRoutes"));
 router.use("/successes/:id/reviews", require("./successReviewRoutes"));
 router.use("/donations", require("./donationRoutes"));
+router.use("/events", require("./eventRoutes"));
 
 
 
