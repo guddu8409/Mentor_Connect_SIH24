@@ -37,6 +37,7 @@ router
   }, eventController.show)
   .put(
     isLoggedIn,
+    upload.single("event[poster]"),
     (req, res, next) => {
       logger.info("======= [ROUTE: Update Event] =======");
       next();

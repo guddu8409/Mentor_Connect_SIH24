@@ -3,8 +3,21 @@ const fs = require("fs");
 const path = require("path");
 const logger = require("../utils/logger")("deleteImageService");
 
+// Environment Configuration
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 // Utility function to delete a file from Cloudinary
 async function deleteFromCloudinary(publicId) {
+  
+  // Configure Cloudinary
+  cloudinary.config({
+    cloud_name: process.env.CLOUD_NAME,
+    api_key: process.env.CLOUD_API_KEY,
+    api_secret: process.env.CLOUD_API_SECRET,
+  });
+  
   if (!cloudinary.config().cloud_name) {
     throw new Error("Cloudinary not configured. Ensure cloud_name, api_key, and api_secret are set.");
   }

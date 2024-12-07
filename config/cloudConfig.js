@@ -28,7 +28,7 @@ if (storageType === "cloudinary") {
     !process.env.CLOUD_API_SECRET
   ) {
     console.error(
-      "Error: Missing Cloudinary configuration in environment variables."
+      "Error inside cloudConfig file: Missing Cloudinary configuration in environment variables."
     );
     throw new Error("Cloudinary configuration is incomplete.");
   }

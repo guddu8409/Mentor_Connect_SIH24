@@ -1,16 +1,16 @@
 <% if (userRole === "mentor") { %>
   <%- layout("mentor/layouts/boilerplate") %>
-  <% } else if (userRole === "mentee") { %>
+<% } else if (userRole === "mentee") { %>
   <%- layout("mentee/layouts/boilerplate") %>
-  <% } else { %>
+<% } else { %>
   <%- layout("layouts/boilerplate") %>
-  <% } %>
+<% } %>
 
-<div class="container  col-6 offset-3">
+<div class="container col-6 offset-3">
   <h1 class="my-4">Edit Event</h1>
 
   <form action="/events/<%= event._id %>?_method=PUT" method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
-    <div class="mb-3 ">
+    <div class="mb-3">
       <label for="title" class="form-label">Event Title <span class="text-danger">*</span></label>
       <input type="text" class="form-control" id="title" name="event[title]" value="<%= event.title %>" required minlength="1" maxlength="200">
       <div class="invalid-feedback">Please enter an event title.</div>
@@ -24,7 +24,20 @@
 
     <div class="mb-3">
       <label for="eventPoster" class="form-label">Event Poster (optional)</label>
-      <input type="file" class="form-control" id="eventPoster" name="event[poster]" accept="image/*">
+      
+      <!-- Preview the current or newly uploaded poster -->
+      <img id="posterPreview" 
+           class="img-fluid mb-4" 
+           src="<%= event.poster?.url || 'https://www.eventsindustryforum.co.uk/images/articles/about_the_eif.jpg' %>" 
+           alt="<%= event.title %>">
+
+      <!-- File input for uploading a new poster -->
+      <input type="file" 
+             class="form-control" 
+             id="eventPoster" 
+             name="event[poster]" 
+             accept="image/*" 
+             onchange="previewImage(event)">
     </div>
 
     <div class="row mb-3">
@@ -64,7 +77,6 @@
       </div>
     </div>
 
-   
     <input type="submit" class="btn btn-primary" value="Update Event">
   </form>
 
@@ -73,4 +85,18 @@
   </form>
 </div>
 
+<script>
+  function previewImage(event) {
+    const fileInput = event.target;
+    const preview = document.getElementById('posterPreview');
+    
+    if (fileInput.files && fileInput.files[0]) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        preview.src = e.target.result; // Update the `src` attribute with the new image
+      };
+      reader.readAsDataURL(fileInput.files[0]); // Read the file as a data URL
+    }
+  }
+</script>
 <script src="/js/new-event.js"></script>

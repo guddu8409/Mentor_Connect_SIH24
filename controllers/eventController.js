@@ -14,9 +14,7 @@ module.exports.create = wrapAsync(async (req, res, next) => {
       req.body.event;
 
     // Handle event poster upload
-    const uploadedPoster = req.files
-      ? await uploadFile(req.files)
-      : null;
+    const uploadedPoster = req.file ? await uploadFile(req.file) : null;
 
     // Construct the event object based on form input
     const event = new Event({
@@ -58,6 +56,24 @@ module.exports.index = wrapAsync(async (req, res) => {
       .populate("joinMembers")
       .populate("organiser");
     console.info(`Found ${events.length} events.`);
+    // console.log(
+    //   "................................................................"
+    // );
+    // console.log(events[0].poster.toString().charAt(0));
+    // console.log(".....");
+
+    // console.log(events[1].poster.toString().charAt(0));
+    // console.log(".....");
+
+    // console.log(events[2].poster.toString().charAt(0));
+    // if (events[0].poster && events[0].poster instanceof mongoose.Types.Document && events[0].poster.toString() === 'null') {
+    //   console.log("poster is MongooseDocument { null }");
+    // } else if (events[0].poster) {
+    //   console.log("poster exists and is:", events[0].poster);
+    // } else {
+    //   console.log("poster is undefined or null");
+    // }
+
     res.render("events/index", { events, cssFile: "event/eventIndex.css" });
   } catch (err) {
     console.error("Error fetching events:", err);
@@ -116,29 +132,54 @@ module.exports.edit = wrapAsync(async (req, res) => {
 });
 
 // Update
-module.exports.update = wrapAsync(async (req, res) => {
-  const eventId = req.params.id;
-  console.info(`Updating event ID: ${eventId}`);
+module.exports.update = async (req, res, next) => {
   try {
-    console.log("update, req.body.event: ", req.body.event);
+    const { id } = req.params;
+    const { title, description, date, time, isOnline, venue, link } =
+      req.body.event;
 
-    const updatedEvent = await Event.findByIdAndUpdate(
-      eventId,
-      req.body.event,
-      { new: true }
-    );
-    if (!updatedEvent) {
-      throw new ExpressError(404, "Event not found.");
+    // Find the existing event
+    const event = await Event.findById(id);
+
+    if (!event) {
+      req.flash("error", "Event not found!");
+      return res.redirect("/events");
     }
-    console.info(`Event updated: ${updatedEvent.title}`);
-    req.flash("success", "Event updated successfully!");
-    res.redirect(`/events/${updatedEvent._id}`);
-  } catch (err) {
-    console.error("Error updating event:", err);
-    throw new ExpressError(500, "Unable to update event.");
-  }
-});
 
+    // Update event fields
+    event.title = title || event.title;
+    event.description = description || event.description;
+    event.date = date || event.date;
+    event.time = time || event.time;
+    event.isOnline = isOnline === "true"; // Ensure boolean conversion
+    event.venue = isOnline === "false" ? venue : null; // Venue only for offline events
+    event.link = isOnline === "true" ? link : null; // Link only for online events
+
+    // Handle poster update
+    if (req.file) {
+      // Delete the old poster if it exists
+      if (event.poster) {
+        await deleteImage(event.poster); // Reuse the deleteImage service
+      }
+
+      // Upload the new poster
+      const uploadedPoster = await uploadFile(req.file); // Handles both local and Cloudinary
+      event.poster = {
+        url: uploadedPoster.url,
+        publicId: uploadedPoster.publicId,
+      };
+    }
+
+    // Save the updated event
+    await event.save();
+
+    req.flash("success", "Event updated successfully!");
+    res.redirect(`/events/${id}`);
+  } catch (error) {
+    console.error("Error updating event:", error);
+    next(error); // Pass the error to the error-handling middleware
+  }
+};
 module.exports.delete = wrapAsync(async (req, res) => {
   const { id } = req.params;
   try {
@@ -156,7 +197,7 @@ module.exports.delete = wrapAsync(async (req, res) => {
     console.log("poster: " + event.poster);
 
     // Delete associated poster
-    if (event.poster && typeof event.poster === "string") {
+    if (event.poster && event.poster.toString().charAt(0) === "{") {
       await deleteImage(event.poster);
     } else {
       console.log("No valid poster found.");
