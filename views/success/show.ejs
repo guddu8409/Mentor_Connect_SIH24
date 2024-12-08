@@ -1,9 +1,9 @@
 <% if (userRole === "mentor") { %>
-    <%- layout("mentor/layouts/boilerplate") %>
+<%- layout("mentor/layouts/boilerplate") %>
 <% } else if (userRole === "mentee") { %>
-    <%- layout("mentee/layouts/boilerplate") %>
+<%- layout("mentee/layouts/boilerplate") %>
 <% } else { %>
-    <%- layout("layouts/boilerplate") %>
+<%- layout("layouts/boilerplate") %>
 <% } %>
 <div class="container mt-3 main-container">
     <div class="row">

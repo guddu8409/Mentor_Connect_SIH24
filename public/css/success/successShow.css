@@ -1,5 +1,5 @@
 /* General Styling */
-body {
+.main-container body {
   font-family: "Roboto", sans-serif;
   color: #333;
   background-color: #f4f7f6;
@@ -7,17 +7,19 @@ body {
 }
 
 /* Typography */
-h1, h4, h5 {
+.main-container h1,
+.main-container h4,
+.main-container h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #2c3e50;
 }
 
-h1 {
+.main-container h1 {
   font-size: 2.5rem;
 }
 
-p {
+.main-container p {
   font-size: 1rem;
 }
 
@@ -40,7 +42,7 @@ p {
 }
 
 /* Left Box Styling */
-.main-content-box {
+.main-container .main-content-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +51,7 @@ p {
 }
 
 /* Right Box Styling (Comment Section) */
-.comment-section {
+.main-container .comment-section {
   padding: 20px;
   background-color: #fafafa;
   border-radius: 10px;
@@ -62,7 +64,7 @@ p {
 }
 
 /* Overflow control for reviews */
-.comment-section .review-list {
+.main-container .comment-section .review-list {
   overflow-y: auto;
 }
 
@@ -80,7 +82,7 @@ p {
 }
 
 /* Button Styling */
-.btn {
+.main-container .btn {
   padding: 12px 30px;
   border-radius: 6px;
   font-weight: bold;
@@ -89,48 +91,48 @@ p {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
 }
 
-.btn:hover {
+.main-container .btn:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Button Styles - Back */
-.btn-back {
+.main-container .btn-back {
   background-color: #00796b;
   color: #fff;
 }
-.btn-back:hover {
+.main-container .btn-back:hover {
   background-color: #004d40;
 }
 
 /* Button Styles - Edit */
-.btn-edit {
+.main-container .btn-edit {
   background-color: #0288d1;
   color: #fff;
 }
-.btn-edit:hover {
+.main-container .btn-edit:hover {
   background-color: #01579b;
 }
 
 /* Button Styles - Delete */
-.btn-delete {
+.main-container .btn-delete {
   background-color: #e53935;
   color: #fff;
 }
-.btn-delete:hover {
+.main-container .btn-delete:hover {
   background-color: #b71c1c;
 }
 
 /* Button Styles - Submit */
-.btn-submit {
+.main-container .btn-submit {
   background-color: #388e3c;
   color: #fff;
 }
-.btn-submit:hover {
+.main-container .btn-submit:hover {
   background-color: #1b5e20;
 }
 
 /* Comment Section Textarea */
-textarea.form-control {
+.main-container textarea.form-control {
   border: 2px solid #d0d7d6;
   border-radius: 6px;
   padding: 12px;
@@ -140,13 +142,13 @@ textarea.form-control {
   resize: vertical;
 }
 
-textarea.form-control:focus {
+.main-container textarea.form-control:focus {
   border-color: #00bfa5;
   box-shadow: 0 0 10px rgba(0, 191, 165, 0.3);
 }
 
 /* Review Card */
-.review-card {
+.main-container .review-card {
   background-color: #f1f1f1;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -155,14 +157,14 @@ textarea.form-control:focus {
   transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-.review-card:hover {
+.main-container .review-card:hover {
   transform: scale(1.02);
   border-color: #8e8e8e;
   background-color: #f9f9f9;
 }
 
 /* Review Username */
-.review-username {
+.main-container .review-username {
   font-weight: bold;
   color: #00796b;
 }

@@ -84,6 +84,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Back Button */
 .btn-secondary {
     background-color: #6c757d;
     color: #ffffff;
@@ -93,22 +94,24 @@ body {
     background-color: #5a6268;
 }
 
+/* Edit Button: Blue */
 .btn-warning {
-    background-color: #008080; /* Teal */
+    background-color: #007bff; /* Bootstrap Blue */
     color: #ffffff;
 }
 
 .btn-warning:hover {
-    background-color: #006b6b; /* Slightly darker teal */
+    background-color: #0056b3; /* Darker Blue */
 }
 
+/* Delete Button: Red */
 .btn-danger {
-    background-color: #005f9e; /* Blue */
+    background-color: #dc3545; /* Bootstrap Red */
     color: #ffffff;
 }
 
 .btn-danger:hover {
-    background-color: #004880; /* Darker blue */
+    background-color: #c82333; /* Darker Red */
 }
 
 /* Links */
