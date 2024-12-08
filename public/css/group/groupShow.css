@@ -1,148 +1,154 @@
-/* Scoped styles for the group-show-container */
-
-/* Importing Professional Font */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+/* General Styling */
 body {
-  font-family: "Roboto", sans-serif;
-  color: #333;
-  background-color: #f4f7f6;
-  line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Typography */
-h1,
-h3,
-h5 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: #2c3e50;
+.container-fluid {
+    padding: 20px;
 }
 
-h1 {
-  font-size: 2.5rem;
+/* Card Component */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for contrast */
 }
 
-h3 {
-  font-size: 1.8rem;
+.card-header {
+    background-color: #008080; /* Teal */
+    color: #ffffff;
+    padding: 12px 16px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+.card-body {
+    padding: 15px;
 }
 
-/* Container styling */
-.container.mt-3 {
-  border: 2px solid #dce7e4;
-  padding: 20px;
-  border-radius: 12px;
-  background-color: #ffffff;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+/* Sidebar (Members List and Features) */
+.col-md-2 {
+    padding: 10px;
 }
 
-.container.mt-3:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+.list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Group Header */
-.group-show-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
+.list-group-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #e6f7f7; /* Light teal background */
+    color: #333;
+}
+
+.list-group-item:hover {
+    background-color: #cce7f7; /* Light blue on hover */
+    color: #333;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #008080; /* Teal links */
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+    color: #005f9e; /* Dark blue */
 }
 
 /* Buttons */
 .btn {
-  padding: 12px 30px;
-  border-radius: 6px;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Back Button */
 .btn-secondary {
-  background-color: #00796b;
-  color: #fff;
+    background-color: #6c757d;
+    color: #ffffff;
 }
 
 .btn-secondary:hover {
-  background-color: #004d40;
+    background-color: #5a6268;
 }
 
-/* Edit Button */
-.btn-edit {
-  background-color: #0288d1;
-  color: #fff;
+.btn-warning {
+    background-color: #008080; /* Teal */
+    color: #ffffff;
 }
 
-.btn-edit:hover {
-  background-color: #01579b;
+.btn-warning:hover {
+    background-color: #006b6b; /* Slightly darker teal */
 }
 
-/* Delete Button */
-.btn-delete {
-  background-color: #e53935;
-  color: #fff;
+.btn-danger {
+    background-color: #005f9e; /* Blue */
+    color: #ffffff;
 }
 
-.btn-delete:hover {
-  background-color: #b71c1c;
+.btn-danger:hover {
+    background-color: #004880; /* Darker blue */
 }
 
-/* Quizzes Button */
-.btn-primary.btn-lg {
-  background-color: #0288d1;
-  color: #fff;
-  font-size: 1.1rem;
+/* Links */
+a {
+    color: #008080; /* Teal */
+    text-decoration: none;
 }
 
-.btn-primary.btn-lg:hover {
-  background-color: #01579b;
+a:hover {
+    color: #005f9e; /* Dark blue */
+    text-decoration: underline;
 }
 
-/* Member List */
-ul {
-  list-style: none;
-  padding: 0;
+/* Main Content */
+.card-body h1 {
+    font-size: 2rem;
+    color: #008080; /* Teal for headers */
 }
 
-ul li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #dce7e4;
+.card-body p {
+    margin: 8px 0;
+    line-height: 1.6;
 }
 
-ul li:last-child {
-  border-bottom: none;
+.card-body a {
+    color: #005f9e; /* Blue links */
+    font-weight: bold;
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .container.mt-3 {
-    padding: 15px;
-    max-width: 90%;
-  }
+    .row {
+        flex-direction: column;
+    }
 
-  .group-show-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+    .col-md-2 {
+        margin-bottom: 20px;
+    }
 
-@media (max-width: 576px) {
-  .container.mt-3 {
-    padding: 10px;
-    max-width: 95%;
-  }
+    .col-md-8 {
+        order: 1;
+    }
 }

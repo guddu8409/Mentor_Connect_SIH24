@@ -155,6 +155,7 @@ module.exports.displayAllConnections = async (req, res) => {
       mentorId: mentor._id,
       loggedInUserId: req.user._id,
       connectedMentees: mentor.connections, // Array of connected mentors
+      cssFile:"mentor/connection/index.css"
     });
   } catch (error) {
     console.error("Error fetching connections:", error);
