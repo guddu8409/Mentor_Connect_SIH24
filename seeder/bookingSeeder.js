@@ -95,7 +95,7 @@ async function bookingSeeder() {
 
     for (const bookingItem of bookingData) {
       // Hardcoded mentor ID
-      const mentorUserId = "6740e239a0f9d2173544a237";
+      const mentorUserId = "67569bae767e389e41c15d83";
 
       // Randomly select a mentee user
       let menteeUserId = userIds[Math.floor(Math.random() * userIds.length)];
