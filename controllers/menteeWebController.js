@@ -7,6 +7,30 @@ const MenteeConnectionService = require("../services/menteeConnectionService");
 
 const ConnectionRequest = require("../models/connectionRequest");
 
+
+//scheduling
+module.exports.displayMentorScheduleForMentee = async (req, res) => {
+  try {
+    const mentorUserId = req.params.mentorUserId;
+    const mentor = await Mentor.findById(mentorUserId);
+    if (!mentor) {
+      req.flash("error", "Mentor not found.");
+      return res.redirect("/");
+    }
+
+    res.render("mentee/schedule/schedule", { mentor });
+  } catch (error) {
+    console.error("Error fetching mentor schedule: ", error);
+    req.flash("error", "An error occurred while fetching the schedule.");
+    res.redirect("/");
+  }
+};
+
+
+
+
+
+
 module.exports.dashboard = (req, res) => {
   res.render("mentee/home/home");
 };
@@ -259,3 +283,5 @@ module.exports.cancelRequest = async (req, res) => {
     res.status(500).send("An error occurred while cancelling the request.");
   }
 };
+
+

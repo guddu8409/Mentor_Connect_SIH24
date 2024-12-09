@@ -5,11 +5,18 @@ const { isLoggedIn, isMentor, isOwner } = require("../middlewares/authMiddleware
 const { dashboard, 
     viewProfile, editProfile, deleteProfile, renderEditProfile,
     displayAllConnections,pendingRequest, acceptRequest, rejectRequest,
-    renderMessagePage,
+    renderMessagePage,renderMentorOwnSchdule,updateMentorOwnSchdule
     
 } = require("../controllers/mentorWebController");
 
 const router = express.Router();
+
+// schedule
+router.get("/schedule",isLoggedIn,isMentor,renderMentorOwnSchdule);
+router.post("/update-booking",isLoggedIn,isMentor,updateMentorOwnSchdule);
+router.get("/schedule",isLoggedIn,isMentor,renderMentorOwnSchdule);
+
+
 
 // Mentor Dashboard
 router.get("/", isLoggedIn, isMentor, dashboard);

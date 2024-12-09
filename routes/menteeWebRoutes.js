@@ -21,4 +21,11 @@ router.get("/connections", isLoggedIn, isMentee, menteeController.displayAllConn
 router.post("/connections/:mentorId/connectRequest", isLoggedIn, isMentee, menteeController.connectRequest);
 router.delete("/connections/:mentorId/cancelRequest", isLoggedIn, isMentee, menteeController.cancelRequest);
 
+// scheduling
+router.get("/schedule/:mentorUserId", isLoggedIn, isMentee, menteeController.displayMentorScheduleForMentee);
+// router.post("/schedule/new", isLoggedIn, isMentee, menteeController.createSchedule);
+// router.get("/schedule/:scheduleId/edit", isLoggedIn, isMentee, menteeController.renderEditSchedule);
+// router.post("/schedule/:scheduleId/edit", isLoggedIn, isMentee, menteeController.editSchedule);
+// router.delete("/schedule/:scheduleId/delete", isLoggedIn, isMentee, menteeController.deleteSchedule);
+
 module.exports = router;
