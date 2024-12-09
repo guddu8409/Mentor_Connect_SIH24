@@ -39,7 +39,7 @@ module.exports.renderMentorOwnSchdule = async (req, res) => {
         : "Payment not done", // Check for payment and format accordingly
     }));
 
-    console.log(formattedBookings);
+    // console.log(formattedBookings);
     // Render the schedule page and pass the bookings data
     res.render("mentor/booking/index.ejs", {
       userRole: "mentor", // Render the page for a mentor

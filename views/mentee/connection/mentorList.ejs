@@ -36,6 +36,9 @@
                         </form>
                     <% } else if (mentor.connectionStatus === "accepted") { %>
                         <button class="btn btn-sm btn-success" disabled>Connected</button>
+                        <a href="/mentee/connections/<%= mentor._id %>/disconnect" class="btn btn-sm btn-info">Disconnect</a>
+
+                        <a href="/mentee/schedule/<%=mentor.user.id  %>" class="btn btn-sm btn-info">schedule</a>
                     <% } else { %>
                         <button class="btn btn-sm btn-danger" disabled>Rejected</button>
                     <% } %>

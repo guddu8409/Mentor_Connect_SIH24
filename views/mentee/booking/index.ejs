@@ -1,0 +1,205 @@
+<%- layout("mentee/layouts/boilerplate") %>
+
+<!-- Main Container for FullCalendar -->
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">Mentor's Schedule for mentee</h1>
+
+            <!-- Calendar Container -->
+            <div id="calendar"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Booking Details -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookingModalLabel">Booking Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Title:</strong> <span id="modalTitle"></span></p>
+                <p><strong>Start:</strong> <span id="modalStart"></span></p>
+                <p><strong>End:</strong> <span id="modalEnd"></span></p>
+                <p><strong>Status:</strong> <span id="modalStatus"></span></p>
+                <p><strong>Reason:</strong> <span id="modalReason"></span></p>
+                <p><strong>Payment Status:</strong> <span id="modalPayment"></span></p>
+                <div id="toggleStatusContainer">
+                    <label for="toggleReason" class="form-label">Cancellation/Restore Reason:</label>
+                    <input type="text" class="form-control" id="toggleReason" placeholder="Enter reason">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="toggleStatusButton">Toggle Status</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FullCalendar JS and CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+
+        var bookings = <%- JSON.stringify(bookings) %>; // Embed the bookings data
+        var menteeUserId = "<%= menteeUserId %>"; // Pass mentee's ID from backend
+
+        // Map bookings to FullCalendar event format
+        var events = bookings.map(function (booking) {
+            const isOwnBooking = booking.menteeUserId === menteeUserId;
+            const isPast = new Date(booking.end) < new Date();
+            let backgroundColor;
+
+            if (isPast) {
+                backgroundColor = '#d3d3d3'; // Faded for past bookings
+            } else if (isOwnBooking) {
+                backgroundColor = 'green'; // Own bookings in green
+            } else {
+                backgroundColor = 'red'; // Other mentees' bookings in red
+            }
+
+            return {
+                id: booking.bookingId,
+                title: isOwnBooking ? booking.title : "Mentor Session",
+                start: booking.start,
+                end: booking.end,
+                backgroundColor: backgroundColor,
+                extendedProps: {
+                    status: booking.status,
+                    reason: booking.reason,
+                    paymentStatus: booking.paymentStatus,
+                    isOwnBooking: isOwnBooking,
+                    isPast: isPast,
+                },
+                editable: isOwnBooking && !isPast, // Allow editing for current mentee's non-past bookings
+            };
+        });
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'timeGridWeek',
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'timeGridWeek,dayGridMonth',
+            },
+            events: events,
+            editable: true, // Allow drag-and-drop for editable events
+            selectable: true, // Enable selecting time slots
+            select: function (info) {
+                // Handle slot selection for new booking
+                if (confirm(`Do you want to book this slot from ${info.startStr} to ${info.endStr}?`)) {
+                    fetch('/mentee/book-slot', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            start: info.startStr,
+                            end: info.endStr,
+                            menteeUserId: menteeUserId,
+                        }),
+                    })
+                        .then((response) => {
+                            if (response.ok) {
+                                alert('Slot booked successfully!');
+                                calendar.refetchEvents(); // Refresh calendar
+                            } else {
+                                alert('Failed to book slot. Please try again.');
+                            }
+                        })
+                        .catch((err) => console.error('Error:', err));
+                }
+            },
+            eventMouseEnter: function (info) {
+                // Tooltip for event details
+                var tooltip = document.createElement('div');
+                tooltip.id = 'eventTooltip';
+                tooltip.style.position = 'absolute';
+                tooltip.style.zIndex = '1000';
+                tooltip.style.background = '#fff';
+                tooltip.style.border = '1px solid #ccc';
+                tooltip.style.padding = '10px';
+                tooltip.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                tooltip.innerHTML = `
+                    <p><strong>Title:</strong> ${info.event.title}</p>
+                    <p><strong>Status:</strong> ${info.event.extendedProps.status}</p>
+                    <p><strong>Reason:</strong> ${info.event.extendedProps.reason || 'N/A'}</p>
+                    <p><strong>Payment Status:</strong> ${info.event.extendedProps.paymentStatus}</p>
+                `;
+                document.body.appendChild(tooltip);
+
+                document.addEventListener('mousemove', function moveTooltip(e) {
+                    tooltip.style.top = e.clientY + 10 + 'px';
+                    tooltip.style.left = e.clientX + 10 + 'px';
+
+                    // Remove tooltip on mouse leave
+                    info.el.addEventListener('mouseleave', function removeTooltip() {
+                        tooltip.remove();
+                        document.removeEventListener('mousemove', moveTooltip);
+                    });
+                });
+            },
+            eventClick: function (info) {
+                const event = info.event;
+
+                if (event.extendedProps.isPast || !event.extendedProps.isOwnBooking) {
+                    // Prevent interaction with past or other mentee's bookings
+                    return;
+                }
+
+                // Populate modal with booking details
+                document.getElementById('modalTitle').textContent = event.title;
+                document.getElementById('modalStart').textContent = event.start.toISOString();
+                document.getElementById('modalEnd').textContent = event.end.toISOString();
+                document.getElementById('modalStatus').textContent = event.extendedProps.status;
+                document.getElementById('modalReason').textContent = event.extendedProps.reason || 'N/A';
+                document.getElementById('modalPayment').textContent = event.extendedProps.paymentStatus;
+
+                // Reset reason input
+                document.getElementById('toggleReason').value = '';
+
+                // Show the modal
+                const bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+                bookingModal.show();
+            },
+            eventDrop: function (info) {
+                if (info.event.extendedProps.isOwnBooking) {
+                    if (confirm('Do you want to update this booking?')) {
+                        fetch('/mentee/update-booking', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                bookingId: info.event.id,
+                                start: info.event.start.toISOString(),
+                                end: info.event.end.toISOString(),
+                            }),
+                        })
+                            .then((response) => {
+                                if (response.ok) {
+                                    alert('Booking updated successfully!');
+                                } else {
+                                    alert('Failed to update booking. Please try again.');
+                                }
+                            })
+                            .catch((err) => console.error('Error:', err));
+                    } else {
+                        info.revert(); // Revert changes if not confirmed
+                    }
+                }
+            },
+        });
+
+        calendar.render();
+    });
+</script>
+

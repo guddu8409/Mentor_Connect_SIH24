@@ -4,6 +4,13 @@ const menteeController = require("../controllers/menteeWebController");
 
 const router = express.Router();
 
+
+// schedule
+router.get("/schedule/:mentorUserId",isLoggedIn,isMentee,menteeController.renderParticularMentorScheduleForMentee);
+// router.post("/update-booking",isLoggedIn,isMentee,updateMentorOwnSchdule);
+
+
+
 // Dashboard route
 router.get("/", isLoggedIn, isMentee, menteeController.dashboard);
 
@@ -22,7 +29,7 @@ router.post("/connections/:mentorId/connectRequest", isLoggedIn, isMentee, mente
 router.delete("/connections/:mentorId/cancelRequest", isLoggedIn, isMentee, menteeController.cancelRequest);
 
 // scheduling
-router.get("/schedule/:mentorUserId", isLoggedIn, isMentee, menteeController.displayMentorScheduleForMentee);
+router.get("/schedule/:mentorUserId", isLoggedIn, isMentee, menteeController.renderParticularMentorScheduleForMentee);
 // router.post("/schedule/new", isLoggedIn, isMentee, menteeController.createSchedule);
 // router.get("/schedule/:scheduleId/edit", isLoggedIn, isMentee, menteeController.renderEditSchedule);
 // router.post("/schedule/:scheduleId/edit", isLoggedIn, isMentee, menteeController.editSchedule);

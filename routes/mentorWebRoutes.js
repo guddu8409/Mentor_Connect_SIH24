@@ -14,8 +14,6 @@ const router = express.Router();
 // schedule
 router.get("/schedule",isLoggedIn,isMentor,renderMentorOwnSchdule);
 router.post("/update-booking",isLoggedIn,isMentor,updateMentorOwnSchdule);
-router.get("/schedule",isLoggedIn,isMentor,renderMentorOwnSchdule);
-
 
 
 // Mentor Dashboard

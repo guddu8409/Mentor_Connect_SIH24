@@ -4,28 +4,64 @@ const menteeService = require("../services/menteeService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
 const MenteeConnectionService = require("../services/menteeConnectionService");
-
+const Booking=require("../models/bookingModel");
 const ConnectionRequest = require("../models/connectionRequest");
 
 
 //scheduling
-module.exports.displayMentorScheduleForMentee = async (req, res) => {
+module.exports.renderParticularMentorScheduleForMentee = async (req, res) => {
   try {
     const mentorUserId = req.params.mentorUserId;
-    const mentor = await Mentor.findById(mentorUserId);
-    if (!mentor) {
-      req.flash("error", "Mentor not found.");
-      return res.redirect("/");
-    }
+    const menteeUserId = req.user._id; // Logged-in mentee's ID
 
-    res.render("mentee/schedule/schedule", { mentor });
-  } catch (error) {
-    console.error("Error fetching mentor schedule: ", error);
-    req.flash("error", "An error occurred while fetching the schedule.");
-    res.redirect("/");
+    // Fetch all bookings where the specified user is the mentor
+    const bookings = await Booking.find({ mentorUserId: mentorUserId })
+      .populate("menteeUserId") // Populate mentee details
+      .exec();
+
+    // Format bookings for FullCalendar
+    const formattedBookings = bookings.map((booking) => {
+      const isCurrentMentee = booking.menteeUserId?._id.toString() === menteeUserId.toString();
+
+      if (isCurrentMentee) {
+        // Full details if the booking belongs to the logged-in mentee
+        return {
+          bookingId: booking._id.toString(), // Booking ID
+          title: `Session with ${
+            booking.menteeUserId ? booking.menteeUserId.username : "Mentee"
+          }`, // Use mentee's username
+          start: booking.schedule.start.toISOString(), // Convert start date to ISO string
+          end: booking.schedule.end.toISOString(), // Convert end date to ISO string
+          status: booking.status, // Include booking status
+          reason: booking.reason || "", // Default to empty string if no reason
+          paymentStatus: booking.payment
+            ? `Payment done with ${booking.payment.toString()}`
+            : "Payment not done", // Check for payment and format accordingly
+        };
+      } else {
+        // General details for bookings not belonging to the logged-in mentee
+        return {
+          bookingId: "******", // Mask the booking ID
+          title: "Mentor Session", // Generic title
+          start: booking.schedule.start.toISOString(), // Start date
+          end: booking.schedule.end.toISOString(), // End date
+          status: "scheduled", // Default status for anonymized details
+          paymentStatus:"done"
+        };
+      }      
+    });
+
+    // Render the schedule page and pass the bookings data
+    res.render("mentee/booking/index.ejs", {
+      userRole: "mentee", // Render the page for a mentor
+      bookings: formattedBookings, // Pass formatted bookings to the template
+      menteeUserId:req.user.id, 
+    });
+  } catch (err) {
+    console.error("Error fetching mentor schedule:", err);
+    res.status(500).send("An error occurred while fetching your schedule.");
   }
 };
-
 
 
 
