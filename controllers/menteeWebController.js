@@ -1,5 +1,9 @@
 const Mentee = require("../models/mentee/mentee");
 const Mentor = require("../models/mentor/mentor");
+const mongoose = require('mongoose');
+const Booking = require("../models/bookingModel"); // Ensure the model is imported
+const wrapAsync = require("../utils/wrapAsync");
+
 const menteeService = require("../services/menteeService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
@@ -259,3 +263,75 @@ module.exports.cancelRequest = async (req, res) => {
     res.status(500).send("An error occurred while cancelling the request.");
   }
 };
+
+//schedule
+module.exports.renderMentorScheduleForMentee = async (req, res) => {
+  try {
+    // Fetch the logged-in user's ID (mentee) and the mentor's ID
+    const menteeId = req.user._id;
+    const mentorId = req.params.mentorId;
+
+    // Fetch all bookings for the specified mentor
+    const bookings = await Booking.find({ mentorUserId: mentorId })
+      .populate("mentorUserId") // Populate mentor details
+      .populate("menteeUserId") // Populate mentee details
+      .exec();
+
+    // Format bookings for FullCalendar
+    const formattedBookings = bookings.map((booking) => {
+      // If the booking is for the logged-in mentee, provide full details
+      if (booking.menteeUserId && booking.menteeUserId._id.equals(menteeId)) {
+        return {
+          bookingId: booking._id.toString(),
+          title: `Session with ${
+            booking.mentorUserId ? booking.mentorUserId.username : "Mentor"
+          }`,
+          start: booking.schedule.start.toISOString(),
+          end: booking.schedule.end.toISOString(),
+          status: booking.status,
+          reason: booking.reason || "",
+        };
+      } else {
+        // For other mentees' bookings, provide only general details
+        return {
+          bookingId: booking._id.toString(),
+          title: "Scheduled",
+          start: booking.schedule.start.toISOString(),
+          end: booking.schedule.end.toISOString(),
+          status: "scheduled", // Hide the exact status for other mentees
+          reason: "", // No reason provided
+        };
+      }
+    });
+
+    // Render the schedule page and pass the bookings data
+    res.render("mentee/booking/index.ejs", {
+      userRole: "mentee", // Render the page for a mentee
+      bookings: formattedBookings, // Pass formatted bookings to the template
+    });
+  } catch (err) {
+    console.error("Error fetching mentee schedule:", err);
+    res.status(500).send("An error occurred while fetching the mentor's schedule.");
+  }
+};
+
+
+module.exports.cancelBookRequest= wrapAsync(async (req, res) => {
+  const { bookingId, reason } = req.body;
+  const booking = await Booking.findById(bookingId);
+  if (!booking) return res.status(404).send("Booking not found.");
+  booking.status = "cancelled";
+  booking.reason = reason;
+  await booking.save();
+  res.send("Booking cancelled.");
+});
+
+module.exports.reverseCancelBookRequest=  wrapAsync(async (req, res) => {
+  const { bookingId } = req.body;
+  const booking = await Booking.findById(bookingId);
+  if (!booking) return res.status(404).send("Booking not found.");
+  booking.status = "confirmed";
+  booking.reason = "";
+  await booking.save();
+  res.send("Booking restored.");
+});

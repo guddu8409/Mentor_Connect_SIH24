@@ -5,7 +5,7 @@ const { isLoggedIn, isMentor, isOwner } = require("../middlewares/authMiddleware
 const { dashboard, 
     viewProfile, editProfile, deleteProfile, renderEditProfile,
     displayAllConnections,pendingRequest, acceptRequest, rejectRequest,
-    renderMessagePage,
+    renderMessagePage,renderMentorCalendar,updateBooking
     
 } = require("../controllers/mentorWebController");
 
@@ -44,8 +44,9 @@ router.post("/connection/reject/:requestId", isLoggedIn, isMentor, rejectRequest
 // render message page with respective mentee
 router.get("/message/:menteeId", isLoggedIn, isMentor, renderMessagePage);
 
-//
-
+// booking
+router.get("/schedule", isLoggedIn, isMentor, renderMentorCalendar);
+router.post("/update-booking", isLoggedIn, isMentor, updateBooking);
 
 module.exports = router;
 

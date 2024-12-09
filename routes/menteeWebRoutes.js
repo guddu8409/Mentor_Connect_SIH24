@@ -21,4 +21,9 @@ router.get("/connections", isLoggedIn, isMentee, menteeController.displayAllConn
 router.post("/connections/:mentorId/connectRequest", isLoggedIn, isMentee, menteeController.connectRequest);
 router.delete("/connections/:mentorId/cancelRequest", isLoggedIn, isMentee, menteeController.cancelRequest);
 
+// scheduling routes
+router.get("/schedule/:mentorId", isLoggedIn, isMentee, menteeController.renderMentorScheduleForMentee);
+// router.post("/schedule/:bookingId/cancel-booking",isLoggedIn, isMentee, MenteeController.cancelBookRequest);
+// router.post("/schedule/:bookingId/reverse-cancel-booking",isLoggedIn, isMentee, MenteeController.reverseCancelBookingRequest);
+
 module.exports = router;
