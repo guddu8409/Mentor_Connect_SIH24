@@ -9,8 +9,7 @@ const UserSchema = new mongoose.Schema({
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }], 
     default: [] // Default to an empty array
   },
-  pricePerSession: { type: Number, default: 50 }, // Default price for mentors
-});
+ });
 
 UserSchema.plugin(passportLocalMongoose);
 

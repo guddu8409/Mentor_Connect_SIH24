@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const JobReview = require("../jobReview");
+const { number } = require("joi");
 const { Schema } = mongoose;
 
 // Availability Schema
@@ -13,6 +14,7 @@ const { Schema } = mongoose;
 // Mentor Schema
 const MentorSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }, // No default since it's required
+  pricePerSession: { type: Number, default: 50 }, // Default price for mentors
   expertise: { type: [String], default: [] }, // Default to an empty array
   yearsOfExperience: { type: Number, default: 0 }, // Default to 0
   availability: {

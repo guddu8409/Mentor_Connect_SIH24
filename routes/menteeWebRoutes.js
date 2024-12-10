@@ -4,6 +4,13 @@ const menteeController = require("../controllers/menteeWebController");
 
 const router = express.Router();
 
+
+// schedule
+router.get("/schedule/:mentorUserId",isLoggedIn,isMentee,menteeController.renderParticularMentorScheduleForMentee);
+// router.post("/update-booking",isLoggedIn,isMentee,updateMentorOwnSchdule);
+
+
+
 // Dashboard route
 router.get("/", isLoggedIn, isMentee, menteeController.dashboard);
 
@@ -21,9 +28,12 @@ router.get("/connections", isLoggedIn, isMentee, menteeController.displayAllConn
 router.post("/connections/:mentorId/connectRequest", isLoggedIn, isMentee, menteeController.connectRequest);
 router.delete("/connections/:mentorId/cancelRequest", isLoggedIn, isMentee, menteeController.cancelRequest);
 
-// scheduling routes
-router.get("/schedule/:mentorId", isLoggedIn, isMentee, menteeController.renderMentorScheduleForMentee);
-// router.post("/schedule/:bookingId/cancel-booking",isLoggedIn, isMentee, MenteeController.cancelBookRequest);
-// router.post("/schedule/:bookingId/reverse-cancel-booking",isLoggedIn, isMentee, MenteeController.reverseCancelBookingRequest);
-
+// scheduling
+router.get("/schedule/:mentorUserId", isLoggedIn, isMentee, menteeController.renderParticularMentorScheduleForMentee);
+router.post(
+  "/schedule/book-slot",
+  isLoggedIn,
+  isMentee,
+  menteeController.handleBookSlot
+);
 module.exports = router;

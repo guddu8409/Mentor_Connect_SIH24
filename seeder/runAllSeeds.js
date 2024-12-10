@@ -9,20 +9,16 @@ const MONGO_URL = "mongodb://127.0.0.1:27017/mentorConnect2";
 const logger = require("../utils/logger")("runAllSeeds"); // Import your logger
 
 // Import seeders
-// const discussionSeeder = require("./discussionSeeder");
-// const discussionReviewSeeder = require("./discussionReviewSeeder");
-// const donationSeeder = require("./donationSeeder");
-// const groupSeeder = require("./groupSeeder");
-// const jobSeeder = require("./jobSeeder");
-// const jobReviewSeeder = require("./jobReviewSeeder");
-// const notificationSeeder = require("./notificationSeeder");
-// const paymentSeeder = require("./paymentSeeder");
-// const quizSeeder = require("./quizSeeder");
-// const successSeeder = require("./successSeeder");
-// const successReviewSeeder = require("./successReviewSeeder");
-// const userSeeder = require("./userSeeder");
-// const mentorSeeder = require("./mentorSeeder");
-// const errorSeeder = require("./errorSeeder");
+const discussionSeeder = require("./discussionSeeder");
+const discussionReviewSeeder = require("./discussionReviewSeeder");
+const donationSeeder = require("./donationSeeder");
+const groupSeeder = require("./groupSeeder");
+const jobSeeder = require("./jobSeeder");
+const jobReviewSeeder = require("./jobReviewSeeder");
+const paymentSeeder = require("./paymentSeeder");
+const quizSeeder = require("./quizSeeder");
+const successSeeder = require("./successSeeder");
+const successReviewSeeder = require("./successReviewSeeder");
 const scheduleSeeder = require("./bookingSeeder");
 
 async function runSeeds() {
@@ -47,16 +43,11 @@ async function runSeeds() {
       // require("../models/quiz").deleteMany({}),
       // require("../models/success").deleteMany({}),
       // require("../models/successReview").deleteMany({}),
-      // require("../models/user").deleteMany({}),
-    
     ]);
     logger.info("Old data cleared.");
     console.log("old data cleared");
 
     // Seed in proper sequence
-    // await userSeeder();
-    // await mentorSeeder();
-    // await notificationSeeder();
     // await discussionSeeder();
     // await discussionReviewSeeder();
     // await donationSeeder();

@@ -8,6 +8,104 @@ const ConnectionRequest = require("../models/connectionRequest");
 const mentorService = require("../services/mentorService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
+const Booking = require("../models/bookingModel"); // Ensure the model is imported
+const mongoose = require('mongoose');
+
+
+module.exports.renderMentorOwnSchdule = async (req, res) => {
+  try {
+    // Fetch the logged-in user's mentor ID
+    const mentorId = req.user._id;
+
+    // Fetch all bookings where the logged-in user is the mentor
+    const bookings = await Booking.find({ mentorUserId: mentorId })
+      .populate("menteeUserId") // Populate mentee details
+      .exec();
+
+    console.log(
+      "................................................................"
+    );
+
+    // Format bookings for FullCalendar
+    const formattedBookings = bookings.map((booking) => ({
+      bookingId: booking._id.toString(), // Add the booking ID to the formatted data
+      title: `Session with ${
+        booking.menteeUserId ? booking.menteeUserId.username : "Mentee"
+      }`, // Use mentee's username
+      start: booking.schedule.start.toISOString(), // Convert date to ISO string
+      end: booking.schedule.end.toISOString(), // Convert date to ISO string
+      status: booking.status, // Include booking status
+      reason: booking.reason || "", // Default to empty string if no reason
+      paymentStatus: booking.payment
+        ? `Payment done with ${booking.payment.toString()}`
+        : "Payment not done", // Check for payment and format accordingly
+    }));
+
+    // console.log(formattedBookings);
+    // Render the schedule page and pass the bookings data
+    res.render("mentor/booking/index.ejs", {
+      userRole: "mentor", // Render the page for a mentor
+      bookings: formattedBookings, // Pass formatted bookings to the template
+    });
+  } catch (err) {
+    console.error("Error fetching mentor schedule:", err);
+    res.status(500).send("An error occurred while fetching your schedule.");
+  }
+};
+
+module.exports.updateMentorOwnSchdule= async (req, res) => {
+  console.log("Updating schedule: Received request body:");
+  console.log(req.body);
+
+  const { bookingId, status, reason } = req.body; // Extract bookingId, status, and reason
+
+  // Step 1: Validate input
+  if (!bookingId || !status) {
+    console.error("Error: Missing required fields in the request body.");
+    return res.status(400).send({ 
+      message: "Invalid request: bookingId and status are required fields." 
+    });
+  }
+
+  try {
+    // Step 2: Convert bookingId to ObjectId if it's a string and the field in DB is an ObjectId
+    let bookingQuery = { bookingId };
+    if (mongoose.Types.ObjectId.isValid(bookingId)) {
+      bookingQuery = { _id: new mongoose.Types.ObjectId(bookingId) }; // Correct instantiation of ObjectId
+    }
+
+    console.log(`Searching for booking with bookingId: ${bookingId}`);
+    const booking = await Booking.findOne(bookingQuery); // Use the correct query format
+    console.log("Booking query executed.");
+
+    if (booking) {
+      console.log(`Booking found. Updating bookingId: ${bookingId}`);
+
+      // Step 3: Update booking fields
+      booking.status = status;
+      booking.reason = reason;
+
+      console.log(`Saving updated booking with bookingId: ${bookingId}`);
+      await booking.save(); // Save changes to the database
+      console.log("Booking saved successfully.");
+
+      // Step 4: Send success response
+      return res.status(200).send({ message: "Booking updated successfully" });
+    } else {
+      console.error(`Error: Booking with bookingId ${bookingId} not found.`);
+      return res.status(404).send({ 
+        message: `Booking not found: No booking exists with bookingId ${bookingId}` 
+      });
+    }
+  } catch (error) {
+    // Step 5: Handle errors
+    console.error("Error during booking update:", error);
+    return res.status(500).send({ 
+      message: "Internal server error. Please try again later." 
+    });
+  }
+};
+
 
 module.exports.dashboard = (req, res) => {
   res.render("mentor/home/home", {
