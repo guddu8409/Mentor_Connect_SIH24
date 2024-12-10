@@ -1,11 +1,85 @@
 <%- layout("mentor/layouts/boilerplate") %>
 
 <div>
-  <h1>Home page of mentor hence this whole system is run according to mentor</h1>
-  <h2>eska apna navBar hoga, footer hoga</h2>
+  <h1 style="text-align: center;">Home Page of Mentor</h1>
+  <h2 style="text-align: center; color: #555;">This whole system runs according to the mentor's guidance</h2>
 </div>
 
+<h1 style="text-align: center; color: #0066cc;">Mentor Dashboard</h1>
+<p style="text-align: center; font-size: 1.2rem;">
+  Welcome,
+  <span id="mentor-name" style="color: #009933; font-weight: bold;"></span>!
+</p>
 
-<!-- <#%- include('../layouts/boilerplate') %> -->
-<h1>Mentor Dashboard</h1>
-<!-- <p>Welcome, <#%= currUser.username %>!</p> -->
+<div id="mentor-content" style="display: flex; flex-direction: column; gap: 2rem; padding: 1rem;">
+  <!-- My Mentee Groups Section -->
+  <div style="background-color: #f2f2f2; padding: 2rem; border-radius: 10px; height: 300px; overflow-y: auto;">
+    <h2 style="color: #333;">My Mentee Groups</h2>
+    <ul>
+      <li>Group 1: Web Development Enthusiasts</li>
+      <li>Group 2: Data Science Learners</li>
+      <li>Group 3: AI Innovators</li>
+      <li>Group 4: Mobile App Developers</li>
+      <li>Group 5: UI/UX Designers</li>
+      <li>Group 6: Cybersecurity Experts</li>
+      <li>Group 7: Cloud Computing Pioneers</li>
+      <li>Group 8: Game Developers</li>
+    </ul>
+  </div>
+
+  <!-- Connected Mentees Section -->
+  <div style="background-color: #e6f7ff; padding: 2rem; border-radius: 10px; height: 300px; overflow-y: auto;">
+    <h2 style="color: #0050b3;">Connected Mentees</h2>
+    <ul>
+      <li>Mentee 1: Alice Johnson (Web Developer)</li>
+      <li>Mentee 2: Bob Smith (Data Scientist)</li>
+      <li>Mentee 3: Charlie Brown (AI Enthusiast)</li>
+      <li>Mentee 4: Diana Prince (UI/UX Designer)</li>
+      <li>Mentee 5: Edward Nigma (Cybersecurity Specialist)</li>
+      <li>Mentee 6: Fiona Apple (Cloud Engineer)</li>
+    </ul>
+  </div>
+
+  <!-- Success Stories Section -->
+  <div style="background-color: #fff7e6; padding: 2rem; border-radius: 10px; height: 300px; overflow-y: auto;">
+    <h2 style="color: #d48806;">Success Stories of Mentees</h2>
+    <ul>
+      <li>
+        <strong>Alice Johnson:</strong> Landed a job as a Frontend Developer at a leading tech firm after mastering
+        React.js.
+      </li>
+      <li>
+        <strong>Bob Smith:</strong> Published a groundbreaking paper on AI algorithms, mentored and guided by you.
+      </li>
+      <li>
+        <strong>Charlie Brown:</strong> Successfully launched his own AI-based startup with the skills you taught.
+      </li>
+      <li>
+        <strong>Diana Prince:</strong> Designed an award-winning UI for a global e-commerce platform.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Slogan Section -->
+  <div style="background-color: #d9f7be; padding: 2rem; border-radius: 10px; height: 200px; text-align: center;">
+    <h2 style="color: #006600;">Slogan</h2>
+    <p style="font-size: 1.2rem;">"Empowering success stories, one mentee at a time!"</p>
+  </div>
+</div>
+
+<script>
+  // Simulate typing effect for the mentor's name
+  const mentorName = "John Doe"; // Replace with dynamic name logic
+  let index = 0;
+  const nameElement = document.getElementById("mentor-name");
+
+  function typeEffect() {
+    if (index < mentorName.length) {
+      nameElement.textContent += mentorName.charAt(index);
+      index++;
+      setTimeout(typeEffect, 100); // Adjust typing speed
+    }
+  }
+
+  typeEffect();
+</script>

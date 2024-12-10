@@ -1,30 +1,87 @@
 <% layout("/mentor/layouts/boilerplate") -%>
 <div class="container mt-5">
-    <h2 class="text-center">User Profile</h2>
-
-    <div class="profile-info">
-        <h4>Username: <%= mentor.user.username %></h4>
-
-        <h2>Username: <%= currUser._id %></h2>
-        <h4>Role: <%= mentor.user.role %></h4>
-        <h4>Expertise: <%= mentor.expertise.join(", ") %></h4>
-        <h4>Years of Experience: <%= mentor.yearsOfExperience %></h4>
-        <h4>Bio: <%= mentor.bio || 'No bio available' %></h4>
-        <h4>LinkedIn: <a href="<%= mentor.linkedIn %>" target="_blank"><%= mentor.linkedIn %></a></h4>
-        <h4>Twitter: <a href="<%= mentor.twitter %>" target="_blank"><%= mentor.twitter %></a></h4>
-        <h4>GitHub: <a href="<%= mentor.github %>" target="_blank"><%= mentor.github %></a></h4>
-        <h4>Portfolio: <a href="<%= mentor.portfolio %>" target="_blank"><%= mentor.portfolio %></a></h4>
+    <!-- Profile Header -->
+    <div class="profile-header text-center">
+        <img src="<%= mentor.profilePicture || '/images/default-profile.png' %>" alt="Profile Picture"
+            class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+        <h2><%= mentor.user.username %></h2>
+        <p class="text-muted"><%= mentor.jobTitle || 'No job title provided' %> at
+            <%= mentor.employer || 'No employer listed' %></p>
+        <p class="text-muted"><%= mentor.city %>, <%= mentor.country %></p>
+        <% if (mentor.isStarMentor) { %>
+        <span class="badge bg-warning text-dark">Star Mentor</span>
+        <% } %>
     </div>
 
-    <!-- Show edit and delete options if the logged-in user is the owner -->
-    <% if (isOwner) { %>
-        <div class="profile-actions mt-3">
-            <a href="/mentor/profile/edit/<%= mentor.user._id %>" class="btn btn-primary">Edit Profile</a>
-            <form action="/mentor/profile/delete/<%= mentor.user._id %>" method="POST" class="mt-2" onsubmit="return confirm('Are you sure you want to delete your profile?');">
-                <button type="submit" class="btn btn-danger">Delete Profile</button>
-            </form>
-        </div>
-    <% } %>
+    <!-- Profile Details -->
+    <div class="profile-info mt-4">
+        <h4>About</h4>
+        <p><%= mentor.user.bio || 'No bio available' %></p>
 
-    
+        <h4>Contact</h4>
+        <ul class="list-unstyled">
+            <% if (mentor.linkedIn) { %>
+            <li><strong>LinkedIn:</strong> <a href="<%= mentor.linkedIn %>" target="_blank"><%= mentor.linkedIn %></a>
+            </li>
+            <% } %>
+            <% if (mentor.twitter) { %>
+            <li><strong>Twitter:</strong> <a href="<%= mentor.twitter %>" target="_blank"><%= mentor.twitter %></a></li>
+            <% } %>
+            <% if (mentor.github) { %>
+            <li><strong>GitHub:</strong> <a href="<%= mentor.github %>" target="_blank"><%= mentor.github %></a></li>
+            <% } %>
+            <% if (mentor.portfolio) { %>
+            <li><strong>Portfolio:</strong> <a href="<%= mentor.portfolio %>"
+                    target="_blank"><%= mentor.portfolio %></a></li>
+            <% } %>
+        </ul>
+
+        <h4>Expertise</h4>
+        <p><%= mentor.expertise.length ? mentor.expertise.join(", ") : 'No expertise listed' %></p>
+
+        <h4>Professional Details</h4>
+        <ul class="list-unstyled">
+            <li><strong>Years of Experience:</strong> <%= mentor.yearsOfExperience %></li>
+            <li><strong>Graduation Year:</strong> <%= mentor.graduationYear || 'N/A' %></li>
+            <li><strong>Degree:</strong> <%= mentor.degree || 'N/A' %></li>
+            <li><strong>Department:</strong> <%= mentor.department || 'N/A' %></li>
+            <li><strong>Industry:</strong> <%= mentor.industry || 'N/A' %></li>
+        </ul>
+
+        <h4>Skills</h4>
+        <p><%= mentor.skills.length ? mentor.skills.join(", ") : 'No skills listed' %></p>
+
+        <h4>Projects</h4>
+        <ul>
+            <% if (mentor.projects.length) { %>
+            <% mentor.projects.forEach(project => { %>
+            <li><%= project %></li>
+            <% }) %>
+            <% } else { %>
+            <li>No projects listed</li>
+            <% } %>
+        </ul>
+
+        <h4>Achievements</h4>
+        <ul>
+            <% if (mentor.achievements.length) { %>
+            <% mentor.achievements.forEach(achievement => { %>
+            <li><%= achievement %></li>
+            <% }) %>
+            <% } else { %>
+            <li>No achievements listed</li>
+            <% } %>
+        </ul>
+    </div>
+
+    <!-- Edit and Delete Options -->
+    <% if (isOwner) { %>
+    <div class="profile-actions mt-4 text-center">
+        <a href="/mentor/profile/edit/<%= mentor.user._id %>" class="btn btn-primary">Edit Profile</a>
+        <form action="/mentor/profile/delete/<%= mentor.user._id %>" method="POST" class="d-inline"
+            onsubmit="return confirm('Are you sure you want to delete your profile?');">
+            <button type="submit" class="btn btn-danger">Delete Profile</button>
+        </form>
+    </div>
+    <% } %>
 </div>

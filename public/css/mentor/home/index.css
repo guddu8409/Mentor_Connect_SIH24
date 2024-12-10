@@ -1,3 +1,21 @@
-*{
-      background-color: black;
-}
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+
+  #mentor-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+
+  ul li {
+    margin: 0.5rem 0;
+  }
