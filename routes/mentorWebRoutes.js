@@ -5,7 +5,7 @@ const { isLoggedIn, isMentor, isOwner } = require("../middlewares/authMiddleware
 const { dashboard, 
     viewProfile, editProfile, deleteProfile, renderEditProfile,
     displayAllConnections,pendingRequest, acceptRequest, rejectRequest,
-    renderMessagePage,renderMentorOwnSchdule,updateMentorOwnSchdulerenderMentorCalendar,updateBooking
+    renderMessagePage,renderMentorOwnSchdule,updateMentorOwnSchdule,renderMentorCalendar,updateBooking
     
 } = require("../controllers/mentorWebController");
 

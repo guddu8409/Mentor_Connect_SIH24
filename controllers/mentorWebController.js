@@ -8,8 +8,6 @@ const ConnectionRequest = require("../models/connectionRequest");
 const mentorService = require("../services/mentorService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
-const Booking = require("../models/bookingModel"); // Ensure the model is imported
-const mongoose = require('mongoose');
 
 
 module.exports.renderMentorOwnSchdule = async (req, res) => {
@@ -107,11 +105,34 @@ module.exports.updateMentorOwnSchdule= async (req, res) => {
 };
 
 
+// module.exports.dashboard = (req, res) => {
+//   res.render("mentor/home/home", {
+//     cssFile: "mentor/home/index.css",
+//   });
+// };
+
+
+
 module.exports.dashboard = (req, res) => {
-  res.render("mentor/home/home", {
-    cssFile: "mentor/home/index.css",
+  res.render('mentor/home/home', {
+    cssFile:"mentor/home/index.css",
+    mentorName: 'John Doe',
+    groups: [
+      { name: 'Web Development Enthusiasts', description: 'Learning the latest in web technologies.' },
+      { name: 'Data Science Learners', description: 'Exploring data and building models.' }
+    ],
+    mentees: [
+      { name: 'Alice Johnson', role: 'Web Developer' },
+      { name: 'Bob Smith', role: 'Data Scientist' }
+    ],
+    successStories: [
+      { name: 'Alice Johnson', achievement: 'Landed a job as a Frontend Developer.' },
+      { name: 'Bob Smith', achievement: 'Published a groundbreaking AI paper.' }
+    ],
+    thoughtOfTheDay: 'Empowering success stories, one mentee at a time!'
   });
 };
+
 
 module.exports.viewProfile = async (req, res) => {
   try {

@@ -9,7 +9,6 @@ const mentorService = require("../services/mentorService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
 const MenteeConnectionService = require("../services/menteeConnectionService");
-const Booking = require("../models/bookingModel");
 const ConnectionRequest = require("../models/connectionRequest");
 
 //scheduling
