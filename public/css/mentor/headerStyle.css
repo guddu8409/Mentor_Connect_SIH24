@@ -86,7 +86,7 @@ header {
 
 /* Auth Buttons */
 .auth-buttons {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   display: flex;
   align-items: center;
   gap: 10px; /* Adds spacing between buttons */
@@ -120,6 +120,11 @@ header {
 
 .register-btn:hover {
   background-color: #0056b3;
+}
+
+/* Add margin to the logout button to avoid clipping */
+.auth-buttons .login-btn:last-child { 
+  margin-right: 30px; /* Increase margin to make sure it's fully visible */
 }
 
 /* Mobile Menu */
