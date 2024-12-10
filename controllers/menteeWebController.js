@@ -1,12 +1,12 @@
 const Mentee = require("../models/mentee/mentee");
 const Mentor = require("../models/mentor/mentor");
 const menteeService = require("../services/menteeService");
+const mentorService = require("../services/mentorService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
 const MenteeConnectionService = require("../services/menteeConnectionService");
-const Booking=require("../models/bookingModel");
+const Booking = require("../models/bookingModel");
 const ConnectionRequest = require("../models/connectionRequest");
-
 
 //scheduling
 module.exports.renderParticularMentorScheduleForMentee = async (req, res) => {
@@ -14,14 +14,15 @@ module.exports.renderParticularMentorScheduleForMentee = async (req, res) => {
     const mentorUserId = req.params.mentorUserId;
     const menteeUserId = req.user._id; // Logged-in mentee's ID
 
-    // Fetch all bookings where the specified user is the mentor
-    const bookings = await Booking.find({ mentorUserId: mentorUserId })
+    // Fetch all bookings where the specified user is the mentor and status is not "deleted"
+    const bookings = await Booking.find({ mentorUserId: mentorUserId, status: { $ne: "deleted" } })
       .populate("menteeUserId") // Populate mentee details
       .exec();
 
     // Format bookings for FullCalendar
     const formattedBookings = bookings.map((booking) => {
-      const isCurrentMentee = booking.menteeUserId?._id.toString() === menteeUserId.toString();
+      const isCurrentMentee =
+        booking.menteeUserId?._id.toString() === menteeUserId.toString();
 
       if (isCurrentMentee) {
         // Full details if the booking belongs to the logged-in mentee
@@ -30,10 +31,10 @@ module.exports.renderParticularMentorScheduleForMentee = async (req, res) => {
           title: `Session with ${
             booking.menteeUserId ? booking.menteeUserId.username : "Mentee"
           }`, // Use mentee's username
-          start: booking.schedule.start.toISOString(), // Convert start date to ISO string
-          end: booking.schedule.end.toISOString(), // Convert end date to ISO string
+          start: booking.schedule.start.toISOString(), // Start date
+          end: booking.schedule.end.toISOString(), // End date
           status: booking.status, // Include booking status
-          reason: booking.reason || "", // Default to empty string if no reason
+          reason: booking.bookingReason || "", // Default to empty string if no reason
           paymentStatus: booking.payment
             ? `Payment done with ${booking.payment.toString()}`
             : "Payment not done", // Check for payment and format accordingly
@@ -46,16 +47,18 @@ module.exports.renderParticularMentorScheduleForMentee = async (req, res) => {
           start: booking.schedule.start.toISOString(), // Start date
           end: booking.schedule.end.toISOString(), // End date
           status: "scheduled", // Default status for anonymized details
-          paymentStatus:"done"
+          paymentStatus: "done",
         };
-      }      
+      }
     });
 
     // Render the schedule page and pass the bookings data
     res.render("mentee/booking/index.ejs", {
-      userRole: "mentee", // Render the page for a mentor
+      userRole: "mentee", // Render the page for a mentee
       bookings: formattedBookings, // Pass formatted bookings to the template
-      menteeUserId:req.user.id, 
+      menteeUserId: req.user.id,
+      mentorUserId: mentorUserId, // Pass mentor ID to the template
+      pricePerSlot: 50, // Example price per slot
     });
   } catch (err) {
     console.error("Error fetching mentor schedule:", err);
@@ -64,13 +67,9 @@ module.exports.renderParticularMentorScheduleForMentee = async (req, res) => {
 };
 
 
-
-
-
 module.exports.dashboard = (req, res) => {
   res.render("mentee/home/home");
 };
-
 
 module.exports.viewProfile = async (req, res) => {
   try {
@@ -183,7 +182,8 @@ module.exports.displayMentor = async (req, res) => {
   }
 };
 
-module.exports.displayMentorList = async (req, res) => { //when he search for add new mentor
+module.exports.displayMentorList = async (req, res) => {
+  //when he search for add new mentor
   try {
     // Fetch the mentee's details
     const mentee = await Mentee.findOne({ user: req.user._id })
@@ -220,7 +220,8 @@ module.exports.displayMentorList = async (req, res) => { //when he search for ad
   }
 };
 
-module.exports.displayAllConnections = async (req, res) => { // display all connected mentor
+module.exports.displayAllConnections = async (req, res) => {
+  // display all connected mentor
   try {
     // Find the mentee using the logged-in user's ID
     const mentee = await Mentee.findOne({ user: req.user._id }).populate({
@@ -320,4 +321,52 @@ module.exports.cancelRequest = async (req, res) => {
   }
 };
 
+// A model to store payment information
 
+module.exports.handleBookSlot = async (req, res) => {
+  console.log("Book slot started");
+
+  try {
+    const {
+      start,
+      end,
+      reason,
+      totalPrice,
+      mentorUserId,
+      menteeUserId,
+      title,
+    } = req.body;
+
+    // Step 1: Temporarily save received data with a pending status
+    const booking = new Booking({
+      menteeUserId: menteeUserId, // ID of the mentee
+      mentorUserId: mentorUserId, // ID of the mentor
+      status: "pending", // Default status
+      schedule: {
+        start: start, // Start time of the booking
+        end: end, // End time of the booking
+      },
+      title: title, // Booking title
+      bookingReason: reason, // Reason for the booking
+    });
+
+    console.log(" before Booking save");
+
+    await booking.save();
+    console.log("after Booking save");
+
+    // Step 2: Render payment page
+    console.log("rendering payment page.....");
+
+    res.render("mentee/booking/payment.ejs", {
+      bookingId: booking._id,
+      totalPrice,
+      menteeUserId,
+      mentorUserId,
+    });
+  } catch (error) {
+    console.error("Error during slot booking:", error);
+    req.flash("error", "An error occurred while processing your request.");
+    res.redirect("/mentee/booking"); // Redirect back to booking page with error
+  }
+};

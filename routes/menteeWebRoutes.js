@@ -30,6 +30,9 @@ router.delete("/connections/:mentorId/cancelRequest", isLoggedIn, isMentee, ment
 
 // scheduling
 router.get("/schedule/:mentorUserId", isLoggedIn, isMentee, menteeController.renderParticularMentorScheduleForMentee);
+router.post("/book-slot", isLoggedIn, isMentee, menteeController.handleBookSlot);
+
+
 // router.post("/schedule/new", isLoggedIn, isMentee, menteeController.createSchedule);
 // router.get("/schedule/:scheduleId/edit", isLoggedIn, isMentee, menteeController.renderEditSchedule);
 // router.post("/schedule/:scheduleId/edit", isLoggedIn, isMentee, menteeController.editSchedule);
