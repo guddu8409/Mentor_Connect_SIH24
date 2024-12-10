@@ -2,7 +2,7 @@
 
 const Mentor = require("../models/mentor/mentor");
 const Mentee = require("../models/mentee/mentee");
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Booking = require("../models/bookingModel"); // Ensure the model is imported
 const ConnectionRequest = require("../models/connectionRequest");
 const mentorService = require("../services/mentorService");
@@ -10,9 +10,10 @@ const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
 
 module.exports.dashboard = (req, res) => {
-  res.render("mentor/home/home");
+  res.render("mentor/home/home", {
+    cssFile: "mentor/home/index.css",
+  });
 };
-
 
 module.exports.viewProfile = async (req, res) => {
   try {
@@ -34,7 +35,7 @@ module.exports.viewProfile = async (req, res) => {
     console.log("user: " + req.user._id);
 
     // Render the profile page and pass mentor data and ownership status
-    res.render("mentor/profile/index", { mentor, isOwner });
+    res.render("mentor/profile/index", { mentor, isOwner,cssFile: "mentor/profile/index.css" });
   } catch (error) {
     console.error("Error fetching mentor profile: ", error);
     req.flash("error", "An error occurred while fetching the profile.");
@@ -48,7 +49,7 @@ module.exports.renderEditProfile = async (req, res) => {
   console.log("Mentor retrieved successfully for user " + userId);
   console.log("mentor: ", mentor);
 
-  res.render("mentor/profile/edit", { mentor: mentor });
+  res.render("mentor/profile/edit", { mentor: mentor,cssFile:"/mentor/profile/edit.css" });
 };
 // Edit Profile Controller
 module.exports.editProfile = async (req, res) => {
@@ -157,7 +158,7 @@ module.exports.displayAllConnections = async (req, res) => {
       mentorId: mentor._id,
       loggedInUserId: req.user._id,
       connectedMentees: mentor.connections, // Array of connected mentors
-      cssFile:"mentor/connection/index.css"
+      cssFile: "mentor/connection/index.css",
     });
   } catch (error) {
     console.error("Error fetching connections:", error);
@@ -275,12 +276,10 @@ module.exports.rejectRequest = async (req, res) => {
     res.json({ success: true, message: "Connection request rejected." });
   } catch (error) {
     console.error("Error rejecting connection request:", error);
-    res
-      .status(500)
-      .json({
-        success: false,
-        message: "An error occurred while rejecting the request.",
-      });
+    res.status(500).json({
+      success: false,
+      message: "An error occurred while rejecting the request.",
+    });
   }
 };
 
@@ -298,7 +297,6 @@ module.exports.renderMessagePage = async (req, res) => {
     res.status(500).send("Error rendering message page");
   }
 };
-
 
 module.exports.renderMentorCalendar = async (req, res) => {
   try {
@@ -350,8 +348,8 @@ module.exports.updateBooking = async (req, res) => {
   // Step 1: Validate input
   if (!bookingId || !status) {
     console.error("Error: Missing required fields in the request body.");
-    return res.status(400).send({ 
-      message: "Invalid request: bookingId and status are required fields." 
+    return res.status(400).send({
+      message: "Invalid request: bookingId and status are required fields.",
     });
   }
 
@@ -381,15 +379,15 @@ module.exports.updateBooking = async (req, res) => {
       return res.status(200).send({ message: "Booking updated successfully" });
     } else {
       console.error(`Error: Booking with bookingId ${bookingId} not found.`);
-      return res.status(404).send({ 
-        message: `Booking not found: No booking exists with bookingId ${bookingId}` 
+      return res.status(404).send({
+        message: `Booking not found: No booking exists with bookingId ${bookingId}`,
       });
     }
   } catch (error) {
     // Step 5: Handle errors
     console.error("Error during booking update:", error);
-    return res.status(500).send({ 
-      message: "Internal server error. Please try again later." 
+    return res.status(500).send({
+      message: "Internal server error. Please try again later.",
     });
   }
 };

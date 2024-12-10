@@ -12,7 +12,7 @@ const MenteeConnectionService = require("../services/menteeConnectionService");
 const ConnectionRequest = require("../models/connectionRequest");
 
 module.exports.dashboard = (req, res) => {
-  res.render("mentee/home/home");
+  res.render("mentee/home/home",{cssFile:"/mentee/home/index.css"});
 };
 
 
@@ -31,7 +31,7 @@ module.exports.viewProfile = async (req, res) => {
 
     const isOwner = mentee.user._id.toString() === req.user._id.toString();
 
-    res.render("mentee/profile/index", { mentee, isOwner });
+    res.render("mentee/profile/index", { mentee, isOwner ,cssFile:"mentee/profile/index.css"});
   } catch (error) {
     console.error("Error fetching mentee profile: ", error);
     req.flash("error", "An error occurred while fetching the profile.");
@@ -42,7 +42,7 @@ module.exports.viewProfile = async (req, res) => {
 module.exports.renderEditProfile = async (req, res) => {
   const userId = req.user._id;
   const mentee = await menteeService.getMenteeByUserId(userId);
-  res.render("mentee/profile/edit", { mentee });
+  res.render("mentee/profile/edit", { mentee,cssFile:"mentee/profile/edit.css" });
 };
 
 module.exports.editProfile = async (req, res) => {
