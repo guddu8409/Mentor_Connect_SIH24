@@ -205,11 +205,11 @@ async function changeStatusConfirmedToDeleteByBookingId(
       if (!booking) {
         throw new Error("Booking not found");
       }
-  
-    //   if (booking.status !== "confirmed") {
-    //     throw new Error("Booking must be confirmed to cancel");
-    //   }
-  
+
+      //   if (booking.status !== "confirmed") {
+      //     throw new Error("Booking must be confirmed to cancel");
+      //   }
+
       booking.status = "deleted";
       const updatedBooking = await booking.save();
       return updatedBooking;
@@ -217,6 +217,24 @@ async function changeStatusConfirmedToDeleteByBookingId(
       throw new Error("Error canceling booking: " + error.message);
     }
   }
+  
+async function deleteBookingByBookingId(bookingId) {
+  try {
+    // Find the booking by ID
+    const booking = await Booking.findById(bookingId);
+    if (!booking) {
+      throw new Error("Booking not found");
+    }
+
+    // Permanently delete the booking
+    await Booking.findByIdAndDelete(bookingId);
+
+    return { message: "Booking deleted successfully", bookingId };
+  } catch (error) {
+    throw new Error("Error deleting booking: " + error.message);
+  }
+}
+  
 
 module.exports = {
   createBooking,
@@ -228,6 +246,7 @@ module.exports = {
   changeEndingTimeByBookingId,
   changeStartingAndEndingTimeByBookingId,
   changeBookingReasonByBookingId,
-    changeCancelReasonByBookingId,
-    changeStatusConfirmedToDeleteByBookingId
+  changeCancelReasonByBookingId,
+  changeStatusConfirmedToDeleteByBookingId,
+  deleteBookingByBookingId,
 };

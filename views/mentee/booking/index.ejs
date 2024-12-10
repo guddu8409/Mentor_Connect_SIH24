@@ -61,8 +61,8 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger" id="deleteEventButton">Delete</button>
-                <button type="button" class="btn btn-warning" id="cancelEventButton">Cancel</button>
+                <button type="button" class="btn btn-danger" id="deleteEventButton">Cancel schedule</button>
+                <!-- <button type="button" class="btn btn-warning" id="cancelEventButton">Cancel</button> -->
             </div>
         </div>
     </div>
@@ -113,6 +113,64 @@
             events: events,
             editable: false,
             selectable: true,
+            select: function (selectionInfo) {
+                // Populate the modal with selected time range
+                document.getElementById('modalStart').textContent = selectionInfo.start.toISOString();
+                document.getElementById('modalEnd').textContent = selectionInfo.end.toISOString();
+
+                // Calculate total price based on duration and price per slot
+                let durationInHours = (selectionInfo.end - selectionInfo.start) / (1000 * 60 * 30);
+                let totalPrice = durationInHours * <%= pricePerSlot %>;
+                document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);
+
+                // Clear previous input values
+                document.getElementById('bookingTitle').value = '';
+                document.getElementById('bookingReason').value = '';
+
+                // Show the booking modal
+                var bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+                bookingModal.show();
+
+                // Handle booking confirmation
+                document.getElementById('confirmBookingButton').onclick = function () {
+                    const title = document.getElementById('bookingTitle').value.trim();
+                    const reason = document.getElementById('bookingReason').value.trim();
+
+                    // Validate required fields
+                    if (!title || !reason) {
+                        alert("Please fill in all required fields.");
+                        return;
+                    }
+
+                    // Create a hidden form for submission
+                    const form = document.createElement('form');
+                    form.method = 'POST';
+                    form.action = '/mentee/schedule/book-slot'; // Endpoint for slot booking
+
+                    const inputs = [
+                        { name: 'start', value: selectionInfo.start.toISOString() },
+                        { name: 'end', value: selectionInfo.end.toISOString() },
+                        { name: 'reason', value: reason },
+                        { name: 'totalPrice', value: totalPrice },
+                        { name: 'mentorUserId', value: '<%= mentorUserId %>' },
+                        { name: 'menteeUserId', value: '<%= menteeUserId %>' },
+                        { name: 'title', value: title }
+                    ];
+
+                    // Add input fields to the form
+                    inputs.forEach(inputData => {
+                        const input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = inputData.name;
+                        input.value = inputData.value;
+                        form.appendChild(input);
+                    });
+
+                    document.body.appendChild(form);
+                    form.submit(); // Submit the form to trigger backend processing
+                };
+            },
+
             eventClick: function (info) {
                 // Populate modal with event details
                 document.getElementById('eventTitle').textContent = info.event.title;
@@ -145,23 +203,23 @@
                 };
 
                 // Handle Cancel Event
-                document.getElementById('cancelEventButton').onclick = function () {
-                    if (confirm('Are you sure you want to cancel this booking?')) {
-                        // Post request to cancel booking
-                        const form = document.createElement('form');
-                        form.method = 'POST';
-                        form.action = '/mentee/cancel-slot'; // Update to your route
+                // document.getElementById('cancelEventButton').onclick = function () {
+                //     if (confirm('Are you sure you want to cancel this booking?')) {
+                //         // Post request to cancel booking
+                //         const form = document.createElement('form');
+                //         form.method = 'POST';
+                //         form.action = '/mentee/cancel-slot'; // Update to your route
 
-                        const input = document.createElement('input');
-                        input.type = 'hidden';
-                        input.name = 'bookingId';
-                        input.value = info.event.id;
-                        form.appendChild(input);
+                //         const input = document.createElement('input');
+                //         input.type = 'hidden';
+                //         input.name = 'bookingId';
+                //         input.value = info.event.id;
+                //         form.appendChild(input);
 
-                        document.body.appendChild(form);
-                        form.submit();
-                    }
-                };
+                //         document.body.appendChild(form);
+                //         form.submit();
+                //     }
+                // };
             },
             eventMouseEnter: function (info) {
     // Create a tooltip box

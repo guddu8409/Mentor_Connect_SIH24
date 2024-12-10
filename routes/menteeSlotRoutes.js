@@ -82,19 +82,22 @@ router.post("/payment/:bookingId", isLoggedIn, async (req, res) => {
 // handle cancel slot, no refund only status confirmed
 router.post("/delete-slot", async (req, res) => {
   const bookingId = req.body.bookingId;
-  // const booking= await bookingService.getBookingByBookingId(bookingId);
+  const oldBooking = await bookingService.getBookingByBookingId(bookingId);
   if (!bookingId) {
     return res
       .status(400)
       .json({ message: "Invalid request: bookingId is required." });
   }
+  console.log(".......................................");
+  
+console.log("Booking :", oldBooking);
 
-  const updatedBooking =
-    await bookingService.changeStatusConfirmedToDeleteByBookingId(bookingId);
-  console.log("after cancel slot, booking is: ", updatedBooking);
-  console.log(`/mentee/schedule/${updatedBooking.mentorUserId}`);
+  const mentorUserId = oldBooking.mentorUserId._id;
+  await bookingService.deleteBookingByBookingId(bookingId);
+  console.log("after cancel slot, booking is: ", mentorUserId);
+  console.log(`/mentee/schedule/${mentorUserId}`);
   req.flash('success',"Booking deleted successfully");
-  res.redirect(`/mentee/schedule/${updatedBooking.mentorUserId}`);
+  res.redirect(`/mentee/schedule/${mentorUserId}`);
 });
 
 module.exports = router;
