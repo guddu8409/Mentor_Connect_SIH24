@@ -3,6 +3,103 @@ const adminService = require("../services/adminService");
 const userService = require("../services/userService");
 const { validationResult } = require("express-validator");
 
+const Mentor = require("../models/mentor/mentor");
+const User = require("../models/user");
+
+// Admin Home
+module.exports.adminHome = async (req, res) => {
+  try {
+    const pendingMentors = await Mentor.find({ registrationStatus: "pending" })
+      .populate({
+        path: "user",
+        select: "username email",
+        match: { _id: { $ne: null } }, // Exclude null references
+      })
+      .select("expertise yearsOfExperience bio experienceCertificate")
+      .lean(); // Converts Mongoose documents to plain JavaScript objects
+
+    const filteredPendingMentors = pendingMentors.filter(
+      (mentor) => mentor.user
+    );
+
+    const reportedMentors = await User.find({
+      "reportedBy.0": { $exists: true },
+      role: "mentor",
+    })
+      .populate("reportedBy", "username email")
+      .select("username email reportedBy isBlacklisted");
+    console.log("pending menttor: ", pendingMentors);
+    console.log("Reported Mentors: ", reportedMentors);
+
+    res.render("admin/home/adminHome", {
+      pendingMentors: filteredPendingMentors,
+      reportedMentors,
+      cssFile:"admin/mentorReported.css"
+    });
+  } catch (error) {
+    req.flash("error", "Error loading admin data.");
+    res.redirect("/");
+  }
+};
+
+// Approve or Reject Mentor
+module.exports.updateMentorStatus = async (req, res) => {
+  try {
+    const { mentorId, action } = req.body; // action = 'approve' or 'reject'
+    const mentor = await Mentor.findById(mentorId);
+
+    if (!mentor) {
+      req.flash("error", "Mentor not found.");
+      return res.redirect("/admin");
+    }
+
+    if (action === "approve") {
+      mentor.registrationStatus = "approved";
+      await mentor.save();
+      req.flash("success", "Mentor approved successfully.");
+    } else if (action === "reject") {
+      await mentor.deleteOne(); // Reject and remove mentor
+      req.flash("success", "Mentor rejected and removed.");
+    }
+
+    res.redirect("/admin");
+  } catch (error) {
+    req.flash("error", "Error updating mentor status.");
+    res.redirect("/admin");
+  }
+};
+
+// Blacklist or Reset Reports for Mentor
+module.exports.manageReportedMentor = async (req, res) => {
+  try {
+    const { mentorId, action } = req.body; // action = 'blacklist' or 'resetReports'
+    const mentor = await User.findById(mentorId);
+
+    if (!mentor || mentor.role !== "mentor") {
+      req.flash("error", "Mentor not found.");
+      return res.redirect("/admin");
+    }
+
+    if (action === "blacklist") {
+      mentor.isBlacklisted = true;
+      await mentor.save();
+      req.flash("success", "Mentor has been blacklisted.");
+    } else if (action === "resetReports") {
+      mentor.reportedBy = [];
+      await mentor.save();
+      req.flash("success", "Mentor reports have been reset.");
+    }
+
+    res.redirect("/admin");
+  } catch (error) {
+    req.flash("error", "Error managing reported mentor.");
+    res.redirect("/admin");
+  }
+};
+
+
+
+
 module.exports.dashboard = (req, res) => {
   res.render("admin/home/home", { cssFile: "admin/home.css" });
 };

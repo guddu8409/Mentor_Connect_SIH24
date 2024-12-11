@@ -1,13 +1,37 @@
 const { log } = require("console");
 const userService = require("../services/userService");
-
+const Mentor = require("../models/mentor/mentor");
 module.exports.register = async (req, res) => {
   try {
     const { username, password, email, role } = req.body;
 
     // Call userService for registration
-    const { user } = await userService.register({ username, password, email, role });
+    const { user } = await userService.register({
+      username,
+      password,
+      email,
+      role,
+    });
+    console.log("Registered user", username, email, role);
 
+    if (role === "mentor") {
+      // Create a mentor profile with registrationStatus set to 'pending'
+      const newMentor = new Mentor({
+        user: user._id,
+      });
+      console.log("Creating new Mentor");
+
+      await newMentor.save();
+      console.log("Mentor saved");
+
+      req.flash(
+        "success",
+        `Welcome ${user.username}! Complete your onboarding to start.`
+      );
+      return res.redirect("/onboarding"); // Redirect mentors to onboarding page
+    }
+
+    // For mentee or admin, log the user in and redirect to their dashboard
     req.login(user, (err) => {
       if (err) throw new Error("Login failed");
       req.flash("success", `Welcome! ${user.username}`);
@@ -15,7 +39,7 @@ module.exports.register = async (req, res) => {
     });
   } catch (error) {
     req.flash("error", error.message);
-    res.redirect("/register");
+    res.redirect("/auth/register");
   }
 };
 
@@ -39,11 +63,37 @@ module.exports.forgetPassword = async (req, res) => {
   }
 };
 
-module.exports.login = (req, res) => {
-  const redirectUrl = `/${req.user.role}`;
-  req.flash("success", "Welcome back!");
-  res.redirect(redirectUrl);
+module.exports.login = async (req, res) => {
+  try {
+    if (req.user && req.user.role === "mentor") {
+      // Find mentor by user ID
+      const mentor = await Mentor.findOne({ user: req.user._id });
+
+      if (mentor) {
+        // Check if onboarding form is submitted and registration is still pending
+        if (!mentor.isOnboardingFormSubmited && mentor.registrationStatus === "pending") {
+          console.log("Render onboarding form...");
+          return res.render("mentor/onboarding/onboardingForm"); // Show onboarding form if not submitted
+        }
+      }
+
+      // Redirect to mentor dashboard if onboarding is completed or registration is not pending
+      const redirectUrl = `/${req.user.role}`;
+      req.flash("success", "Welcome back!");
+      return res.redirect(redirectUrl);
+    }
+
+    // For non-mentor roles, redirect to the respective dashboard
+    const redirectUrl = `/${req.user.role}`;
+    req.flash("success", "Welcome back!");
+    res.redirect(redirectUrl);
+  } catch (error) {
+    console.error("Error during login:", error);
+    req.flash("error", "An error occurred during login. Please try again.");
+    res.redirect("/login"); // Redirect back to login page on error
+  }
 };
+
 
 module.exports.logout = (req, res) => {
   req.logout((err) => {
