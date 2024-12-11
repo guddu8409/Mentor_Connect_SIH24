@@ -7,15 +7,17 @@ module.exports.index = wrapAsync(async (req, res) => {
   logger.info("======= [CONTROLLER: Discussion] =======");
   logger.info("[ACTION: Index]");
 
-  const { queryType } = req.query;
+  const { queryType, mentorUserId } = req.query; // Extract mentorUserId from query
   let discussions;
 
   try {
-    discussions = queryType 
-      ? await Discussion.find({ queryType }) 
-      : await Discussion.find({});
+    const query = {};
+    if (queryType) query.queryType = queryType; // Existing queryType logic
+    if (mentorUserId) query.mentorUserId = mentorUserId; // New mentorUserId logic
 
-    logger.info(`Retrieved ${discussions.length} discussions.`);
+    discussions = await Discussion.find(query);
+
+    console.info(`Retrieved ${discussions.length} discussions.`);
     res.render("discussions/index", {
       discussions,
       cssFile: "discussion/discussionIndex.css",
@@ -28,6 +30,7 @@ module.exports.index = wrapAsync(async (req, res) => {
 
   logger.info("======= [END OF ACTION: Index] =======\n");
 });
+
 
 module.exports.new = (req, res) => {
   logger.info("======= [CONTROLLER: Discussion] =======");

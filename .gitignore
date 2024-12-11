@@ -30,3 +30,6 @@ build/
 *.bak
 *.orig
 .cache/
+
+
+.bin/

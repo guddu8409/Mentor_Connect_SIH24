@@ -3,14 +3,6 @@ const JobReview = require("../jobReview");
 const { number } = require("joi");
 const { Schema } = mongoose;
 
-// Availability Schema
-// const AvailabilitySchema = new mongoose.Schema({
-//   type: { type: String, enum: ["immediate", "scheduled"], default: "immediate" },
-//   startTime: { type: Date, default: null }, // Default to null
-//   endTime: { type: Date, default: null }, // Default to null
-//   reasonUnavailable: { type: String, default: "" }, // Default to an empty string
-// });
-
 // Mentor Schema
 const MentorSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }, // No default since it's required

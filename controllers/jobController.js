@@ -9,7 +9,7 @@ module.exports.index = wrapAsync(async (req, res) => {
 
   try {
     const jobs = await Job.find({}).populate("likes").populate("reports");
-    logger.info(`Found ${jobs.length} jobs.`);
+    // logger.info(`Found ${jobs.length} jobs.`);
     // Assuming `req.user` contains the logged-in user's data
     const userRole = req.user?.role || "mentee"; // Default to "mentee" if role isn't defined
 
