@@ -11,13 +11,37 @@ module.exports = function (io) {
       console.log(`User joined room: ${chatId}`);
     });
 
+    // Import the Booking model
+    const Booking = require("./models/bookingModel");
+
     // Listen for a new message from the client
     socket.on("newMessage", async ({ chatId, senderId, text }) => {
       try {
-        // Save the message to the database
+        // Find the chat
         const chat = await Chat.findById(chatId);
         if (!chat) return;
 
+        // Find the other participant in the chat
+        const otherParticipantId = chat.participants.find(
+          (participant) => participant.toString() !== senderId
+        );
+
+        // Ensure the sender is allowed to message (confirmed and active booking)
+        const now = new Date();
+        const booking = await Booking.findOne({
+          menteeUserId: senderId, // Assuming sender is always the mentee
+          mentorUserId: otherParticipantId, // Assuming the other user is the mentor
+          status: "confirmed",
+          "schedule.start": { $lte: now },
+          "schedule.end": { $gte: now },
+        });
+
+        if (!booking) {
+          console.error("Unauthorized message attempt by:", senderId);
+          return;
+        }
+
+        // Save the message to the database
         const message = { sender: senderId, text, timestamp: new Date() };
         chat.messages.push(message);
         await chat.save();

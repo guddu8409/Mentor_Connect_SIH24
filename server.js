@@ -76,6 +76,27 @@ app.get("/", (req, res) => {
   res.render("common/landingPage", { cssFile: "common/landingPage.css" });
 });
 
+
+
+// Route to check if the chat is enabled
+const Booking = require('./models/bookingModel');
+
+app.get('/chat-enabled/:mentorId/:menteeId', async (req, res) => {
+  const { mentorId, menteeId } = req.params;
+
+  const now = new Date();
+  const booking = await Booking.findOne({
+    menteeUserId: menteeId,
+    mentorUserId: mentorId,
+    status: "confirmed",
+    "schedule.start": { $lte: now },
+    "schedule.end": { $gte: now },
+  });
+
+  res.json({ chatEnabled: !!booking }); // Return true if a valid booking is found
+});
+
+
 app.get("*", (req, res) => {
   res.status(404).send("Page Not Found");
 });
