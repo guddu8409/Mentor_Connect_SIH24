@@ -11,6 +11,7 @@ router.get("/register", (req, res) =>
 router.post("/register", register);
 
 router.get("/login", (req, res) => res.render("common/login"));
+
 // Login Route
 router.post(
   "/login",
