@@ -315,6 +315,63 @@ module.exports.cancelRequest = async (req, res) => {
   }
 };
 
+
+module.exports.disconnect = async (req, res) => {
+  try {
+    const userId = req.user._id; // Current mentee's ID (assuming authenticated user is a mentee)
+    const mentorId = req.params.mentorId; // ID of the mentor to disconnect from
+
+    // Find the mentee document
+    const menteeDocument = await Mentee.findOne({ user: userId });
+    if (!menteeDocument) {
+      return res.status(404).send("Mentee not found.");
+    }
+
+    const menteeId = menteeDocument._id;
+
+    // Find the mentor document
+    const mentorDocument = await Mentor.findById(mentorId);
+    if (!mentorDocument) {
+      return res.status(404).send("Mentor not found.");
+    }
+
+    // Remove connection from mentee's connections
+    menteeDocument.connections = menteeDocument.connections.filter(
+      (connection) => connection.toString() !== mentorId.toString()
+    );
+
+    // Remove connection from mentor's connections
+    mentorDocument.connections = mentorDocument.connections.filter(
+      (connection) => connection.toString() !== menteeId.toString()
+    );
+
+    // Save updated documents
+    await menteeDocument.save().catch(err => {
+      console.error("Error saving mentee:", err);
+      throw err;
+    });
+
+    await mentorDocument.save().catch(err => {
+      console.error("Error saving mentor:", err);
+      throw err;
+    });
+
+    // Optionally remove any pending or existing ConnectionRequest between them
+    await ConnectionRequest.deleteMany({
+      mentee: menteeId,
+      mentor: mentorId,
+    });
+
+    // Flash success message and redirect
+    req.flash("success", "You have successfully disconnected from the mentor.");
+    res.redirect("/mentee/mentorList");
+  } catch (error) {
+    console.error("Error disconnecting:", error.stack);
+    res.status(500).send("An error occurred while disconnecting.");
+  }
+};
+
+
 // A model to store payment information
 
 module.exports.handleBookSlot = async (req, res) => {

@@ -48,8 +48,8 @@ async function runSeeds() {
     console.log("old data cleared");
 
     // Seed in proper sequence
-    // await discussionSeeder();
-    // await discussionReviewSeeder();
+    await discussionSeeder();
+    await discussionReviewSeeder();
     // await donationSeeder();
     // await groupSeeder();
     // await jobSeeder();
@@ -58,7 +58,7 @@ async function runSeeds() {
     // await quizSeeder();
     // await successSeeder();
     // await successReviewSeeder();
-    await scheduleSeeder();
+    // await scheduleSeeder();
 
     logger.info("Database successfully seeded!");
     console.log("Database successfully seeded!");

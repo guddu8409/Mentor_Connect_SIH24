@@ -28,7 +28,7 @@ module.exports = function (io) {
 
         // Ensure the sender is allowed to message (confirmed and active booking)
         const now = new Date();
-        const booking = await Booking.findOne({
+        const booking1 = await Booking.findOne({
           menteeUserId: senderId, // Assuming sender is always the mentee
           mentorUserId: otherParticipantId, // Assuming the other user is the mentor
           status: "confirmed",
@@ -36,9 +36,18 @@ module.exports = function (io) {
           "schedule.end": { $gte: now },
         });
 
-        if (!booking) {
-          console.error("Unauthorized message attempt by:", senderId);
-          return;
+        if (!booking1) {
+          const booking2 = await Booking.findOne({
+            mentorUserId: senderId, // Assuming sender is always the mentee
+            menteeUserId: otherParticipantId, // Assuming the other user is the mentor
+            status: "confirmed",
+            "schedule.start": { $lte: now },
+            "schedule.end": { $gte: now },
+          });
+          if (!booking2) {
+            console.error("Unauthorized message attempt by:", senderId);
+            return;
+          }
         }
 
         // Save the message to the database
