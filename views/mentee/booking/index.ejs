@@ -4,9 +4,8 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-12">
-            <h1 class="mb-4">Mentor Schedule Price per Slot: <%= pricePerSlot %></h1>
-            <h4>Mentor ID: <%= mentorUserId %></h4>
-            <h4>Mentee ID: <%= menteeUserId %></h4>
+            <h1 class="mb-4">Mentor Schedule Price per Slot:&nbsp; &#8377; <%= pricePerSlot %></h1>
+          
             <!-- Calendar Container -->
             <div id="calendar"></div>
         </div>
@@ -109,6 +108,11 @@
                 center: 'title',
                 right: 'timeGridWeek,dayGridMonth'
             },
+
+            defaultDate: new Date().toISOString().split('T')[0], // Start with today's date
+        validRange: {
+            start: new Date().toISOString().split('T')[0] // Disable past dates
+        },
             
             events: events,
             editable: false,

@@ -92,6 +92,10 @@
                 center: 'title',
                 right: 'timeGridWeek,dayGridMonth'
             },
+            defaultDate: new Date().toISOString().split('T')[0], // Start with today's date
+        validRange: {
+            start: new Date().toISOString().split('T')[0] // Disable past dates
+        },
             events: events,
             editable: false,
             droppable: false,

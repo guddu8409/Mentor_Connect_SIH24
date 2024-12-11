@@ -71,7 +71,8 @@ module.exports.renderParticularMentorScheduleForMentee = async (req, res) => {
 
 
 module.exports.dashboard = (req, res) => {
-  res.render("mentee/home/home",{cssFile:"/mentee/home/index.css"});
+  // res.render("mentee/home/home",{cssFile:"/mentee/home/index.css"});
+  res.redirect("mentee/connections");
 };
 
 module.exports.viewProfile = async (req, res) => {

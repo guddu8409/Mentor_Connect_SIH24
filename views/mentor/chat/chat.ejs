@@ -79,6 +79,57 @@
         messageInput.value = "";
     });
 
+    // Function to check if the chat is enabled
+    async function checkChatEnabled() {
+        try {
+            const response = await fetch(`/chat-enabled/${mentorId}/${menteeId}`);
+            const data = await response.json();
+
+            const messageInput = document.getElementById("messageInput");
+            const chatForm = document.getElementById("chatForm");
+
+            if (data.chatEnabled) {
+                messageInput.disabled = false;
+                messageInput.placeholder = "Type your message...";
+            } else {
+                messageInput.disabled = true;
+                messageInput.placeholder = "Chat is only available during your scheduled session.";
+            }
+        } catch (error) {
+            console.error("Error checking chat status:", error);
+        }
+    }
+    const mentorId = "<%= secondPerson._id %>"; // Mentor's ID
+    const menteeId = "<%= loggedInUser.id %>"; // Mentee's ID
+
+    // Function to check if the chat is enabled
+    async function checkChatEnabled() {
+        try {
+            const response = await fetch(`/chat-enabled/${mentorId}/${menteeId}`);
+            const data = await response.json();
+
+            const messageInput = document.getElementById("messageInput");
+            const chatForm = document.getElementById("chatForm");
+
+            if (data.chatEnabled) {
+                messageInput.disabled = false;
+                messageInput.placeholder = "Type your message...";
+            } else {
+                messageInput.disabled = true;
+                messageInput.placeholder = "Chat is only available during your scheduled session.";
+            }
+        } catch (error) {
+            console.error("Error checking chat status:", error);
+        }
+    }
+
+    // Call the function on page load and periodically
+    window.onload = () => {
+        checkChatEnabled();
+        setInterval(checkChatEnabled, 60000); // Check every minute
+    };
+
+
     // Scroll to the bottom when the page loads
     window.onload = scrollToBottom;
 </script>
