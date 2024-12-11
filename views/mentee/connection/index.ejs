@@ -21,7 +21,10 @@
                 <h5 class="mb-1"><%= mentor.user.username %></h5>
                 <p class="mb-0 text-muted"><%= mentor.expertise.join(", ") %></p>
             </div>
-            <span class="badge badge-primary badge-pill">Chat</span>
+            <div class="action-buttons">
+                <span class="badge badge-schedule">Schedule</span>
+                <span class="badge badge-chat">Chat</span>
+            </div>
         </a>
         <% }) %>
     </div>

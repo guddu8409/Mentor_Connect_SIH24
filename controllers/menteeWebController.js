@@ -172,18 +172,7 @@ module.exports.deleteProfile = async (req, res) => {
   }
 };
 
-module.exports.displayMentor = async (req, res) => {
-  try {
-    const mentors = await Mentor.find().populate("user").exec(); // Replace with your mentor fetching logic
-    res.render("mentee/findMentor/mentorList", {
-      mentors,
-      cssFile: "mentee/findmentor/mentorList.css",
-    });
-  } catch (error) {
-    console.error("Error fetching mentors:", error);
-    res.status(500).send("An error occurred while fetching mentors.");
-  }
-};
+
 
 module.exports.displayMentorList = async (req, res) => {
   //when he search for add new mentor
@@ -240,6 +229,7 @@ module.exports.displayAllConnections = async (req, res) => {
     res.render("mentee/connection/index", {
       loggedInUserId: req.user._id, // Pass the logged-in user's ID
       connectedMentors: mentee.connections, // Array of connected mentors
+      cssFile:"/mentee/connection/index.css"
     });
   } catch (error) {
     console.error("Error fetching connections:", error);
