@@ -31,31 +31,31 @@
           <div class="invalid-feedback">Certificate upload is required.</div>
         </div>
         
-        <!-- Calendly Link -->
+        <!-- Calendly Connection -->
         <div class="mb-3">
-          <label for="calendlyLink" class="form-label">Calendly Account Link</label>
-          <input type="url" class="form-control" id="calendlyLink" name="calendlyLink" required>
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Calendly link is required.</div>
+          <label for="calendlyConnect" class="form-label">Calendly Connection</label>
+          <div id="calendlyStatus">
+            <button id="connectCalendly" type="button" class="btn btn-primary">Connect Calendly</button>
+          </div>
+          <input type="hidden" id="calendlyToken" name="calendlyToken">
+          <div class="invalid-feedback">Connecting Calendly is required.</div>
         </div>
         
-        <button type="submit" class="btn btn-success">Submit Onboarding</button>
+        <button type="submit" class="btn btn-success" id="submitButton" disabled>Submit Onboarding</button>
       </form>
     </div>
   </div>
 </div>
 
 <script>
-  // JavaScript to validate form
-  document.querySelector('form').addEventListener('submit', function(event) {
-    var expertise = document.getElementById('expertise').value;
-    var yearsOfExperience = document.getElementById('yearsOfExperience').value;
-    var certificate = document.getElementById('experienceCertificate').files.length;
-    var calendlyLink = document.getElementById('calendlyLink').value;
-    
-    if (!expertise || !yearsOfExperience || !certificate || !calendlyLink) {
-      event.preventDefault();
-      alert('All fields are required');
-    }
+  // Connect to Calendly
+  document.getElementById("connectCalendly").addEventListener("click", () => {
+    window.location.href = "/auth/calendly"; // Redirect to Calendly OAuth2 flow
   });
+
+  // Enable submit button if Calendly is connected
+  const calendlyToken = document.getElementById("calendlyToken");
+  if (calendlyToken.value) {
+    document.getElementById("submitButton").disabled = false;
+  }
 </script>

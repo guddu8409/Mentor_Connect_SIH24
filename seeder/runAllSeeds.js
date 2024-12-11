@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 // Mongoose Connection
 // const MONGO_URL = process.env.MONGODB_URL;
-const MONGO_URL = "mongodb://127.0.0.1:27017/mentorConnect2";
+const MONGO_URL = "mongodb://127.0.0.1:27017/mentorConnect3";
 
 
 const logger = require("../utils/logger")("runAllSeeds"); // Import your logger

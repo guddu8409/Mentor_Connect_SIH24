@@ -46,6 +46,10 @@ const MentorSchema = new mongoose.Schema({
   isOnboardingFormSubmited: {
     type: Boolean,
     default: false,
+  },
+  fallbackRoutes: {
+    type: String,
+    default: "",
   }
 });
 
