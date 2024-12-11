@@ -69,6 +69,9 @@ module.exports.updateMentorStatus = async (req, res) => {
   }
 };
 
+
+
+
 // Blacklist or Reset Reports for Mentor
 module.exports.manageReportedMentor = async (req, res) => {
   try {
@@ -200,5 +203,58 @@ module.exports.deleteProfile = async (req, res) => {
     console.error("Error deleting admin profile and user: ", error);
     req.flash("error", "An error occurred while deleting the profile.");
     res.redirect(`/admin/profile/${paramsId}`);
+  }
+};
+
+
+
+// View All Users
+module.exports.viewUsers = async (req, res) => {
+  try {
+    const users = await userService.getAllUsers(); // Fetch all users
+    res.render("admin/users/users", { users });  // Render the users page
+  } catch (error) {
+    console.error("Error fetching users: ", error);
+    req.flash("error", "An error occurred while fetching users.");
+    res.redirect("/");
+  }
+};
+
+// Delete User and Related Role Documents
+module.exports.deleteUser = async (req, res) => {
+  const userId = req.params.id;  // Get user ID from URL
+
+  try {
+    const user = await User.findById(userId);
+
+    if (!user) {
+      req.flash("error", "User not found.");
+      return res.redirect("/admin/users");
+    }
+
+    // Delete role-specific documents (e.g., Mentor or Mentee)
+    if (user.role === 'mentor') {
+      const mentor = await Mentor.findOne({ user: userId });
+      if (mentor) {
+        await mentor.deleteOne(); // Delete mentor document
+      }
+    }
+    // Handle other roles (like Mentee) if necessary
+    // if (user.role === 'mentee') {
+    //   const mentee = await Mentee.findOne({ user: userId });
+    //   if (mentee) {
+    //     await mentee.deleteOne(); // Delete mentee document
+    //   }
+    // }
+
+    // Delete the user
+    await user.deleteOne();
+
+    req.flash("success", "User and related documents deleted successfully.");
+    res.redirect("/admin/users");
+  } catch (error) {
+    console.error("Error deleting user: ", error);
+    req.flash("error", "An error occurred while deleting the user.");
+    res.redirect("/admin/users");
   }
 };
