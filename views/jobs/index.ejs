@@ -66,6 +66,13 @@
                                 Apply Now
                             </a>
 
+                            <% if (userRole === 'mentor' && job.owner.toString() !== currUser._id.toString()) { %>
+                                <!-- Apply Now button with applyLink -->
+                                <a href="<%= job._id %>/refer" class="btn btn-apply btn-sm mb-2">
+                                    Refer
+                                </a>
+                            <% } %>
+                            
                             <!-- Buttons -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex">

@@ -6,7 +6,8 @@
             <h1 class="mb-0">Your Mentees</h1>
         </div>
 
-        <div><button><a href="/mentor/connection/<%=mentorId  %>/pendingRequest">pending Requested Mentee</a></button></div>
+        <div><button><a href="/mentor/connection/<%=mentorId  %>/pendingRequest">pending Requested Mentee</a></button>
+        <%= noOfPending %></div>
     </div>
     <% if (connectedMentees.length === 0) { %>
     <div class="alert alert-info">

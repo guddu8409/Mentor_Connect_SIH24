@@ -4,9 +4,10 @@ const Mentor = require("../models/mentor/mentor");
 
 const mentors = [
   {
-    username: "mentor11",
+    username: "mentor",
     password: "m",
     role: "mentor",
+    email:"rakesh20330102@gmail.com",
     expertise: ["Web Development", "JavaScript"],
     yearsOfExperience: 5,
     bio: "Web developer with expertise in React and Node.js",
@@ -19,10 +20,12 @@ const mentors = [
       startTime: new Date(),
     },
   },
+  
   {
-    username: "mentor_jane11",
-    password: "securepassword",
+    username: "mentor1",
+    password: "m",
     role: "mentor",
+    email:"rakesh20330102@gmail.com",
     expertise: ["Data Science", "Python"],
     yearsOfExperience: 7,
     bio: "Data scientist with a focus on AI and ML.",
@@ -33,12 +36,63 @@ const mentors = [
       endTime: new Date("2024-11-20T12:00:00"),
     },
   },
+
+  // {
+  //   username: "mentor4",
+  //   password: "m",
+  //   role: "mentor",
+  //   email:"rakesh20330102@gmail.com",
+  //   expertise: ["Web Development", "JavaScript"],
+  //   yearsOfExperience: 5,
+  //   bio: "Web developer with expertise in React and Node.js",
+  //   linkedIn: "https://linkedin.com/in/mentorjohn",
+  //   twitter: "https://twitter.com/mentorjohn",
+  //   github: "https://github.com/mentorjohn",
+  //   portfolio: "https://mentorjohn.dev",
+  //   availability: {
+  //     type: "immediate",
+  //     startTime: new Date(),
+  //   },
+  // },
+  // {
+  //   username: "mentor2",
+  //   password: "m",
+  //   role: "mentor",
+  //   email:"rakesh20330102@gmail.com",
+  //   expertise: ["Web Development", "JavaScript"],
+  //   yearsOfExperience: 5,
+  //   bio: "Web developer with expertise in React and Node.js",
+  //   linkedIn: "https://linkedin.com/in/mentorjohn",
+  //   twitter: "https://twitter.com/mentorjohn",
+  //   github: "https://github.com/mentorjohn",
+  //   portfolio: "https://mentorjohn.dev",
+  //   availability: {
+  //     type: "immediate",
+  //     startTime: new Date(),
+  //   },
+  // }, {
+  //   username: "mentor3",
+  //   password: "m",
+  //   role: "mentor",
+  //   email:"rakesh20330102@gmail.com",
+  //   expertise: ["Web Development", "JavaScript"],
+  //   yearsOfExperience: 5,
+  //   bio: "Web developer with expertise in React and Node.js",
+  //   linkedIn: "https://linkedin.com/in/mentorjohn",
+  //   twitter: "https://twitter.com/mentorjohn",
+  //   github: "https://github.com/mentorjohn",
+  //   portfolio: "https://mentorjohn.dev",
+  //   availability: {
+  //     type: "immediate",
+  //     startTime: new Date(),
+  //   },
+  // },
 ];
 
 const seedMentors = async () => {
   try {
-    // await User.deleteMany({ role: "mentor" }); // Clear existing mentor users
-    // await Mentor.deleteMany(); // Clear existing mentor records
+    await User.deleteMany({ role: "mentor" }); // Clear existing mentor users
+    await Mentor.deleteMany(); // Clear existing mentor records
     console.log("Existing mentors removed.");
 
     for (const mentorData of mentors) {

@@ -15,10 +15,10 @@ router.get("/schedule/:mentorUserId",isLoggedIn,isMentee,menteeController.render
 router.get("/", isLoggedIn, isMentee, menteeController.dashboard);
 
 // Profile routes
-router.get("/profile/:id", isLoggedIn, isMentee, menteeController.viewProfile);
-router.get("/profile/edit/:id", isLoggedIn, isMentee, isOwner, menteeController.renderEditProfile);
-router.post("/profile/edit/:id", isLoggedIn, isMentee, isOwner, menteeController.editProfile);
-router.post("/profile/delete/:id", isLoggedIn, isMentee, isOwner, menteeController.deleteProfile);
+router.get("/profile/:id", isLoggedIn, menteeController.viewProfile);
+router.get("/profile/edit/:id", isLoggedIn, menteeController.renderEditProfile);
+router.post("/profile/edit/:id", isLoggedIn, menteeController.editProfile);
+router.post("/profile/delete/:id", isLoggedIn, menteeController.deleteProfile);
 
 // Mentor listing and finding routes
 router.get("/mentorList", isLoggedIn, isMentee, menteeController.displayMentorList);
@@ -26,8 +26,16 @@ router.get("/mentorList", isLoggedIn, isMentee, menteeController.displayMentorLi
 // Connection routes
 router.get("/connections", isLoggedIn, isMentee, menteeController.displayAllConnections);
 router.post("/connections/:mentorId/connectRequest", isLoggedIn, isMentee, menteeController.connectRequest);
-router.get("/connections/:mentorId/disconnect", isLoggedIn, isMentee, menteeController.disconnect);
+router.get(
+  "/connections/:mentorId/disconnect",
+  isLoggedIn,
+  isMentee,
+  menteeController.disconnect
+);
 router.delete("/connections/:mentorId/cancelRequest", isLoggedIn, isMentee, menteeController.cancelRequest);
+router.get("/mentors/:mentorId", isLoggedIn, menteeController.viewMentorProfile);
+
+
 
 // scheduling
 router.get("/schedule/:mentorUserId", isLoggedIn, isMentee, menteeController.renderParticularMentorScheduleForMentee);

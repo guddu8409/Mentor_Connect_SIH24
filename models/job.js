@@ -5,33 +5,29 @@ const JobReview = require("./jobReview"); // Import the JobReview model
 const jobSchema = new Schema({
   title: {
     type: String,
-    required: true,
-    trim: true,
   },
   salary: {
     type: Number,
-    required: true,
   },
   location: {
     type: String,
-    required: true,
-    trim: true,
   },
   jobType: {
     type: String,
-    required: true,
     enum: ["Full-time", "Part-time", "Internship"],
-    trim: true,
+ 
+  },
+  techStack: {
+    type:[String]
+  },
+  description: {
+    type: String,
   },
   companyName: {
     type: String,
-    required: true,
-    trim: true,
   },
   applyLink: {
     type: String,
-    required: true,
-    trim: true,
   },
   reviews: [
     {
@@ -55,14 +51,40 @@ const jobSchema = new Schema({
       ref: "User",
     },
   ],
+  refer: [
+    {
+      fromMentor: {
+        type: Schema.Types.ObjectId,
+        ref: "User", // Mentor making the referral
+        required: true,
+      },
+      mentee: {
+        type: Schema.Types.ObjectId,
+        ref: "User", // Mentee being referred
+        required: true,
+      },
+      note: {
+        type: String, // Optional note for the referral
+        default: "",
+      },
+      timestamp: {
+        type: Date, // Time of the referral
+        default: Date.now,
+      },
+    },
+  ],
 });
 
+// Middleware to initialize arrays if not provided
 jobSchema.pre("save", function (next) {
   if (!this.likes) {
     this.likes = [];
   }
   if (!this.reports) {
     this.reports = [];
+  }
+  if (!this.refer) {
+    this.refer = [];
   }
   next();
 });

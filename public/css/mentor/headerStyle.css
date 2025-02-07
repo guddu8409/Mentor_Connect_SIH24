@@ -13,6 +13,10 @@ html, body {
   width: 100%;
 }
 
+.container, .content {
+  min-height: 70vh;
+}
+
 .login-page, .container {
   min-height: 100%;
   flex: 1;

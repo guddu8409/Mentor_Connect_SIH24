@@ -21,7 +21,7 @@ const getMentorByUserId = async (userId) => {
 };
 
 const getMentorByMentor = async (mentorId) => {
-  return await Mentor.findOne({ mentorId }) .exec();
+  return await Mentor.findOne({ mentorId }).populate('user') .exec();
 };
 
 /*

@@ -1,14 +1,30 @@
-const express = require('express');
+const express = require("express");
+const { isLoggedIn, isAdmin, isOwner } = require("../middlewares/authMiddleware");
+const {
+  dashboard,
+  viewUsers,
+  viewProfile,
+  editProfile,
+  deleteProfile,
+  renderEditProfile,
+} = require("../controllers/adminWebController");
+
 const router = express.Router();
-const adminController = require('../controllers/adminWebController');
 
-// Admin home
-router.get('/', adminController.adminHome);
+// Admin Dashboard
+router.get("/", isLoggedIn, isAdmin, dashboard);
 
-// Approve or reject a mentor
-router.post('/update-mentor-status', adminController.updateMentorStatus);
+// View Users (admin-specific user management)
+router.get("/users", isLoggedIn, isAdmin, viewUsers);
 
-// Manage reported mentors
-router.post('/manage-reported-mentor', adminController.manageReportedMentor);
+// View Admin Profile
+router.get("/profile/:id", isLoggedIn, isAdmin, viewProfile);
+
+// Edit Admin Profile (only for the owner)
+router.get("/profile/edit/:id", isLoggedIn, isAdmin, isOwner, renderEditProfile);
+router.post("/profile/edit/:id", isLoggedIn, isAdmin, isOwner, editProfile);
+
+// Delete Admin Profile (only for the owner)
+router.post("/profile/delete/:id", isLoggedIn, isAdmin, isOwner, deleteProfile);
 
 module.exports = router;

@@ -66,24 +66,50 @@ module.exports.show = wrapAsync(async (req, res) => {
     const job = await Job.findById(jobId)
       .populate({
         path: "reviews",
-        populate: { path: "author" },
+        populate: { 
+          path: "author", 
+          select: "username email" // Include author details in reviews
+        }
       })
-      .populate("owner");
+      .populate("owner", "username role") // Include owner details
+      .populate({
+        path: "refer.fromMentor",
+        select: "username email role", // Include mentor details in refer
+      })
+      .populate({
+        path: "refer.mentee",
+        select: "username email role", // Include mentee details in refer
+      });
 
     if (!job) {
       logger.info("Job not found.");
       req.flash("error", "Job does not exist!");
       return res.redirect("/jobs");
     }
+
     const userRole = req.user?.role || "mentee"; // Default to "mentee" if role isn't defined
-    logger.info(`Job found: ${job._id}`);
-    res.render("jobs/show", { job,userRole, cssFile: "job/jobShow.css" });
+    const isOwner = job.owner._id.equals(req.user._id); // Check if the current user is the owner
+
+    console.log(`Job found: ${job._id}`);
+    console.log(job.refer);
+    console.log(`isOwner: ${isOwner}`);
+
+    // Send the complete job object to the EJS template
+    res.render("jobs/show", { 
+      job, 
+      userRole, 
+      isOwner, 
+      cssFile: "job/jobShow.css" 
+    });
   } catch (err) {
     logger.error(`Error fetching job: ${err}`);
     req.flash("error", "Unable to retrieve job.");
     res.redirect("/jobs");
   }
 });
+
+
+
 
 module.exports.renderEditForm = wrapAsync(async (req, res) => {
   const jobId = req.params.id;

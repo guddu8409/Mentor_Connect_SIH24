@@ -6,16 +6,7 @@
         <div class="col-md-6 offset-md-3">
             <form action="/auth/register" method="post" class="needs-validation" novalidate>
 
-                <!-- Role Field -->
-                <div class="mb-3 role-selection ">
-                    <label for="role" class="form-label">Select Role</label><br>
-                    <input type="radio" id="mentor" name="role" value="mentor">
-                    <label for="mentor">Mentor</label><br>
-                    <input type="radio" id="mentee" name="role" value="mentee" checked>
-                    <label for="mentee">Mentee</label><br>
-                    <input type="radio" id="admin" name="role" value="admin">
-                    <label for="admin">Admin</label>
-                </div>
+            
                 
                 <!-- Username Field -->
                 <div class="mb-3">
@@ -49,6 +40,13 @@
                     <div class="valid-feedback">Passwords match.</div>
                     <div class="invalid-feedback">Passwords do not match.</div>
                 </div>
+                <!-- Role Field -->
+                <label for="role" class="form-label">Select Role</label>
+                <select id="role" name="role" class="form-select">
+                    <option value="mentor">Mentor</option>
+                    <option value="mentee" selected>Mentee</option>
+                </select>
+
                 <button type="submit" class="btn btn-success">Sign Up</button>
             </form>
         </div>

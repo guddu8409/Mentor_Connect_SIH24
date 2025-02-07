@@ -96,9 +96,6 @@ app.get('/chat-enabled/:mentorId/:menteeId', async (req, res) => {
   res.json({ chatEnabled: !!booking }); // Return true if a valid booking is found
 });
 
-app.get("/calendly", (req, res) => {
-  res.redirect("https://calendly.com/rakesh18212236");
-});
 
 app.get("*", (req, res) => {
   res.status(404).send("Page Not Found");

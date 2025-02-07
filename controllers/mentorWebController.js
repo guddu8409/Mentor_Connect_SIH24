@@ -276,9 +276,13 @@ module.exports.displayAllConnections = async (req, res) => {
       return res.status(404).send("mentor profile not found");
     }
 
+    console.log("................................................................");
+    console.log(mentor.pendingRequests.length);
+    
     // Send the list of connected mentors to the EJS view
     res.render("mentor/connection/index", {
       mentorId: mentor._id,
+      noOfPending:mentor.pendingRequests.length,
       loggedInUserId: req.user._id,
       connectedMentees: mentor.connections, // Array of connected mentors
       cssFile: "mentor/connection/index.css",
@@ -307,6 +311,7 @@ module.exports.pendingRequest = async (req, res) => {
     // Send the list of pending connection requests to the EJS view
     res.render("mentor/connection/pendingRequest", {
       pendingRequests: mentor.pendingRequests, // Array of pending requests
+      cssFile: "mentor/connection/index.css",
     });
   } catch (error) {
     console.error("Error fetching pending requests:", error);

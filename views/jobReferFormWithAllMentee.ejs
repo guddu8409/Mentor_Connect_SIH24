@@ -1,0 +1,38 @@
+<% if (userRole === "mentor") { %>
+<%- layout("mentor/layouts/boilerplate") %>
+<% } else { %>
+<%- layout("layouts/boilerplate") %>
+<% } %>
+
+<div class="container mt-5">
+    <h1>Refer Mentees for the Job</h1>
+
+    <form action="/<%= jobId %>/refer" method="POST">
+        <!-- Hidden Field for Job ID -->
+        <input type="hidden" name="jobId" value="<%= jobId %>">
+
+        <div class="mb-4">
+            <label for="ownerName" class="form-label">Job Owner name</label>
+            <input type="text" id="ownerName" name="ownerName" class="form-control" value="<%= ownerName %>" readonly>
+        </div>
+
+        <div class="mb-4">
+            <label for="mentorName" class="form-label">My name</label>
+            <input type="text" id="mentorName" name="mentorName" class="form-control" value="<%= mentorName %>"
+                readonly>
+        </div>
+
+        <div class="mb-4">
+            <label for="mentees" class="form-label">Select Mentee to Refer</label>
+            <select id="mentees" name="mentee" class="form-select" required>
+                <% mentees.forEach(mentee => { %>
+                <option value="<%= mentee._id %>"><%= mentee.name %></option>
+                <% }) %>
+            </select>
+        </div>
+        
+
+
+        <button type="submit" class="btn btn-primary">Send Referral</button>
+    </form>
+</div>

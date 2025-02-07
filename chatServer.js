@@ -15,6 +15,7 @@ module.exports = function (io) {
     const Booking = require("./models/bookingModel");
 
     // Listen for a new message from the client
+    // Listen for a new message from the client
     socket.on("newMessage", async ({ chatId, senderId, text }) => {
       try {
         // Find the chat

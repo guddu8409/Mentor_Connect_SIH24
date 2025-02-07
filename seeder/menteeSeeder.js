@@ -10,15 +10,35 @@ const mentees = [
     goals: "Learn full-stack web development and improve coding skills.",
     interests: ["Web Development", "React", "Node.js"],
     progress: "Not Started",
+    email:"rakesh2016200@gmail.com",
   },
   {
-    username: "mentee_sara",
-    password: "saraSecure123",
+    username: "mentee1",
+    password: "m",
     role: "mentee",
     goals: "Improve data science skills and work on machine learning projects.",
     interests: ["Data Science", "Python", "Machine Learning"],
     progress: "In Progress",
+    email:"rakesh2016200@gmail.com",
   },
+  // {
+  //   username: "mentee2",
+  //   password: "m",
+  //   role: "mentee",
+  //   goals: "Learn full-stack web development and improve coding skills.",
+  //   interests: ["Web Development", "React", "Node.js"],
+  //   progress: "Not Started",
+  //   email:"rakesh2016200@gmail.com",
+  // },
+  // {
+  //   username: "mentee3",
+  //   password: "m",
+  //   role: "mentee",
+  //   goals: "Improve data science skills and work on machine learning projects.",
+  //   interests: ["Data Science", "Python", "Machine Learning"],
+  //   progress: "In Progress",
+  //   email:"rakesh2016200@gmail.com",
+  // },
 ];
 
 const seedMentees = async () => {

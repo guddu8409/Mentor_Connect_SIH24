@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectToDatabase = async () => {
   const MONGO_URL =
-    process.env.MONGODB_URL || "mongodb://127.0.0.1:27017/mentorConnect3";
+    process.env.MONGODB_URL || "mongodb://127.0.0.1:27017/mentorConnect20";
   try {
     await mongoose.connect(MONGO_URL); // Removed deprecated options
     console.log("Connected to MongoDB");

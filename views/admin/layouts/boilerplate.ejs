@@ -12,6 +12,7 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/admin/sidebarStyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="/fevicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet" />
@@ -27,7 +28,7 @@
     <div class="body-container">
       <div class="left">
         <!-- Sidebar -->
-        <!-- < %- include("../includes/sidebar.ejs") %> -->
+        <%- include("../includes/sidebar.ejs") %>
       </div>
       <div class="right">
         <%- include("../includes/flash.ejs") %> <%- body %>

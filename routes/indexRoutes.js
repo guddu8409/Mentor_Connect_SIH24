@@ -20,7 +20,9 @@ router.use("/donations", require("./donationRoutes"));
 router.use("/events", require("./eventRoutes"));
 router.use("/slot", require("./slotPaymentRoutes"));
 router.use("/mentee/slot", require("./menteeSlotRoutes"));
-router.use("/onboarding", require("./onboardingRoutes"));
+router.use("/", require("./referRoutes"));
+
+
 
 
 module.exports = router;

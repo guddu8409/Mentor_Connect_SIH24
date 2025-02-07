@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 // Mongoose Connection
 // const MONGO_URL = process.env.MONGODB_URL;
-const MONGO_URL = "mongodb://127.0.0.1:27017/mentorConnect3";
+const MONGO_URL = "mongodb://127.0.0.1:27017/mentorConnect20";
 
 
 const logger = require("../utils/logger")("runAllSeeds"); // Import your logger
@@ -48,11 +48,11 @@ async function runSeeds() {
     console.log("old data cleared");
 
     // Seed in proper sequence
-    await discussionSeeder();
-    await discussionReviewSeeder();
+    // await discussionSeeder();
+    // await discussionReviewSeeder();
     // await donationSeeder();
     // await groupSeeder();
-    // await jobSeeder();
+    await jobSeeder();
     // await jobReviewSeeder();
     // await paymentSeeder();
     // await quizSeeder();

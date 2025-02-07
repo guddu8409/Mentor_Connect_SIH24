@@ -1,6 +1,8 @@
+/* profile.css */
+
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     color: #333;
     background-color: #f8f9fa;
     margin: 0;
@@ -9,7 +11,7 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 20px auto;
+    margin: 0 auto;
     background: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -18,113 +20,93 @@ body {
 
 /* Profile Header */
 .profile-header {
-    display: flex;
-    align-items: center;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
-    margin-bottom: 20px; /* Increased margin for spacing */
+    margin-bottom: 20px;
 }
 
-.photo {
-    flex-shrink: 0;
-    margin-right: 25px;
-}
-
-.photo-wrapper {
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-.profile-picture {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+.profile-header img {
     border: 4px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.edit-icon-wrapper {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+.profile-header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.photo-wrapper:hover .edit-icon-wrapper {
-    visibility: visible;
-    opacity: 1;
+.profile-header p {
+    margin: 5px 0;
 }
 
-.profile-picture-input {
-    display: none;
+.badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 12px;
 }
 
-/* Profile Info Section */
+/* Profile Info */
 .profile-info h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.3rem;
     margin-top: 20px;
-    color: #333;
-    position: relative;
-    padding-top: 10px; /* Add some space for the line */
+    color: #555;
 }
 
-.profile-info h4::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px; /* Thin line */
-    background-color: #007bff; /* Blue color */
-}
-
-.profile-info p,
-.profile-info ul {
+.profile-info p, .profile-info ul {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
 }
 
 .profile-info ul {
     padding-left: 20px;
 }
 
-.profile-info li {
+.profile-info ul li {
     margin-bottom: 10px;
 }
 
-.profile-info strong {
-    color: #333;
-}
-
-.profile-info a {
+/* Links */
+a {
     color: #007bff;
     text-decoration: none;
 }
 
-.profile-info a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Badge */
-.badge {
-    padding: 5px 10px;
-    font-size: 0.9rem;
-    border-radius: 20px;
+/* Profile Actions */
+.profile-actions {
+    margin-top: 30px;
+}
+
+.profile-actions .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.profile-actions .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.profile-actions .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.profile-actions .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.profile-actions .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
 }
 
 /* Responsive Design */
@@ -133,17 +115,16 @@ body {
         padding: 15px;
     }
 
-    .profile-header {
-        flex-direction: column;
-        text-align: center;
+    .profile-header h2 {
+        font-size: 1.5rem;
     }
 
-    .photo {
-        margin-bottom: 15px;
+    .profile-info h4 {
+        font-size: 1.2rem;
     }
 
-    .username-content {
-        margin-top: 10px;
-        text-align: center;
+    .profile-actions .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
     }
 }

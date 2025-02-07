@@ -4,6 +4,14 @@
   <!-- Hero Section -->
   <div id="/" class="page1hero">
     <section class="hero">
+      <div class="language-toggle">
+        <label for="language-select">Choose Language:</label>
+        <select id="language-select">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="pa">Punjabi</option>
+        </select>
+      </div>
       <div class="hero-content">
         <h1><b>Accelerate Your Career Growth with Expert Mentorship</b></h1>
         <p>Connect with industry leaders who've been there, done that. Get structured guidance to achieve your goals faster.</p>
@@ -185,6 +193,52 @@
     </div>
   </section>
 </div>
+<!-- User Manual Section -->
+<section id="user-manual" class="user-manual-section">
+  <div>
+    <h2><b>Need Help? Download the User Manual</b></h2>
+    <p>Our comprehensive guide will help you navigate through the platform with ease.</p>
+    <a href="/userManual.pdf" class="manual-download-button" download>
+      <img src="/pdf_icon.png" alt="PDF Icon" class="pdf-icon" />
+      Download User Manual
+    </a>
+  </div>
+</section>
+
+<style>
+  .user-manual-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  .manual-download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .manual-download-button:hover {
+    background-color: #0056b3;
+  }
+
+  .pdf-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+</style>
+
 
 <script>
   // Counter Animation Function
@@ -216,3 +270,81 @@
   observer.observe(document.getElementById('Stats-section'));
 </script>
 
+<!-- Language Toggle Section -->
+
+
+<script>
+  // Translation data for Hindi and Punjabi
+  const translations = {
+    hi: {
+      heroTitle: "विशेषज्ञ मेंटरशिप के साथ अपने करियर की वृद्धि को तेज करें",
+      heroDescription: "उन उद्योग के नेताओं से जुड़ें जो इसे पहले ही अनुभव कर चुके हैं। अपने लक्ष्यों को तेजी से प्राप्त करने के लिए संरचित मार्गदर्शन प्राप्त करें।",
+      ctaButton: "अपनी वृद्धि यात्रा शुरू करें",
+      challengesTitle: "76% पेशेवर मानते हैं कि मेंटर महत्वपूर्ण हैं, लेकिन केवल 37% के पास एक है",
+      challenge1: "कोई स्पष्ट दिशा न होने पर करियर में फंसा महसूस करना",
+      challenge2: "अपने लक्ष्यों को समझने वाले अनुभवी मेंटर ढूंढने में कठिनाई",
+      challenge3: "बैठकों का समन्वय और फॉलो-अप में समय बर्बाद करना",
+      satisfiedMentees: "संतुष्ट मेंटी",
+      expertMentors: "विशेषज्ञ मेंटर",
+      industryExperts: "उद्योग विशेषज्ञ",
+      howItWorksTitle: "आपकी पेशेवर सफलता का रास्ता",
+      createProfile: "अपनी प्रोफ़ाइल बनाएं",
+      getMatched: "मेंटर के साथ मेल खाएं",
+      scheduleSessions: "सत्र शेड्यूल करें",
+      growSucceed: "बढ़ें और सफल हों",
+    },
+    pa: {
+      heroTitle: "ਨਿਪੁੰਨ ਮਾਰਗਦਰਸ਼ਨ ਨਾਲ ਆਪਣੀ ਕੈਰੀਅਰ ਵਾਧੇ ਨੂੰ ਤੇਜ਼ ਕਰੋ",
+      heroDescription: "ਉਨ੍ਹਾਂ ਉਦਯੋਗ ਦੇ ਨੇਤਾਵਾਂ ਨਾਲ ਜੁੜੋ ਜੋ ਪਹਿਲਾਂ ਹੀ ਇਸ ਨੂੰ ਅਨੁਭਵ ਕਰ ਚੁੱਕੇ ਹਨ। ਆਪਣੇ ਲਕਸ਼ਾਂ ਨੂੰ ਜਲਦੀ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਸੰਰਚਿਤ ਮਾਰਗਦਰਸ਼ਨ ਪ੍ਰਾਪਤ ਕਰੋ।",
+      ctaButton: "ਆਪਣੀ ਵਾਧੇ ਦੀ ਯਾਤਰਾ ਸ਼ੁਰੂ ਕਰੋ",
+      challengesTitle: "76% ਪੇਸ਼ੇਵਰ ਮੰਨਦੇ ਹਨ ਕਿ ਮਾਰਗਦਰਸ਼ਕ ਮਹੱਤਵਪੂਰਣ ਹਨ, ਪਰ ਸਿਰਫ 37% ਕੋਲ ਹੀ ਇੱਕ ਹੈ",
+      challenge1: "ਕੋਈ ਸਪਸ਼ਟ ਦਿਸ਼ਾ ਨਾ ਹੋਣ ਕਾਰਨ ਕੈਰੀਅਰ ਵਿੱਚ ਫਸਿਆ ਮਹਿਸੂਸ ਕਰਨਾ",
+      challenge2: "ਆਪਣੇ ਲਕਸ਼ਾਂ ਨੂੰ ਸਮਝਣ ਵਾਲੇ ਅਨੁਭਵੀ ਮਾਰਗਦਰਸ਼ਕ ਲੱਭਣ ਵਿੱਚ ਮੁਸ਼ਕਲ",
+      challenge3: "ਮੀਟਿੰਗਾਂ ਦਾ ਸਮਨਵਯ ਅਤੇ ਅਨੁਸਰਨ ਵਿੱਚ ਸਮਾਂ ਬਰਬਾਦ ਕਰਨਾ",
+      satisfiedMentees: "ਸੰਤੁਸ਼ਟ ਮੰਤਰੀ",
+      expertMentors: "ਵਿਸ਼ੇਸ਼ਗ ਮਾਰਗਦਰਸ਼ਕ",
+      industryExperts: "ਉਦਯੋਗ ਵਿਸ਼ੇਸ਼ਗ",
+      howItWorksTitle: "ਤੁਹਾਡੇ ਪੇਸ਼ੇਵਰ ਸਫਲਤਾ ਦਾ ਰਸਤਾ",
+      createProfile: "ਆਪਣੀ ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਓ",
+      getMatched: "ਮਾਰਗਦਰਸ਼ਕ ਨਾਲ ਮੇਲ ਖਾਓ",
+      scheduleSessions: "ਅਧਿਵੇਸ਼ਨ ਸ਼ਡਿਊਲ ਕਰੋ",
+      growSucceed: "ਵਧੋ ਅਤੇ ਸਫਲ ਹੋਵੋ",
+    },
+  };
+
+  // Function to change the language
+  function changeLanguage(language) {
+    const elementsToTranslate = {
+      '.hero h1': 'heroTitle',
+      '.hero p': 'heroDescription',
+      '.cta-button': 'ctaButton',
+      '.main-title': 'challengesTitle',
+      '.challenge-item:nth-child(1) h3': 'challenge1',
+      '.challenge-item:nth-child(2) h3': 'challenge2',
+      '.challenge-item:nth-child(3) h3': 'challenge3',
+      '#alumni-counter + .counter-label strong': 'satisfiedMentees',
+      '#students-counter + .counter-label strong': 'expertMentors',
+      '#faculty-counter + .counter-label strong': 'industryExperts',
+      '.how-it-works h2': 'howItWorksTitle',
+      '.steps .step:nth-child(1) h3': 'createProfile',
+      '.steps .step:nth-child(2) h3': 'getMatched',
+      '.steps .step:nth-child(3) h3': 'scheduleSessions',
+      '.steps .step:nth-child(4) h3': 'growSucceed',
+    };
+
+    // Update content for each translatable element
+    Object.keys(elementsToTranslate).forEach(selector => {
+      const key = elementsToTranslate[selector];
+      const element = document.querySelector(selector);
+      if (element && translations[language][key]) {
+        element.textContent = translations[language][key];
+      }
+    });
+  }
+
+  // Event listener for language selection
+  document.getElementById('language-select').addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value;
+    changeLanguage(selectedLanguage);
+  });
+</script>

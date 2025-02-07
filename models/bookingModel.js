@@ -14,7 +14,7 @@ const bookingSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ["pending", "confirmed", "cancelled", "deleted"],
+      enum: ["pending", "confirmed", "cancelled","deleted"],
       default: "pending",
     },
     payment: {
@@ -42,13 +42,6 @@ const bookingSchema = new mongoose.Schema(
       type: String,
       required: true,
     }, // Reason for booking, if applicable
-    calendlyEventUrl: {
-      type: String, // URL for the Calendly event
-      required: true,
-    },
-    techStack: {
-      type: [String], // Array to store tech stacks associated with the booking
-    },
   },
   {
     timestamps: true, // Automatically adds createdAt and updatedAt
